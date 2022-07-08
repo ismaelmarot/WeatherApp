@@ -1,0 +1,266 @@
+@forward '_grid'
+@forward '_animations'
+
+@use '_variables' as var
+@use '_mixins' as mix
+
+/*========== STYLES ==========*/
+.sound
+	display: none
+
+%btn-model
+	@include mix.flex-column(center,center)
+	@include mix.setHeightWidth(5rem,15rem)
+	border-radius: 3px
+	background-color: nth(var.$colors,1)
+	color: nth(var.$colors,4)
+
+.btn 
+	@extend %btn-model	
+	p
+		@include mix.flex-column(center,center)
+		@include mix.setHeightWidth(5rem,15rem)
+		font-size: 1.5em
+		letter-spacing: .05em
+	&:hover
+		background-color: nth(var.$colors,2)
+		p
+			@include mix.transformScale(1.1)
+			letter-spacing: 0.2em		
+
+body 
+	font-family: var.$font-2
+	a
+		color: nth(var.$colors,4)
+		text-decoration: none		
+		
+.header
+	@include mix.flex-column(center,center)
+	position: sticky
+	position: -webkit-sticky
+	top: 0
+	z-index: 3
+	background-color: nth(var.$colors,2)
+	.header-bar
+		@include mix.flex-row(center,center)
+		width: 100%
+		height: (var.$font-size-h1+var.$padding-h1)
+		h1
+			@include mix.flex-row(center,center)
+			@include mix.setHeightWidth(auto,20%)
+			font-size: var.$font-size-h1
+			color: nth(var.$colors,4)
+			padding-left: 1rem
+		.menu
+			@include mix.flex-row(center,center)		
+			@include mix.setHeightWidth(auto,70%)
+			
+			#input-check-btn-menu
+				display: none
+				&:checked ~ .nav-menu
+					margin-left: 0
+				&:checked ~ .lbl-btn-menu #spn-1
+					top: 45%	
+					transform: rotate(140deg)
+				&:checked ~ .lbl-btn-menu #spn-2
+					display: none	
+				&:checked ~ .lbl-btn-menu #spn-3
+					top: 45%
+					transform: rotate(-140deg)
+			
+			.lbl-btn-menu
+				@include mix.setHeightWidth(2rem,2.5rem)
+				position: relative
+				display: none
+				&:hover
+					cursor: pointer
+				
+				#spn-1 , #spn-2 , #spn-3
+					@include mix.setHeightWidth(.15rem,100%)
+					background-color: nth(var.$colors,4)
+					position: absolute
+					border-radius: .2rem
+					transition: all .4s ease
+				#spn-2
+					top: 45%
+				#spn-3
+					top: 90%		
+			
+			.nav-menu
+				@include mix.setHeightWidth(auto,100%)
+				@include mix.setTransition(all,0.5s)
+				ul					
+					@include mix.setHeightWidth(auto,100%)
+					@include mix.flex-row(center,center)
+					justify-content: flex-end
+					-webkit-box-pack: end
+					-ms-flex-pack: end
+
+					align-items: center
+					-webkit-box-align: center
+					-ms-flex-align: center
+					li a p						
+						margin: 0 2rem
+						padding: .5rem 0
+						border-radius: 3px
+						font-size: 2rem
+						color: nth(var.$colors,4)
+						&:hover					
+							@include mix.transformDuration(.5s)		
+							@include mix.transformScale(1.2)
+.space-container
+	@include mix.flex-column(center,center)
+	height: auto
+	background-image: url('../imgs/img-space.jpg')
+	img
+		@include mix.setHeightWidth(10rem,10rem)
+		border-radius: 100%
+		margin: 3rem 0
+	h2
+		font-size: 2rem
+		margin-top: 2rem
+		color: nth(var.$colors,4)
+	h3
+		font-size: 1.5rem
+		margin-top: 1rem
+		color: nth(var.$colors,4)	
+	.btn
+		margin: 3rem	
+
+.about-photo
+	display: flex
+	justify-content: center
+	align-items: center
+	height: auto
+	img
+		@include mix.setHeightWidth(40vw,auto)
+		@include mix.setBorder(1vh,1vh,1vh,1vh,solid,nth(var.$colors,3))
+		margin-top: 5rem
+
+.about-info
+	@include mix.flex-column (space-between,center)
+	display: flex
+	height: auto
+	margin: 10vh 5vh 5vh
+	div	
+		width: 100%
+	h3
+		font-size: 3rem
+		padding-bottom: 1rem
+	p
+		padding-top: 0rem
+		font-size: 1.5rem
+		line-height: 2rem
+
+	.div-btn
+		display: flex
+		justify-content: center
+		.btn
+			width: 15rem	
+
+.knowledge
+	@include mix.flex-column(center,center)
+	height: 80vh
+	background-color: nth(var.$colors,3)
+	margin: 10rem 0 2rem 0
+	p
+		color: nth(var.$colors,4)
+		font-size: 2.5rem
+		padding: 1rem
+
+.footer
+	@include mix.flex-column(center,center)
+	background-color: nth(var.$colors,2)
+	.info-media-contact
+		.icon-contact
+			@include mix.setHeightWidth(4rem,4rem)
+			margin: 1rem 2rem	
+			&:hover
+				@include mix.transformDuration(.5s)
+				@include mix.transformScale(1.2)	
+	
+	.info-developer
+		@include mix.flex-row(center,center)
+		width: 100%
+		background-color: nth(var.$colors,1)	
+		.info-dev-text
+			color: nth(var.$colors,4)
+			font-size: .8rem
+			letter-spacing: .2rem
+			padding: .2rem 1rem .2rem 1rem
+		div
+			@include mix.flex-row(center,center)		
+			p
+				&:nth-child(1n+1)
+					border-left: .1px solid nth(var.$colors,4)
+				a
+					color: red
+
+/*===== @MEDIA QUERIES =============================*/
+@media all and (max-width: 1023px)
+	.header	
+		.header-bar
+			h1
+				@include mix.setHeightWidth(auto,30%)
+			.menu
+				@include mix.setHeightWidth(100%,70%)
+				.lbl-btn-menu
+					display: block						
+					margin-left: 60%	
+				.nav-menu
+					position: absolute
+					@include mix.setHeightWidth(auto,100%)
+					top: (var.$font-size-h1+var.$padding-h1)
+					height: auto
+					left: 0px	
+					margin-left: -100%
+					ul
+						@include mix.flex-column(center,center)
+						li
+							@include mix.flex-row(center,center)
+							@include mix.setHeightWidth(6rem,100%)
+							@include mix.setBorder(.05rem,0,.05rem,0,solid,nth(var.$colors,4))
+							background-color: nth(var.$colors,2)								
+							a p								
+								height: 4rem	
+								font-size: 3rem
+								text-align: center			
+	.about-photo
+		img
+			@include mix.setHeightWidth(auto,70vw)
+	.about-info
+			margin-top: 3vh
+			.btn
+				margin-top: 4vh
+	.footer
+		.info-media-contact
+			.icon-contact
+				@include mix.setHeightWidth(4rem,4rem)
+		
+		.info-developer
+			@include mix.flex-column(center,center)						
+			div p
+				&:nth-child(1)
+					border-left: none
+
+/*----- end @media 600 a 1023px --------------------*/
+@media all and (max-width: 599px)
+	.about-photo
+		img
+			@include mix.setHeightWidth(auto,90%)
+	.footer
+		.info-media-contact
+			width: 100%
+			display: flex
+			justify-content: space-around
+			.icon-contact
+				@include mix.setHeightWidth(3rem,3rem)
+		
+		.info-developer
+			@include mix.flex-column(center,center)
+			div
+				@include mix.flex-column(center,center)
+				p
+					&:nth-child(1n+1)
+						border-left: none				
+/*----- end @media 520px ---------------------------*/													

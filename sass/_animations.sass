@@ -1,0 +1,27 @@
+/*========== EFFECTS ==========*/
+html
+	scroll-behavior: smooth
+
+/*========== ANIMATIONS ==========*/
+.animation-left , .animation-righ , .animation-in
+	opacity: 0
+	transition: all 5s		
+	
+.showWithAnimationFromLeft
+	animation: showFromLeft 2s
+
+.showWithAnimationFromRight
+	animation: showFromRight 2s
+
+/*========== KEYFRAMES ==========*/	
+@keyframes showFromLeft
+	0%
+		transform: translateX(-100rem)
+	100%
+		transform: translateX(0)	
+
+@keyframes showFromRight
+	0%
+		transform: translateX(100rem)
+	100%
+		transform: translateX(0)	
