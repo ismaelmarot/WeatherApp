@@ -1,11 +1,7 @@
 import { Input } from './WeatherSearch.style';
+import type { WeatherSearchProps } from '../../../types/WeatherSearch.type';
 
-type Props = {
-  value: string;
-  onChange: (value: string) => void;
-};
-
-export function WeatherSearch({ value, onChange }: Props) {
+export function WeatherSearch({ value, onChange }: WeatherSearchProps) {
   return (
     <Input
       type='text'
