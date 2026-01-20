@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { flex } from '../mixins/setFlex';
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -8,6 +9,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    height: 100vh;
+    ${flex('column', 'center', 'center')}
+
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
       'Helvetica Neue', Arial, sans-serif;
 
