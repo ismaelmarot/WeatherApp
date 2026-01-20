@@ -4,17 +4,9 @@ function App() {
   return (
     <>
       <GlobalStyles />
-      <div
-        style={{
-          minHeight: '100vh',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          backgroundColor: 'red'
-        }}
-      >
-        <h1 style={{ color: 'white' }}>
-          CENTRADO REAL
+      <div className="container min-vh-100 d-flex align-items-center justify-content-center">
+        <h1 className='text-center'>
+         Weather App
         </h1>
       </div>
     </>
