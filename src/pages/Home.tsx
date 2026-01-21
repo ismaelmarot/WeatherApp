@@ -1,14 +1,28 @@
 import { useState, useEffect } from 'react';
 import { getWeatherByCoords } from '../services/weather.service';
+import { getWeatherByCity } from '../services/weather.service';
 import type { WeatherResponse } from '../services/weather.service';
 import { WeatherSearch } from '../components/weather/WeatherSearch/WeatherSearch';
 import { useGeolocation } from '../hooks/useGeolocation';
 import { Div } from './Home.style';
 
+
 const Home = () => {
   const [city, setCity] = useState('');
   const { loading, error, coords } = useGeolocation();
   const [weather, setWeather] = useState<WeatherResponse | null>(null);
+
+  const handleSearch = async () => {
+    if (!city.trim()) return;
+
+    try {
+      const data = await getWeatherByCity(city);
+      setWeather(data);
+      setCity('');
+    } catch (err: any) {
+      alert(err.message);
+    }
+  };
 
   useEffect(() => {
     if (!coords) return;
@@ -34,7 +48,11 @@ const Home = () => {
       <h1 className='text-center'>Weather App</h1>
       <p>Check the weather anywhere</p>
 
-      <WeatherSearch value={city} onChange={setCity} />
+      <WeatherSearch
+        value={city}
+        onChange={setCity}
+        onSubmit={handleSearch}
+      />
 
       {loading && <p>Getting your location...</p>}
       {error && <p>{error}</p>}
