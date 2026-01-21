@@ -9,7 +9,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    height: 100vh;
     ${flex('column', 'center', 'center')}
 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',

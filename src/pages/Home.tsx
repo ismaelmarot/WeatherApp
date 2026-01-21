@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react';
+import { useGeolocation } from '../hooks/useGeolocation';
 import { getWeatherByCoords } from '../services/weather.service';
 import { getWeatherByCity } from '../services/weather.service';
 import type { WeatherResponse } from '../services/weather.service';
 import { WeatherSearch } from '../components/weather/WeatherSearch/WeatherSearch';
-import { useGeolocation } from '../hooks/useGeolocation';
+import { WeatherCurrent } from '../components/weather/WeatherCurrent/WeatherCurrent';
+import { WeatherDayInfo } from '../components/weather/WeatherDayInfo/WeatherDayInfo';
+import { WeatherDetails } from '../components/weather/WeatherDetails/WeatherDetails';
 import { Div } from './Home.style';
-
 
 const Home = () => {
   const [city, setCity] = useState('');
@@ -74,21 +76,30 @@ const Home = () => {
 
       {weather && (
         <div>
-          <h2>{weather.location.name}</h2>
+          {/* <h2>{weather.location.name}</h2> */}
 
-          <p style={{ fontSize: '48px', margin: '8px 0' }}>
+          {/* <p style={{ fontSize: '48px', margin: '8px 0' }}>
             {Math.round(weather.current.temp_c)}°C
-          </p>
+          </p> */}
 
           <p>Sensación térmica: {Math.round(weather.current.feelslike_c)}°C</p>
 
-          <div style={{ marginTop: '16px' }}>
+          {/* <div style={{ marginTop: '16px' }}>
             <p>💧 Humedad: {weather.current.humidity}%</p>
             <p>💨 Viento: {weather.current.wind_kph} km/h</p>
             <p>☀️ UV: {weather.current.uv}</p>
-          </div>
+          </div> */}
         </div>
       )}
+
+      {weather && (
+        <>
+          <WeatherCurrent weather={weather} />
+          <WeatherDetails weather={weather} />
+          <WeatherDayInfo weather={weather} />
+        </>
+      )}
+
     </Div>
   )
 }

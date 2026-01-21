@@ -1,4 +1,4 @@
-import { Wrapper, Card,  } from './CenteredLayout.style';
+import { Wrapper, Card } from './CenteredLayout.style';
 
 type Props = {
   children: React.ReactNode;

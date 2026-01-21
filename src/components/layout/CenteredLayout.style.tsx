@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { flex } from '../../mixins/setFlex';
 
 export const Wrapper = styled.div`
-  height: 95vh;
   ${flex('column', 'center', 'center')}
   overflow: hidden;
 `;
