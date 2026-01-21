@@ -17,6 +17,6 @@ export function WeatherSearch({
           onSubmit();
         }
       }}
-    />
+    />  
   );
 }

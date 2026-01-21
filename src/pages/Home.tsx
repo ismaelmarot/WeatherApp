@@ -11,6 +11,9 @@ const Home = () => {
   const [city, setCity] = useState('');
   const { loading, error, coords } = useGeolocation();
   const [weather, setWeather] = useState<WeatherResponse | null>(null);
+  const [isFetching, setIsFetching] = useState(false);
+  const [uiError, setUiError] = useState<string | null>(null);
+
 
   const handleSearch = async () => {
     if (!city.trim()) return;
@@ -28,14 +31,19 @@ const Home = () => {
     if (!coords) return;
 
     const fetchWeather = async () => {
+      setIsFetching(true);
+      setUiError(null);
+
       try {
         const data = await getWeatherByCoords(
           coords.latitude,
           coords.longitude
         );
         setWeather(data);
-      } catch (err) {
-        console.error(err);
+      } catch {
+        setUiError('Unable to get weather for your location');
+      } finally {
+        setIsFetching(false);
       }
     };
 
