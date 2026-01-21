@@ -74,19 +74,21 @@ const Home = () => {
 
       {weather && (
         <div>
-          <h2>
-            {weather.location.name}, {weather.location.country}
-          </h2>
-          <p>{Math.round(weather.current.temp_c)}°C</p>
-          <p>{weather.current.condition.text}</p>
-          <img
-            src={weather.current.condition.icon}
-            alt={weather.current.condition.text}
-          />
+          <h2>{weather.location.name}</h2>
+
+          <p style={{ fontSize: '48px', margin: '8px 0' }}>
+            {Math.round(weather.current.temp_c)}°C
+          </p>
+
+          <p>Sensación térmica: {Math.round(weather.current.feelslike_c)}°C</p>
+
+          <div style={{ marginTop: '16px' }}>
+            <p>💧 Humedad: {weather.current.humidity}%</p>
+            <p>💨 Viento: {weather.current.wind_kph} km/h</p>
+            <p>☀️ UV: {weather.current.uv}</p>
+          </div>
         </div>
       )}
-
-
     </Div>
   )
 }
