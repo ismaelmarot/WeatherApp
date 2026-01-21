@@ -5,51 +5,89 @@ if (!API_KEY) {
   throw new Error('Missing WeatherAPI key');
 }
 
+if (!BASE_URL) {
+  throw new Error('Missing WeatherAPI base URL');
+}
+
+/**
+ * Types returned by WeatherAPI
+ * Used forecast.json to get:
+    * - current
+    * - forecast (min/max, lluvia)
+    * - astro (sol y luna)
+ */
 export type WeatherResponse = {
   location: {
     name: string;
     country: string;
+    localtime: string;
   };
+
   current: {
     temp_c: number;
     feelslike_c: number;
     humidity: number;
     wind_kph: number;
+    wind_dir: string;
+    pressure_mb: number;
+    vis_km: number;
     uv: number;
     condition: {
       text: string;
       icon: string;
     };
   };
+
+  forecast: {
+    forecastday: {
+      date: string;
+      day: {
+        maxtemp_c: number;
+        mintemp_c: number;
+        daily_chance_of_rain: number;
+        totalprecip_mm: number;
+      };
+      astro: {
+        sunrise: string;
+        sunset: string;
+        moonrise: string;
+        moonset: string;
+        moon_phase: string;
+        moon_illumination: string;
+      };
+    }[];
+  };
 };
 
+/* Weather by Coordinates */
 export async function getWeatherByCoords(
   lat: number,
   lon: number
 ): Promise<WeatherResponse> {
   const response = await fetch(
-    `${BASE_URL}/current.json?key=${API_KEY}&q=${lat},${lon}&lang=es`
+    `${BASE_URL}/forecast.json?key=${API_KEY}&q=${lat},${lon}&days=1&lang=es`
   );
 
   if (!response.ok) {
     const error = await response.json();
-    console.error(error);
-    throw new Error(error.error?.message || 'Weather API error');
+    console.error('Weather API error:', error);
+    throw new Error(error.error?.message || 'Error fetching weather');
   }
 
   return response.json();
 }
 
+/* Weather by City */
 export async function getWeatherByCity(
   city: string
 ): Promise<WeatherResponse> {
   const response = await fetch(
-    `${BASE_URL}/current.json?key=${API_KEY}&q=${city}&lang=es`
+    `${BASE_URL}/forecast.json?key=${API_KEY}&q=${city}&days=1&lang=es`
   );
 
   if (!response.ok) {
     const error = await response.json();
-    console.error(error);
+    console.error('Weather API error:', error);
     throw new Error(error.error?.message || 'City not found');
   }
 
