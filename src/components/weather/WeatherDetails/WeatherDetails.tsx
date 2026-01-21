@@ -21,7 +21,7 @@ export function WeatherDetails({ weather }: Props) {
             </Item>
 
             <Item>
-                <Label>UV</Label>
+                <Label>☀️ UV Index</Label>
                 <Value>{current.uv}</Value>
             </Item>
 

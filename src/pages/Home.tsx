@@ -68,7 +68,7 @@ const Home = () => {
       {error && <p>{error}</p>}
 
       {coords && (
-        <p>
+        <p>Your current location: 
           Lat: {coords.latitude.toFixed(2)} - Lon:{' '}
           {coords.longitude.toFixed(2)}
         </p>
@@ -82,7 +82,7 @@ const Home = () => {
             {Math.round(weather.current.temp_c)}°C
           </p> */}
 
-          <p>Sensación térmica: {Math.round(weather.current.feelslike_c)}°C</p>
+          <p>🌡️ Feels like: {Math.round(weather.current.feelslike_c)}°C</p>
 
           {/* <div style={{ marginTop: '16px' }}>
             <p>💧 Humedad: {weather.current.humidity}%</p>
