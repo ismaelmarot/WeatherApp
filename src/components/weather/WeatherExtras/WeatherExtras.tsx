@@ -1,12 +1,6 @@
-import type { WeatherResponse } from '../../../src/services/weather.service';
-import {
-    Section,
-    Grid,
-    Item,
-    Label,
-    Value,
-    WindArrow,
-} from './WeatherExtras.style';
+import type { WeatherResponse } from '../../../services/weather.service';
+import { Section, Grid, Item, Label, Value, WindArrow } from './WeatherExtras.style';
+import { moonImages } from '../../../utils/moonImages';
 
 type Props = {
     weather: WeatherResponse;
@@ -38,23 +32,32 @@ export function WeatherExtras({ weather }: Props) {
 
             {/* Luna */}
             <Item>
-            <Label>Moon phase</Label>
-            <Value>{astro.moon_phase}</Value>
+                <Label>Moon</Label>
+                <img
+                    src={moonImages[astro.moon_phase]}
+                    alt={astro.moon_phase}
+                    width={48}
+                    style={{borderRadius:'50%',  opacity: 0.9, margin:'1rem', width:'6rem'}}
+                />
+            </Item>
+            <Item>
+                <Label>Moon phase</Label>
+                <Value>{astro.moon_phase}</Value>
             </Item>
 
             <Item>
-            <Label>Moon light</Label>
-            <Value>{astro.moon_illumination}%</Value>
+                <Label>Moon light</Label>
+                <Value>{astro.moon_illumination}%</Value>
             </Item>
 
             <Item>
-            <Label>Moonrise</Label>
-            <Value>{astro.moonrise}</Value>
+                <Label>Moonrise</Label>
+                <Value>{astro.moonrise}</Value>
             </Item>
 
             <Item>
-            <Label>Moonset</Label>
-            <Value>{astro.moonset}</Value>
+                <Label>Moonset</Label>
+                <Value>{astro.moonset}</Value>
             </Item>
         </Grid>
         </Section>
