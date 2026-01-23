@@ -6,9 +6,12 @@ type Props = {
     weather: WeatherResponse;
 };
 
+
 export function WeatherExtras({ weather }: Props) {
     const { current, forecast } = weather;
     const astro = forecast.forecastday[0].astro;
+
+    console.log('Moon phase from API:', astro.moon_phase);
 
     return (
         <Section>
