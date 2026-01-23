@@ -1,4 +1,5 @@
 import { moonImages } from '../../utils/moonImages';
+import { Item } from '../../components/weather/WeatherExtras/WeatherExtras.style';
 
 type LunarDay = {
     date: string;
@@ -12,12 +13,12 @@ type Props = {
 
 export function LunarCalendar({ days }: Props) {
     return (
-        <div>
+        <div style={{alignContent:'center'}}>
         <h3>Lunar calendar</h3>
 
-        <div style={{ display: 'flex', gap: 16 }}>
+        <Item style={{ display: 'flex', justifyContent:'center'}}>
             {days.map(day => (
-            <div key={day.date} style={{ textAlign: 'center' }}>
+            <div key={day.date} style={{ textAlign: 'center', margin:'1rem' }}>
                 <img
                     src={moonImages[day.moon_phase]}
                     alt={day.moon_phase}
@@ -34,7 +35,7 @@ export function LunarCalendar({ days }: Props) {
                 </div>
             </div>
             ))}
-        </div>
+        </Item>
         </div>
     );
 }
