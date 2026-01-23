@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useGeolocation } from '../hooks/useGeolocation';
-import { getWeatherByCoords } from '../services/weather.service';
+import { getForecastByCoords, getWeatherByCoords } from '../services/weather.service';
 import { getWeatherByCity } from '../services/weather.service';
 import type { WeatherResponse } from '../services/weather.service';
 import { WeatherSearch } from '../components/weather/WeatherSearch/WeatherSearch';
@@ -9,6 +9,7 @@ import { WeatherDayInfo } from '../components/weather/WeatherDayInfo/WeatherDayI
 import { WeatherDetails } from '../components/weather/WeatherDetails/WeatherDetails';
 import { WeatherExtras } from '../components/weather/WeatherExtras/WeatherExtras';
 import { Div } from './Home.style';
+import { LunarCalendar } from '../components/LunarCalendar/LunarCalendar';
 
 
 const Home = () => {
@@ -17,7 +18,7 @@ const Home = () => {
   const [weather, setWeather] = useState<WeatherResponse | null>(null);
   const [isFetching, setIsFetching] = useState(false);
   const [uiError, setUiError] = useState<string | null>(null);
-
+  const [forecast, setForecast] = useState<any>(null);
 
   const handleSearch = async () => {
     if (!city.trim()) return;
@@ -34,25 +35,37 @@ const Home = () => {
   useEffect(() => {
     if (!coords) return;
 
-    const fetchWeather = async () => {
+    const fetchAllWeather = async () => {
       setIsFetching(true);
       setUiError(null);
 
       try {
-        const data = await getWeatherByCoords(
+        // 1️⃣ Clima actual
+        const weatherData = await getWeatherByCoords(
           coords.latitude,
           coords.longitude
         );
-        setWeather(data);
-      } catch {
+        setWeather(weatherData);
+
+        // 2️⃣ Forecast + luna
+        const forecastData = await getForecastByCoords(
+          coords.latitude,
+          coords.longitude,
+          7
+        );
+        setForecast(forecastData);
+
+      } catch (error) {
         setUiError('Unable to get weather for your location');
+        console.error(error);
       } finally {
         setIsFetching(false);
       }
     };
 
-    fetchWeather();
+    fetchAllWeather();
   }, [coords]);
+
 
 
   return (
@@ -111,7 +124,16 @@ const Home = () => {
         </>
       )}
 
-
+      {forecast && (
+        <LunarCalendar
+          days={forecast.forecast.forecastday.map((d: any) => ({
+            date: d.date,
+            moon_phase: d.astro.moon_phase,
+            moon_illumination: d.astro.moon_illumination
+          }))}
+        />
+      )}
+      
     </Div>
   )
 }

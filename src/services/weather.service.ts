@@ -93,3 +93,20 @@ export async function getWeatherByCity(
 
   return response.json();
 }
+
+export async function getForecastByCoords(
+  lat: number,
+  lon: number,
+  days = 7
+) {
+  const response = await fetch(
+    `${BASE_URL}/forecast.json?key=${API_KEY}&q=${lat},${lon}&days=${days}&lang=es`
+  );
+
+  if (!response.ok) {
+    const error = await response.json();
+    throw new Error(error.error?.message || 'Forecast error');
+  }
+
+  return response.json();
+}

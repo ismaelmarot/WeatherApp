@@ -31,13 +31,13 @@ export function WeatherExtras({ weather }: Props) {
             </Item>
 
             {/* Luna */}
-            <Item>
-                <Label>Moon</Label>
+            <Item style={{ backgroundColor:'black' }}>
+                <Label style={{ color:'white' }}>Moon</Label>
                 <img
                     src={moonImages[astro.moon_phase]}
                     alt={astro.moon_phase}
                     width={48}
-                    style={{borderRadius:'50%',  opacity: 0.9, margin:'1rem', width:'6rem'}}
+                    style={{ borderRadius:'50%',  opacity: 0.9, margin:'1rem', width:'8rem' }}
                 />
             </Item>
             <Item>
