@@ -7,7 +7,9 @@ import { WeatherSearch } from '../components/weather/WeatherSearch/WeatherSearch
 import { WeatherCurrent } from '../components/weather/WeatherCurrent/WeatherCurrent';
 import { WeatherDayInfo } from '../components/weather/WeatherDayInfo/WeatherDayInfo';
 import { WeatherDetails } from '../components/weather/WeatherDetails/WeatherDetails';
+import { WeatherExtras } from '../components/weather/WeatherExtras/WeatherExtras';
 import { Div } from './Home.style';
+
 
 const Home = () => {
   const [city, setCity] = useState('');
@@ -99,6 +101,16 @@ const Home = () => {
           <WeatherDayInfo weather={weather} />
         </>
       )}
+
+      {weather && (
+        <>
+          <WeatherCurrent weather={weather} />
+          <WeatherDetails weather={weather} />
+          <WeatherDayInfo weather={weather} />
+          <WeatherExtras weather={weather} />
+        </>
+      )}
+
 
     </Div>
   )
