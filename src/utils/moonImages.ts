@@ -12,7 +12,7 @@ export const moonImages: Record<string, string> = {
     'New Moon': newMoon,
     'Full Moon': fullMoon,
     'First Quarter': firstQuarterMoon,
-    'Tird Quarter': thirdQuarterMoon,
+    'Third Quarter': thirdQuarterMoon,
     'Waxing Crescent': waxingCrescentMoon,
     'Waxing Gibbous': waxingGibbousMoon,
     'Waning Crescent': waningCrescentMoon,

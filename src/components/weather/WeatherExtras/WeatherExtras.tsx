@@ -37,7 +37,7 @@ export function WeatherExtras({ weather }: Props) {
             <Item style={{ backgroundColor:'black' }}>
                 <Label style={{ color:'white' }}>Moon</Label>
                 <img
-                    src={moonImages[astro.moon_phase]}
+                    src={moonImages[astro.moon_phase] ?? moonImages['Full Moon']}
                     alt={astro.moon_phase}
                     width={48}
                     style={{ borderRadius:'50%',  opacity: 0.9, margin:'1rem', width:'8rem' }}
