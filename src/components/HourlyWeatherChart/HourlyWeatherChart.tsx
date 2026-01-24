@@ -23,7 +23,7 @@ export function HourlyWeatherChart({ data }: Props) {
 
   return (
     <Container>
-      <h3>Next 12 hours</h3>
+      <h3>Temperature - next 12 hours</h3>
 
       <ResponsiveContainer width="100%" height={250}>
         <LineChart data={chartData}>
