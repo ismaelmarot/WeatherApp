@@ -1,5 +1,6 @@
 import type { WeatherResponse } from '../../../services/weather.service';
 import { Grid, Item, Label, Value } from './WeatherDetails.style';
+import { WindCompass } from '../WindCompass';
 
 type Props = {
     weather: WeatherResponse;
@@ -17,7 +18,10 @@ export function WeatherDetails({ weather }: Props) {
 
             <Item>
                 <Label>Wind</Label>
-                <Value>{current.wind_kph} km/h</Value>
+                <WindCompass
+                    direction={current.wind_dir}
+                    speed={current.wind_kph}
+                />
             </Item>
 
             <Item>
