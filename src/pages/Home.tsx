@@ -10,7 +10,7 @@ import { WeatherDetails } from '../components/weather/WeatherDetails/WeatherDeta
 import { WeatherExtras } from '../components/weather/WeatherExtras/WeatherExtras';
 import { Div } from './Home.style';
 import { LunarCalendar } from '../components/LunarCalendar/LunarCalendar';
-
+import { HourlyForecast } from '../components/weather/HourlyForecast/HourlyForecast';
 
 const Home = () => {
   const [city, setCity] = useState('');
@@ -19,7 +19,7 @@ const Home = () => {
   const [isFetching, setIsFetching] = useState(false);
   const [uiError, setUiError] = useState<string | null>(null);
   const [forecast, setForecast] = useState<any>(null);
-
+  
   const handleSearch = async () => {
     if (!city.trim()) return;
 
@@ -66,6 +66,13 @@ const Home = () => {
     fetchAllWeather();
   }, [coords]);
 
+  function getNextHours(forecast: any) {
+    const now = new Date();
+
+    return forecast.forecast.forecastday[0].hour
+      .filter((h: any) => new Date(h.time) >= now)
+      .slice(0, 12);
+  }
 
 
   return (
@@ -133,6 +140,11 @@ const Home = () => {
           }))}
         />
       )}
+
+      {forecast && (
+        <HourlyForecast hours={getNextHours(forecast)} />
+      )}
+
       
     </Div>
   )
