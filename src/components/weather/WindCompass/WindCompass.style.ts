@@ -11,25 +11,19 @@ export const Compass = styled.div`
 `;
 
 export const Arrow = styled.div`
-  position: absolute;
+   position: absolute;
   top: 50%;
   left: 50%;
-  width: 2px;
-  height: 32px;
-  background: #111;
-  transform-origin: bottom center;
-  translate: -50% -100%;
-  border-radius: 2px;
+  transform-origin: center 90%;
+  translate: -50% -90%;
+  transition: transform 0.3s ease;
 
-  &::after {
-    content: '';
-    position: absolute;
-    top: -6px;
-    left: -4px;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-bottom: 6px solid #111;
-  }
+  width: 0;
+  height: 0;
+
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 30px solid #111;
 `;
 
 export const DirectionLabel = styled.span<{
