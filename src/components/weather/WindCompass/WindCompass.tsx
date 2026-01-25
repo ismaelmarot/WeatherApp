@@ -51,16 +51,16 @@ export function WindCompass({ speed, degree }: Props) {
       })}
 
       {/* Cardinales */}
-      <text x={center} y={18} textAnchor="middle" fill="rgb(0, 0, 0)" fontSize="14">
+      <text x={center} y={15} textAnchor="middle" fill="rgb(0, 0, 0)" fontSize="14">
         N
       </text>
       <text x={size - 12} y={center + 5} fill="rgb(0, 0, 0)" fontSize="14">
         E
       </text>
-      <text x={center} y={size - 6} textAnchor="middle" fill="rgb(0, 0, 0)" fontSize="14">
+      <text x={center} y={size - 4} textAnchor="middle" fill="rgb(0, 0, 0)" fontSize="14">
         S
       </text>
-      <text x={6} y={center + 5} fill="rgb(0, 0, 0)" fontSize="14">
+      <text x={2} y={center + 5} fill="rgb(0, 0, 0)" fontSize="14">
         W
       </text>
 
@@ -71,13 +71,13 @@ export function WindCompass({ speed, degree }: Props) {
         textAnchor="middle"
         fill="rgb(0, 0, 0)"
         fontSize="28"
-        fontWeight="600"
+        fontWeight="500"
       >
         {speed}
       </text>
       <text
         x={center}
-        y={center + 22}
+        y={center + 15}
         textAnchor="middle"
         fill="rgb(0, 0, 0)"
         fontSize="14"
@@ -88,12 +88,12 @@ export function WindCompass({ speed, degree }: Props) {
       {/* Aguja */}
       <g transform={`rotate(${rotation} ${center} ${center})`}>
         <line
-          x1={center}
+          x1={center + 40}
           y1={center}
           x2={center + radius - 12}
           y2={center}
           stroke="rgb(0, 0, 0)"
-          strokeWidth="2"
+          strokeWidth="5"
           strokeLinecap="round"
         />
         <circle
