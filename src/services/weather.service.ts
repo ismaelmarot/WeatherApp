@@ -24,6 +24,7 @@ export type WeatherResponse = {
   };
 
   current: {
+    wind_degree: number;
     temp_c: number;
     feelslike_c: number;
     humidity: number;

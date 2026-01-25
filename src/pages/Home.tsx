@@ -122,14 +122,6 @@ const Home = () => {
           <WeatherCurrent weather={weather} />
           <WeatherDetails weather={weather} />
           <WeatherDayInfo weather={weather} />
-        </>
-      )}
-
-      {weather && (
-        <>
-          <WeatherCurrent weather={weather} />
-          <WeatherDetails weather={weather} />
-          <WeatherDayInfo weather={weather} />
           <WeatherExtras weather={weather} />
         </>
       )}
