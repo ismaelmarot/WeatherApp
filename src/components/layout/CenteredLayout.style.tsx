@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { flex } from '../../mixins/setFlex';
+import { size } from '../../mixins/setSize';
+import { GeneralColors } from '../../constants/GeneralColors';
 
 export const Wrapper = styled.div`
   ${flex('column', 'center', 'center')}
@@ -7,12 +9,9 @@ export const Wrapper = styled.div`
 `;
 
 export const Card = styled.div`
-  height: 100%;
-  width: 50rem;
-  border-radius: .5rem;
+  ${size('50rem','100%')}
   padding: 3rem;
-  background-color: rgb(255, 255, 255);
-
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-radius: .5rem;
   text-align: center;
+  background-color: ${GeneralColors.white};
 `;
