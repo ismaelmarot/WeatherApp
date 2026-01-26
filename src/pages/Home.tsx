@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useGeolocation } from '../hooks/useGeolocation';
 import { getForecastByCoords, getWeatherByCoords } from '../services/weather.service';
-import { getWeatherByCity } from '../services/weather.service';
 import type { WeatherResponse } from '../services/weather.service';
 import { WeatherSearch } from '../components/weather/WeatherSearch/WeatherSearch';
 import { WeatherCurrent } from '../components/weather/WeatherCurrent/WeatherCurrent';
@@ -22,20 +21,7 @@ const Home = () => {
   const [uiError, setUiError] = useState<string | null>(null);
   const [forecast, setForecast] = useState<any>(null);
 
-  const hourlyForecast = forecast?.forecastday?.[0]?.hour ?? [];
-
-
-  const handleSearch = async () => {
-    if (!city.trim()) return;
-
-    try {
-      const data = await getWeatherByCity(city);
-      setWeather(data);
-      setCity('');
-    } catch (err: any) {
-      alert(err.message);
-    }
-  };
+  const hourlyForecast = forecast?.forecast?.forecastday?.[0]?.hour ?? [];
 
   useEffect(() => {
     if (!coords) return;
@@ -116,6 +102,14 @@ const Home = () => {
           fetchWeatherByCoords(location.lat, location.lon);
         }}
       />
+      {isFetching &&
+        <p>Loading weather...</p>
+      }
+
+      {uiError &&
+        <p style={{ color: 'red' }}>{uiError}</p>
+      }
+
 
       {loading && <p>Getting your location...</p>}
       {error && <p>{error}</p>}
@@ -156,10 +150,6 @@ const Home = () => {
         <HourlyForecast hours={getNextHours(forecast)} />
       )}
 
-      {hourlyForecast.length > 0 && (
-        <HourlyWeatherChart data={hourlyForecast} />
-      )}
-
       {weather && (
         <RainChanceChart
           hours={weather.forecast.forecastday[0].hour.slice(
@@ -169,7 +159,10 @@ const Home = () => {
         />
       )}
 
-      
+      {hourlyForecast.length > 0 && (
+        <HourlyWeatherChart data={hourlyForecast} />
+      )}
+
     </Div>
   )
 }
