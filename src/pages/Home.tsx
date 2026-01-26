@@ -2,16 +2,16 @@ import { useState, useEffect } from 'react';
 import { useGeolocation } from '../hooks/useGeolocation';
 import { getForecastByCoords, getWeatherByCoords } from '../services/weather.service';
 import type { WeatherResponse } from '../services/weather.service';
-import { WeatherSearch } from '../components/weather/WeatherSearch/WeatherSearch';
-import { WeatherCurrent } from '../components/weather/WeatherCurrent/WeatherCurrent';
-import { WeatherDayInfo } from '../components/weather/WeatherDayInfo/WeatherDayInfo';
-import { WeatherDetails } from '../components/weather/WeatherDetails/WeatherDetails';
-import { WeatherExtras } from '../components/weather/WeatherExtras/WeatherExtras';
+import { WeatherSearch } from '../components/Weather/WeatherSearch/WeatherSearch';
+import { WeatherCurrent } from '../components/Weather/WeatherCurrent/WeatherCurrent';
+import { WeatherDayInfo } from '../components/Weather/WeatherDayInfo/WeatherDayInfo';
+import { WeatherDetails } from '../components/Weather/WeatherDetails/WeatherDetails';
+import { WeatherExtras } from '../components/Weather/WeatherExtras/WeatherExtras';
 import { Div } from './Home.style';
 import { LunarCalendar } from '../components/LunarCalendar/LunarCalendar';
-import { HourlyForecast } from '../components/weather/HourlyForecast/HourlyForecast';
+import { HourlyForecast } from '../components/Weather/HourlyForecast/HourlyForecast';
 import { HourlyWeatherChart } from '../components/HourlyWeatherChart';
-import { RainChanceChart } from '../components/weather/RainChanceChart/RainChanceChart';
+import { RainChanceChart } from '../components/Weather/RainChanceChart/RainChanceChart';
 
 const Home = () => {
   const [city, setCity] = useState('');

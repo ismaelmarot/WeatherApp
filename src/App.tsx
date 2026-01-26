@@ -1,6 +1,6 @@
 import Home from './pages/Home'
 import { GlobalStyle } from './styles/GlobalStyle'
-import { CenteredLayout } from './components/layout/CenteredLayout';
+import { CenteredLayout } from './components/Layout/CenteredLayout';
 
 function App() {
   return (

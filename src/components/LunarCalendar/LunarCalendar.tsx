@@ -1,5 +1,5 @@
 import { moonImages } from '../../utils/moonImages';
-import { Item } from '../../components/weather/WeatherExtras/WeatherExtras.style';
+import { Item } from '../Weather/WeatherExtras/WeatherExtras.style';
 
 type LunarDay = {
     date: string;
