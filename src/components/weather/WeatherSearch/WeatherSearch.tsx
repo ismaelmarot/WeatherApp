@@ -81,8 +81,13 @@ export function WeatherSearch({
         placeholder="Search city"
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        onFocus={() => value.length >= 2 && setShowList(true)}
+        onFocus={() => {
+          onChange('');
+          setResults([]);
+          setShowList(false);
+        }}
       />
+
 
       {showList && results.length > 0 && (
         <div
