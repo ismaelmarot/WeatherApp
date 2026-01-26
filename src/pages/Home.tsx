@@ -108,12 +108,6 @@ const Home = () => {
       <h1 className='text-center'>Weather App</h1>
       <p>Check the weather anywhere</p>
 
-      {/* <WeatherSearch
-        value={city}
-        onChange={setCity}
-        onSubmit={handleSearch}
-      /> */}
-
       <WeatherSearch
         value={city}
         onChange={setCity}
@@ -135,19 +129,7 @@ const Home = () => {
 
       {weather && (
         <div>
-          {/* <h2>{weather.location.name}</h2> */}
-
-          {/* <p style={{ fontSize: '48px', margin: '8px 0' }}>
-            {Math.round(weather.current.temp_c)}°C
-          </p> */}
-
           <p>🌡️ Feels like: {Math.round(weather.current.feelslike_c)}°C</p>
-
-          {/* <div style={{ marginTop: '16px' }}>
-            <p>💧 Humedad: {weather.current.humidity}%</p>
-            <p>💨 Viento: {weather.current.wind_kph} km/h</p>
-            <p>☀️ UV: {weather.current.uv}</p>
-          </div> */}
         </div>
       )}
 

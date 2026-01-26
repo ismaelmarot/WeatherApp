@@ -9,13 +9,6 @@ if (!BASE_URL) {
   throw new Error('Missing WeatherAPI base URL');
 }
 
-/**
- * Types returned by WeatherAPI
- * Used forecast.json to get:
-    * - current
-    * - forecast (min/max, lluvia)
-    * - astro (sol y luna)
- */
 export type WeatherResponse = {
   location: {
     name: string;
