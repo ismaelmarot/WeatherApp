@@ -1,10 +1,7 @@
 import { Wrapper, Card } from './CenteredLayout.style';
+import type { LayoutProps } from '../../types/Layout.type';
 
-type Props = {
-  children: React.ReactNode;
-};
-
-export function CenteredLayout({ children }: Props) {
+export function CenteredLayout({ children }: LayoutProps) {
   return (
     <Wrapper>
       <Card>{children}</Card>
