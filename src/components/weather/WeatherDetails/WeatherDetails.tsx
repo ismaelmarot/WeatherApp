@@ -19,14 +19,13 @@ export function WeatherDetails({ weather }: Props) {
             <Item>
                 <Label>Wind</Label>
                 {/* <WindCompass
-                    direction={current.wind_dir}
-                    speed={current.wind_kph}
-                /> */}
-                <WindCompass
                     speed={current.wind_kph}
                     degree={current.wind_degree}
+                /> */}
+                <WindCompass 
+                    speed={weather.current.wind_kph} 
+                    degree={weather.current.wind_degree} 
                 />
-
             </Item>
 
             <Item>
