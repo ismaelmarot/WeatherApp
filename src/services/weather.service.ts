@@ -56,9 +56,19 @@ export type WeatherResponse = {
         moon_phase: string;
         moon_illumination: string;
       };
+      hour: {
+        time: string;
+        temp_c: number;
+        chance_of_rain: number;
+        precip_mm: number;
+        condition: {
+          icon: string;
+        };
+      }[];
     }[];
   };
 };
+
 
 /* Weather by Coordinates */
 export async function getWeatherByCoords(

@@ -12,6 +12,7 @@ import { Div } from './Home.style';
 import { LunarCalendar } from '../components/LunarCalendar/LunarCalendar';
 import { HourlyForecast } from '../components/weather/HourlyForecast/HourlyForecast';
 import { HourlyWeatherChart } from '../components/HourlyWeatherChart';
+import { RainChanceChart } from '../components/weather/RainChanceChart/RainChanceChart';
 
 const Home = () => {
   const [city, setCity] = useState('');
@@ -21,7 +22,8 @@ const Home = () => {
   const [uiError, setUiError] = useState<string | null>(null);
   const [forecast, setForecast] = useState<any>(null);
 
-  const hourlyForecast = forecast?.forecast?.forecastday?.[0]?.hour ?? [];
+  const hourlyForecast = forecast?.forecastday?.[0]?.hour ?? [];
+
 
   const handleSearch = async () => {
     if (!city.trim()) return;
@@ -77,16 +79,48 @@ const Home = () => {
       .slice(0, 12);
   }
 
+  const fetchWeatherByCoords = async (lat: number, lon: number) => {
+    try {
+      setIsFetching(true);
+      setUiError(null);
+
+      const weatherData = await getWeatherByCoords(lat, lon);
+      setWeather(weatherData);
+
+      const forecastData = await getForecastByCoords(lat, lon, 7);
+      setForecast(forecastData);
+
+    } catch (error) {
+      setUiError('Unable to get weather for selected location');
+      console.error(error);
+    } finally {
+      setIsFetching(false);
+    }
+  };
+
+
+  const currentHour = Number(
+    weather?.location.localtime.split(' ')[1].split(':')[0]
+  );    
 
   return (
     <Div>
       <h1 className='text-center'>Weather App</h1>
       <p>Check the weather anywhere</p>
 
-      <WeatherSearch
+      {/* <WeatherSearch
         value={city}
         onChange={setCity}
         onSubmit={handleSearch}
+      /> */}
+
+      <WeatherSearch
+        value={city}
+        onChange={setCity}
+        onSelect={(location) => {
+          setCity(location.name);
+          fetchWeatherByCoords(location.lat, location.lon);
+        }}
       />
 
       {loading && <p>Getting your location...</p>}
@@ -144,6 +178,14 @@ const Home = () => {
         <HourlyWeatherChart data={hourlyForecast} />
       )}
 
+      {weather && (
+        <RainChanceChart
+          hours={weather.forecast.forecastday[0].hour.slice(
+            currentHour,
+            currentHour + 12
+          )}
+        />
+      )}
 
       
     </Div>
