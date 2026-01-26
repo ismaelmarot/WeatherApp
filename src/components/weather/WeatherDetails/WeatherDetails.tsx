@@ -24,7 +24,7 @@ export function WeatherDetails({ weather }: Props) {
                 /> */}
                 <WindCompass 
                     speed={weather.current.wind_kph} 
-                    degree={weather.current.wind_degree} 
+                    degree={weather.current.wind_degree}
                 />
             </Item>
 

@@ -9,9 +9,13 @@ type Props = {
 
 export function WeatherExtras({ weather }: Props) {
     const { current, forecast } = weather;
-    const astro = forecast.forecastday[0].astro;
+    const localDate = weather.location.localtime.split(' ')[0];
 
-    console.log('Moon phase from API:', astro.moon_phase);
+    const todayForecast =
+        forecast.forecastday.find((d: any) => d.date === localDate) ??
+        forecast.forecastday[0];
+
+    const astro = todayForecast.astro;
 
     return (
         <Section>
@@ -28,7 +32,7 @@ export function WeatherExtras({ weather }: Props) {
             <Value>
                 {current.wind_kph} km/h
                 <WindArrow
-                style={{ transform: `rotate(${windDeg(current.wind_dir)}deg)` }}
+                    style={{ transform: `rotate(${windDeg(current.wind_dir)}deg)` }}
                 />
             </Value>
             </Item>
