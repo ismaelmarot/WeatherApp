@@ -1,11 +1,7 @@
-import type { WeatherResponse } from '../../services/weather.service';
+import type { WeatherDayInfoProps } from '../../types/WeatherDayInfo.type';
 import { Grid, Item, Label, Value } from './WeatherDayInfo.style';
 
-type Props = {
-    weather: WeatherResponse;
-};
-
-export function WeatherDayInfo({ weather }: Props) {
+export function WeatherDayInfo({ weather }: WeatherDayInfoProps) {
     const forecast = weather.forecast.forecastday[0];
     const { day, astro } = forecast;
 
