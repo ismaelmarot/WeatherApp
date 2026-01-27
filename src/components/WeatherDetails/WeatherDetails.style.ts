@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { GeneralColors } from '../../constants/GeneralColors';
 
 export const Grid = styled.div`
     display: grid;
@@ -8,17 +9,17 @@ export const Grid = styled.div`
 `;
 
 export const Item = styled.div`
-    background-color: #f5f5f7;
-    border-radius: 14px;
+    background-color: ${GeneralColors.grey};
+    border-radius: .5rem;
     padding: 0.75rem;
 `;
 
 export const Label = styled.div`
     font-size: 0.75rem;
-    color: #6e6e73;
+    color: ${GeneralColors.black}
 `;
 
 export const Value = styled.div`
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 500;
 `;
