@@ -1,14 +1,14 @@
 import Home from './pages/Home'
 import { GlobalStyle } from './styles/GlobalStyle'
-import { CenteredLayout } from './components/Layout/CenteredLayout';
+import { Layout } from './components/Layout/Layout';
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <CenteredLayout>
+      <Layout>
         <Home />
-      </CenteredLayout>
+      </Layout>
     </>
   )
 }
