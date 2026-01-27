@@ -18,6 +18,11 @@ export const HourItem = styled.div`
   padding: 0.75rem;
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.6);
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const Time = styled.div`
