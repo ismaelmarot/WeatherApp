@@ -1,11 +1,7 @@
-import type { HourForecast } from '../../../types/HourlyForecast.type';
+import type { HourlyForecastProps } from '../../../types/HourlyForecast.type';
 import { Container, HourItem, Time, Temp, Icon, Rain } from './HourlyForecast.style';
 
-type Props = {
-    hours: HourForecast[];
-};
-
-export function HourlyForecast({ hours }: Props) {
+export function HourlyForecast({ hours }: HourlyForecastProps) {
     return (
         <Container>
             {hours.map((hour, index) => (
