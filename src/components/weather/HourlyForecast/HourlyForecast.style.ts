@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { flex } from '../../../mixins/setFlex';
 
 export const Container = styled.div`
   display: flex;
@@ -13,16 +14,13 @@ export const Container = styled.div`
 `;
 
 export const HourItem = styled.div`
+  ${flex('column','center','space-between')}
   min-width: 64px;
-  text-align: center;
   padding: 0.75rem;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.6);
   border: 2px solid red;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  border-radius: .5rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
 `;
 
 export const Time = styled.div`
@@ -38,7 +36,7 @@ export const Temp = styled.div`
 
 export const Rain = styled.div`
   font-size: 0.7rem;
-  color: #007aff;
+  /* color: #007aff; */
   margin-top: 0.25rem;
 `;
 
