@@ -1,5 +1,6 @@
-import type { HourlyForecastProps } from '../../../types/HourlyForecast.type';
+import type { HourlyForecastProps } from '../../../types/hourlyForecast.type';
 import { Container, HourItem, Time, Temp, Icon, Rain } from './HourlyForecast.style';
+import { formatHour } from '../../../utils/formatHOur';
 
 export function HourlyForecast({ hours }: HourlyForecastProps) {
     return (
@@ -17,11 +18,4 @@ export function HourlyForecast({ hours }: HourlyForecastProps) {
             ))}
         </Container>
     );
-}
-
-function formatHour(time: string) {
-    return new Date(time).toLocaleTimeString('es-AR', {
-        hour: '2-digit',
-        minute: '2-digit',
-    });
 }
