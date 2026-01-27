@@ -1,12 +1,8 @@
-import type { WeatherResponse } from '../../../services/weather.service';
-import { Grid, Item, Label, Value } from './WeatherDetails.style';
+import type { WeaterDetailsProps } from '../../../types/WeatherDetails.type';
 import { WindCompass } from '../WindCompass';
+import { Grid, Item, Label, Value } from './WeatherDetails.style';
 
-type Props = {
-    weather: WeatherResponse;
-};
-
-export function WeatherDetails({ weather }: Props) {
+export function WeatherDetails({ weather }: WeaterDetailsProps) {
     const { current } = weather;
 
     return (
@@ -18,10 +14,6 @@ export function WeatherDetails({ weather }: Props) {
 
             <Item>
                 <Label>Wind</Label>
-                {/* <WindCompass
-                    speed={current.wind_kph}
-                    degree={current.wind_degree}
-                /> */}
                 <WindCompass 
                     speed={weather.current.wind_kph} 
                     degree={weather.current.wind_degree}
