@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { size } from '../../mixins/setSize';
+import { GeneralColors } from '../../constants/GeneralColors';
 
 export const Container = styled.div`
     margin-top: 1.5rem;
@@ -12,17 +14,16 @@ export const Temp = styled.div`
 
 export const Condition = styled.div`
     font-size: 1.1rem;
-    color: #555;
+    color: ${GeneralColors.black};
     margin-top: 0.25rem;
 `;
 
 export const Location = styled.div`
-    font-size: 0.9rem;
-    color: #888;
     margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: ${GeneralColors.black};
 `;
 
 export const Icon = styled.img`
-    width: 64px;
-    height: 64px;
+    ${size('4rem','4rem')}
 `;
