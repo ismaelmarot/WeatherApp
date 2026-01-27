@@ -1,4 +1,4 @@
-import type { WeatherResponse } from '../../../services/weather.service';
+import type { WeatherResponse } from '../../services/weather.service';
 import { Grid, Item, Label, Value } from './WeatherDayInfo.style';
 
 type Props = {

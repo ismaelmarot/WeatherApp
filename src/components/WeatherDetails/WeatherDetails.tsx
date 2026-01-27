@@ -1,4 +1,4 @@
-import type { WeaterDetailsProps } from '../../../types/WeatherDetails.type';
+import type { WeaterDetailsProps } from '../../types/WeatherDetails.type';
 import { WindCompass } from '../WindCompass';
 import { Grid, Item, Label, Value } from './WeatherDetails.style';
 

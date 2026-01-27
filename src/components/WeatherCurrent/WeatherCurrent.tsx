@@ -1,4 +1,4 @@
-import type { WeatherResponse } from '../../../services/weather.service';
+import type { WeatherResponse } from '../../services/weather.service';
 import { Container, Temp, Condition, Location, Icon } from './WeatherCurrent.style';
 
 type Props = {

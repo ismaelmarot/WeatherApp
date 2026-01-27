@@ -1,6 +1,6 @@
-import type { WeatherResponse } from '../../../services/weather.service';
+import type { WeatherResponse } from '../../services/weather.service';
 import { Section, Grid, Item, Label, Value, WindArrow } from './WeatherExtras.style';
-import { moonImages } from '../../../utils/moonImages';
+import { moonImages } from '../../utils/moonImages';
 
 type Props = {
     weather: WeatherResponse;
