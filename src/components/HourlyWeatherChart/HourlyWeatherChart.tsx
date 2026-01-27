@@ -1,8 +1,8 @@
-import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
-import { Container } from './HourlyWatherChart.style';
-import type { HourlyForecastChart } from '../../types/HourlyForecastChart.type';
+import { LineChart, Line, XAxis, YAxis, Tooltip } from 'recharts';
+import type { HourlyForecastChartProps } from '../../types/HourlyForecastChart.type';
+import { Chart, Container, H3 } from './HourlyWatherChart.style';
 
-export function HourlyWeatherChart({ data }: HourlyForecastChart) {
+export function HourlyWeatherChart({ data }: HourlyForecastChartProps) {
   if (!data.length) return null;
 
   const chartData = data.map((hour) => ({
@@ -12,12 +12,14 @@ export function HourlyWeatherChart({ data }: HourlyForecastChart) {
 
   return (
     <Container>
-      <h3>Temperature - next 12 hours</h3>
-
-      <ResponsiveContainer width='100%' height={250}>
-        <LineChart data={chartData}>
-          <XAxis dataKey="hour" />
-          <YAxis unit="°C" />
+      <H3>Temperature – next 12 hours</H3>
+      <Chart>
+        <LineChart
+          style={{width:'100%', height:'16rem', fontSize:'.8rem'}}
+          data={chartData}
+        >
+          <XAxis dataKey='hour' />
+          <YAxis unit='°C' />
           <Tooltip />
           <Line
             type='monotone'
@@ -26,7 +28,7 @@ export function HourlyWeatherChart({ data }: HourlyForecastChart) {
             dot={{ r: 4 }}
           />
         </LineChart>
-      </ResponsiveContainer>
+      </Chart>
     </Container>
   );
 }
