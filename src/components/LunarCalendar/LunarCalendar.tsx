@@ -4,7 +4,7 @@ import { moonImages } from '../../utils/moonImages';
 
 export function LunarCalendar({ days }: LunarCalendarProps) {
     return (
-        <div>
+        <>
             <h3>Lunar calendar</h3>
             <Calendar>
                 {days.map(day => (
@@ -23,6 +23,6 @@ export function LunarCalendar({ days }: LunarCalendarProps) {
                 </Item>
                 ))}
             </Calendar>
-        </div>
+        </>
     );
 }

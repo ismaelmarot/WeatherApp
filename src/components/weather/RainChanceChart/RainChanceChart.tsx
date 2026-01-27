@@ -1,36 +1,20 @@
-type Hour = {
-  time: string;
-  temp_c: number;
-  chance_of_rain: number;
-};
+import type { RainChanceChartProps } from '../../../types/RainChanceChart.type';
+import { Container, Item } from "./RainChanceChart.style";
 
-type Props = {
-  hours: Hour[];
-};
-
-export function RainChanceChart({ hours }: Props) {
+export function RainChanceChart({ hours }: RainChanceChartProps) {
   return (
-    <div style={{ marginTop: '1rem' }}>
+    <Container>
       {hours.map((h) => {
         const hourLabel = h.time.split(' ')[1].slice(0, 5);
 
         return (
-          <div
-            key={h.time}
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              padding: '8px 0',
-              fontSize: '14px',
-            }}
-          >
+          <Item key={h.time}>
             <span>{hourLabel}</span>
             <span>{Math.round(h.temp_c)}°C</span>
             <span>{h.chance_of_rain}% 🌧️</span>
-          </div>
+          </Item>
         );
       })}
-    </div>
+    </Container>
   );
 }

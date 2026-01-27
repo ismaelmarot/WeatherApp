@@ -36,7 +36,6 @@ export const Temp = styled.div`
 
 export const Rain = styled.div`
   font-size: 0.7rem;
-  /* color: #007aff; */
   margin-top: 0.25rem;
 `;
 
