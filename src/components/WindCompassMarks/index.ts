@@ -1,0 +1,1 @@
+export { WindCompassMarks } from './WindCompassMarks';
