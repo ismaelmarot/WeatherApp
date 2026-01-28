@@ -2,7 +2,7 @@ import type { WindCompassProps } from '../../types/WindCompass.type';
 import { WindCompassMarks } from '../WindCompassMarks/WindCompassMarks';
 import { WindCompassSpeed } from '../WindCompassSpeed/WindCompassSpeed';
 import { WindNeedle } from '../WindNeedle/WindNeedle';
-import { CardinalDirections } from './WindCompass.style';
+import { CardinalDirections, Circle } from './WindCompass.style';
 
 export function WindCompass({ speed, degree }: WindCompassProps) {
   const size = 180;
@@ -13,17 +13,13 @@ export function WindCompass({ speed, degree }: WindCompassProps) {
   return (
     <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
       {/* External Ring */}
-      <circle
+      <Circle
         cx={center}
         cy={center}
         r={radius}
-        fill="none"
-        stroke="#e5e7eb"
-        strokeWidth="2"
       />
        {/* Marks */}
       <WindCompassMarks center={center} radius={radius} />
-
       {/* Cardinal */}
       <CardinalDirections x={center} y={16}>
         N
@@ -39,8 +35,10 @@ export function WindCompass({ speed, degree }: WindCompassProps) {
       </CardinalDirections>
 
       {/* Speed */}
-      <WindCompassSpeed center={center} speed={speed} />
-
+      <WindCompassSpeed
+        center={center}
+        speed={speed}
+      />
       {/* Needle */}
        <WindNeedle
         center={center}
