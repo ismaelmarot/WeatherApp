@@ -11,7 +11,6 @@ export function WeatherDetails({ weather }: WeaterDetailsProps) {
                 <Label>Humidity</Label>
                 <Value>{current.humidity}%</Value>
             </Item>
-
             <Item>
                 <Label>Wind</Label>
                 <WindCompass 
@@ -19,12 +18,10 @@ export function WeatherDetails({ weather }: WeaterDetailsProps) {
                     degree={weather.current.wind_degree}
                 />
             </Item>
-
             <Item>
                 <Label>☀️ UV Index</Label>
                 <Value>{current.uv}</Value>
             </Item>
-
             <Item>
                 <Label>Pressure</Label>
                 <Value>{current.pressure_mb} mb</Value>

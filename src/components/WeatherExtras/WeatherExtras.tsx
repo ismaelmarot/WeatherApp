@@ -1,13 +1,9 @@
-import type { WeatherResponse } from '../../services/weather.service';
-import { Section, Grid, Item, Label, Value, WindArrow } from './WeatherExtras.style';
+import type { WeatherExtrasProps } from '../../types/WeatherExtras.type';
+import { ArrowContainer, Container, Image, Item, ItemMoon, Label, Value, WindArrow } from './WeatherExtras.style';
 import { moonImages } from '../../utils/moonImages';
+import { windDeg } from '../../constants/WindDeg';
 
-type Props = {
-    weather: WeatherResponse;
-};
-
-
-export function WeatherExtras({ weather }: Props) {
+export function WeatherExtras({ weather }: WeatherExtrasProps) {
     const { current, forecast } = weather;
     const localDate = weather.location.localtime.split(' ')[0];
 
@@ -18,35 +14,31 @@ export function WeatherExtras({ weather }: Props) {
     const astro = todayForecast.astro;
 
     return (
-        <Section>
-        <Grid>
-            {/* Visibilidad */}
+        <Container>
             <Item>
-            <Label>Visibility</Label>
-            <Value>{current.vis_km} km</Value>
+                <Label>Visibility</Label>
+                <Value>{current.vis_km} km</Value>
             </Item>
 
-            {/* Viento */}
             <Item>
-            <Label>Wind</Label>
-            <Value>
-                {current.wind_kph} km/h
-                <WindArrow
-                    style={{ transform: `rotate(${windDeg(current.wind_dir)}deg)` }}
-                />
-            </Value>
+                <Label>Wind</Label>
+                <Value>
+                    {current.wind_kph} km/h
+                    <ArrowContainer>
+                        <WindArrow
+                            style={{ transform: `rotate(${windDeg(current.wind_dir) + 180}deg)` }}
+                        />
+                    </ArrowContainer>
+                </Value>
             </Item>
 
-            {/* Luna */}
-            <Item style={{ backgroundColor:'black' }}>
-                <Label style={{ color:'white' }}>Moon</Label>
-                <img
+            <ItemMoon>
+                <Label>Moon</Label>
+                <Image
                     src={moonImages[astro.moon_phase] ?? moonImages['Full Moon']}
                     alt={astro.moon_phase}
-                    width={48}
-                    style={{ borderRadius:'50%',  opacity: 0.9, margin:'1rem', width:'8rem' }}
                 />
-            </Item>
+            </ItemMoon>
             <Item>
                 <Label>Moon phase</Label>
                 <Value>{astro.moon_phase}</Value>
@@ -66,33 +58,6 @@ export function WeatherExtras({ weather }: Props) {
                 <Label>Moonset</Label>
                 <Value>{astro.moonset}</Value>
             </Item>
-        </Grid>
-        </Section>
+        </Container>
     );
-}
-
-/**
- * Convierte N, NE, E, etc a grados
- */
-function windDeg(dir: string): number {
-    const map: Record<string, number> = {
-        N: 0,
-        NNE: 22.5,
-        NE: 45,
-        ENE: 67.5,
-        E: 90,
-        ESE: 112.5,
-        SE: 135,
-        SSE: 157.5,
-        S: 180,
-        SSW: 202.5,
-        SW: 225,
-        WSW: 247.5,
-        W: 270,
-        WNW: 292.5,
-        NW: 315,
-        NNW: 337.5,
-    };
-
-    return map[dir] ?? 0;
 }
