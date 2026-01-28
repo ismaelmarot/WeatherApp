@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useGeolocation } from '../hooks/useGeolocation';
 import type { WeatherResponse } from '../services/weather.service';
 import { getForecastByCoords, getWeatherByCoords } from '../services/weather.service';
-import { Div } from './Home.style';
+import { Container, AlertError } from './Home.style';
 import {
   HourlyForecast,
   HourlyWeatherChart,
@@ -33,14 +33,14 @@ const Home = () => {
       setUiError(null);
 
       try {
-        // 1️⃣ Clima actual
+        // 1️⃣ Current weather
         const weatherData = await getWeatherByCoords(
           coords.latitude,
           coords.longitude
         );
         setWeather(weatherData);
 
-        // 2️⃣ Forecast + luna
+        // 2️⃣ Forecast + Moon
         const forecastData = await getForecastByCoords(
           coords.latitude,
           coords.longitude,
@@ -92,8 +92,8 @@ const Home = () => {
   );    
 
   return (
-    <Div>
-      <h1 className='text-center'>Weather App</h1>
+    <Container>
+      <h1>Weather App</h1>
       <p>Check the weather anywhere</p>
 
       <WeatherSearch
@@ -110,7 +110,7 @@ const Home = () => {
       }
 
       {uiError &&
-        <p style={{ color: 'red' }}>{uiError}</p>
+        <AlertError>{uiError}</AlertError>
       }
 
 
@@ -166,7 +166,7 @@ const Home = () => {
         <HourlyWeatherChart data={hourlyForecast} />
       )}
 
-    </Div>
+    </Container>
   )
 }
 
