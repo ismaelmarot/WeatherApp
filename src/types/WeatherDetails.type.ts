@@ -1,5 +1,5 @@
 import type { WeatherResponse } from '../services/weather.service';
 
-export type WeaterDetailsProps = {
+export type WeatherDetailsProps = {
     weather: WeatherResponse;
 };
