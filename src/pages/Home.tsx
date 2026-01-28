@@ -102,8 +102,9 @@ const Home = () => {
         onSelect={(location) => {
           setCity(location.name);
           fetchWeatherByCoords(location.lat, location.lon);
-        }}
-      />
+        } } onSubmit={function (): void {
+          throw new Error('Function not implemented.');
+        } }      />
       {isFetching &&
         <p>Loading weather...</p>
       }
