@@ -1,8 +1,9 @@
+import { CARDINALS } from '../../constants/Cardinals';
 import type { WindCompassProps } from '../../types/WindCompass.type';
 import { WindCompassMarks } from '../WindCompassMarks/WindCompassMarks';
 import { WindCompassSpeed } from '../WindCompassSpeed/WindCompassSpeed';
-import { WindNeedle } from '../WindNeedle/WindNeedle';
 import { CardinalDirections, Circle } from './WindCompass.style';
+import { WindNeedle } from '../WindNeedle/WindNeedle';
 
 export function WindCompass({ speed, degree }: WindCompassProps) {
   const size = 180;
@@ -19,20 +20,20 @@ export function WindCompass({ speed, degree }: WindCompassProps) {
         r={radius}
       />
        {/* Marks */}
-      <WindCompassMarks center={center} radius={radius} />
+      <WindCompassMarks
+        center={center}
+        radius={radius}
+      />
       {/* Cardinal */}
-      <CardinalDirections x={center} y={16}>
-        N
-      </CardinalDirections>
-      <CardinalDirections x={size -12} y={center + 5}>
-        E
-      </CardinalDirections>
-      <CardinalDirections x={center} y={size - 6}>
-        S
-      </CardinalDirections>
-      <CardinalDirections x={9} y={center + 5}>
-        W
-      </CardinalDirections>
+      {CARDINALS.map(({ label, x, y }) => (
+        <CardinalDirections
+          key={label}
+          x={x(size, center)}
+          y={y(size, center)}
+        >
+          {label}
+        </CardinalDirections>
+      ))}
 
       {/* Speed */}
       <WindCompassSpeed
