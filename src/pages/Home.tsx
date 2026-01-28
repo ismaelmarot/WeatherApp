@@ -1,17 +1,19 @@
 import { useState, useEffect } from 'react';
 import { useGeolocation } from '../hooks/useGeolocation';
-import { getForecastByCoords, getWeatherByCoords } from '../services/weather.service';
 import type { WeatherResponse } from '../services/weather.service';
-import { WeatherSearch } from '../components/WeatherSearch/WeatherSearch';
-import { WeatherCurrent } from '../components/WeatherCurrent/WeatherCurrent';
-import { WeatherDayInfo } from '../components/WeatherDayInfo/WeatherDayInfo';
-import { WeatherDetails } from '../components/WeatherDetails/WeatherDetails';
-import { WeatherExtras } from '../components/WeatherExtras/WeatherExtras';
+import { getForecastByCoords, getWeatherByCoords } from '../services/weather.service';
 import { Div } from './Home.style';
-import { LunarCalendar } from '../components/LunarCalendar/LunarCalendar';
-import { HourlyForecast } from '../components/HourlyForecast/HourlyForecast';
-import { HourlyWeatherChart } from '../components/HourlyWeatherChart';
-import { RainChanceChart } from '../components/RainChanceChart/RainChanceChart';
+import {
+  HourlyForecast,
+  HourlyWeatherChart,
+  LunarCalendar,
+  RainChanceChart,
+  WeatherCurrent,
+  WeatherDayInfo,
+  WeatherDetails,
+  WeatherExtras,
+  WeatherSearch
+} from '../components';
 
 const Home = () => {
   const [city, setCity] = useState('');

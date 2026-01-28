@@ -1,8 +1,8 @@
 import { CARDINALS } from '../../constants/Cardinals';
 import type { WindCompassProps } from '../../types/WindCompass.type';
+import { CardinalDirections, Circle } from './WindCompass.style';
 import { WindCompassMarks } from '../WindCompassMarks/WindCompassMarks';
 import { WindCompassSpeed } from '../WindCompassSpeed/WindCompassSpeed';
-import { CardinalDirections, Circle } from './WindCompass.style';
 import { WindNeedle } from '../WindNeedle/WindNeedle';
 
 export function WindCompass({ speed, degree }: WindCompassProps) {
