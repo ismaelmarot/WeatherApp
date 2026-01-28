@@ -1,3 +1,5 @@
+export type { CoordinatesProps } from './Coordinates.type'
+export type { GeoStateProps } from './GeoState.type'
 export type { Cardinal } from './CardinalDirections.type'
 export type { FlexDirection, JustifyContent, AlignItems } from './flexValue.type'
 export type { HourProps } from './Hour.type'

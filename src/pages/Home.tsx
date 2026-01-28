@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useGeolocation } from '../hooks/useGeolocation';
 import { useWeather } from '../hooks/useWeather';
 import { getNextHours } from '../utils/getNextOurs.utils';
@@ -18,8 +18,21 @@ import { Container, AlertError } from './Home.style';
 
 const Home = () => {
   const [city, setCity] = useState('');
-  const { coords, loading, error } = useGeolocation();
-  const { weather, forecast, isFetching, uiError, fetchByCoords } = useWeather(coords);
+  const { coords: geoCoords, loading, error } = useGeolocation();
+
+  const [activeCoords, setActiveCoords] = useState<{
+    latitude: number;
+    longitude: number;
+  } | null>(null);
+
+  const { weather, forecast, isFetching, uiError, fetchByCoords } =
+    useWeather(activeCoords);
+
+  useEffect(() => {
+    if (geoCoords && !activeCoords) {
+      setActiveCoords(geoCoords);
+    }
+  }, [geoCoords]);
 
   const hourlyForecast = forecast?.forecast?.forecastday?.[0]?.hour ?? [];
   const nextHours = forecast ? getNextHours(forecast) : [];
@@ -34,9 +47,23 @@ const Home = () => {
         onChange={setCity}
         onSelect={(location) => {
           setCity(location.name);
-          fetchByCoords(location.lat, location.lon);
+
+          const coords = {
+            latitude: location.lat,
+            longitude: location.lon
+          };
+
+          setActiveCoords(coords);
+          fetchByCoords(coords.latitude, coords.longitude);
         }}
       />
+
+      {activeCoords && (
+        <p>
+          📍 Lat: {activeCoords.latitude.toFixed(2)} – Lon:{' '}
+          {activeCoords.longitude.toFixed(2)}
+        </p>
+      )}
 
       {isFetching && <p>Loading weather...</p>}
       {uiError && <AlertError>{uiError}</AlertError>}

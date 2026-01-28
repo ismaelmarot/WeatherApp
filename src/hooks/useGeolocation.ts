@@ -1,18 +1,8 @@
 import { useEffect, useState } from 'react';
-
-type Coordinates = {
-  latitude: number;
-  longitude: number;
-};
-
-type GeoState = {
-  loading: boolean;
-  error: string | null;
-  coords: Coordinates | null;
-};
+import type { GeoStateProps } from '../types/GeoState.type';
 
 export function useGeolocation() {
-  const [state, setState] = useState<GeoState>({
+  const [state, setState] = useState<GeoStateProps>({
     loading: true,
     error: null,
     coords: null,
