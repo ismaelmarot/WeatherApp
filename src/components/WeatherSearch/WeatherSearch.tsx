@@ -1,31 +1,17 @@
 import { useEffect, useState } from 'react';
-import { Input } from './WeatherSearch.style';
-
-type LocationResult = {
-  id: number;
-  name: string;
-  region: string;
-  country: string;
-  lat: number;
-  lon: number;
-};
-
-type WeatherSearchProps = {
-  value: string;
-  onChange: (value: string) => void;
-  onSelect: (location: LocationResult) => void;
-};
+import { Container, Input, ItemPlace, ListPlacesSearch, LocationPlace } from './WeatherSearch.style';
+import type { LocationResultProps } from '../../types/LocationResult.type';
+import type { WeatherSearchProps } from '../../types/WeatherSearch.type';
 
 const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 const BASE_URL = 'https://api.weatherapi.com/v1';
-
 
 export function WeatherSearch({
   value,
   onChange,
   onSelect,
 }: WeatherSearchProps) {
-  const [results, setResults] = useState<LocationResult[]>([]);
+  const [results, setResults] = useState<LocationResultProps[]>([]);
   const [showList, setShowList] = useState(false);
 
   useEffect(() => {
@@ -51,9 +37,9 @@ export function WeatherSearch({
   }, [value]);
 
   return (
-    <div style={{ position: 'relative' }}>
+    <Container>
       <Input
-        type="text"
+        type='text'
         placeholder="Search city"
         value={value}
         onChange={(e) => onChange(e.target.value)}
@@ -64,44 +50,24 @@ export function WeatherSearch({
         }}
       />
 
-
       {showList && results.length > 0 && (
-        <div
-          style={{
-            position: 'absolute',
-            top: '100%',
-            left: 0,
-            right: 0,
-            background: '#ffffff',
-            border:'2px solid black',
-            borderRadius: '8px',
-            marginTop: '4px',
-            overflow: 'hidden',
-            zIndex: 10,
-          }}
-        >
+        <ListPlacesSearch>
           {results.map((loc) => (
-            <div
+            <ItemPlace
               key={loc.id}
               onClick={() => {
                 onSelect(loc);
                 setShowList(false);
               }}
-              style={{
-                padding: '10px',
-                cursor: 'pointer',
-                borderBottom: '1px solid #222',
-              }}
             >
               <strong>{loc.name}</strong>
-              <div style={{ fontSize: '12px', opacity: 0.7 }}>
+              <LocationPlace>
                 {loc.region}, {loc.country}
-              </div>
-            </div>
+              </LocationPlace>
+            </ItemPlace>
           ))}
-        </div>
+        </ListPlacesSearch>
       )}
-    </div>
+    </Container>
   );
 }
-
