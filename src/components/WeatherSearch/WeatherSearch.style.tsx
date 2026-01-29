@@ -9,13 +9,12 @@ export const Input = styled.input`
   width: 100%;
   margin-top: 1.5rem;
   padding: 0.75rem 1rem;
-
+  color: red;
+  font-size: 1rem;
+  
   border-radius: .5rem;
   border: 2px solid ${GeneralColors.grey};
   background-color: ${GeneralColors.white};
-
-  font-size: 1rem;
-  color: ${GeneralColors.black};
 
   outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
@@ -26,7 +25,7 @@ export const Input = styled.input`
   }
 
   &::placeholder {
-    color: ${GeneralColors.grey};
+    color: ${GeneralColors.darkGrey};
   }
 `;
 
