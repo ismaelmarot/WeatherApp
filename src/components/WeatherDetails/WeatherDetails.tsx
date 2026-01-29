@@ -1,8 +1,8 @@
-import type { WeaterDetailsProps } from '../../types/WeatherDetails.type';
+import type { WeatherDetailsProps } from '../../types/WeatherDetails.type';
 import { WindCompass } from '../WindCompass';
 import { Grid, Item, Label, Value } from './WeatherDetails.style';
 
-export function WeatherDetails({ weather }: WeaterDetailsProps) {
+export function WeatherDetails({ weather }: WeatherDetailsProps) {
     const { current } = weather;
 
     return (
