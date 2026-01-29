@@ -29,4 +29,4 @@ export function WeatherDetails({ weather }: WeatherDetailsProps) {
         </Grid>
     );
 }
-
+7
