@@ -12,7 +12,8 @@ import {
   WeatherDayInfo,
   WeatherDetails,
   WeatherExtras,
-  WeatherSearch
+  WeatherSearch,
+  Humidity, Wind, Pressure
 } from '../components';
 import { Container, AlertError } from './Home.style';
 
@@ -41,6 +42,28 @@ const Home = () => {
   return (
     <Container>
       <h1>Weather App</h1>
+      
+      {weather && (
+        <>
+          <WeatherCurrent weather={weather} />
+
+          {/* 🔹 Weather metrics */}
+          <div style={{ display: 'flex', gap: '16px' }}>
+            <Humidity value={weather.current.humidity} />
+
+            <Wind
+              speed={weather.current.wind_kph}
+              degree={weather.current.wind_degree}
+            />
+
+            <Pressure value={weather.current.pressure_mb} />
+          </div>
+
+          <WeatherDetails weather={weather} />
+          <WeatherDayInfo weather={weather} />
+          <WeatherExtras weather={weather} />
+        </>
+      )}
 
       <WeatherSearch
         value={city}
