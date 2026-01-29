@@ -4,7 +4,7 @@ export type { Cardinal } from './CardinalDirections.type'
 export type { FlexDirection, JustifyContent, AlignItems } from './flexValue.type'
 export type { HourProps } from './Hour.type'
 export type { HourForecastProps } from './HourForecast.type'
-
+export type { HourlyForecastProps } from './HourlyForecast.type'
 export type { LayoutProps } from './Layout.type'
 export type { LocationResultProps } from './LocationResult.type'
 export type { LunarCalendarProps } from './LunarCalendar.type'
