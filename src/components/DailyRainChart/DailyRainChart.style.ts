@@ -17,3 +17,5 @@ export const Chart = styled.div`
   ${size('100%', '16rem')}
   margin-top: 1rem;
 `;
+
+

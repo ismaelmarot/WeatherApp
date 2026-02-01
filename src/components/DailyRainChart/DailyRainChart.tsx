@@ -42,3 +42,4 @@ export function DailyRainChart({ hours }: DailyRainChartProps) {
     </Container>
   );
 }
+
