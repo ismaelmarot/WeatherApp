@@ -16,6 +16,7 @@ import {
   Humidity, Wind, Pressure
 } from '../components';
 import { Container, AlertError } from './Home.style';
+import { DailyRainChart } from '../components';
 
 const Home = () => {
   const [city, setCity] = useState('');
@@ -128,6 +129,13 @@ const Home = () => {
       {hourlyForecast.length > 0 && (
         <HourlyWeatherChart data={hourlyForecast} />
       )}
+
+      {forecast && (
+        <DailyRainChart
+          hours={forecast.forecast.forecastday[0].hour}
+        />
+      )}
+
     </Container>
   );
 };

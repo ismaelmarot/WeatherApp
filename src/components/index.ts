@@ -16,3 +16,4 @@ export * from './WindNeedle'
 export * from './Humidity'
 export * from './Pressure'
 export * from './Wind'
+export * from './DailyRainChart';
