@@ -13,7 +13,7 @@ import {
   WeatherDetails,
   WeatherExtras,
   WeatherSearch,
-  Humidity, Wind, Pressure,
+  // Humidity, Wind, Pressure,
   AirQuality
 } from '../components';
 import { Container, AlertError } from './Home.style';
