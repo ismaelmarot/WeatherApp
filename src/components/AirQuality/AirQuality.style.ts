@@ -32,13 +32,24 @@ export const AQIBar = styled.div`
 
 export const Indicator = styled.div`
   position: absolute;
-  top: -6px;
-  width: 0;
-  height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 12px solid black;
+  top: -12px;          /* Ajusta según tamaño del triángulo */
+  width: 16px;         /* Div padre con ancho real */
+  height: 12px;
+  transform: translateX(-50%);  /* Centrar el triángulo sobre la posición */
+
   transition: left 0.3s ease;
+
+  /* Triángulo con pseudo-elemento */
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 12px solid black;
+  }
 `;
 
 export const Pollutants = styled.div`

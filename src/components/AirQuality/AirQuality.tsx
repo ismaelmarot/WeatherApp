@@ -11,7 +11,7 @@ import {
 } from './AirQuality.style';
 
 export type AirQualityProps = {
-  epaIndex: 300; // 0 - 500
+  epaIndex: number; // 0 - 500
   co: number;
   no2: number;
   o3: number;
@@ -33,7 +33,7 @@ export const AirQuality: React.FC<AirQualityProps> = ({
   const barRef = useRef<HTMLDivElement>(null);
   const [indicatorLeft, setIndicatorLeft] = useState(0);
 
-  // Función para calcular posición en base al ancho actual
+  // Calcular posición de la flecha según ancho de la barra
   const updateIndicator = () => {
     if (barRef.current) {
       const width = barRef.current.offsetWidth;
@@ -42,15 +42,10 @@ export const AirQuality: React.FC<AirQualityProps> = ({
     }
   };
 
-  // Ejecutar al montar y cuando se redimensiona
   useEffect(() => {
     updateIndicator();
 
-    // Observer para cambios de tamaño de la barra
-    const observer = new ResizeObserver(() => {
-      updateIndicator();
-    });
-
+    const observer = new ResizeObserver(() => updateIndicator());
     if (barRef.current) observer.observe(barRef.current);
 
     return () => observer.disconnect();
@@ -61,7 +56,8 @@ export const AirQuality: React.FC<AirQualityProps> = ({
       <Title>Air Quality Index (AQI): {epaIndex}</Title>
 
       <AQIBar ref={barRef}>
-        <Indicator style={{ left: indicatorLeft - 8 }} />
+        {/* Flecha dinámica */}
+        <Indicator style={{ left: indicatorLeft }} />
       </AQIBar>
 
       <Pollutants>
