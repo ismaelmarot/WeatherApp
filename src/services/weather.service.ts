@@ -17,6 +17,7 @@ export type WeatherResponse = {
   };
 
   current: {
+    air_quality: any;
     wind_degree: number;
     temp_c: number;
     feelslike_c: number;
@@ -69,7 +70,7 @@ export async function getWeatherByCoords(
   lon: number
 ): Promise<WeatherResponse> {
   const response = await fetch(
-    `${BASE_URL}/forecast.json?key=${API_KEY}&q=${lat},${lon}&days=1&lang=es`
+     `${BASE_URL}/forecast.json?key=${API_KEY}&q=${lat},${lon}&days=1&lang=es&aqi=yes`
   );
 
   if (!response.ok) {

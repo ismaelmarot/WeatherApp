@@ -13,7 +13,8 @@ import {
   WeatherDetails,
   WeatherExtras,
   WeatherSearch,
-  Humidity, Wind, Pressure
+  Humidity, Wind, Pressure,
+  AirQuality
 } from '../components';
 import { Container, AlertError } from './Home.style';
 import { DailyRainChart } from '../components';
@@ -44,11 +45,9 @@ const Home = () => {
     <Container>
       <h1>Weather App</h1>
       
-      {weather && (
+      {/* {weather && (
         <>
           <WeatherCurrent weather={weather} />
-
-          {/* 🔹 Weather metrics */}
           <div style={{ display: 'flex', gap: '16px' }}>
             <Humidity value={weather.current.humidity} />
 
@@ -64,7 +63,7 @@ const Home = () => {
           <WeatherDayInfo weather={weather} />
           <WeatherExtras weather={weather} />
         </>
-      )}
+      )} */}
 
       <WeatherSearch
         value={city}
@@ -135,6 +134,21 @@ const Home = () => {
           hours={forecast.forecast.forecastday[0].hour}
         />
       )}
+
+      caliad aire
+      {weather?.current?.air_quality && (
+        <AirQuality
+          epaIndex={weather.current.air_quality['us-epa-index']}
+          co={weather.current.air_quality.co}
+          no2={weather.current.air_quality.no2}
+          o3={weather.current.air_quality.o3}
+          so2={weather.current.air_quality.so2}
+          pm25={weather.current.air_quality.pm2_5}
+          pm10={weather.current.air_quality.pm10}
+        />
+      )}
+
+
 
     </Container>
   );
