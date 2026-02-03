@@ -1,4 +1,4 @@
-import { AreaChart, Area, XAxis, YAxis, Tooltip } from 'recharts';
+import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import { Container, H3, Chart } from './DailyRainChart.style';
 
 type HourData = {
@@ -21,25 +21,30 @@ export function DailyRainChart({ hours }: DailyRainChartProps) {
   return (
     <Container>
       <H3>🌧 Rain probability – today</H3>
-
       <Chart>
-        <AreaChart
-          style={{ width: '100%', height: '16rem', fontSize: '.8rem' }}
-          data={chartData}
-        >
-          <XAxis dataKey="hour" />
-          <YAxis unit="%" domain={[0, 100]} />
-          <Tooltip />
-          <Area
-            type="monotone"
-            dataKey="rain"
-            stroke="rgba(0,122,255,0.9)"
-            fill="rgba(0,122,255,0.35)"
-            strokeWidth={3}
-          />
-        </AreaChart>
-      </Chart>
+  <ResponsiveContainer width="100%" height={256}>
+    <AreaChart data={chartData}>
+      <defs>
+        <linearGradient id="rainGradient" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="rgba(9, 9, 126, 0.971)" />
+          <stop offset="100%" stopColor="rgba(132, 234, 254, 0.997)59)" />
+        </linearGradient>
+      </defs>
+
+      <XAxis dataKey="hour" />
+      <YAxis unit="%" domain={[0, 100]} />
+      <Tooltip />
+
+      <Area
+        type="monotone"
+        dataKey="rain"
+        stroke="rgba(0,122,255,0.9)"
+        fill="url(#rainGradient)"
+        strokeWidth={1}
+      />
+    </AreaChart>
+  </ResponsiveContainer>
+</Chart>
     </Container>
   );
 }
-

@@ -11,11 +11,10 @@ export const Container = styled.section`
 
 export const H3 = styled.h3`
   font-size: 1.5rem;
+  margin-bottom: 1rem;
 `;
 
 export const Chart = styled.div`
   ${size('100%', '16rem')}
-  margin-top: 1rem;
 `;
-
 
