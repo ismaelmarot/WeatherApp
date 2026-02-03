@@ -14,7 +14,8 @@ import {
   WeatherExtras,
   WeatherSearch,
   // Humidity, Wind, Pressure,
-  AirQuality
+  AirQuality,
+  RainChance
 } from '../components';
 import { Container, AlertError } from './Home.style';
 import { DailyRainChart } from '../components';
@@ -135,6 +136,7 @@ const Home = () => {
         />
       )}
 
+      caliad aire
       {weather?.current?.air_quality && (
         <AirQuality
           epaIndex={weather.current.air_quality['us-epa-index']}
@@ -147,6 +149,12 @@ const Home = () => {
         />
       )}
 
+      {forecast && weather && (
+        <RainChance
+          chance={forecast.forecast.forecastday[0].day.daily_chance_of_rain}
+          isRainingNow={weather.current.precip_mm > 0}
+        />
+      )}
 
 
     </Container>

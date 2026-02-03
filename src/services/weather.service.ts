@@ -27,6 +27,7 @@ export type WeatherResponse = {
     pressure_mb: number;
     vis_km: number;
     uv: number;
+    precip_mm: number;
     condition: {
       text: string;
       icon: string;
