@@ -17,4 +17,3 @@ export const H3 = styled.h3`
 export const Chart = styled.div`
   ${size('100%', '16rem')}
 `;
-

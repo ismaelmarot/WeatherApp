@@ -1,14 +1,6 @@
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import { Container, H3, Chart } from './DailyRainChart.style';
-
-type HourData = {
-  time: string;
-  chance_of_rain: number;
-};
-
-type DailyRainChartProps = {
-  hours: HourData[];
-};
+import type { DailyRainChartProps } from '../../types/DailyRainChart.type';
 
 export function DailyRainChart({ hours }: DailyRainChartProps) {
   if (!hours.length) return null;
@@ -21,30 +13,31 @@ export function DailyRainChart({ hours }: DailyRainChartProps) {
   return (
     <Container>
       <H3>🌧 Rain probability – today</H3>
+
       <Chart>
-  <ResponsiveContainer width="100%" height={256}>
-    <AreaChart data={chartData}>
-      <defs>
-        <linearGradient id="rainGradient" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="rgba(9, 9, 126, 0.971)" />
-          <stop offset="100%" stopColor="rgba(132, 234, 254, 0.997)59)" />
-        </linearGradient>
-      </defs>
+        <ResponsiveContainer width="100%" height={256}>
+          <AreaChart data={chartData}>
+            <defs>
+              <linearGradient id="rainGradient" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="rgba(0,122,255,0.9)" />
+                <stop offset="100%" stopColor="rgba(0,122,255,0.15)" />
+              </linearGradient>
+            </defs>
 
-      <XAxis dataKey="hour" />
-      <YAxis unit="%" domain={[0, 100]} />
-      <Tooltip />
+            <XAxis dataKey="hour" />
+            <YAxis unit="%" domain={[0, 100]} />
+            <Tooltip />
 
-      <Area
-        type="monotone"
-        dataKey="rain"
-        stroke="rgba(0,122,255,0.9)"
-        fill="url(#rainGradient)"
-        strokeWidth={1}
-      />
-    </AreaChart>
-  </ResponsiveContainer>
-</Chart>
+            <Area
+              type="monotone"
+              dataKey="rain"
+              stroke="rgba(0,122,255,0.9)"
+              fill="url(#rainGradient)"
+              strokeWidth={3}
+            />
+          </AreaChart>
+        </ResponsiveContainer>
+      </Chart>
     </Container>
   );
 }
