@@ -19,9 +19,9 @@ export const Chart = styled.div`
 `;
 
 export const GradientStopStart = styled.stop`
-  stop-color: rgba(0,122,255,0.9);
+  stop-color: rgb(17, 0, 255);
 `;
 
 export const GradientStopEnd = styled.stop`
-  stop-color: rgba(0, 122, 255, 0.15);
+  stop-color: rgb(192, 229, 241);
 `;
