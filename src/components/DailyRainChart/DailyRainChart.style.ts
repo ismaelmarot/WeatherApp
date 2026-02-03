@@ -17,3 +17,11 @@ export const H3 = styled.h3`
 export const Chart = styled.div`
   ${size('100%', '16rem')}
 `;
+
+export const GradientStopStart = styled.stop`
+  stop-color: rgba(0,122,255,0.9);
+`;
+
+export const GradientStopEnd = styled.stop`
+  stop-color: rgba(0, 122, 255, 0.15);
+`;
