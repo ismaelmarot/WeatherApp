@@ -12,7 +12,7 @@ export function DailyRainChart({ hours }: DailyRainChartProps) {
 
   return (
     <Container>
-      <H3>🌧 Rain probability – today</H3>
+      <H3>Rain probability – today</H3>
 
       <Chart>
         <ResponsiveContainer width='100%' height={256}>

@@ -1,4 +1,4 @@
-import type { HourlyForecastProps } from '../../types/hourlyForecast.type';
+import type { HourlyForecastProps } from '../../types';
 import { formatHour } from '../../utils/formatHour.utils';
 import { Container, HourItem, Time, Temp, Icon, Rain } from './HourlyForecast.style';
 

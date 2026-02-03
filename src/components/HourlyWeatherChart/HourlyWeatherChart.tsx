@@ -7,6 +7,7 @@ import {
 } from 'recharts';
 import type { HourlyForecastChartProps } from '../../types/HourlyForecastChart.type';
 import { Chart, Container, H3 } from './HourlyWatherChart.style';
+import { TemperatureColors } from '../../constants';
 
 export function HourlyWeatherChart({ data }: HourlyForecastChartProps) {
   if (!Array.isArray(data) || data.length === 0) {
@@ -31,18 +32,17 @@ export function HourlyWeatherChart({ data }: HourlyForecastChartProps) {
       <Chart>
           <AreaChart data={chartData} style={{ width: '100%', height: '16rem', fontSize: '.8rem' }}>
             <defs>
-              {/* 🔥 Gradiente REAL mapeado al eje Y */}
-              <linearGradient id="tempAreaGradient" x1="0" y1="1" x2="0" y2="0">
-                <stop offset="0%" stopColor="#FFD60A" />
-                <stop offset="50%" stopColor="#FF9F0A" />
-                <stop offset="100%" stopColor="#FF3B30" />
+              <linearGradient id="tempAreaGradient" x1='0' y1='1' x2='0' y2='0'>
+                <stop offset='0%' stopColor={TemperatureColors.minimum} />
+                <stop offset='50%' stopColor={TemperatureColors.average} />
+                <stop offset='100%' stopColor={TemperatureColors.maximum} />
               </linearGradient>
             </defs>
 
-            <XAxis dataKey="hour" />
+            <XAxis dataKey='hour' />
 
             <YAxis
-              unit="°C"
+              unit='°C'
               domain={[
                 Math.floor(minTemp - padding),
                 Math.ceil(maxTemp + padding),
@@ -52,11 +52,11 @@ export function HourlyWeatherChart({ data }: HourlyForecastChartProps) {
             <Tooltip />
 
             <Area
-              type="monotone"
-              dataKey="temp"
-              stroke="#FF3B30"
-              strokeWidth={.8}
-              fill="url(#tempAreaGradient)"
+              type='monotone'
+              dataKey='temp'
+              stroke={TemperatureColors.maximum}
+              strokeWidth={1}
+              fill='url(#tempAreaGradient)'
               fillOpacity={0.9}
             />
           </AreaChart>
