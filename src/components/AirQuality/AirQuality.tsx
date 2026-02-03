@@ -1,27 +1,10 @@
-import React, { useRef, useState, useEffect } from 'react';
-import {
-  Container,
-  Title,
-  AQIBar,
-  Indicator,
-  Pollutants,
-  Pollutant,
-  PollutantName,
-  PollutantValue
-} from './AirQuality.style';
-
-export type AirQualityProps = {
-  epaIndex: number; // 0 - 500
-  co: number;
-  no2: number;
-  o3: number;
-  so2: number;
-  pm25: number;
-  pm10: number;
-};
+import React from 'react';
+import { Container, Pollutants, Title } from './AirQuality.style';
+import { PollutantGauge } from '../PollutantGauge/PollutantGauge';
+import { pm25ToAQI, pm10ToAQI, simpleGasToAQI } from '../../utils/aqiConverters.utils';
+import type { AirQualityProps } from '../../types';
 
 export const AirQuality: React.FC<AirQualityProps> = ({
-  epaIndex,
   co,
   no2,
   o3,
@@ -29,51 +12,16 @@ export const AirQuality: React.FC<AirQualityProps> = ({
   pm25,
   pm10
 }) => {
-  const clampedIndex = Math.min(Math.max(epaIndex, 0), 500);
-  const barRef = useRef<HTMLDivElement>(null);
-  const [indicatorLeft, setIndicatorLeft] = useState(0);
-
-  // Calcular posición de la flecha según ancho de la barra
-  const updateIndicator = () => {
-    if (barRef.current) {
-      const width = barRef.current.offsetWidth;
-      const left = (clampedIndex / 500) * width;
-      setIndicatorLeft(left);
-    }
-  };
-
-  useEffect(() => {
-    updateIndicator();
-
-    const observer = new ResizeObserver(() => updateIndicator());
-    if (barRef.current) observer.observe(barRef.current);
-
-    return () => observer.disconnect();
-  }, [clampedIndex]);
-
   return (
     <Container>
-      <Title>Air Quality Index (AQI): {epaIndex}</Title>
-
-      <AQIBar ref={barRef}>
-        {/* Flecha dinámica */}
-        <Indicator style={{ left: indicatorLeft }} />
-      </AQIBar>
-
+      <Title style={{color:'black'}}>Air Quality</Title>
       <Pollutants>
-        {[
-          ['CO', co],
-          ['NO₂', no2],
-          ['O₃', o3],
-          ['SO₂', so2],
-          ['PM2.5', pm25],
-          ['PM10', pm10]
-        ].map(([name, value]) => (
-          <Pollutant key={name}>
-            <PollutantName>{name}</PollutantName>
-            <PollutantValue>{(value as number).toFixed(2)}</PollutantValue>
-          </Pollutant>
-        ))}
+        <PollutantGauge label="CO" aqi={simpleGasToAQI(co, 10)} />
+        <PollutantGauge label="NO₂" aqi={simpleGasToAQI(no2, 200)} />
+        <PollutantGauge label="O₃" aqi={simpleGasToAQI(o3, 180)} />
+        <PollutantGauge label="SO₂" aqi={simpleGasToAQI(so2, 350)} />
+        <PollutantGauge label="PM2.5" aqi={pm25ToAQI(pm25)} />
+        <PollutantGauge label="PM10" aqi={pm10ToAQI(pm10)} />
       </Pollutants>
     </Container>
   );

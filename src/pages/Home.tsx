@@ -135,7 +135,6 @@ const Home = () => {
         />
       )}
 
-      caliad aire
       {weather?.current?.air_quality && (
         <AirQuality
           epaIndex={weather.current.air_quality['us-epa-index']}

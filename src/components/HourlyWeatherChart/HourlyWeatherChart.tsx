@@ -1,10 +1,4 @@
-import {
-  AreaChart,
-  Area,
-  XAxis,
-  YAxis,
-  Tooltip,
-} from 'recharts';
+import { AreaChart, Area, XAxis, YAxis, Tooltip } from 'recharts';
 import type { HourlyForecastChartProps } from '../../types/HourlyForecastChart.type';
 import { Chart, Container, H3 } from './HourlyWatherChart.style';
 import { TemperatureColors } from '../../constants';
