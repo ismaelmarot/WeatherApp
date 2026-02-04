@@ -7,5 +7,6 @@ export const Container = styled.div`
   gap: 0.25rem;
   border: 1px solid black;
   border-radius: 1rem;
-  margin: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
 `;
