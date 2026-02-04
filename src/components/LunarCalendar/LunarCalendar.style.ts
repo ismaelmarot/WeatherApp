@@ -3,11 +3,17 @@ import { flex } from '../../mixins/setFlex';
 import { GeneralColors } from '../../constants/GeneralColors';
 
 export const Calendar = styled.div`
-    ${flex('row','center','center')}
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+    overflow-x: auto;
     padding: 1rem;
     border-radius: .5rem;
     background-color: ${GeneralColors.grey};
 `;
+
 
 export const Item = styled.div`
     ${flex('column','center','center')}
