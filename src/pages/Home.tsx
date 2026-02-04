@@ -45,7 +45,8 @@ const Home = () => {
 
   return (
     <Container>
-      <h1>Weather App</h1>
+      <div>HOLa</div>
+      {/* <h1>Weather App</h1> */}
       
       {/* {weather && (
         <>
@@ -67,7 +68,7 @@ const Home = () => {
         </>
       )} */}
 
-      <WeatherSearch
+      {/* <WeatherSearch
         value={city}
         onChange={setCity}
         onSelect={(location) => {
@@ -161,7 +162,7 @@ const Home = () => {
         <div style={{ display: 'flex', gap: '16px' }}>
           <Pressure value={weather.current.pressure_mb} />
         </div>
-      )}
+      )} */}
 
     </Container>
   );
