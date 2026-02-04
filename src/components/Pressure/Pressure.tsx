@@ -1,63 +1,52 @@
 import type { PressureProps } from '../../types';
 import { Container } from './Pressure.style';
+import {
+  PRESSURE_MIN,
+  PRESSURE_MAX,
+  PRESSURE_RADIUS,
+  PRESSURE_STROKE,
+} from '../../constants/index';
+import { PRESSURE_COLORS } from '../../constants/pressureColors.constants';
+import { getArrowCoordinates } from '../../utils/pressure.utils';
 
 export function Pressure({ value }: PressureProps) {
-  const MIN = 950;
-  const MAX = 1050;
+  const clamped = Math.min(Math.max(value, PRESSURE_MIN), PRESSURE_MAX);
+  const percent = (clamped - PRESSURE_MIN) / (PRESSURE_MAX - PRESSURE_MIN);
 
-  // Clamp seguro
-  const clamped = Math.min(Math.max(value, MIN), MAX);
-  const percent = (clamped - MIN) / (MAX - MIN);
+  const circumference = 2 * Math.PI * PRESSURE_RADIUS;
 
-  const radius = 40;
-  const stroke = 6;
-  const circumference = 2 * Math.PI * radius;
-
-  const cx = 50;
-  const cy = 50;
-
-  // Ángulo del medidor: inicia abajo (90°) y recorre en sentido horario
-  const angleDeg = 90 + percent * 360;
-  const angleRad = (angleDeg * Math.PI) / 180;
-
-  // Coordenadas de la punta de la flecha
-  const markerLength = 10; // longitud de la flecha
-  const x1 = cx + Math.cos(angleRad) * (radius - markerLength); // base de flecha
-  const y1 = cy + Math.sin(angleRad) * (radius - markerLength);
-  const x2 = cx + Math.cos(angleRad) * radius; // punta de flecha
-  const y2 = cy + Math.sin(angleRad) * radius;
+  const { x1, y1, x2, y2 } = getArrowCoordinates(percent);
 
   return (
     <Container>
-      <span style={{ fontSize: '0.8rem', color: '#6b7280' }}>
+      <span style={{ fontSize: '0.8rem', color: PRESSURE_COLORS.label }}>
         Pressure
       </span>
 
-      <svg viewBox="0 0 100 100" width="100">
+      <svg viewBox='0 0 100 100' width='100'>
         {/* Escala tipo regla */}
         <circle
-          cx={cx}
-          cy={cy}
-          r={radius}
-          fill="none"
-          stroke="#8da5beb8"
-          strokeWidth={stroke / 2}
-          strokeDasharray="2 4"
+          cx={50}
+          cy={50}
+          r={PRESSURE_RADIUS}
+          fill='none'
+          stroke={PRESSURE_COLORS.background}
+          strokeWidth={PRESSURE_STROKE / 2}
+          strokeDasharray='2 2'
         />
 
-        {/* Carga de presión desde el mínimo */}
+        {/* Carga de presión */}
         <circle
-          cx={cx}
-          cy={cy}
-          r={radius}
-          fill="none"
-          stroke="#ca8223"
-          strokeWidth={stroke}
+          cx={50}
+          cy={50}
+          r={PRESSURE_RADIUS}
+          fill='none'
+          stroke={PRESSURE_COLORS.fill}
+          strokeWidth={PRESSURE_STROKE}
           strokeDasharray={circumference}
           strokeDashoffset={circumference * (1 - percent)}
-          strokeLinecap="round"
-          transform={`rotate(90 ${cx} ${cy})`}
-          opacity={0.85}
+          strokeLinecap='round'
+          transform={`rotate(90 50 50)`}         
         />
 
         {/* Flecha marcador */}
@@ -66,29 +55,29 @@ export function Pressure({ value }: PressureProps) {
           y1={y1}
           x2={x2}
           y2={y2}
-          stroke="#020b1e"
-          strokeWidth="3"
-          strokeLinecap="round"
+          stroke={PRESSURE_COLORS.marker}
+          strokeWidth='3'
+          strokeLinecap='round'
         />
 
         {/* Valor central */}
         <text
-          x={cx}
-          y={cy + 2}
-          textAnchor="middle"
-          fontSize="14"
-          fontWeight="600"
-          fill="#111827"
+          x={50}
+          y={52}
+          textAnchor='middle'
+          fontSize='14'
+          fontWeight='600'
+          fill={PRESSURE_COLORS.text}
         >
           {Math.round(value)}
         </text>
 
         <text
-          x={cx}
-          y={cy + 16}
-          textAnchor="middle"
-          fontSize="10"
-          fill="#6b7280"
+          x={50}
+          y={66}
+          textAnchor='middle'
+          fontSize='10'
+          fill={PRESSURE_COLORS.unit}
         >
           hPa
         </text>

@@ -1,10 +1,3 @@
-// import styled from "styled-components";
-
-// export const Container = styled.div`
-//     width: 120px;
-//     text-align: center;
-// `;
-
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -12,7 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 0.25rem;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 1rem;
   margin: 1rem;
 `;
