@@ -15,7 +15,8 @@ import {
   WeatherSearch,
   // Humidity, Wind, Pressure,
   AirQuality,
-  RainChance
+  RainChance,
+  Pressure
 } from '../components';
 import { Container, AlertError } from './Home.style';
 import { DailyRainChart } from '../components';
@@ -156,6 +157,11 @@ const Home = () => {
         />
       )}
 
+      {weather && (
+        <div style={{ display: 'flex', gap: '16px' }}>
+          <Pressure value={weather.current.pressure_mb} />
+        </div>
+      )}
 
     </Container>
   );
