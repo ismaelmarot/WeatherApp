@@ -168,47 +168,19 @@
 // };
 
 // export default Home;
+//============================================================================
 
-import { Screen } from './Home.style';
-import { useBreakpoint } from '../hooks/index';
+import { ScreenContainer } from '../components/ScreenContainer/ScreenContainer';
+import { MobileScreens } from '../components/MobileScreens/MobileScreens';
 
 const Home = () => {
-  const breakpoint = useBreakpoint();
-
-  // Ejemplo de info
-  const infos = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
-
-  // Organizar screens según breakpoint
-  let screens: string[][] = [];
-
-  if (breakpoint === 'mobile') {
-    // Cada info en un screen
-    screens = infos.map(i => [i]);
-  } else if (breakpoint === 'tablet') {
-    // Distribuir según tu ejemplo
-    screens = [
-      ['A', 'C', 'D'],
-      ['E', 'G', 'F'],
-      ['B', 'C']
-    ];
-  } else {
-    // Desktop: todo junto
-    screens = [infos];
-  }
-
   return (
-    <div style={{ scrollSnapType: 'y mandatory', overflowY: 'auto', height: '100vh' }}>
-      {screens.map((screenInfos, i) => (
-        <Screen key={i}>
-          {screenInfos.map((info) => (
-            <div key={info} style={{ margin: '1rem' }}>
-              {info}
-            </div>
-          ))}
-        </Screen>
-      ))}
-    </div>
-  );
+    <ScreenContainer>
+      <MobileScreens />;
+    </ScreenContainer>
+  )
 };
 
 export default Home;
+
+
