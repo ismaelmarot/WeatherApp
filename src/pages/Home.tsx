@@ -170,15 +170,45 @@
 // export default Home;
 
 import { Screen } from './Home.style';
+import { useBreakpoint } from '../hooks/index';
 
-export default function Home() {
+const Home = () => {
+  const breakpoint = useBreakpoint();
+
+  // Ejemplo de info
+  const infos = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+
+  // Organizar screens según breakpoint
+  let screens: string[][] = [];
+
+  if (breakpoint === 'mobile') {
+    // Cada info en un screen
+    screens = infos.map(i => [i]);
+  } else if (breakpoint === 'tablet') {
+    // Distribuir según tu ejemplo
+    screens = [
+      ['A', 'C', 'D'],
+      ['E', 'G', 'F'],
+      ['B', 'C']
+    ];
+  } else {
+    // Desktop: todo junto
+    screens = [infos];
+  }
+
   return (
-    <>
-      <Screen color="#1e293b">SCREEN 1</Screen>
-      <Screen color="#334155">SCREEN 2</Screen>
-      <Screen color="#475569">SCREEN 3</Screen>
-      <Screen color="#64748b">SCREEN 4</Screen>
-      <Screen color="#94a3b8">SCREEN 5</Screen>
-    </>
+    <div style={{ scrollSnapType: 'y mandatory', overflowY: 'auto', height: '100vh' }}>
+      {screens.map((screenInfos, i) => (
+        <Screen key={i}>
+          {screenInfos.map((info) => (
+            <div key={info} style={{ margin: '1rem' }}>
+              {info}
+            </div>
+          ))}
+        </Screen>
+      ))}
+    </div>
   );
-}
+};
+
+export default Home;
