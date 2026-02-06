@@ -1,5 +1,6 @@
-import styled from 'styled-components';
-import { flex } from '../../mixins/setFlex';
+import styled from 'styled-components'
+import { flex } from '../../mixins/setFlex'
+import { GeneralColors } from '../../constants'
 
 export const Container = styled.div`
   display: flex;
@@ -11,35 +12,34 @@ export const Container = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
-`;
+`
 
 export const HourItem = styled.div`
   ${flex('column','center','space-between')}
   min-width: 64px;
   padding: 0.75rem;
-  border: 2px solid red;
   border-radius: .5rem;
   text-align: center;
-  background: rgba(255, 255, 255, 0.6);
-`;
+  background: ${GeneralColors.blue};
+`
 
 export const Time = styled.div`
-  font-size: 0.8rem;
+  font-size: .8rem;
   font-weight: 600;
-`;
+`
 
 export const Temp = styled.div`
   font-size: 1rem;
   font-weight: 500;
-  margin-top: 0.25rem;
-`;
+  margin-top: .25rem;
+`
 
 export const Rain = styled.div`
-  font-size: 0.7rem;
-  margin-top: 0.25rem;
+  font-size: .7rem;
+  margin-top: .25rem;
 `;
 
 export const Icon = styled.img`
-  width: 32px;
-  margin: 0.25rem auto;
-`;
+  width: 2rem;
+  margin: .25rem auto;
+`

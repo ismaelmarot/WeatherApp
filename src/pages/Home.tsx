@@ -4,20 +4,27 @@ import { useWeather } from '../hooks/useWeather';
 import { getNextHours } from '../utils/getNextOurs.utils';
 import { getCurrentHour } from '../utils/getCurrentHour.utils';
 import {
-  HourlyForecast,
-  HourlyWeatherChart,
-  LunarCalendar,
-  RainChanceChart,
+  // HourlyForecast,
+  // HourlyWeatherChart,
+  // LunarCalendar,
+  // RainChanceChart,
+  // WeatherDayInfo,
+  // WeatherExtras,
   WeatherCurrent,
-  WeatherDayInfo,
-  WeatherDetails,
-  WeatherExtras,
+  // WeatherDetails,
   WeatherSearch,
   // Humidity, Wind, Pressure,
-  AirQuality,
-  RainChance,
-  Pressure,
-  CoordinatesInfo
+  // AirQuality,
+  // RainChance,
+  // Pressure,
+  CoordinatesInfo,
+  UvIndex,
+  PressureGauge,
+  Humidity,
+  PressureValue,
+  Wind,
+  LunarCalendar,
+  HourlyForecast
 } from '../components';
 import { Container, AlertError } from './Home.style';
 import { DailyRainChart } from '../components';
@@ -102,28 +109,58 @@ const Home = () => {
       )}
       
 
+
+      {weather && (
+          <UvIndex value={weather.current.uv} />
+      )}
+
+      {weather?.current?.humidity != null && (
+        <Humidity value={weather.current.humidity} />
+      )}
+
+      {weather?.current?.pressure_mb != null && ( 
+        <PressureValue value={weather.current.pressure_mb} />
+      )}
+      
+      {weather && (
+        <PressureGauge value={weather.current.pressure_mb} />  
+      )}
+
+      {weather?.current?.wind_kph != null &&
+        weather?.current?.wind_degree != null && (
+          <Wind 
+            speed={weather.current.wind_kph} 
+            degree={weather.current.wind_degree} 
+          />
+      )}
+
+      {forecast?.forecast?.forecastday?.length > 0 && (
+        <LunarCalendar
+          days={forecast.forecast.forecastday.map((d: any) => ({
+            date: d.date,
+            moon_phase: d.astro.moon_phase,
+            moon_illumination: d.astro.moon_illumination
+          }))}
+        />
+      )}
+
+      {nextHours?.length > 0 && (
+        <HourlyForecast hours={nextHours} />
+      )}
+
+
+
+
       {/* {weather && (
         <>
-          <WeatherCurrent weather={weather} />
           <WeatherDetails weather={weather} />
           <WeatherDayInfo weather={weather} />
           <WeatherExtras weather={weather} />
         </>
-      )} */}
+      )) */}
 
-      {/* {forecast && (
-        <>
-          <LunarCalendar
-            days={forecast.forecast.forecastday.map((d: any) => ({
-              date: d.date,
-              moon_phase: d.astro.moon_phase,
-              moon_illumination: d.astro.moon_illumination
-            }))}
-          />
 
-          <HourlyForecast hours={nextHours} />
-        </>
-      )} */}
+
 
       {/* {weather && (
         <RainChanceChart

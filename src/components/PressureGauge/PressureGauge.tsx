@@ -1,5 +1,5 @@
 import type { PressureProps } from '../../types';
-import { Container } from './Pressure.style';
+import { Container } from './PressureGauge.style';
 import {
   PRESSURE_MIN,
   PRESSURE_MAX,
@@ -9,7 +9,7 @@ import {
 import { PRESSURE_COLORS } from '../../constants/pressureColors.constants';
 import { getArrowCoordinates } from '../../utils/pressure.utils';
 
-export function Pressure({ value }: PressureProps) {
+export function PressureGauge({ value }: PressureProps) {
   const clamped = Math.min(Math.max(value, PRESSURE_MIN), PRESSURE_MAX);
   const percent = (clamped - PRESSURE_MIN) / (PRESSURE_MAX - PRESSURE_MIN);
 

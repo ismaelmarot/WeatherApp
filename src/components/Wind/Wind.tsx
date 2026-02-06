@@ -1,4 +1,5 @@
-import { WindCompass } from '../WindCompass/WindCompass';
+import { WindCompass } from '../WindCompass/WindCompass'
+import { Container, H3 } from './Wind.style'
 
 type WindProps = {
     speed: number;
@@ -7,9 +8,9 @@ type WindProps = {
 
 export function Wind({ speed, degree }: WindProps) {
   return (
-    <>
-      <span>Wind</span>
+    <Container>
+      <H3>Wind</H3>
       <WindCompass speed={speed} degree={degree} />
-    </>
+    </Container>
   );
 }
