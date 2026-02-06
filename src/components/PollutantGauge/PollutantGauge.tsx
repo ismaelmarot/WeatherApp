@@ -6,13 +6,17 @@ type PollutantGaugeProps = {
   aqi: number;
   description?: string;
   aqiStatus?: string;
+  value?: number;
+  unit?: string;
 };
 
 export const PollutantGauge: React.FC<PollutantGaugeProps> = ({
   label,
   aqi,
   description,
-  aqiStatus
+  aqiStatus,
+  value,
+  unit
 }) => {
   const radius = 42;
   const stroke = 6;
@@ -71,8 +75,18 @@ export const PollutantGauge: React.FC<PollutantGaugeProps> = ({
 
       <Info>
         <Label>{label}</Label>
+
         {description && <Description>{description}</Description>}
+        
+         {value !== undefined && unit && (
+            <p style={{ fontSize: '0.75rem', color: '#000000' }}>
+              {value.toFixed(2)} {unit}
+            </p>
+          )}
+
         {aqiStatus && <Status>{aqiStatus}</Status>}
+       
+
       </Info>
     </Wrapper>
   )
