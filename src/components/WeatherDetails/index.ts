@@ -1,1 +1,0 @@
-export { WeatherDetails } from './WeatherDetails';

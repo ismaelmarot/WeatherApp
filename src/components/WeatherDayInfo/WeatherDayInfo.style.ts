@@ -12,6 +12,10 @@ export const Item = styled.div`
     background-color: ${GeneralColors.grey};
     border-radius: .5rem;
     padding: .9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 `;
 
 export const Label = styled.div`

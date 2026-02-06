@@ -27,7 +27,9 @@ import {
   RainChanceChart,
   HourlyWeatherChart,
   AirQuality,
-  RainChance
+  RainChance,
+  WeatherDayInfo,
+  WeatherExtras,
 } from '../components';
 import { Container, AlertError } from './Home.style';
 import { DailyRainChart } from '../components';
@@ -149,20 +151,6 @@ const Home = () => {
         <HourlyForecast hours={nextHours} />
       )}
 
-
-
-
-      {/* {weather && (
-        <>
-          <WeatherDetails weather={weather} />
-          <WeatherDayInfo weather={weather} />
-          <WeatherExtras weather={weather} />
-        </>
-      )) */}
-
-
-
-
       {weather?.forecast?.forecastday?.[0]?.hour && (
         <RainChanceChart
           hours={weather.forecast.forecastday[0].hour.slice(
@@ -176,7 +164,7 @@ const Home = () => {
         <HourlyWeatherChart data={hourlyForecast} />
       )}
 
-      {forecast && (
+      { forecast && (
         <DailyRainChart hours={forecast.forecast.forecastday[0].hour} />
       )}
 
@@ -199,6 +187,19 @@ const Home = () => {
           isRainingNow={weather.current.precip_mm > 0}
         />
       )}
+
+
+      {weather && (
+        <WeatherDayInfo weather={weather} />
+      )}
+
+      {weather && (
+
+        <WeatherExtras weather={weather} />
+      )}
+
+
+
 
     </Container>
   );
