@@ -1,14 +1,18 @@
-import React from 'react';
-import { Wrapper, Label } from './PollutantGauge.style';
+import React from 'react'
+import { Wrapper, Label, Info, Description, Status } from './PollutantGauge.style'
 
 type PollutantGaugeProps = {
   label: string;
   aqi: number;
+  description?: string;
+  aqiStatus?: string;
 };
 
 export const PollutantGauge: React.FC<PollutantGaugeProps> = ({
   label,
-  aqi
+  aqi,
+  description,
+  aqiStatus
 }) => {
   const radius = 42;
   const stroke = 6;
@@ -65,7 +69,11 @@ export const PollutantGauge: React.FC<PollutantGaugeProps> = ({
         </text>
       </svg>
 
-      <Label>{label}</Label>
+      <Info>
+        <Label>{label}</Label>
+        {description && <Description>{description}</Description>}
+        {aqiStatus && <Status>{aqiStatus}</Status>}
+      </Info>
     </Wrapper>
-  );
-};
+  )
+}

@@ -26,7 +26,8 @@ import {
   LunarCalendar,
   HourlyForecast,
   RainChanceChart,
-  HourlyWeatherChart
+  HourlyWeatherChart,
+  AirQuality
 } from '../components';
 import { Container, AlertError } from './Home.style';
 import { DailyRainChart } from '../components';
@@ -183,7 +184,7 @@ const Home = () => {
         />
       )}
 
-      {/* caliad aire
+      caliad aire
       {weather?.current?.air_quality && (
         <AirQuality
           epaIndex={weather.current.air_quality['us-epa-index']}
@@ -194,7 +195,7 @@ const Home = () => {
           pm25={weather.current.air_quality.pm2_5}
           pm10={weather.current.air_quality.pm10}
         />
-      )} */}
+      )}
 
       {/* {forecast && weather && (
         <RainChance
