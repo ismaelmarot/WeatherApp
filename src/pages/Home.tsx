@@ -25,7 +25,8 @@ import {
   Wind,
   LunarCalendar,
   HourlyForecast,
-  RainChanceChart
+  RainChanceChart,
+  HourlyWeatherChart
 } from '../components';
 import { Container, AlertError } from './Home.style';
 import { DailyRainChart } from '../components';
@@ -172,9 +173,9 @@ const Home = () => {
         />
       )}
 
-      {/* {hourlyForecast.length > 0 && (
+      {hourlyForecast.length > 0 && (
         <HourlyWeatherChart data={hourlyForecast} />
-      )} */}
+      )}
 
       {/* {forecast && (
         <DailyRainChart
