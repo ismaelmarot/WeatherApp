@@ -1,21 +1,40 @@
 import styled from 'styled-components';
 import { GeneralColors } from '../../constants/GeneralColors';
+import { flex, size } from '../../mixins';
+import { sizeMax } from '../../mixins/setSize';
 
 export const Container = styled.div`
+  ${flex('row','center','center')}
+  height: 10rem;
+  border-radius: .5rem;
+  background-color: ${GeneralColors.darkGrey};
+`;
+
+export const SearchWrapper = styled.div`
+  ${flex('row','center','center')}
+  ${size('80%','auto')}
+  ${sizeMax('30rem','3rem')}
   position: relative;
+`;
+
+export const SearchIcon = styled.div`
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  color: ${GeneralColors.darkGrey};
+  font-size: 1.3rem;
+  pointer-events: none;
 `;
 
 export const Input = styled.input`
   width: 100%;
-  margin-top: 1.5rem;
-  padding: 0.75rem 1rem;
-  color: red;
-  font-size: 1rem;
-  
+  color: ${GeneralColors.darkGrey};
+  font-size: 1.5rem;
+  padding-left: 1rem;
   border-radius: .5rem;
   border: 2px solid ${GeneralColors.grey};
   background-color: ${GeneralColors.white};
-
   outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 

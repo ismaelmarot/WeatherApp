@@ -13,3 +13,17 @@ export function size(width?: SizeValue, height?: SizeValue): string {
         height: ${height ? formatSize(height) : 'auto'};
     ;`
 }
+
+export function sizeMax(maxWidth?: SizeValue, maxHeight?: SizeValue): string {
+    return `
+        max-width: ${maxWidth ? formatSize(maxWidth) : 'none'};
+        max-height: ${maxHeight ? formatSize(maxHeight) : 'none'};
+    `;
+}
+
+export function sizeMin(minWidth?: SizeValue, minHeight?: SizeValue): string {
+    return `
+        min-width: ${minWidth ? formatSize(minWidth) : '0'};
+        min-height: ${minHeight ? formatSize(minHeight) : '0'};
+    `;
+}
