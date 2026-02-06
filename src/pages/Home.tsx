@@ -16,7 +16,6 @@ import {
   // Humidity, Wind, Pressure,
   // AirQuality,
   // RainChance,
-  // Pressure,
   CoordinatesInfo,
   UvIndex,
   PressureGauge,
@@ -27,7 +26,8 @@ import {
   HourlyForecast,
   RainChanceChart,
   HourlyWeatherChart,
-  AirQuality
+  AirQuality,
+  RainChance
 } from '../components';
 import { Container, AlertError } from './Home.style';
 import { DailyRainChart } from '../components';
@@ -111,8 +111,6 @@ const Home = () => {
         <WeatherCurrent weather={weather} />
       )}
       
-
-
       {weather && (
           <UvIndex value={weather.current.uv} />
       )}
@@ -179,9 +177,7 @@ const Home = () => {
       )}
 
       {forecast && (
-        <DailyRainChart
-          hours={forecast.forecast.forecastday[0].hour}
-        />
+        <DailyRainChart hours={forecast.forecast.forecastday[0].hour} />
       )}
 
       caliad aire
@@ -197,18 +193,12 @@ const Home = () => {
         />
       )}
 
-      {/* {forecast && weather && (
+      {forecast && weather && (
         <RainChance
           chance={forecast.forecast.forecastday[0].day.daily_chance_of_rain}
           isRainingNow={weather.current.precip_mm > 0}
         />
-      )} */}
-
-      {/* {weather && (
-        <div style={{ display: 'flex', gap: '16px' }}>
-          <Pressure value={weather.current.pressure_mb} />
-        </div>
-      )} */}
+      )}
 
     </Container>
   );

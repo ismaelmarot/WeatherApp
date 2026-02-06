@@ -9,7 +9,6 @@ export const POLLUTANT_LABELS = {
   PM10: "Partículas en suspensión menores a 10 micrones",
 }
 
-
 export const AQI_TEXTS = [
   { max: 50, text: "Bueno" },
   { max: 100, text: "Moderado" },

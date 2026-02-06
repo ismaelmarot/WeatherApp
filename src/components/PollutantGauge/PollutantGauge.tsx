@@ -1,14 +1,6 @@
 import React from 'react'
 import { Wrapper, Label, Info, Description, Status } from './PollutantGauge.style'
-
-type PollutantGaugeProps = {
-  label: string;
-  aqi: number;
-  description?: string;
-  aqiStatus?: string;
-  value?: number;
-  unit?: string;
-};
+import type { PollutantGaugeProps } from '../../types';
 
 export const PollutantGauge: React.FC<PollutantGaugeProps> = ({
   label,
