@@ -16,7 +16,8 @@ import {
   // Humidity, Wind, Pressure,
   AirQuality,
   RainChance,
-  Pressure
+  Pressure,
+  CoordinatesInfo
 } from '../components';
 import { Container, AlertError } from './Home.style';
 import { DailyRainChart } from '../components';
@@ -84,20 +85,22 @@ const Home = () => {
             }}
           />
       
+      {activeCoords && (
+        <CoordinatesInfo
+          latitude={activeCoords.latitude}
+          longitude={activeCoords.longitude}
+        />
+      )}
 
-
-
-      {/* {activeCoords && (
-        <p>
-          📍 Lat: {activeCoords.latitude.toFixed(2)} – Lon:{' '}
-          {activeCoords.longitude.toFixed(2)}
-        </p>
-      )} */}
-
-      {/* {isFetching && <p>Loading weather...</p>}
+      {isFetching && <p>Loading weather...</p>}
       {uiError && <AlertError>{uiError}</AlertError>}
       {loading && <p>Getting your location...</p>}
-      {error && <p>{error}</p>} */}
+      {error && <p>{error}</p>}
+
+      {weather && (
+        <WeatherCurrent weather={weather} />
+      )}
+      
 
       {/* {weather && (
         <>

@@ -1,9 +1,11 @@
 import styled from 'styled-components';
-import { size } from '../../mixins/setSize';
+import { flex, size } from '../../mixins'; 
 import { GeneralColors } from '../../constants/GeneralColors';
 
 export const Container = styled.div`
-    margin-top: 1.5rem;
+    ${flex('column','center','center')}
+    border: 3px solid red;
+    border-radius: .5rem;
 `;
 
 export const Temp = styled.div`

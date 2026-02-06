@@ -1,11 +1,7 @@
-import type { WeatherResponse } from '../../services/weather.service';
+import type { WeatherCurrentProps } from '../../types';
 import { Container, Temp, Condition, Location, Icon } from './WeatherCurrent.style';
 
-type Props = {
-    weather: WeatherResponse;
-};
-
-export function WeatherCurrent({ weather }: Props) {
+export function WeatherCurrent({ weather }: WeatherCurrentProps) {
     return (
         <Container>
             <Icon
