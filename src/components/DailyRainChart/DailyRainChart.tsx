@@ -1,6 +1,6 @@
-import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
-import { Container, H3, Chart, GradientStopStart, GradientStopEnd } from './DailyRainChart.style';
-import type { DailyRainChartProps } from '../../types/DailyRainChart.type';
+import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts'
+import { Container, H3, Chart, GradientStopStart, GradientStopEnd } from './DailyRainChart.style'
+import type { DailyRainChartProps } from '../../types/DailyRainChart.type'
 
 export function DailyRainChart({ hours }: DailyRainChartProps) {
   if (!hours.length) return null;
@@ -39,5 +39,5 @@ export function DailyRainChart({ hours }: DailyRainChartProps) {
         </ResponsiveContainer>
       </Chart>
     </Container>
-  );
+  )
 }

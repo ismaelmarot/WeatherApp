@@ -177,11 +177,11 @@ const Home = () => {
         <HourlyWeatherChart data={hourlyForecast} />
       )}
 
-      {/* {forecast && (
+      {forecast && (
         <DailyRainChart
           hours={forecast.forecast.forecastday[0].hour}
         />
-      )} */}
+      )}
 
       {/* caliad aire
       {weather?.current?.air_quality && (
