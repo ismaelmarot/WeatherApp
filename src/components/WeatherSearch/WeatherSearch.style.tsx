@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { GeneralColors } from '../../constants/GeneralColors';
-import { flex, size } from '../../mixins';
-import { sizeMax } from '../../mixins/setSize';
+import styled from 'styled-components'
+import { GeneralColors } from '../../constants/GeneralColors'
+import { flex, size } from '../../mixins'
+import { sizeMax } from '../../mixins/setSize'
 
 export const Container = styled.div`
   position: relative;
@@ -9,14 +9,14 @@ export const Container = styled.div`
   height: 10rem;
   border-radius: .5rem;
   background-color: ${GeneralColors.darkGrey};
-`;
+`
 
 export const SearchWrapper = styled.div`
   ${flex('row','center','center')}
   ${size('80%','auto')}
   ${sizeMax('30rem','3rem')}
   position: relative;
-`;
+`
 
 export const SearchIcon = styled.div`
   position: absolute;
@@ -26,7 +26,7 @@ export const SearchIcon = styled.div`
   color: ${GeneralColors.darkGrey};
   font-size: 1.3rem;
   pointer-events: none;
-`;
+`
 
 export const Input = styled.input`
   width: 100%;
@@ -47,7 +47,7 @@ export const Input = styled.input`
   &::placeholder {
     color: ${GeneralColors.black};
   }
-`;
+`
 
 export const ListPlacesSearch = styled.div`
   position: absolute;
@@ -59,7 +59,7 @@ export const ListPlacesSearch = styled.div`
   border-radius: 8px;
   z-index: 10;
   background: ${GeneralColors.white};
-`;
+`
 
 export const ItemPlace = styled.div`
   ${flex('column','flex-start','center')}
@@ -72,11 +72,11 @@ export const ItemPlace = styled.div`
   &:hover {
     background-color: ${GeneralColors.grey};
   }
-`;
+`
 
 export const LocationPlace = styled.div`
   width: 100%;
   font-size: .8rem;
   opacity: .7;
   color: ${GeneralColors.black};
-`;
+`

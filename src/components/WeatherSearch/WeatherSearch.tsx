@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
-import { Container, Input, ItemPlace, ListPlacesSearch, LocationPlace, SearchWrapper, SearchIcon } from './WeatherSearch.style';
-import type { LocationResultProps } from '../../types/LocationResult.type';
-import type { WeatherSearchProps } from '../../types/WeatherSearch.type';
-import { FiSearch } from 'react-icons/fi';
+import { useEffect, useState } from 'react'
+import { Container, Input, ItemPlace, ListPlacesSearch, LocationPlace, SearchWrapper, SearchIcon } from './WeatherSearch.style'
+import type { LocationResultProps } from '../../types/LocationResult.type'
+import type { WeatherSearchProps } from '../../types/WeatherSearch.type'
+import { FiSearch } from 'react-icons/fi'
 
 const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 const BASE_URL = 'https://api.weatherapi.com/v1';
@@ -71,5 +71,5 @@ export function WeatherSearch({
         </ListPlacesSearch>
       )}
     </Container>
-  );
+  )
 }
