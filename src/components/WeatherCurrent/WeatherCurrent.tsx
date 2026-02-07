@@ -1,5 +1,5 @@
-import type { WeatherCurrentProps } from '../../types';
-import { Container, Temp, Condition, Location, Icon } from './WeatherCurrent.style';
+import type { WeatherCurrentProps } from '../../types'
+import { Container, Temp, Condition, Location, Icon } from './WeatherCurrent.style'
 
 export function WeatherCurrent({ weather }: WeatherCurrentProps) {
     return (
@@ -17,5 +17,5 @@ export function WeatherCurrent({ weather }: WeatherCurrentProps) {
                 {weather.location.name}, {weather.location.country}
             </Location>
         </Container>
-    );
+    )
 }

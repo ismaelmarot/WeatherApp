@@ -1,7 +1,7 @@
 export const WEATHER_API_CONFIG = {
     baseUrl: import.meta.env.VITE_WEATHER_BASE_URL,
     apiKey: import.meta.env.VITE_WEATHER_API_KEY,
-    defaultDays: 3,
+    defaultDays: 7,
 };
 
 if (!WEATHER_API_CONFIG.apiKey) {

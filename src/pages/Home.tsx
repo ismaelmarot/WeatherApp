@@ -193,6 +193,7 @@ const Home = () => {
         <WeatherDayInfo weather={weather} />
       )}
 
+
       {/* {weather && (
 
         <WeatherExtras weather={weather} />
