@@ -1,42 +1,29 @@
-import { useState, useEffect } from 'react';
-import { useGeolocation } from '../hooks/useGeolocation';
-import { useWeather } from '../hooks/useWeather';
-import { getNextHours } from '../utils/getNextOurs.utils';
-import { getCurrentHour } from '../utils/getCurrentHour.utils';
+import { useState, useEffect } from 'react'
+import { useGeolocation, useWeather } from '../hooks'
+import { getCurrentHour, getNextHours } from '../utils'
 import {
-  // HourlyForecast,
-  // HourlyWeatherChart,
-  // LunarCalendar,
-  // RainChanceChart,
-  // WeatherDayInfo,
-  // WeatherExtras,
-  WeatherCurrent,
-  // WeatherDetails,
-  WeatherSearch,
-  // Humidity, Wind, Pressure,
-  // AirQuality,
-  // RainChance,
-  CoordinatesInfo,
-  UvIndex,
-  PressureGauge,
-  Humidity,
-  PressureValue,
-  Wind,
-  LunarCalendar,
-  HourlyForecast,
-  RainChanceChart,
-  HourlyWeatherChart,
   AirQuality,
-  RainChance,
-  WeatherDayInfo,
-  WeatherExtras,
+  CoordinatesInfo,
+  DailyRainChart,
+  HourlyForecast,
+  HourlyWeatherChart,
+  Humidity,
+  LunarCalendar,
   MoonImage,
   MoonInfoItem,
+  PressureGauge,
+  PressureValue,
+  RainChance,
+  RainChanceChart,
+  UvIndex,
   VisibilityItem,
+  WeatherCurrent,
+  WeatherDayInfo,
+  WeatherSearch,
+  Wind,
   WindItem,
 } from '../components';
-import { Container, AlertError } from './Home.style';
-import { DailyRainChart } from '../components';
+import { Container, AlertError } from './Home.style'
 
 const Home = () => {
   const [city, setCity] = useState('');
@@ -66,28 +53,7 @@ const Home = () => {
     <Container>
       <h1>Weather App</h1>
       
-      {/* {weather && (
-        <>
-          <WeatherCurrent weather={weather} />
-          <div style={{ display: 'flex', gap: '16px' }}>
-            <Humidity value={weather.current.humidity} />
-
-            <Wind
-              speed={weather.current.wind_kph}
-              degree={weather.current.wind_degree}
-            />
-
-            <Pressure value={weather.current.pressure_mb} />
-          </div>
-
-          <WeatherDetails weather={weather} />
-          <WeatherDayInfo weather={weather} />
-          <WeatherExtras weather={weather} />
-        </>
-      )} */}
-
-        
-          <WeatherSearch
+      <WeatherSearch
             value={city}
             onChange={setCity}
             onSelect={(location) => {
@@ -243,11 +209,8 @@ const Home = () => {
           value={astro.moonset}
         />
       )}
-
-
-
     </Container>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
