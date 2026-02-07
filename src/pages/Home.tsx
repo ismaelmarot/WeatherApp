@@ -22,7 +22,7 @@ import {
   WeatherSearch,
   Wind,
   WindItem,
-} from '../components';
+} from '../components'
 import { Container, AlertError } from './Home.style'
 
 const Home = () => {
