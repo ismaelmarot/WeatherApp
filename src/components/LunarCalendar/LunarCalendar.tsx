@@ -2,7 +2,7 @@ import type { LunarCalendarProps } from '../../types/LunarCalendar.type';
 import { Calendar, Image, Item, Day, Lightning } from './LunarCalendar.style';
 import { moonImages } from '../../utils/moonImages';
 
-export function LunarCalendar({ days }: LunarCalendarProps) {
+export function          LunarCalendar({ days }: LunarCalendarProps) {
     return (
         <>
             <h3>Lunar calendar</h3>
@@ -10,7 +10,7 @@ export function LunarCalendar({ days }: LunarCalendarProps) {
                 {days.map(day => (
                 <Item key={day.date}>
                     <Image
-                        src={moonImages[day.moon_phase]}
+                        src={moonImages[day.moon_phase] ?? moonImages['Full Moon']}
                         alt={day.moon_phase}
                     />
                     <Day>
