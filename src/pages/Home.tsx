@@ -30,6 +30,10 @@ import {
   RainChance,
   WeatherDayInfo,
   WeatherExtras,
+  MoonImage,
+  MoonInfoItem,
+  VisibilityItem,
+  WindItem,
 } from '../components';
 import { Container, AlertError } from './Home.style';
 import { DailyRainChart } from '../components';
@@ -55,6 +59,8 @@ const Home = () => {
   const hourlyForecast = forecast?.forecast?.forecastday?.[0]?.hour ?? [];
   const nextHours = forecast ? getNextHours(forecast) : [];
   const currentHour = weather ? getCurrentHour(weather) : 0;
+
+  const astro = weather?.forecast?.forecastday?.[0]?.astro;
 
   return (
     <Container>
@@ -194,11 +200,49 @@ const Home = () => {
       )}
 
 
-      {/* {weather && (
 
-        <WeatherExtras weather={weather} />
-      )} */}
+      {weather && (
+        <VisibilityItem visibilityKm={weather.current.vis_km} />
+      )}
 
+      {weather && (
+        <WindItem
+          windKph={weather.current.wind_kph}
+          windDir={weather.current.wind_dir}
+        />
+      )}
+
+      {weather && (
+        <MoonImage phase={astro.moon_phase} />
+      )}
+
+      {weather && (
+        <MoonInfoItem
+          label="Moon phase"
+          value={astro.moon_phase}
+        />
+      )}
+
+      {weather && (
+        <MoonInfoItem
+          label="Moon light"
+          value={`${astro.moon_illumination}%`}
+        />
+      )}
+
+      {weather && (
+        <MoonInfoItem
+          label="Moonrise"
+          value={astro.moonrise}
+        />
+      )}
+
+      {weather && (
+        <MoonInfoItem
+          label="Moonset"
+          value={astro.moonset}
+        />
+      )}
 
 
 

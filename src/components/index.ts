@@ -20,3 +20,8 @@ export * from './WindCompass'
 export * from './WindCompassMarks'
 export * from './WindCompassSpeed'
 export * from './WindNeedle'
+
+export * from './MoonInfoItem'
+export * from './WindItem'
+export * from './MoonImage'
+export * from './VisibilityItem'
