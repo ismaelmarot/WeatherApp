@@ -4,6 +4,7 @@ import { flex, size } from '../../mixins';
 import { sizeMax } from '../../mixins/setSize';
 
 export const Container = styled.div`
+  position: relative;
   ${flex('row','center','center')}
   height: 10rem;
   border-radius: .5rem;
@@ -44,7 +45,7 @@ export const Input = styled.input`
   }
 
   &::placeholder {
-    color: ${GeneralColors.darkGrey};
+    color: ${GeneralColors.black};
   }
 `;
 
@@ -53,7 +54,6 @@ export const ListPlacesSearch = styled.div`
   top: 100%;
   left: 0;
   right: 0;
-  margin-top: 4px;
   overflow: hidden;
   border: 2px solid ${GeneralColors.black};
   border-radius: 8px;
@@ -62,12 +62,21 @@ export const ListPlacesSearch = styled.div`
 `;
 
 export const ItemPlace = styled.div`
-  padding: .2rem;
-  border-bottom: 1px solid ${GeneralColors.black};
+  ${flex('column','flex-start','center')}
+  min-height: 3rem;
   cursor: pointer;
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid ${GeneralColors.black};
+  color: ${GeneralColors.black};
+
+  &:hover {
+    background-color: ${GeneralColors.grey};
+  }
 `;
 
 export const LocationPlace = styled.div`
-  font-size: .7rem;
+  width: 100%;
+  font-size: .8rem;
   opacity: .7;
+  color: ${GeneralColors.black};
 `;

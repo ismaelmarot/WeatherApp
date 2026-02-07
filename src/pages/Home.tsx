@@ -207,19 +207,3 @@ const Home = () => {
 };
 
 export default Home;
-//============================================================================
-
-// import { ScreenContainer } from '../components/ScreenContainer/ScreenContainer';
-// import { MobileScreens } from '../components/MobileScreens/MobileScreens';
-
-// const Home = () => {
-//   return (
-//     <ScreenContainer>
-//       <MobileScreens />;
-//     </ScreenContainer>
-//   )
-// };
-
-// export default Home;
-
-

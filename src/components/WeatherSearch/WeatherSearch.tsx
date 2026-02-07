@@ -49,11 +49,6 @@ export function WeatherSearch({
           placeholder="Search city"
           value={value}
           onChange={(e) => onChange(e.target.value)}
-          onFocus={() => {
-            onChange('');
-            setResults([]);
-            setShowList(false);
-           }}
         />
       </SearchWrapper>
 
