@@ -2,6 +2,8 @@ export { CARDINALS } from './Cardinals'
 export { GeneralColors } from './GeneralColors'
 export { windDeg } from './WindDeg'
 export { TemperatureColors } from './TemperatureColors'
+export { PRESSURE_COLORS } from './pressureColors.constants'
+export { MOON_IMAGES } from './moonImages'
 export {
     PRESSURE_MIN,
     PRESSURE_MAX,
@@ -10,4 +12,3 @@ export {
     PRESSURE_MARKER_LENGTH,
     PRESSURE_MARKER_OVERSHOOT
 } from './pressure.constants'
-export { PRESSURE_COLORS } from './pressureColors.constants'

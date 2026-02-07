@@ -6,9 +6,11 @@ import waxingGibbousMoon from '../assets/moon-phases/waxing-gibbous-moon.jpg';
 import waxingCrescentMoon from '../assets/moon-phases/waxing-crescent-moon.jpg';
 import waningCrescentMoon from '../assets/moon-phases/waning-crescent-moon.jpg';
 import waningGibbousMoon from '../assets/moon-phases/waning-gibbous-moon.jpg';
+import type { MoonPhase } from '../types';
 
 
-export const moonImages: Record<string, string> = {
+
+export const moonImages: Record<MoonPhase, string> = {
     'New Moon': newMoon,
     'Full Moon': fullMoon,
     'First Quarter': firstQuarterMoon,

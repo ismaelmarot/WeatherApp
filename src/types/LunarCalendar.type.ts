@@ -1,5 +1,5 @@
-import type { LunarDayProps } from './LunarDay.type';
+import type { LunarDayProps } from './LunarDay.type'
 
 export type LunarCalendarProps = {
     days: LunarDayProps[];
-};
+}
