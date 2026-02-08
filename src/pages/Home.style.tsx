@@ -1,11 +1,12 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.div`
-    width: 100%;
-    /* height: auto; */
-    border: 3px solid red
+    height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 `
 
 export const AlertError = styled.p`
     color: red;
-`;
+`
