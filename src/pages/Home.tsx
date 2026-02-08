@@ -53,63 +53,62 @@ const Home = () => {
     <Container>
       <h1>Weather App</h1>
       
-      <WeatherSearch
-            value={city}
-            onChange={setCity}
-            onSelect={(location) => {
-              setCity(location.name);
+      {/* <WeatherSearch
+        value={city}
+        onChange={setCity}
+        onSelect={(location) => {
+        setCity(location.name);
+          const coords = {
+            latitude: location.lat,
+            longitude: location.lon
+          };
 
-              const coords = {
-                latitude: location.lat,
-                longitude: location.lon
-              };
-
-              setActiveCoords(coords);
-              fetchByCoords(coords.latitude, coords.longitude);
-            }}
-          />
+          setActiveCoords(coords);
+          fetchByCoords(coords.latitude, coords.longitude);
+        }}
+      /> */}
       
-      {activeCoords && (
+      {/* {activeCoords && (
         <CoordinatesInfo
           latitude={activeCoords.latitude}
           longitude={activeCoords.longitude}
         />
-      )}
+      )} */}
 
       {isFetching && <p>Loading weather...</p>}
       {uiError && <AlertError>{uiError}</AlertError>}
       {loading && <p>Getting your location...</p>}
       {error && <p>{error}</p>}
 
-      {weather && (
+      {/* {weather && (
         <WeatherCurrent weather={weather} />
-      )}
+      )} */}
       
-      {weather && (
+      {/* {weather && (
           <UvIndex value={weather.current.uv} />
-      )}
+      )} */}
 
-      {weather?.current?.humidity != null && (
+      {/* {weather?.current?.humidity != null && (
         <Humidity value={weather.current.humidity} />
-      )}
-
+      )} */}
+{/* 
       {weather?.current?.pressure_mb != null && ( 
         <PressureValue value={weather.current.pressure_mb} />
-      )}
+      )} */}
       
-      {weather && (
+      {/* {weather && (
         <PressureGauge value={weather.current.pressure_mb} />  
-      )}
+      )} */}
 
-      {weather?.current?.wind_kph != null &&
+      {/* {weather?.current?.wind_kph != null &&
         weather?.current?.wind_degree != null && (
           <Wind 
             speed={weather.current.wind_kph} 
             degree={weather.current.wind_degree} 
           />
-      )}
+      )} */}
 
-      {forecast?.forecast?.forecastday?.length > 0 && (
+      {/* {forecast?.forecast?.forecastday?.length > 0 && (
         <LunarCalendar
           days={forecast.forecast.forecastday.map((d: any) => ({
             date: d.date,
@@ -117,30 +116,30 @@ const Home = () => {
             moon_illumination: d.astro.moon_illumination
           }))}
         />
-      )}
+      )} */}
 
-      {nextHours?.length > 0 && (
+      {/* {nextHours?.length > 0 && (
         <HourlyForecast hours={nextHours} />
-      )}
+      )} */}
 
-      {weather?.forecast?.forecastday?.[0]?.hour && (
+      {/* {weather?.forecast?.forecastday?.[0]?.hour && (
         <RainChanceChart
           hours={weather.forecast.forecastday[0].hour.slice(
             currentHour,
             currentHour + 12
           )}
         />
-      )}
+      )} */}
 
-      {hourlyForecast.length > 0 && (
+      {/* {hourlyForecast.length > 0 && (
         <HourlyWeatherChart data={hourlyForecast} />
-      )}
+      )} */}
 
-      { forecast && (
+      {/* { forecast && (
         <DailyRainChart hours={forecast.forecast.forecastday[0].hour} />
-      )}
+      )} */}
 
-      caliad aire
+      {/* caliad aire
       {weather?.current?.air_quality && (
         <AirQuality
           epaIndex={weather.current.air_quality['us-epa-index']}
@@ -151,64 +150,62 @@ const Home = () => {
           pm25={weather.current.air_quality.pm2_5}
           pm10={weather.current.air_quality.pm10}
         />
-      )}
+      )} */}
 
-      {forecast && weather && (
+      {/* {forecast && weather && (
         <RainChance
           chance={forecast.forecast.forecastday[0].day.daily_chance_of_rain}
           isRainingNow={weather.current.precip_mm > 0}
         />
-      )}
+      )} */}
 
 
-      {weather && (
+      {/* {weather && (
         <WeatherDayInfo weather={weather} />
-      )}
+      )} */}
 
-
-
-      {weather && (
+      {/* {weather && (
         <VisibilityItem visibilityKm={weather.current.vis_km} />
-      )}
+      )} */}
 
-      {weather && (
+      {/* {weather && (
         <WindItem
           windKph={weather.current.wind_kph}
           windDir={weather.current.wind_dir}
         />
-      )}
+      )} */}
 
-      {weather && (
+      {/* {weather && (
         <MoonImage phase={astro.moon_phase} />
-      )}
+      )} */}
 
-      {weather && (
+      {/* {weather && (
         <MoonInfoItem
           label="Moon phase"
           value={astro.moon_phase}
         />
-      )}
+      )} */}
 
-      {weather && (
+      {/* {weather && (
         <MoonInfoItem
           label="Moon light"
           value={`${astro.moon_illumination}%`}
         />
-      )}
+      )} */}
 
-      {weather && (
+      {/* {weather && (
         <MoonInfoItem
           label="Moonrise"
           value={astro.moonrise}
         />
-      )}
+      )} */}
 
-      {weather && (
+      {/* {weather && (
         <MoonInfoItem
           label="Moonset"
           value={astro.moonset}
         />
-      )}
+      )} */}
     </Container>
   )
 }
