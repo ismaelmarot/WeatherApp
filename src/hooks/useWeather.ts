@@ -41,41 +41,43 @@
 // }
 
 
-import { useState } from 'react';
-import type { WeatherResponse } from '../services/weather.service';
-import {
-  getWeatherByCoords,
-  getForecastByCoords
-} from '../services/weather.service';
+import { useEffect, useState } from 'react';
+import type { WeatherResponse } from '../types';
+import { getForecastByCoords, getWeatherByCoords } from '../services/weather.service';
 
-export function useWeather() {
-  const [weather, setWeather] = useState<WeatherResponse | null>(null);
-  const [forecast, setForecast] = useState<any>(null);
-  const [isFetching, setIsFetching] = useState(false);
-  const [uiError, setUiError] = useState<string | null>(null);
+export function useWeather(coords: { latitude: number; longitude: number } | null) {
+    const [weather, setWeather] = useState<WeatherResponse | null>(null);
+    const [forecast, setForecast] = useState<any>(null);
+    const [isFetching, setIsFetching] = useState(false);
+    const [uiError, setUiError] = useState<string | null>(null);
 
-  const fetchByCoords = async (lat: number, lon: number) => {
-    try {
-      setIsFetching(true);
-      setUiError(null);
+    useEffect(() => {
+        if (!coords) return;
+        fetchByCoords(coords.latitude, coords.longitude);
+    }, [coords]);
 
-      const weatherData = await getWeatherByCoords(lat, lon);
-      const forecastData = await getForecastByCoords(lat, lon, 7);
+    const fetchByCoords = async (lat: number, lon: number) => {
+        try {
+            setIsFetching(true);
+            setUiError(null);
 
-      setWeather(weatherData);
-      setForecast(forecastData);
-    } catch {
-      setUiError('Unable to get weather');
-    } finally {
-      setIsFetching(false);
-    }
-  };
+            const weatherData = await getWeatherByCoords(lat, lon);
+            setWeather(weatherData);
 
-  return {
-    weather,
-    forecast,
-    isFetching,
-    uiError,
-    fetchByCoords
-  };
+            const forecastData = await getForecastByCoords(lat, lon, 7);
+            setForecast(forecastData);
+        } catch {
+            setUiError('Unable to get weather');
+        } finally {
+            setIsFetching(false);
+        }
+    };
+
+    return {
+        weather,
+        forecast,
+        isFetching,
+        uiError,
+        fetchByCoords
+    };
 }

@@ -1,5 +1,7 @@
 export type WeatherResponse = {
     location: {
+        lon: any;
+        lat: any;
         name: string;
         country: string;
         localtime: string;

@@ -1,5 +1,5 @@
 import { useDevice } from '../../hooks'
-import { MobileScreen1, MobileScreen2, MobileScreen3, MobileScreen4 } from '../mobile'
+import { MobileScreen1, MobileScreen2, MobileScreen3, MobileScreen4, MobileScreen5, MobileScreen6 } from '../mobile'
 import { TabletScreen1, TabletScreen2 } from '../tablet'
 import { DesktopScreen1 } from '../desktop'
 
@@ -13,6 +13,8 @@ export function ScreenRouter() {
             <MobileScreen2 />
             <MobileScreen3 />
             <MobileScreen4 />
+            <MobileScreen5 />
+            <MobileScreen6 />
         </>
         );
     }

@@ -4,14 +4,13 @@ import { GeneralColors } from '../../constants'
 
 export const Wrapper = styled.div`
   ${flex('row','center','center')}
-  ${size('100%','8rem')}
+  ${size('100%','auto')}
   border-radius: .5rem;
-  padding: 1rem;
   border: 2px solid ${GeneralColors.black};
 `
 
 export const Label = styled.div`
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: #000000;
 `
 export const Info = styled.div`
@@ -22,8 +21,8 @@ export const Info = styled.div`
 
 export const Description = styled.small`
   color: ${GeneralColors.darkGrey};
-  font-size: .7rem;
-  height: 2rem;
+  font-size: .8rem;
+  /* height: 2rem; */
 `
 
 export const Status = styled.small`

@@ -13,8 +13,7 @@ export function MobileScreen3() {
             <Humidity value={weather.current.humidity} />
             <PressureValue value={weather.current.pressure_mb} />
             <VisibilityItem visibilityKm={weather.current.vis_km} />
-            <WindItem windKph={weather.current.wind_kph} windDir={weather.current.wind_dir} />
-        
+            <WindItem windKph={weather.current.wind_kph} windDir={weather.current.wind_dir} />    
         </ScreenLayoutBase>
     )
 }
