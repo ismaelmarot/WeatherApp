@@ -25,9 +25,6 @@
 // } from '../components'
 // import { Container, AlertError } from './Home.style'
 
-import { ScreenRouter } from "../screens/ScreenRouter/ScreenRouter";
-import { Container } from "./Home.style";
-
 // const Home = () => {
 //   const [city, setCity] = useState('');
 //   const { coords: geoCoords, loading, error } = useGeolocation();
@@ -216,14 +213,18 @@ import { Container } from "./Home.style";
 
 
 
-
+import { WeatherProvider } from '../context/WeatherContext'
+import { ScreenRouter } from '../screens/ScreenRouter/ScreenRouter'
+import { Container } from './Home.style'
 
 const Home = () => {
   return (
-    <Container>
-      <ScreenRouter />
-    </Container>
+    <WeatherProvider>
+      <Container>
+        <ScreenRouter />
+      </Container>
+    </WeatherProvider>
   );
 };
 
-export default Home;
+export default Home
