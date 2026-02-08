@@ -249,7 +249,7 @@ export default Home
 
 
 //       {nextHours?.length > 0 && (
-//         <HourlyForecast hours={nextHours} /> !!!!!!
+//         <HourlyForecast hours={nextHours} />
 //       )}
 
 
@@ -262,16 +262,7 @@ export default Home
 //         <WeatherDayInfo weather={weather} />
 //       )}
 
-//       {weather && (
-//         <VisibilityItem visibilityKm={weather.current.vis_km} />
-//       )}
 
-//       {weather && (
-//         <WindItem
-//           windKph={weather.current.wind_kph}
-//           windDir={weather.current.wind_dir}
-//         />
-//       )}
 
 
 //     // </Container>
