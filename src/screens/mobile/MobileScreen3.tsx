@@ -1,5 +1,5 @@
 import { ScreenLayoutBase } from '../../layouts/ScreenLayoutBase'
-import { UvIndex, Humidity, PressureValue } from '../../components'
+import { UvIndex, Humidity, PressureValue, WindItem, VisibilityItem } from '../../components'
 import { useWeatherContext } from '../../context/WeatherContext'
 
 export function MobileScreen3() {
@@ -12,6 +12,9 @@ export function MobileScreen3() {
             <UvIndex value={weather.current.uv} />
             <Humidity value={weather.current.humidity} />
             <PressureValue value={weather.current.pressure_mb} />
+            <VisibilityItem visibilityKm={weather.current.vis_km} />
+            <WindItem windKph={weather.current.wind_kph} windDir={weather.current.wind_dir} />
+        
         </ScreenLayoutBase>
     )
 }
