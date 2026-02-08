@@ -8,7 +8,6 @@ export const AirQuality: React.FC<AirQualityProps> = (props) => {
   return (
     <Container>
       <Title>Air Quality</Title>
-
       <Pollutants>
         {AIR_QUALITY_ITEMS.map((item) => {
           const value = props[item.valueKey]

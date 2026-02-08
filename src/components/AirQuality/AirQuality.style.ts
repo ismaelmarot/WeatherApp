@@ -5,6 +5,7 @@ import { flex } from '../../mixins'
 export const Container = styled.div`
   ${flex('column','center','center')}
   background: ${GeneralColors.grey};
+  overflow: scroll;
 `
 
 export const Title = styled.h3`

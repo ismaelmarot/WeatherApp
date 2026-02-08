@@ -7,6 +7,8 @@ export const Container = styled.div`
     padding: 1rem;
     background-color: ${GeneralColors.blue};
     border-radius: .5rem;
+    border: 2px solid red;
+    width: 100%;
 `
 
 export const Item = styled.div`

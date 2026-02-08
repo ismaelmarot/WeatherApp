@@ -74,10 +74,12 @@
 //         />
 //       )}
 
+
 //       {isFetching && <p>Loading weather...</p>}
 //       {uiError && <AlertError>{uiError}</AlertError>}
 //       {loading && <p>Getting your location...</p>}
 //       {error && <p>{error}</p>}
+
 
 //       {weather && (
 //         <WeatherCurrent weather={weather} />
@@ -94,7 +96,7 @@
 //       {weather?.current?.pressure_mb != null && ( 
 //         <PressureValue value={weather.current.pressure_mb} />
 //       )}
-      
+
 //       {weather && (
 //         <PressureGauge value={weather.current.pressure_mb} />  
 //       )}
@@ -107,6 +109,12 @@
 //           />
 //       )}
 
+
+
+
+
+
+
 //       {forecast?.forecast?.forecastday?.length > 0 && (
 //         <LunarCalendar
 //           days={forecast.forecast.forecastday.map((d: any) => ({
@@ -118,7 +126,7 @@
 //       )}
 
 //       {nextHours?.length > 0 && (
-//         <HourlyForecast hours={nextHours} />
+//         <HourlyForecast hours={nextHours} /> !!!!!!
 //       )}
 
 //       {weather?.forecast?.forecastday?.[0]?.hour && (
