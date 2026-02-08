@@ -236,3 +236,45 @@ const Home = () => {
 };
 
 export default Home
+
+
+
+
+
+//       {isFetching && <p>Loading weather...</p>}
+//       {uiError && <AlertError>{uiError}</AlertError>}
+//       {loading && <p>Getting your location...</p>}
+//       {error && <p>{error}</p>}
+
+
+
+//       {nextHours?.length > 0 && (
+//         <HourlyForecast hours={nextHours} /> !!!!!!
+//       )}
+
+
+//       {hourlyForecast.length > 0 && (
+//         <HourlyWeatherChart data={hourlyForecast} />
+//       )}
+
+
+//       {weather && (
+//         <WeatherDayInfo weather={weather} />
+//       )}
+
+//       {weather && (
+//         <VisibilityItem visibilityKm={weather.current.vis_km} />
+//       )}
+
+//       {weather && (
+//         <WindItem
+//           windKph={weather.current.wind_kph}
+//           windDir={weather.current.wind_dir}
+//         />
+//       )}
+
+
+//     // </Container>
+//   )
+// }
+
