@@ -4,8 +4,8 @@ import { WeatherSearch } from '../../components'
 import { useWeatherContext } from '../../context/WeatherContext'
 
 export function MobileScreen1() {
-  const [city, setCity] = useState('');
-  const { fetchByCoords } = useWeatherContext();
+  const [city, setCity] = useState('')
+  const { fetchByCoords } = useWeatherContext()
 
   return (
     <ScreenLayoutBase>

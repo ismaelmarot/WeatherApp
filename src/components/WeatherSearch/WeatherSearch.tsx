@@ -1,11 +1,19 @@
 import { useEffect, useState } from 'react'
-import { Container, Input, ItemPlace, ListPlacesSearch, LocationPlace, SearchWrapper, SearchIcon } from './WeatherSearch.style'
+import {
+  Container,
+  Input,
+  ItemPlace,
+  ListPlacesSearch,
+  LocationPlace,
+  SearchWrapper,
+  SearchIcon
+} from './WeatherSearch.style'
 import type { LocationResultProps } from '../../types/LocationResult.type'
 import type { WeatherSearchProps } from '../../types/WeatherSearch.type'
 import { FiSearch } from 'react-icons/fi'
 
-const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
-const BASE_URL = 'https://api.weatherapi.com/v1';
+const API_KEY = import.meta.env.VITE_WEATHER_API_KEY
+const BASE_URL = 'https://api.weatherapi.com/v1'
 
 export function WeatherSearch({
   value,
@@ -50,26 +58,25 @@ export function WeatherSearch({
           value={value}
           onChange={(e) => onChange(e.target.value)}
         />
-      </SearchWrapper>
-
-      {showList && results.length > 0 && (
-        <ListPlacesSearch>
-          {results.map((loc) => (
-            <ItemPlace
-              key={loc.id}
-              onClick={() => {
-                onSelect(loc);
-                setShowList(false);
-              }}
-            >
+        {showList && results.length > 0 && (
+          <ListPlacesSearch>
+            {results.map((loc) => (
+              <ItemPlace
+                key={loc.id}
+                onClick={() => {
+                  onSelect(loc);
+                  setShowList(false);
+                }}
+              >
               <strong>{loc.name}</strong>
               <LocationPlace>
                 {loc.region}, {loc.country}
               </LocationPlace>
-            </ItemPlace>
-          ))}
-        </ListPlacesSearch>
-      )}
+              </ItemPlace>
+            ))}
+          </ListPlacesSearch>
+        )}  
+      </SearchWrapper>
     </Container>
   )
 }
