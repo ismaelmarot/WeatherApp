@@ -1,31 +1,36 @@
-import styled from 'styled-components';
-import { flex, size } from '../../mixins'; 
-import { GeneralColors } from '../../constants/GeneralColors';
+import styled from 'styled-components'
+import { flex, size } from '../../mixins'
+import { GeneralColors } from '../../constants/GeneralColors'
 
 export const Container = styled.div`
-    ${flex('column','center','center')}
-    border: 3px solid red;
-    border-radius: .5rem;
-`;
+    ${flex('column','center','space-between')}
+    ${size('100%','100%')}
+`
+
+export const TempIconContainer = styled.div`
+    ${flex('column','flex-start','flex-start')}
+    width: 100%;
+    padding-left: 1rem;
+`
 
 export const Temp = styled.div`
-    font-size: 4rem;
+    font-size: 12rem;
     font-weight: 600;
     line-height: 1;
-`;
-
-export const Condition = styled.div`
-    font-size: 1.1rem;
-    color: ${GeneralColors.black};
-    margin-top: 0.25rem;
-`;
-
-export const Location = styled.div`
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-    color: ${GeneralColors.black};
-`;
+`
 
 export const Icon = styled.img`
-    ${size('4rem','4rem')}
-`;
+    display: block;
+    ${size('6rem','6rem')}
+    border: 2px solid blue;
+`
+
+export const Condition = styled.div`
+    font-size: 2rem;
+    color: ${GeneralColors.white};
+`
+
+export const Location = styled.div`
+    font-size: 2rem;
+    color: ${GeneralColors.white};
+`

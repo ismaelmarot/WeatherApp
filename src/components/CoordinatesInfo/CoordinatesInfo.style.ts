@@ -4,7 +4,7 @@ import { GeneralColors } from '../../constants/GeneralColors';
 
 export const Container = styled.div`
     ${flex('column','center','center')}
-    background-color: ${GeneralColors.blue};
-    border-radius: .5rem;
-    font-size: 2rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: ${GeneralColors.darkGrey}
 `;

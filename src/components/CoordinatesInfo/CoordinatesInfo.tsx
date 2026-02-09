@@ -1,5 +1,5 @@
-import type { CoordinatesInfoProps } from '../../types';
-import { Container } from './CoordinatesInfo.style';
+import type { CoordinatesInfoProps } from '../../types'
+import { Container } from './CoordinatesInfo.style'
 
 export function CoordinatesInfo({
     latitude,
@@ -9,5 +9,5 @@ export function CoordinatesInfo({
         <Container>
             📍 Lat: {latitude.toFixed(2)} – Lon: {longitude.toFixed(2)}
         </Container>
-    );
+    )
 }

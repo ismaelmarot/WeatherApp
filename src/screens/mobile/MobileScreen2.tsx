@@ -16,16 +16,13 @@ export function MobileScreen2() {
 
   return (
     <ScreenLayoutBase>
-
       <WeatherCurrent weather={weather} />
-
       {activeCoords && (
         <CoordinatesInfo
           latitude={activeCoords.latitude}
           longitude={activeCoords.longitude}
         />
-      )}
-      
+      )}     
     </ScreenLayoutBase>
   )
 }
