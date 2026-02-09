@@ -1,6 +1,6 @@
-import { ScreenLayoutBase } from '../../layouts/ScreenLayoutBase';
-import { useWeatherContext } from '../../context/WeatherContext';
-import { MoonImage, MoonInfoItem, LunarCalendar } from '../../components';
+import { ScreenLayoutBase } from '../../layouts/ScreenLayoutBase'
+import { useWeatherContext } from '../../context/WeatherContext'
+import { MoonImage, MoonInfoItem, LunarCalendar } from '../../components'
 
 export function MobileScreen9() {
     const { weather, forecast } = useWeatherContext();
@@ -31,5 +31,5 @@ export function MobileScreen9() {
                 />
             )}
         </ScreenLayoutBase>
-    );
+    )
 }

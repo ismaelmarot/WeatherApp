@@ -248,20 +248,9 @@ export default Home
 
 
 
-//       {nextHours?.length > 0 && (
-//         <HourlyForecast hours={nextHours} />
-//       )}
-
-
 //       {hourlyForecast.length > 0 && (
 //         <HourlyWeatherChart data={hourlyForecast} />
 //       )}
-
-
-//       {weather && (
-//         <WeatherDayInfo weather={weather} />
-//       )}
-
 
 
 
