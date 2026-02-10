@@ -10,7 +10,7 @@ type WeatherIconProps = {
 export function WeatherIcon({
   code,
   isDay,
-  size = 100,
+  size = 100
 }: WeatherIconProps) {
   const icon = getWeatherIcon(code, isDay)
 
@@ -25,6 +25,7 @@ export function WeatherIcon({
       height={size}
       draggable={false}
       color="#ffffff"
+      style={{borderRadius:'50%'}}
     />
   )
 }
