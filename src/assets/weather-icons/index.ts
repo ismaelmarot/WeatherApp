@@ -1,0 +1,7 @@
+export { default as DaySunny } from './svg/wi-day-sunny.svg'
+export { default as NightClear } from './svg/wi-night-clear.svg'
+export { default as Cloudy } from './svg/wi-cloudy.svg'
+export { default as DayCloudy } from './svg/wi-day-cloudy.svg'
+export { default as Rain } from './svg/wi-rain.svg'
+export { default as Snow } from './svg/wi-snow.svg'
+export { default as Thunder } from './svg/wi-thunderstorm.svg'

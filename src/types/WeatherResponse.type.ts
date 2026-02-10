@@ -8,6 +8,7 @@ export type WeatherResponse = {
     };
 
     current: {
+        is_day: number;
         air_quality: any;
         wind_degree: number;
         temp_c: number;
@@ -20,8 +21,9 @@ export type WeatherResponse = {
         uv: number;
         precip_mm: number;
         condition: {
-        text: string;
-        icon: string;
+            text: string;
+            icon: string;
+            code: number;
         };
     };
 

@@ -1,4 +1,4 @@
-import type { WeatherResponse } from './WeatherResponse.type';
+import type { WeatherResponse } from './WeatherResponse.type'
 
 export type WeatherCurrentProps = {
     weather: WeatherResponse;

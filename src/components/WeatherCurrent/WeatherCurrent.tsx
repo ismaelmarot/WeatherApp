@@ -1,13 +1,18 @@
 import type { WeatherCurrentProps } from '../../types'
-import { Container, Temp, Condition, Location, Icon, TempIconContainer } from './WeatherCurrent.style'
+import { Container, Temp, Condition, Location, TempIconContainer } from './WeatherCurrent.style'
+import { WeatherIcon } from '..'
 
 export function WeatherCurrent({ weather }: WeatherCurrentProps) {
+
+    console.log(weather.current.condition.code);
+
+
     return (
         <Container>
             <TempIconContainer>
-                <Icon
-                    src={weather.current.condition.icon}
-                    alt={weather.current.condition.text}
+                <WeatherIcon
+                    code={weather.current.condition.code}
+                    isDay={weather.current.is_day === 1}
                 />
                 <Temp>
                     {Math.round(weather.current.temp_c)}°
