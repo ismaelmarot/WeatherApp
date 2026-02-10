@@ -1,11 +1,14 @@
 import type { WeatherCurrentProps } from '../../types'
-import { Container, Temp, Condition, Location, TempIconContainer } from './WeatherCurrent.style'
+import {
+    Container,
+    Temp,
+    Condition,
+    Location,
+    TempIconContainer
+} from './WeatherCurrent.style'
 import { WeatherIcon } from '..'
 
 export function WeatherCurrent({ weather }: WeatherCurrentProps) {
-
-    console.log(weather.current.condition.code);
-
 
     return (
         <Container>
