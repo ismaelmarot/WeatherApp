@@ -3,15 +3,14 @@ import { GeneralColors } from '../../constants'
 
 export const Icon = styled.i`
     font-size: 6rem;
-    color: ${GeneralColors.white}
+    color: ${GeneralColors.white};
 `
 
 export const IconNotFound = styled.p`
-    font-size: .5rem;
-    border: 2px solid red;
-    border-radius: .3rem;
     padding: .2rem .5rem;
-    background-color: red;
+    font-size: .5rem;
     font-weight: 800;
-    color: ${GeneralColors.white}
+    border-radius: .3rem;
+    background-color: red;
+    color: ${GeneralColors.white};
 `

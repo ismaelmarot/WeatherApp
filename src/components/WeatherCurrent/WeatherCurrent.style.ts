@@ -28,18 +28,13 @@ export const Temp = styled.div`
     line-height: 1;
 `
 
-export const Icon = styled.img`
-    display: block;
-    ${size('6rem','6rem')}
-    border: 2px solid blue;
-`
-
-export const Condition = styled.div`
-    font-size: 2rem;
+export const Location = styled.div`
+    ${flex('column','center','center')}
+    font-size: 1.5rem;
     color: ${GeneralColors.white};
 `
 
-export const Location = styled.div`
+export const Condition = styled.div`
     font-size: 2rem;
     color: ${GeneralColors.white};
 `
