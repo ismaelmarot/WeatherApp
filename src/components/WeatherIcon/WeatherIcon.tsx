@@ -2,30 +2,23 @@ import { getWeatherIcon } from '../../utils/getWeatherIcon'
 import { Icon, IconNotFound } from './WeatherIcon.style'
 
 type WeatherIconProps = {
-  code: number;
-  isDay: boolean;
-  size?: number;
-};
+  code: number
+  isDay: boolean
+  size?: number
+  color?: string
+}
 
 export function WeatherIcon({
   code,
   isDay,
-  size = 100
 }: WeatherIconProps) {
-  const icon = getWeatherIcon(code, isDay)
+  const iconClass = getWeatherIcon(code, isDay)
 
-  if (!icon) {
-    return <IconNotFound>ICON NOT FOUND</IconNotFound>
-  }
+  if (!iconClass) return <IconNotFound>ICON NOT FOUND</IconNotFound>
 
   return (
     <Icon
-      src={icon}
-      width={size}
-      height={size}
-      draggable={false}
-      color="#ffffff"
-      style={{borderRadius:'50%'}}
+      className={`wi ${iconClass}`}
     />
   )
 }

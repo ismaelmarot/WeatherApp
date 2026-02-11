@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 import { GeneralColors } from '../../constants'
 
-export const Icon = styled.img`
-    background-color: ${GeneralColors.white}
+export const Icon = styled.i`
+    font-size: 6rem;
+    color: ${GeneralColors.white}
 `
 
 export const IconNotFound = styled.p`
