@@ -1,30 +1,8 @@
-const icons = import.meta.glob('../assets/weather-icons/svg/*.svg',
-    {
-        eager: true,
-        import: 'default',
-    }
-) as Record<string, string>;
-
-export function getWeatherIconPath(fileName: string): string {
-    const entry = Object.entries(icons).find(([path]) =>
-        path.endsWith(`/${fileName}`)
-    );
-
-    if (!entry) {
-        console.warn(`Icon not found: ${fileName}`);
-        return '';
-    }
-
-    return entry[1];
-}
-
-export const WEATHER_ICONS = {
-    sunny: 'wi-day-sunny.svg',
-    partlyCloudy: 'wi-day-cloudy.svg',
-    cloudy: 'wi-cloudy.svg',
-    rain: 'wi-rain.svg',
-    storm: 'wi-thunderstorm.svg',
-    snow: 'wi-snow.svg',
-    fog: 'wi-fog.svg',
-    nightClear: 'wi-night-clear.svg',
-    };
+export const WEATHER_ICONS: Record<string, { day: string; night: string }> = {
+    sunny: { day: 'wi-day-sunny', night: 'wi-night-clear' },
+    partlyCloudy: { day: 'wi-day-cloudy', night: 'wi-night-alt-cloudy' },
+    cloudy: { day: 'wi-cloudy', night: 'wi-cloudy' },
+    rain: { day: 'wi-rain', night: 'wi-rain' },
+    snow: { day: 'wi-snow', night: 'wi-snow' },
+    storm: { day: 'wi-thunderstorm', night: 'wi-thunderstorm' },
+};
