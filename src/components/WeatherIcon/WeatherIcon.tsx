@@ -1,12 +1,6 @@
+import type { WeatherIconProps } from '../../types'
 import { getWeatherIcon } from '../../utils/getWeatherIcon'
 import { Icon, IconNotFound } from './WeatherIcon.style'
-
-type WeatherIconProps = {
-  code: number
-  isDay: boolean
-  size?: number
-  color?: string
-}
 
 export function WeatherIcon({
   code,
