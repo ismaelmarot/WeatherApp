@@ -1,11 +1,10 @@
 import type { ReactNode } from 'react';
 
-
 import {
   WeatherCurrent,
   WeatherSearch,
-  WeatherDetails,
-  WeatherExtras,
+  // WeatherDetails,
+  // WeatherExtras,
   HourlyForecast,
   DailyRainChart
 } from '../components';
@@ -32,16 +31,16 @@ export const mobileScreens: MobileScreen[] = [
       />
     )
   },
-  {
-    id: 'weather-details',
-    render: ({ weather }) =>
-      weather && <WeatherDetails weather={weather} />
-  },
-  {
-    id: 'weather-extras',
-    render: ({ weather }) =>
-      weather && <WeatherExtras weather={weather} />
-  },
+  // {
+  //   id: 'weather-details',
+  //   render: ({ weather }) =>
+  //     weather && <WeatherDetails weather={weather} />
+  // },
+  // {
+  //   id: 'weather-extras',
+  //   render: ({ weather }) =>
+  //     weather && <WeatherExtras weather={weather} />
+  // },
   {
     id: 'hourly-forecast',
     render: ({ nextHours }) =>

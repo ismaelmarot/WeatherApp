@@ -1,28 +1,5 @@
-// import { createGlobalStyle } from 'styled-components';
-// import { flex } from '../mixins/setFlex';
-
-// export const GlobalStyle = createGlobalStyle`
-//   * {
-//     margin: 0;
-//     padding: 0;
-//     box-sizing: border-box;
-//   }
-
-//   body {
-//     ${flex('column', 'center', 'center')}
-
-//     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-//       'Helvetica Neue', Arial, sans-serif;
-
-//     background-color: rgba(245, 245, 247, 1);
-//     color: rgba(29, 29, 31, 1);
-
-//     -webkit-font-smoothing: antialiased;
-//     -moz-osx-font-smoothing: grayscale;
-//   }
-// `;
-
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
+import { size } from './../mixins'
 
 export const GlobalStyle = createGlobalStyle`
   *,
@@ -31,24 +8,22 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  html, body, #root {
+  html,
+  body {
+    ${size('100%','100%')}
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
-  }
+    background: rgba(90, 180, 228, 0.85);
+    overflow: hidden;
 
-  body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont,
       'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
       'Helvetica Neue', sans-serif;
 
-    background: linear-gradient(135deg, #76e5d1 0%, #374dbc 100%);
     -webkit-font-smoothing: antialiased;
-    color: #ffffff;
   }
 
-  button {
-    font-family: inherit;
+   #root {
+    min-height: 100dvh;
   }
-`;
+`

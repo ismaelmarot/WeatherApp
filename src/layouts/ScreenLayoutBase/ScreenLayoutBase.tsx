@@ -1,6 +1,12 @@
 import type { ScreenLayoutBaseProps } from '../../types'
-import { Container } from './ScreenLayoutBase.style'
+import { Container, Content } from './ScreenLayoutBase.style'
 
 export function ScreenLayoutBase({ children }: ScreenLayoutBaseProps) {
-    return <Container>{children}</Container>;
+    return (
+        <Container>
+            <Content>
+                {children}
+            </Content>
+        </Container>
+    )
 }

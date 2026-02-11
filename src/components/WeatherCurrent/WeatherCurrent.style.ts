@@ -4,16 +4,16 @@ import { GeneralColors } from '../../constants/GeneralColors'
 
 export const Container = styled.div`
     ${flex('column','center','space-between')}
-    ${size('100%','90%')}
+    ${size('100%','95dvh')}
     box-sizing: border-box;
     padding: .5rem 1rem;
 
-    background-color: rgba(234, 95, 67, 0.2);
-    border-radius: 16px;
+    border: 1.1px solid rgba(219, 224, 137, 0.86);
+    border-radius: 12px;
+    background-color: rgba(83, 179, 190, 0.69);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1.1px solid rgba(197, 200, 153, 0.8);
 `
 
 export const TempIconContainer = styled.div`
@@ -26,6 +26,7 @@ export const Temp = styled.div`
     font-size: 12rem;
     font-weight: 500;
     line-height: 1;
+    color: ${GeneralColors.white}
 `
 
 export const Location = styled.div`
