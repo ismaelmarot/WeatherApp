@@ -43,9 +43,9 @@ export const GlobalStyle = createGlobalStyle`
       'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
       'Helvetica Neue', sans-serif;
 
-    background-color: #0f0f0f;
-    color: #ffffff;
+    background: linear-gradient(135deg, #76e5d1 0%, #374dbc 100%);
     -webkit-font-smoothing: antialiased;
+    color: #ffffff;
   }
 
   button {

@@ -221,11 +221,11 @@
 
 
 
-import { WeatherProvider } from '../context/WeatherContext'
-import { ScreenRouter } from '../screens/ScreenRouter/ScreenRouter'
+import { WeatherProvider } from '../../context/WeatherContext'
+import { ScreenRouter } from '../../screens/ScreenRouter/ScreenRouter'
 import { Container } from './Home.style'
 
-const Home = () => {
+export const Home = () => {
   return (
     <WeatherProvider>
       <Container>

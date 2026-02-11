@@ -1,5 +1,5 @@
 import type { CoordinatesInfoProps } from '../../types'
-import { Container } from './CoordinatesInfo.style'
+import { Container, LocationIcon } from './CoordinatesInfo.style'
 
 export function CoordinatesInfo({
     latitude,
@@ -7,7 +7,8 @@ export function CoordinatesInfo({
 }: CoordinatesInfoProps) {
     return (
         <Container>
-            📍 Lat: {latitude.toFixed(2)} – Lon: {longitude.toFixed(2)}
+            <LocationIcon />
+            Lat: {latitude.toFixed(2)} – Lon: {longitude.toFixed(2)}
         </Container>
     )
 }

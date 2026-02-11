@@ -1,10 +1,15 @@
-import styled from 'styled-components';
-import { flex } from '../../mixins';
-import { GeneralColors } from '../../constants/GeneralColors';
+import styled from 'styled-components'
+import { flex } from '../../mixins'
+import { GeneralColors } from '../../constants/GeneralColors'
+import { CiLocationOn } from 'react-icons/ci'
 
 export const Container = styled.div`
-    ${flex('column','center','center')}
+    ${flex('row','center','center')}
     font-size: 1rem;
-    margin-bottom: 2rem;
-    color: ${GeneralColors.darkGrey}
+    color: ${GeneralColors.white}
 `;
+
+export const LocationIcon = styled(CiLocationOn)`
+    font-size: 1.5rem;
+    padding-right: .3rem;
+`

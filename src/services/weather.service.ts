@@ -1,7 +1,7 @@
-import type { WeatherResponse } from '../types';
-import { WEATHER_API_CONFIG } from '../config/weatherApi.config';
+import type { WeatherResponse } from '../types'
+import { WEATHER_API_CONFIG } from '../config/weatherApi.config'
 
-const { baseUrl, apiKey, defaultDays } = WEATHER_API_CONFIG;
+const { baseUrl, apiKey, defaultDays } = WEATHER_API_CONFIG
 
 /* Weather by Coordinates */
 export async function getWeatherByCoords(
@@ -9,15 +9,15 @@ export async function getWeatherByCoords(
   lon: number
 ): Promise<WeatherResponse> {
   const response = await fetch(
-    `${baseUrl}/forecast.json?key=${apiKey}&q=${lat},${lon}&days=1&lang=es&aqi=yes`
-  );
+    `${baseUrl}/forecast.json?key=${apiKey}&q=${lat},${lon}&days=1&lang=en&aqi=yes`
+  )
 
   if (!response.ok) {
     const error = await response.json();
-    throw new Error(error.error?.message || 'Error fetching weather');
+    throw new Error(error.error?.message || 'Error fetching weather')
   }
 
-  return response.json();
+  return response.json()
 }
 
 /* Weather by City */
@@ -26,14 +26,14 @@ export async function getWeatherByCity(
 ): Promise<WeatherResponse> {
   const response = await fetch(
     `${baseUrl}/forecast.json?key=${apiKey}&q=${city}&days=1&lang=es`
-  );
+  )
 
   if (!response.ok) {
     const error = await response.json();
-    throw new Error(error.error?.message || 'City not found');
+    throw new Error(error.error?.message || 'City not found')
   }
 
-  return response.json();
+  return response.json()
 }
 
 /* Forecast */
@@ -48,8 +48,8 @@ export async function getForecastByCoords(
 
   if (!response.ok) {
     const error = await response.json();
-    throw new Error(error.error?.message || 'Forecast error');
+    throw new Error(error.error?.message || 'Forecast error')
   }
 
-  return response.json();
+  return response.json()
 }

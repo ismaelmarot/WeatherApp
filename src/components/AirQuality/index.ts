@@ -1,1 +1,1 @@
-export { AirQuality } from './AirQuality';
+export { AirQuality } from './AirQuality'
