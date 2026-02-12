@@ -8,12 +8,12 @@ export function WeatherDayInfo({ weather }: WeatherDayInfoProps) {
     return (
         <Grid>
             <Item>
-                <Label>Min</Label>
+                <Label>Min temperature</Label>
                 <Value>{Math.round(day.mintemp_c)}°</Value>
             </Item>
 
             <Item>
-                <Label>Max</Label>
+                <Label>Max temperature</Label>
                 <Value>{Math.round(day.maxtemp_c)}°</Value>
             </Item>
 

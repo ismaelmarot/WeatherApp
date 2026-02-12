@@ -1,30 +1,33 @@
-import styled from 'styled-components';
-import { GeneralColors } from '../../constants/GeneralColors';
+import styled from 'styled-components'
+import { GeneralColors } from '../../constants'
+import { flex } from '../../mixins'
 
 export const Grid = styled.div`
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 `;
 
 export const Item = styled.div`
-    background-color: ${GeneralColors.grey};
+    ${flex('row','center','space-between')}
+    border: 2px solid ${GeneralColors.white};
     border-radius: .5rem;
     padding: .9rem;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    color: ${GeneralColors.white};
 `;
 
 export const Label = styled.div`
-    font-size: 0.75rem;
-    color: ${GeneralColors.black};
+    font-size: 1rem;
+    font-weight: bold;
 `;
 
 export const Value = styled.div`
     font-size: 1rem;
     font-weight: 500;
-    margin-top: .25rem;
+    /* margin-top: .25rem; */
 `;
