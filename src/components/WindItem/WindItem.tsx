@@ -1,18 +1,19 @@
-import { Container, Label, Value, ArrowContainer, WindArrow } from './WindItem.style'
-import { windDeg } from '../../constants/WindDeg'
+import { Container, Label, Value, ArrowContainer, WindArrowIcon } from './WindItem.style'
 import type { WindItemProps } from '../../types/WindItem.type'
+import { windRotation } from '../../utils'
+
 
 export function WindItem({ windKph, windDir }: WindItemProps) {
+  const rotation = windRotation(windDir ?? 'N')
+
   return (
     <Container>
       <Label>Wind</Label>
       <Value>
-        {windKph} km/h
         <ArrowContainer>
-          <WindArrow
-            style={{ transform: `rotate(${windDeg(windDir) + 180}deg)` }}
-          />
+          <WindArrowIcon $rotation={rotation} />
         </ArrowContainer>
+        {windKph} km/h
       </Value>
     </Container>
   )

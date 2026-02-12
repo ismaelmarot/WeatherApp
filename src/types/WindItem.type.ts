@@ -1,4 +1,4 @@
 export type WindItemProps = {
     windKph: number;
-    windDir: string;
+    windDir?: string | undefined;
 }

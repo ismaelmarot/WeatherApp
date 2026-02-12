@@ -1,9 +1,9 @@
+export { BREAKPOINTS } from './breakPoints'
 export { CARDINALS } from './Cardinals'
 export { GeneralColors } from './GeneralColors'
-export { windDeg } from './WindDeg'
-export { TemperatureColors } from './TemperatureColors'
-export { PRESSURE_COLORS } from './pressureColors.constants'
+export { ICONS } from './icons.constants'
 export { MOON_IMAGES } from './moonImages'
+export { PRESSURE_COLORS } from './pressureColors.constants'
 export {
     PRESSURE_MIN,
     PRESSURE_MAX,
@@ -12,4 +12,5 @@ export {
     PRESSURE_MARKER_LENGTH,
     PRESSURE_MARKER_OVERSHOOT
 } from './pressure.constants'
-export { BREAKPOINTS } from './breakPoints'
+export { TemperatureColors } from './TemperatureColors'
+export { windDeg } from './WindDeg'

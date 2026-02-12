@@ -1,36 +1,36 @@
 import styled from 'styled-components'
-import { GeneralColors } from '../../constants/GeneralColors'
-import { flex } from '../../mixins/setFlex'
-import { size } from '../../mixins/setSize'
+import { flex, size } from '../../mixins'
+import { ICONS, GeneralColors } from '../../constants'
 
 export const Container = styled.div`
-  background-color: ${GeneralColors.grey};
   border-radius: .5rem;
   padding: .85rem;
+  border: 2px solid ${GeneralColors.white};
+  color: ${GeneralColors.white};
 `
 
 export const Label = styled.div`
-  font-size: 0.75rem;
-  color: ${GeneralColors.black};
+  font-size: 1.2rem;
 `
 
 export const Value = styled.div`
   ${flex('column','center','center')}
-  gap: .5rem;
-  margin-top: .25rem;
-  font-size: 1rem;
+  margin-top: .5rem;
+  font-size: 2rem;
   font-weight: 500;
 `
 
 export const ArrowContainer = styled.div`
   ${flex('column','center','center')}
-  ${size('2rem','2rem')}
-  border: 2px solid ${GeneralColors.black};
+  ${size('2.5rem','2.5rem')}
+  border: 2px solid ${GeneralColors.white};
   border-radius: 50%;
 `
 
-export const WindArrow = styled.span`
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-bottom: 22px solid ${GeneralColors.black};
+export const WindArrowIcon = styled(ICONS.WindArrow)<{
+  $rotation: number
+}>`
+  transform: rotate(${props => props.$rotation}deg);
+  transition: transform .3s ease;
+  font-size: 1.5rem;
 `
