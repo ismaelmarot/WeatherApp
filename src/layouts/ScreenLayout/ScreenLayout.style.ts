@@ -5,6 +5,7 @@ export const BaseContainer = styled.section`
   ${flex('column','center','center')}
   min-height: 100dvh;
   width: 90%;
+  margin: 10dvh 0;
   scroll-snap-align: start;
 
   padding-top: env(safe-area-inset-top);

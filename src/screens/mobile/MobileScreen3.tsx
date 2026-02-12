@@ -4,7 +4,6 @@ import {
     PressureValue,
     WindItem,
     VisibilityItem,
-    WeatherDayInfo
 } from '../../components'
 import { useWeatherContext } from '../../context/WeatherContext'
 
@@ -20,7 +19,6 @@ export function MobileScreen3() {
             <PressureValue value={weather.current.pressure_mb} />
             <VisibilityItem visibilityKm={weather.current.vis_km} />
             <WindItem windKph={weather.current.wind_kph} windDir={weather.current.wind_dir} />
-            <WeatherDayInfo weather={weather} />
         </ScreenLayoutGlass>
     )
 }
