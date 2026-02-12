@@ -4,7 +4,7 @@ import { flex } from '../../mixins'
 export const BaseContainer = styled.section`
   ${flex('column','center','center')}
   min-height: 100dvh;
-  width: 100%;
+  width: 90%;
   scroll-snap-align: start;
 
   padding-top: env(safe-area-inset-top);

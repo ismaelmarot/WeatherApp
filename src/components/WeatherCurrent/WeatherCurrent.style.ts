@@ -5,15 +5,6 @@ import { GeneralColors } from '../../constants/GeneralColors'
 export const Container = styled.div`
     ${flex('column','center','space-between')}
     ${size('100%','95dvh')}
-    box-sizing: border-box;
-    padding: .5rem 1rem;
-
-    border: 1.1px solid rgba(219, 224, 137, 0.86);
-    border-radius: 12px;
-    background-color: rgba(83, 179, 190, 0.69);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
 `
 
 export const TempIconContainer = styled.div`
