@@ -13,7 +13,7 @@ export const SearchWrapper = styled.div`
   position: relative;
   ${flex('row', 'center', 'center')}
   width: 90%;
-  max-width: 30rem;
+  max-width: 22rem;
 `
 
 export const SearchIcon = styled.div`

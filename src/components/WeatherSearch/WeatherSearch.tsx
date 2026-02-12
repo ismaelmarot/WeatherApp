@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react'
+import { FiSearch } from 'react-icons/fi'
+import type { LocationResultProps, WeatherSearchProps } from '../../types'
 import {
   Container,
   Input,
@@ -8,9 +10,6 @@ import {
   SearchWrapper,
   SearchIcon
 } from './WeatherSearch.style'
-import type { LocationResultProps } from '../../types/LocationResult.type'
-import type { WeatherSearchProps } from '../../types/WeatherSearch.type'
-import { FiSearch } from 'react-icons/fi'
 
 const API_KEY = import.meta.env.VITE_WEATHER_API_KEY
 const BASE_URL = 'https://api.weatherapi.com/v1'

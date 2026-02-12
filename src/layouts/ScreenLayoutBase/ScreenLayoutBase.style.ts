@@ -17,3 +17,22 @@ export const Content = styled.div`
   max-width: 480px;
   padding: 16px 20px;
 `
+
+export const ScreenLayoutBase = styled.div`
+  min-height: 100dvh;
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+
+  /* GLASS */
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border-radius: 0; /* mobile */
+  
+  @supports not (backdrop-filter: blur(20px)) {
+    background: rgba(255, 255, 255, 0.85);
+  }
+`;
