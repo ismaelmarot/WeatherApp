@@ -14,10 +14,6 @@ export const Item = styled.div`
     border: 2px solid ${GeneralColors.white};
     border-radius: .5rem;
     padding: .9rem;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; */
     color: ${GeneralColors.white};
 `;
 
@@ -29,5 +25,4 @@ export const Label = styled.div`
 export const Value = styled.div`
     font-size: 1rem;
     font-weight: 500;
-    /* margin-top: .25rem; */
 `;

@@ -1,30 +1,30 @@
-import type { PressureProps } from '../../types';
-import { Container } from './PressureGauge.style';
+import type { PressureProps } from '../../types'
+import { Container, HPA, Pressure, Title } from './PressureGauge.style'
 import {
   PRESSURE_MIN,
   PRESSURE_MAX,
   PRESSURE_RADIUS,
   PRESSURE_STROKE,
-} from '../../constants/index';
-import { PRESSURE_COLORS } from '../../constants/pressureColors.constants';
-import { getArrowCoordinates } from '../../utils/pressure.utils';
+} from '../../constants/index'
+import { PRESSURE_COLORS } from '../../constants/pressureColors.constants'
+import { getArrowCoordinates } from '../../utils/pressure.utils'
 
 export function PressureGauge({ value }: PressureProps) {
-  const clamped = Math.min(Math.max(value, PRESSURE_MIN), PRESSURE_MAX);
-  const percent = (clamped - PRESSURE_MIN) / (PRESSURE_MAX - PRESSURE_MIN);
+  const clamped = Math.min(Math.max(value, PRESSURE_MIN), PRESSURE_MAX)
+  const percent = (clamped - PRESSURE_MIN) / (PRESSURE_MAX - PRESSURE_MIN)
 
-  const circumference = 2 * Math.PI * PRESSURE_RADIUS;
+  const circumference = 2 * Math.PI * PRESSURE_RADIUS
 
-  const { x1, y1, x2, y2 } = getArrowCoordinates(percent);
+  const { x1, y1, x2, y2 } = getArrowCoordinates(percent)
 
   return (
     <Container>
-      <span style={{ fontSize: '0.8rem', color: PRESSURE_COLORS.label }}>
+      <Title>
         Pressure
-      </span>
+      </Title>
 
       <svg viewBox='0 0 100 100' width='100'>
-        {/* Escala tipo regla */}
+        {/* Scale rule tipe*/}
         <circle
           cx={50}
           cy={50}
@@ -35,7 +35,7 @@ export function PressureGauge({ value }: PressureProps) {
           strokeDasharray='2 2'
         />
 
-        {/* Carga de presión */}
+        {/* Pression upload*/}
         <circle
           cx={50}
           cy={50}
@@ -49,7 +49,7 @@ export function PressureGauge({ value }: PressureProps) {
           transform={`rotate(90 50 50)`}         
         />
 
-        {/* Flecha marcador */}
+        {/* Marker arrow */}
         <line
           x1={x1}
           y1={y1}
@@ -60,28 +60,15 @@ export function PressureGauge({ value }: PressureProps) {
           strokeLinecap='round'
         />
 
-        {/* Valor central */}
-        <text
-          x={50}
-          y={52}
-          textAnchor='middle'
-          fontSize='14'
-          fontWeight='600'
-          fill={PRESSURE_COLORS.text}
-        >
+        {/* Central data */}
+        <Pressure x={30} y={50}>
           {Math.round(value)}
-        </text>
+        </Pressure>
 
-        <text
-          x={50}
-          y={66}
-          textAnchor='middle'
-          fontSize='10'
-          fill={PRESSURE_COLORS.unit}
-        >
+        <HPA x={38} y={70}>
           hPa
-        </text>
+        </HPA>
       </svg>
     </Container>
-  );
+  )
 }
