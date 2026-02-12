@@ -1,8 +1,5 @@
+import type { HumidityProps } from '../../types';
 import { Container } from './Humidity.style'
-
-type HumidityProps = {
-  value: number;
-};
 
 export function Humidity({ value }: HumidityProps) {
   return (

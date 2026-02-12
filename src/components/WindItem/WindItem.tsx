@@ -1,14 +1,10 @@
-import { Item, Label, Value, ArrowContainer, WindArrow } from './WindItem.style'
+import { Container, Label, Value, ArrowContainer, WindArrow } from './WindItem.style'
 import { windDeg } from '../../constants/WindDeg'
+import type { WindItemProps } from '../../types/WindItem.type'
 
-type Props = {
-  windKph: number;
-  windDir: string;
-};
-
-export function WindItem({ windKph, windDir }: Props) {
+export function WindItem({ windKph, windDir }: WindItemProps) {
   return (
-    <Item>
+    <Container>
       <Label>Wind</Label>
       <Value>
         {windKph} km/h
@@ -18,6 +14,6 @@ export function WindItem({ windKph, windDir }: Props) {
           />
         </ArrowContainer>
       </Value>
-    </Item>
+    </Container>
   )
 }

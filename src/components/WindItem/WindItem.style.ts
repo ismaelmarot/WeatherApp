@@ -3,7 +3,7 @@ import { GeneralColors } from '../../constants/GeneralColors'
 import { flex } from '../../mixins/setFlex'
 import { size } from '../../mixins/setSize'
 
-export const Item = styled.div`
+export const Container = styled.div`
   background-color: ${GeneralColors.grey};
   border-radius: .5rem;
   padding: .85rem;
