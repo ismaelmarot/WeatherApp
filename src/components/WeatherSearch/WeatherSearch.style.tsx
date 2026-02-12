@@ -10,10 +10,11 @@ export const Container = styled.div`
 `
 
 export const SearchWrapper = styled.div`
-  position: relative;
   ${flex('row', 'center', 'center')}
-  width: 90%;
-  max-width: 22rem;
+  position: relative;
+  align-self: center;
+  width: 21rem;
+  max-width: 21rem;
 `
 
 export const SearchIcon = styled.div`
@@ -53,12 +54,19 @@ export const ListPlacesSearch = styled.div`
   top: calc(100% + 0.25rem);
   left: 0;
   right: 0;
+
+  width: 100%;
+  max-height: 20rem;
+
+  box-sizing: border-box;
+  
   max-height: 20rem;
   border-radius: .5rem;
   z-index: 100;
   overflow-y: auto;
   background: ${GeneralColors.white};
   border: 2px solid ${GeneralColors.darkGrey};
+  border-radius: 2rem;
 `
 
 export const ItemPlace = styled.div`
