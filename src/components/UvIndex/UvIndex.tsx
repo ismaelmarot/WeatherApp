@@ -7,7 +7,7 @@ type UvIndexProps = {
 export function UvIndex({ value }: UvIndexProps) {
     return (
         <Container>
-            <span>☀️ UV Index: </span>
+            <span>UV Index: </span>
             <strong>{value}</strong>
         </Container>
     );

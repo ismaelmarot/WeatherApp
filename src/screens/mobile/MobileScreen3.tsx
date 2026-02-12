@@ -1,5 +1,11 @@
 import { ScreenLayoutGlass } from '../../layouts'
-import { UvIndex, Humidity, PressureValue, WindItem, VisibilityItem, WeatherDayInfo } from '../../components'
+import {
+    UvIndex, Humidity,
+    PressureValue,
+    WindItem,
+    VisibilityItem,
+    WeatherDayInfo
+} from '../../components'
 import { useWeatherContext } from '../../context/WeatherContext'
 
 export function MobileScreen3() {
@@ -8,7 +14,7 @@ export function MobileScreen3() {
     if (!weather) return null;
 
     return (
-        <ScreenLayoutGlass>
+        <ScreenLayoutGlass>  
             <UvIndex value={weather.current.uv} />
             <Humidity value={weather.current.humidity} />
             <PressureValue value={weather.current.pressure_mb} />

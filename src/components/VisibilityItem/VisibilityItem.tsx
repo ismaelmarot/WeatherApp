@@ -1,4 +1,4 @@
-import { Item, Label, Value } from './VisibilityItem.style'
+import { Container, Label, Value } from './VisibilityItem.style'
 
 type Props = {
     visibilityKm: number;
@@ -6,9 +6,9 @@ type Props = {
 
 export function VisibilityItem({ visibilityKm }: Props) {
     return (
-        <Item>
+        <Container>
             <Label>Visibility</Label>
             <Value>{visibilityKm} km</Value>
-        </Item>
+        </Container>
     )
 }
