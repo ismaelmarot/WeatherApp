@@ -1,18 +1,18 @@
-import { ScreenLayoutBase } from '../../layouts/ScreenLayoutBase'
 import { useWeatherContext } from '../../context/WeatherContext'
 import { MoonImage, MoonInfoItem, LunarCalendar } from '../../components'
+import { ScreenLayoutGlass } from '../../layouts'
 
 export function MobileScreen9() {
-    const { weather, forecast } = useWeatherContext();
+    const { weather, forecast } = useWeatherContext()
 
-    if (!weather || !forecast) return null;
+    if (!weather || !forecast) return null
 
-    const astro = weather.forecast.forecastday?.[0]?.astro;
+    const astro = weather.forecast.forecastday?.[0]?.astro
 
-    if (!astro) return null;
+    if (!astro) return null
 
     return (
-        <ScreenLayoutBase>
+        <ScreenLayoutGlass>
             {/* Info lunar actual */}
             <MoonImage phase={astro.moon_phase} />
             <MoonInfoItem label="Moon phase" value={astro.moon_phase} />
@@ -30,6 +30,6 @@ export function MobileScreen9() {
                     }))}
                 />
             )}
-        </ScreenLayoutBase>
+        </ScreenLayoutGlass>
     )
 }

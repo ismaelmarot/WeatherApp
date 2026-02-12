@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { flex } from '../../mixins'
 
-export const ScreenLayoutBase = styled.section`
+export const BaseContainer = styled.section`
   ${flex('column','center','center')}
   min-height: 100dvh;
   width: 100%;
@@ -11,7 +11,7 @@ export const ScreenLayoutBase = styled.section`
   padding-bottom: env(safe-area-inset-bottom);
 `
 
-export const ScreenLayoutGlass = styled(ScreenLayoutBase)`
+export const GlassContainer = styled(BaseContainer)`
   background-color: rgba(83, 179, 190, 0.69);
   border: 1.1px solid rgba(219, 224, 137, 0.86);
   border-radius: 12px;
@@ -25,10 +25,17 @@ export const ScreenLayoutGlass = styled(ScreenLayoutBase)`
   }
 `
 
-export const ScreenLayoutNoGlass = styled(ScreenLayoutBase)`
+export const NoGlassContainer = styled(BaseContainer)`
   background: transparent;
   border: none;
   box-shadow: none;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
+`
+
+export const Content = styled.div`
+  flex: 1;
+  width: 100%;
+  max-width: 480px;
+  padding: 16px 20px;
 `

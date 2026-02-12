@@ -1,6 +1,6 @@
 import { PressureGauge } from '../../components'
 import { useWeatherContext } from '../../context/WeatherContext'
-import { ScreenLayoutBase } from '../../layouts/ScreenLayoutBase'
+import { ScreenLayoutGlass } from '../../layouts'
 
 export function MobileScreen4() {
     const { weather } = useWeatherContext();
@@ -8,8 +8,8 @@ export function MobileScreen4() {
     if (!weather) return null;
 
     return (
-        <ScreenLayoutBase>
+        <ScreenLayoutGlass>
             <PressureGauge value={weather.current.pressure_mb} />
-        </ScreenLayoutBase>
+        </ScreenLayoutGlass>
     )
 }

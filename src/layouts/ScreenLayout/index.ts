@@ -1,1 +1,1 @@
-export { ScreenLayoutBase } from './ScreenLayout'
+export { ScreenLayoutGlass, ScreenLayoutNoGlass } from './ScreenLayout'

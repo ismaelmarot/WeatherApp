@@ -1,11 +1,11 @@
 import { PlaceholderBlock } from '../../components'
-import { ScreenLayoutBase } from '../../layouts/ScreenLayoutBase'
+import { ScreenLayoutGlass } from '../../layouts'
 
 export function TabletScreen1() {
     return (
-        <ScreenLayoutBase>
+        <ScreenLayoutGlass>
             <PlaceholderBlock label="🔍 Búsqueda de lugar" />
         <   PlaceholderBlock label="🌡️ Temperatura actual" />
-        </ScreenLayoutBase>
+        </ScreenLayoutGlass>
     )
 }

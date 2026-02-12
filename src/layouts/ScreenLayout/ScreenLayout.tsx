@@ -1,12 +1,25 @@
 import type { ScreenLayoutBaseProps } from '../../types'
-import { Container, Content } from './ScreenLayoutBase.style'
+import {
+    GlassContainer,
+    NoGlassContainer,
+    Content,
+} from './ScreenLayout.style'
 
-export function ScreenLayoutBase({ children }: ScreenLayoutBaseProps) {
+function Layout({
+    children,
+    Container,
+}: ScreenLayoutBaseProps & { Container: React.ElementType }) {
     return (
         <Container>
-            <Content>
-                {children}
-            </Content>
+            <Content>{children}</Content>
         </Container>
     )
+}
+
+export function ScreenLayoutGlass({ children }: ScreenLayoutBaseProps) {
+    return <Layout Container={GlassContainer}>{children}</Layout>
+}
+
+export function ScreenLayoutNoGlass({ children }: ScreenLayoutBaseProps) {
+    return <Layout Container={NoGlassContainer}>{children}</Layout>
 }

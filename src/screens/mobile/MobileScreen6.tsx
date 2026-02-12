@@ -24,20 +24,20 @@
 //     );
 // }
 
-import { ScreenLayoutBase } from '../../layouts/ScreenLayoutBase';
-import { useWeatherContext } from '../../context/WeatherContext';
-import { RainChanceChart, RainChance } from '../../components';
+import { useWeatherContext } from '../../context/WeatherContext'
+import { RainChanceChart, RainChance } from '../../components'
 import { getCurrentHour } from '../../utils';
+import { ScreenLayoutGlass } from '../../layouts'
 
 export function MobileScreen6() {
-    const { weather, forecast } = useWeatherContext();
+    const { weather, forecast } = useWeatherContext()
 
-    if (!weather || !forecast) return null;
+    if (!weather || !forecast) return null
 
-    const currentHour = getCurrentHour(weather);
+    const currentHour = getCurrentHour(weather)
 
     return (
-        <ScreenLayoutBase>
+        <ScreenLayoutGlass>
             {/* Gráfico de lluvia de las próximas horas */}
             {forecast.forecast.forecastday?.[0]?.hour && (
                 <RainChanceChart
@@ -55,6 +55,6 @@ export function MobileScreen6() {
                     isRainingNow={weather.current.precip_mm > 0}
                 />
             )}
-        </ScreenLayoutBase>
-    );
+        </ScreenLayoutGlass>
+    )
 }

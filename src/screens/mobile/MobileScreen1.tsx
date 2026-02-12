@@ -1,14 +1,14 @@
-import { ScreenLayoutBase } from '../../layouts/ScreenLayoutBase'
 import { useState } from 'react';
 import { WeatherSearch } from '../../components'
 import { useWeatherContext } from '../../context/WeatherContext'
+import { ScreenLayoutNoGlass } from '../../layouts'
 
 export function MobileScreen1() {
   const [city, setCity] = useState('')
   const { fetchByCoords } = useWeatherContext()
 
   return (
-    <ScreenLayoutBase>
+    <ScreenLayoutNoGlass>
       <WeatherSearch
         value={city}
         onChange={setCity}
@@ -17,6 +17,6 @@ export function MobileScreen1() {
           fetchByCoords(location.lat, location.lon);
         }}
       />
-    </ScreenLayoutBase>
+    </ScreenLayoutNoGlass>
   )
 }

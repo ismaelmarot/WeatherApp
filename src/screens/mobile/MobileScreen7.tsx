@@ -1,20 +1,20 @@
-import { ScreenLayoutBase } from '../../layouts/ScreenLayoutBase'
 import { useWeatherContext } from '../../context/WeatherContext'
 import { Wind } from '../../components'
+import { ScreenLayoutGlass } from '../../layouts'
 
 export function MobileScreen7() {
-    const { weather } = useWeatherContext();
+    const { weather } = useWeatherContext()
 
-    if (!weather) return null;
+    if (!weather) return null
 
     return (
-        <ScreenLayoutBase>
+        <ScreenLayoutGlass>
             {weather.current.wind_kph != null && weather.current.wind_degree != null && (
                 <Wind 
                     speed={weather.current.wind_kph} 
                     degree={weather.current.wind_degree} 
                 />
             )}
-        </ScreenLayoutBase>
-    );
+        </ScreenLayoutGlass>
+    )
 }

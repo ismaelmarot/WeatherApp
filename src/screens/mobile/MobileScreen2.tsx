@@ -1,6 +1,6 @@
 import { WeatherCurrent } from '../../components'
 import { useWeatherContext } from '../../context/WeatherContext'
-import { ScreenLayoutBase } from '../../layouts/ScreenLayoutBase'
+import { ScreenLayoutGlass } from '../../layouts'
 
 export function MobileScreen2() {
   const { weather } = useWeatherContext()
@@ -8,8 +8,8 @@ export function MobileScreen2() {
   if (!weather) return null
 
   return (
-    <ScreenLayoutBase>
+    <ScreenLayoutGlass>
       <WeatherCurrent weather={weather} />
-    </ScreenLayoutBase>
+    </ScreenLayoutGlass>
   )
 }

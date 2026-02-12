@@ -1,10 +1,10 @@
 import { PlaceholderBlock } from '../../components'
-import { ScreenLayoutBase } from '../../layouts/ScreenLayoutBase'
+import { ScreenLayoutGlass } from '../../layouts'
 
 export function DesktopScreen1() {
     return (
-        <ScreenLayoutBase>
+        <ScreenLayoutGlass>
             <PlaceholderBlock label="🖥️ Vista completa Desktop" />
-        </ScreenLayoutBase>
+        </ScreenLayoutGlass>
     )
 }

@@ -1,4 +1,4 @@
-import { ScreenLayoutBase } from '../../layouts/ScreenLayoutBase'
+import { ScreenLayoutGlass } from '../../layouts'
 import { AirQuality } from '../../components'
 import { useWeatherContext } from '../../context/WeatherContext'
 
@@ -8,7 +8,7 @@ export function MobileScreen5() {
     if (!weather) return null;
 
     return (
-        <ScreenLayoutBase>
+        <ScreenLayoutGlass>
             {weather.current.air_quality && (
                 <AirQuality
                     epaIndex={weather.current.air_quality['us-epa-index']}
@@ -20,6 +20,6 @@ export function MobileScreen5() {
                     pm10={weather.current.air_quality.pm10}
                 />
             )}
-        </ScreenLayoutBase>
+        </ScreenLayoutGlass>
     )
 }
