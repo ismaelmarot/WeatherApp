@@ -1,6 +1,5 @@
-import React from 'react'
-import { Wrapper, Label, Info, Description, Status } from './PollutantGauge.style'
-import type { PollutantGaugeProps } from '../../types';
+import type { PollutantGaugeProps } from '../../types'
+import { Wrapper, Label, Info, Description, Status, DataNumber } from './PollutantGauge.style'
 
 export const PollutantGauge: React.FC<PollutantGaugeProps> = ({
   label,
@@ -67,18 +66,18 @@ export const PollutantGauge: React.FC<PollutantGaugeProps> = ({
 
       <Info>
         <Label>{label}</Label>
-
-        {description && <Description>{description}</Description>}
-        
-         {value !== undefined && unit && (
-            <p style={{ fontSize: '0.75rem', color: '#000000' }}>
-              {value.toFixed(2)} {unit}
-            </p>
-          )}
-
-        {aqiStatus && <Status>{aqiStatus}</Status>}
-       
-
+        {description &&
+          <Description>{description}</Description>
+        }
+      
+        {value !== undefined && unit && (
+          <DataNumber>
+            {value.toFixed(2)} {unit}
+          </DataNumber>
+        )}
+        {aqiStatus &&
+          <Status>{aqiStatus}</Status>
+        }
       </Info>
     </Wrapper>
   )

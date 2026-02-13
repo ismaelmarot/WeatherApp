@@ -1,6 +1,6 @@
+import type { AirQualityProps } from '../../types'
 import { Container, Pollutants, Title } from './AirQuality.style'
 import { PollutantGauge } from '../PollutantGauge/PollutantGauge'
-import type { AirQualityProps } from '../../types'
 import { getAqiText } from '../../constants/aqiInfo'
 import { AIR_QUALITY_ITEMS } from '../../config/airQuality.config'
 
