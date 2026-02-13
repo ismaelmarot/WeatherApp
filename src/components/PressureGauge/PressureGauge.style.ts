@@ -4,7 +4,7 @@ import { flex } from '../../mixins'
 
 export const Container = styled.div`
   ${flex('column','center','center')}
-  margin-top: 1rem;
+  width: 100%;
   padding: 1rem;
   border: 2px solid ${GeneralColors.white};
   border-radius: 1rem;

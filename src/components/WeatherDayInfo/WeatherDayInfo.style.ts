@@ -6,7 +6,7 @@ export const Grid = styled.div`
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
-    margin-top: 1rem;
+    width: 100%;
 `;
 
 export const Item = styled.div`
