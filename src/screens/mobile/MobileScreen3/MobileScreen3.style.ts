@@ -1,19 +1,22 @@
 import styled from 'styled-components'
+import { GeneralColors, ICONS } from '../../../constants'
 
 export const Container = styled.div`
     position: relative;
-    border: 2px solid red;
     height: 100%;
-
 `
 
 export const InfoButton = styled.button`
     position: absolute;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: .1rem;
+    right: .1rem;
     background: none;
     border: none;
-    color: white;
+    color: ${GeneralColors.white};
     cursor: pointer;
     z-index: 10;
+`
+
+export const InfoIcon = styled(ICONS.info)`
+    font-size: 1.5rem;
 `
