@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { GeneralColors } from '../../constants'
-import { size } from '../../mixins'
+import { flex, size } from '../../mixins'
 
 export const Overlay = styled.div`
   position: fixed;
@@ -27,6 +27,7 @@ export const Popup = styled.div`
 
 /* HEADER NO SCROLLEA */
 export const Header = styled.div`
+    ${flex('column','center','space-between')}
   position: sticky;
   top: 0;
   z-index: 10;
@@ -36,10 +37,6 @@ export const Header = styled.div`
 
   background: ${GeneralColors.grey};
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 `
 
 export const Title = styled.h3`
