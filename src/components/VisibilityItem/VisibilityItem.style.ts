@@ -3,6 +3,7 @@ import { GeneralColors } from '../../constants/GeneralColors';
 import { flex } from '../../mixins/setFlex';
 
 export const Container = styled.div`
+  margin: 2rem 0;
   padding: 1rem;
   box-sizing: border-box;
   border-radius: .5rem;
