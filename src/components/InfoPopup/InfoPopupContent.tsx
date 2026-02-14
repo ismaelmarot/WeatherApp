@@ -21,15 +21,21 @@ export function InfoPopupScreen4(){
 export function InfoPopupScreen5(){
     return (
         <>
-            <p><strong>Min temperature:</strong>Descripton del mínimo de temperatura</p>
-        </>
-    )
-}
+            <p>Niveles</p>
+                (verde)- Bueno
+                (amarillo)- Moderado
+                (naranja) - No saludable para personas sensibles
+                (violeta) - Altamente no saludable
+                (marrón) - Peligroso
 
-export function InfoPopupScreen6(){
-    return (
-        <>
-            <p><strong>Min temperature:</strong>Descripton del mínimo de temperatura</p>
+                Fuente
+
+                Contiene información del Servicio de Vigilancia Atmosférica de
+                Copernicus para el 2026 o información modificada del Servicio de Vigilancia
+                de Copernicus para el 2026.
+
+                Ni la Comisión Europea ni el ECMWF son responsables por ningún uso que se
+                haga de esta información.
         </>
     )
 }
