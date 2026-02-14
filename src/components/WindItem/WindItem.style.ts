@@ -27,7 +27,7 @@ export const ArrowContainer = styled.div`
   border-radius: 50%;
 `
 
-export const WindArrowIcon = styled(ICONS.WindArrow)<{
+export const WindArrowIcon = styled(ICONS.windArrow)<{
   $rotation: number
 }>`
   transform: rotate(${props => props.$rotation}deg);

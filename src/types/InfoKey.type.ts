@@ -1,0 +1,11 @@
+export type InfoKeyProps =
+    | 'uv'
+    | 'humidity'
+    | 'pressure'
+    | 'visibility'
+    | 'wind'
+    | 'tempMin'
+    | 'tempMax'
+    | 'sunrise'
+    | 'sunset'
+    | 'rain'

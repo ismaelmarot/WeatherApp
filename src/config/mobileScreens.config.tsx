@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import type { ReactNode } from 'react'
 
 import {
   WeatherCurrent,
@@ -7,15 +7,15 @@ import {
   // WeatherExtras,
   HourlyForecast,
   DailyRainChart
-} from '../components';
-import type { MobileScreenProps } from '../types/MobileScreen.type';
+} from '../components'
+import type { MobileScreenProps } from '../types/MobileScreen.type'
 
 export type MobileScreen = {
   id: string;
   render: (props: MobileScreenProps) => ReactNode | null;
-};
+}
 
-export const mobileScreens: MobileScreen[] = [
+export const MOBILE_SCREENS: MobileScreen[] = [
   {
     id: 'weather-current',
     render: ({ weather }) =>
@@ -57,4 +57,4 @@ export const mobileScreens: MobileScreen[] = [
         />
       )
   }
-];
+]
