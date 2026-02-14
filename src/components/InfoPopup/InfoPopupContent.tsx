@@ -17,3 +17,19 @@ export function InfoPopupScreen4(){
         </>
     )
 }
+
+export function InfoPopupScreen5(){
+    return (
+        <>
+            <p><strong>Min temperature:</strong>Descripton del mínimo de temperatura</p>
+        </>
+    )
+}
+
+export function InfoPopupScreen6(){
+    return (
+        <>
+            <p><strong>Min temperature:</strong>Descripton del mínimo de temperatura</p>
+        </>
+    )
+}
