@@ -1,0 +1,1 @@
+export { MobileScreen7 } from './MobileScreen7'

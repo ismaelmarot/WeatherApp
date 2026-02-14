@@ -1,8 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { WeatherProvider } from './context/WeatherContext.tsx'
+// import { WeatherProvider } from './context/WeatherContext.tsx'
 import App from './App.tsx'
+import { WeatherProvider } from './context'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

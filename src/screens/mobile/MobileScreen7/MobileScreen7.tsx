@@ -1,6 +1,6 @@
-import { useWeatherContext } from '../../context/WeatherContext'
-import { Wind } from '../../components'
-import { ScreenLayoutGlass } from '../../layouts'
+import { useWeatherContext } from '../../../context'
+import { Wind } from '../../../components'
+import { ScreenLayoutGlass } from '../../../layouts'
 
 export function MobileScreen7() {
     const { weather } = useWeatherContext()

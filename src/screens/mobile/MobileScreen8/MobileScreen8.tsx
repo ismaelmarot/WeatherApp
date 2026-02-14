@@ -1,7 +1,7 @@
-import { useWeatherContext } from '../../context/WeatherContext'
-import { HourlyForecast } from '../../components'
-import { getNextHours } from '../../utils'
-import { ScreenLayoutGlass } from '../../layouts'
+import { useWeatherContext } from '../../../context'
+import { HourlyForecast } from '../../../components'
+import { getNextHours } from '../../../utils'
+import { ScreenLayoutGlass } from '../../../layouts'
 
 export function MobileScreen8() {
     const { weather, forecast } = useWeatherContext()

@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useEffect, type ReactNode } from 'react'
-import type { WeatherResponse } from '../types'
-import { useGeolocation } from '../hooks'
-import { getWeatherByCoords, getForecastByCoords } from '../services/weather.service'
+import type { WeatherResponse } from '../../types'
+import { useGeolocation } from '../../hooks'
+import { getWeatherByCoords, getForecastByCoords } from '../../services/weather.service'
 
 type WeatherContextType = {
   weather: WeatherResponse | null
@@ -60,6 +60,6 @@ export function WeatherProvider({ children }: WeatherProviderProps) {
 // Custom hook for the context
 export function useWeatherContext() {
   const context = useContext(WeatherContext);
-  if (!context) throw new Error('useWeatherContext must be used within WeatherProvider')
+    if (!context) throw new Error('useWeatherContext must be used within WeatherProvider')
   return context
 }

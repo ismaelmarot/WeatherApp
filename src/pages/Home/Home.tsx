@@ -221,7 +221,7 @@
 
 
 
-import { WeatherProvider } from '../../context/WeatherContext'
+import { WeatherProvider } from '../../context'
 import { ScreenRouter } from '../../screens/ScreenRouter/ScreenRouter'
 import { Container } from './Home.style'
 

@@ -1,6 +1,6 @@
 import { ScreenLayoutGlass } from '../../../layouts'
 import { AirQuality } from '../../../components'
-import { useWeatherContext } from '../../../context/WeatherContext'
+import { useWeatherContext } from '../../../context'
 
 export function MobileScreen5() {
     const { weather } = useWeatherContext()

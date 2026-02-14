@@ -1,6 +1,6 @@
-import { useWeatherContext } from '../../context/WeatherContext'
-import { MoonImage, MoonInfoItem, LunarCalendar } from '../../components'
-import { ScreenLayoutGlass } from '../../layouts'
+import { useWeatherContext } from '../../../context'
+import { MoonImage, MoonInfoItem, LunarCalendar } from '../../../components'
+import { ScreenLayoutGlass } from '../../../layouts'
 
 export function MobileScreen9() {
     const { weather, forecast } = useWeatherContext()

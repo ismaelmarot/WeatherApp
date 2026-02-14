@@ -1,5 +1,5 @@
 import { PressureGauge, WeatherDayInfo } from '../../../components'
-import { useWeatherContext } from '../../../context/WeatherContext'
+import { useWeatherContext } from '../../../context'
 import { ScreenLayoutGlass } from '../../../layouts'
 import { Container } from './MobileScreen4.style'
 

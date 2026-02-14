@@ -17,17 +17,17 @@
 //                     hours={forecast.forecast.forecastday[0].hour.slice(
 //                         currentHour,
 //                         currentHour + 12
-//                     )}
+//                     )}ß
 //                 />
 //             )}
 //         </ScreenLayoutBase>
-//     );
+//     );ß
 // }
 
-import { useWeatherContext } from '../../context/WeatherContext'
-import { RainChanceChart, RainChance } from '../../components'
-import { getCurrentHour } from '../../utils';
-import { ScreenLayoutGlass } from '../../layouts'
+import { useWeatherContext } from '../../../context'
+import { RainChanceChart, RainChance } from '../../../components'
+import { getCurrentHour } from '../../../utils'
+import { ScreenLayoutGlass } from '../../../layouts'
 
 export function MobileScreen6() {
     const { weather, forecast } = useWeatherContext()
