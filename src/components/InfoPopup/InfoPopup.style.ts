@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { GeneralColors } from '../../constants'
+import { size } from '../../mixins'
 
 export const Overlay = styled.div`
   position: fixed;
@@ -15,8 +16,7 @@ export const Overlay = styled.div`
 `
 
 export const Popup = styled.div`
-  width: 100%;
-  height: 100%;
+    ${size('100%','100%')}
   border-radius: .5rem;
 
   background: ${GeneralColors.grey};
