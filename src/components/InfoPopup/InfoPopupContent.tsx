@@ -1,3 +1,6 @@
+import { ICONS } from '../../constants'
+import { Circle } from '../WindCompass/WindCompass.style'
+
 export function InfoPopupScreen3() {
     return (
         <>
@@ -22,20 +25,26 @@ export function InfoPopupScreen5(){
     return (
         <>
             <p>Niveles</p>
-                (verde)- Bueno
-                (amarillo)- Moderado
-                (naranja) - No saludable para personas sensibles
-                (violeta) - Altamente no saludable
-                (marrón) - Peligroso
+            <ICONS.circle />(verde)- Bueno
+            <ICONS.circle />(amarillo)- Moderado
+            <ICONS.circle />(naranja) - No saludable para personas sensibles
+            <ICONS.circle />(violeta) - Altamente no saludable
+            <ICONS.circle />(marrón) - Peligroso
 
-                Fuente
+                
+            <p><strong>Fuente</strong></p>
 
+            <p>
                 Contiene información del Servicio de Vigilancia Atmosférica de
                 Copernicus para el 2026 o información modificada del Servicio de Vigilancia
                 de Copernicus para el 2026.
-
+            </p>
+            <p>
                 Ni la Comisión Europea ni el ECMWF son responsables por ningún uso que se
                 haga de esta información.
+            </p>
+
+                
         </>
     )
 }
