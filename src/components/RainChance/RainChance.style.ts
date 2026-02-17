@@ -13,6 +13,7 @@ export const Container = styled.div`
 export const Title = styled.h4`
   font-size: 1rem;
   margin-bottom: 1rem;
+  font-weight: 600;
 `
 
 export const Bar = styled.div`
