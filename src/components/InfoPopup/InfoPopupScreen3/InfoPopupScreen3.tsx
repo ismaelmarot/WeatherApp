@@ -1,10 +1,10 @@
-import { COLORS_AIR_QUALITY_LEVELS, ICONS } from '../../constants'
-import { StatusDot } from '../../components'
-import { UVINumber } from './InfoPopupContent.style'
+import { ICONS } from '../../../constants'
+import { UVINumber } from '../InfoPopupContent.style'
+import { Container } from './InfoPopupScreen3.style'
 
 export function InfoPopupScreen3() {
     return (
-        <>
+        <Container>
             <strong>UV Index:</strong>
             <div>Descripción del índice UV...
                 <ICONS.SunOne style={{fontSize:'2rem', color:'#e7e193'}} />
@@ -48,42 +48,6 @@ export function InfoPopupScreen3() {
 
             <strong>Wind:</strong> 
             <p>Descripción del viento...</p>
-        </>
-    )
-}
-
-export function InfoPopupScreen4(){
-    return (
-        <>
-            <p><strong>Min temperature:</strong>Descripton del mínimo de temperatura</p>
-        </>
-    )
-}
-
-export function InfoPopupScreen5(){
-    return (
-        <>
-            <p>Niveles</p>
-            <StatusDot color={COLORS_AIR_QUALITY_LEVELS.verde} /> - Bueno
-            <StatusDot color={COLORS_AIR_QUALITY_LEVELS.verde} /> - Moderado
-            <StatusDot color={COLORS_AIR_QUALITY_LEVELS.verde} /> - No saludable para personas sensibles
-            <StatusDot color={COLORS_AIR_QUALITY_LEVELS.verde} /> - Altamente no saludable
-            <StatusDot color={COLORS_AIR_QUALITY_LEVELS.verde} /> - Peligroso
-
-                
-            <p><strong>Title</strong></p>
-
-            <p>
-                Contiene información del Servicio de Vigilancia Atmosférica de
-                Copernicus para el 2026 o información modificada del Servicio de Vigilancia
-                de Copernicus para el 2026.
-            </p>
-            <p>
-                Ni la Comisión Europea ni el ECMWF son responsables por ningún uso que se
-                haga de esta información.
-            </p>
-
-                
-        </>
+        </Container>
     )
 }

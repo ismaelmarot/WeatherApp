@@ -1,5 +1,4 @@
 export { InfoPopup } from './InfoPopup'
-export {
-    InfoPopupScreen3,
-    InfoPopupScreen4
-} from './InfoPopupContent'
+export * from './InfoPopupScreen3'
+export * from './InfoPopupScreen4'
+export * from './InfoPopupScreen5'

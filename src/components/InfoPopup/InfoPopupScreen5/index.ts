@@ -1,0 +1,1 @@
+export { InfoPopupScreen5 } from './InfoPopupScreen5'
