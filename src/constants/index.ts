@@ -1,5 +1,6 @@
 export { BREAKPOINTS } from './breakPoints'
 export { CARDINALS } from './Cardinals'
+export { COLORS_AIR_QUALITY_LEVELS } from './ColorsAirQualityLevels.constants'
 export { GeneralColors } from './GeneralColors'
 export { ICONS } from './icons.constants'
 export { MOON_IMAGES } from './moonImages'

@@ -1,5 +1,5 @@
-import { ICONS } from '../../constants'
-import { Circle } from '../WindCompass/WindCompass.style'
+import { COLORS_AIR_QUALITY_LEVELS } from '../../constants'
+import { StatusDot } from '../../components'
 
 export function InfoPopupScreen3() {
     return (
@@ -25,14 +25,14 @@ export function InfoPopupScreen5(){
     return (
         <>
             <p>Niveles</p>
-            <ICONS.circle />(verde)- Bueno
-            <ICONS.circle />(amarillo)- Moderado
-            <ICONS.circle />(naranja) - No saludable para personas sensibles
-            <ICONS.circle />(violeta) - Altamente no saludable
-            <ICONS.circle />(marrón) - Peligroso
+            <StatusDot color={COLORS_AIR_QUALITY_LEVELS.verde} /> - Bueno
+            <StatusDot color={COLORS_AIR_QUALITY_LEVELS.verde} /> - Moderado
+            <StatusDot color={COLORS_AIR_QUALITY_LEVELS.verde} /> - No saludable para personas sensibles
+            <StatusDot color={COLORS_AIR_QUALITY_LEVELS.verde} /> - Altamente no saludable
+            <StatusDot color={COLORS_AIR_QUALITY_LEVELS.verde} /> - Peligroso
 
                 
-            <p><strong>Fuente</strong></p>
+            <p><strong>Title</strong></p>
 
             <p>
                 Contiene información del Servicio de Vigilancia Atmosférica de

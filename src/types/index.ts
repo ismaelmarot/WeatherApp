@@ -1,4 +1,3 @@
-
 export type { AirQualityProps } from './AirQuality.type'
 export type { Cardinal } from './CardinalDirections.type'
 export type { CoordinatesProps } from './Coordinates.type'
@@ -19,6 +18,7 @@ export type { PressureProps } from './Pressure.type'
 export type { RainChanceChartProps } from './RainChanceChart.type'
 export type { ScreenLayoutBaseProps } from './ScreenLayoutBase.type'
 export type { SizeValue } from './sizeValue.type'
+export type { StatusDotProps, StatusDotStyledProps } from './StatusDot.type'
 export type { WeatherCurrentProps } from './WeatherCurrent.type'
 export type { WeatherDayInfoProps } from './WeatherDayInfo.type'
 export type { WeatherIconProps } from './WeatherIcon.type'
@@ -29,3 +29,5 @@ export type { WindCompassProps } from './WindCompass.type'
 export type { WindCompassSpeedProps } from './WindCompassSpeed.type'
 export type { WindNeedleProps } from './WindNeedle.type'
 export type { CoordinatesInfoProps } from './CoordinatesInfo.type'
+
+
