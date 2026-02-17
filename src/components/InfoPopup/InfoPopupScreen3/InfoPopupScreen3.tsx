@@ -1,6 +1,5 @@
 import { ICONS } from '../../../constants'
-import { UVINumber } from '../InfoPopupContent.style'
-import { Container } from './InfoPopupScreen3.style'
+import { Container, UVINumber } from './InfoPopupScreen3.style'
 
 export function InfoPopupScreen3() {
     return (

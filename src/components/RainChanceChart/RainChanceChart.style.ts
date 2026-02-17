@@ -1,18 +1,21 @@
 import styled from 'styled-components'
 import { flex } from '../../mixins/setFlex'
-import { GeneralColors } from '../../constants'
+import { GeneralColors, ICONS } from '../../constants'
 
 export const Container = styled.div`
-    margin-top: 1rem;
     padding: 1rem;
-    background-color: ${GeneralColors.blue};
+    background-color: ${GeneralColors.grey};
     border-radius: .5rem;
-    border: 2px solid red;
     width: 100%;
 `
 
 export const Item = styled.div`
     ${flex('row','center','space-between')} 
-    padding: 8px 0;
-    font-size: .8rem;
+    padding: .5rem 0;
+    font-size: 1rem;
+`
+
+export const RainIcon = styled(ICONS.rain)`
+    font-size: 1.5rem;
+    margin-left: .5rem;
 `
