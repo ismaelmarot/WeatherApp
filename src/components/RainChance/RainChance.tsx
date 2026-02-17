@@ -12,6 +12,7 @@ export function RainChance({
     chance,
     isRainingNow = false
 }: RainChanceProps) {
+    
     const safeChance = Math.min(Math.max(chance, 0), 100);
 
     return (

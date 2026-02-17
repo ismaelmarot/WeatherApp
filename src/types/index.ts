@@ -30,4 +30,3 @@ export type { WindCompassProps } from './WindCompass.type'
 export type { WindCompassSpeedProps } from './WindCompassSpeed.type'
 export type { WindNeedleProps } from './WindNeedle.type'
 export type { CoordinatesInfoProps } from './CoordinatesInfo.type'
-

@@ -14,7 +14,6 @@ export function MobileScreen6() {
     return (
         <ScreenLayoutGlass>
             <Container>
-                {/* Gráfico de lluvia de las próximas horas */}
                 {forecast.forecast.forecastday?.[0]?.hour && (
                     <RainChanceChart
                         hours={forecast.forecast.forecastday[0].hour.slice(
@@ -23,7 +22,6 @@ export function MobileScreen6() {
                         )}
                     />
                 )}
-                {/* Probabilidad de lluvia y si está lloviendo ahora */}
                 {forecast && weather && (
                     <RainChance
                         chance={forecast.forecast.forecastday[0].day.daily_chance_of_rain}
