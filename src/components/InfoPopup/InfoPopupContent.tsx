@@ -1,14 +1,43 @@
-import { COLORS_AIR_QUALITY_LEVELS } from '../../constants'
+import { COLORS_AIR_QUALITY_LEVELS, ICONS } from '../../constants'
 import { StatusDot } from '../../components'
+import { UVINumber } from './InfoPopupContent.style'
 
 export function InfoPopupScreen3() {
     return (
         <>
-            <p><strong>UV Index:</strong> Descripción del índice UV...</p>
-            <p><strong>Humidity:</strong> Descripción de humedad...</p>
-            <p><strong>Pressure:</strong> Descripción de presión...</p>
-            <p><strong>Visibility:</strong> Descripción de visibilidad...</p>
-            <p><strong>Wind:</strong> Descripción del viento...</p>
+            <strong>UV Index:</strong>
+            <div>Descripción del índice UV...
+                <ICONS.SunOne style={{fontSize:'2rem', color:'#e7e193'}} />
+                <ICONS.SunTwo style={{fontSize:'2rem',  color:'#f0e006'}} />
+                <ICONS.SunThree style={{fontSize:'2rem',  color:'#ff9500'}} />
+                <ICONS.SunFour style={{fontSize:'2rem',  color:'#ffae00'}} />
+                <ICONS.SunFive style={{fontSize:'2rem',  color:'#ff0000'}} />
+                
+                <UVINumber $bgColor='#40de07'>1</UVINumber>
+                <UVINumber $bgColor='#40de07'>2</UVINumber>
+                <UVINumber $bgColor='#40de07'>3</UVINumber>
+                <UVINumber $bgColor='#40de07'>4</UVINumber>
+                <UVINumber $bgColor='#40de07'>5</UVINumber>
+                <UVINumber $bgColor='#40de07'>6</UVINumber>
+                <UVINumber $bgColor='#40de07'>7</UVINumber>
+                <UVINumber $bgColor='#40de07'>8</UVINumber>
+                <UVINumber $bgColor='#40de07'>9</UVINumber>
+                <UVINumber $bgColor='#40de07'>10</UVINumber>
+                <UVINumber $bgColor='#40de07'>11+</UVINumber>
+               
+            </div> 
+
+            <strong>Humidity:</strong> 
+            <p>Descripción de humedad...</p>
+
+            <strong>Pressure:</strong> 
+            <p>Descripción de presión...</p>
+            
+            <strong>Visibility:</strong> 
+            <p>Descripción de visibilidad...</p>
+
+            <strong>Wind:</strong> 
+            <p>Descripción del viento...</p>
         </>
     )
 }
