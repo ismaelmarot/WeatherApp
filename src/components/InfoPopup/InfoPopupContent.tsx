@@ -15,15 +15,25 @@ export function InfoPopupScreen3() {
                 
                 <UVINumber $bgColor='#40de07'>1</UVINumber>
                 <UVINumber $bgColor='#40de07'>2</UVINumber>
-                <UVINumber $bgColor='#40de07'>3</UVINumber>
-                <UVINumber $bgColor='#40de07'>4</UVINumber>
-                <UVINumber $bgColor='#40de07'>5</UVINumber>
-                <UVINumber $bgColor='#40de07'>6</UVINumber>
-                <UVINumber $bgColor='#40de07'>7</UVINumber>
-                <UVINumber $bgColor='#40de07'>8</UVINumber>
-                <UVINumber $bgColor='#40de07'>9</UVINumber>
-                <UVINumber $bgColor='#40de07'>10</UVINumber>
-                <UVINumber $bgColor='#40de07'>11+</UVINumber>
+                <UVINumber $bgColor='#ffc802'>3</UVINumber>
+                <UVINumber $bgColor='#ffc802'>4</UVINumber>
+                <UVINumber $bgColor='#ffc802'>5</UVINumber>
+                <UVINumber $bgColor='#eb950c'>6</UVINumber>
+                <UVINumber $bgColor='#eb950c'>7</UVINumber>
+                <UVINumber $bgColor='#de0740'>8</UVINumber>
+                <UVINumber $bgColor='#de0740'>9</UVINumber>
+                <UVINumber $bgColor='#de0740'>10</UVINumber>
+                <UVINumber $bgColor='#c908ff'>11+</UVINumber>
+                <p>Low</p>
+                No protectin needed
+                <p>Moderate</p>
+                Some protection is required
+                <p>High</p>
+                Protection essential
+                <p>Very High</p>
+                Extra protection is needed
+                <p>Extreme</p>
+                Stay inside
                
             </div> 
 
