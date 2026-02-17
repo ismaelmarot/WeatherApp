@@ -1,4 +1,4 @@
-import type { RainChanceProps } from '../../types/RainChance.type';
+import type { RainChanceProps } from '../../types'
 import {
     Container,
     Title,
@@ -6,7 +6,7 @@ import {
     Fill,
     Value,
     Badge
-} from './RainChance.style';
+} from './RainChance.style'
 
 export function RainChance({
     chance,
@@ -16,15 +16,13 @@ export function RainChance({
 
     return (
         <Container>
-            <Title>Chance of rain</Title>
-
+            <Title>Probability now</Title>
             <Bar>
                 <Fill value={safeChance} />
             </Bar>
-
             <Value>{safeChance}%</Value>
 
             {isRainingNow && <Badge>Raining now</Badge>}
         </Container>
-    );
+    )
 }

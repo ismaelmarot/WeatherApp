@@ -1,4 +1,4 @@
-import type { RainChanceChartProps } from '../../types/RainChanceChart.type'
+import type { RainChanceChartProps } from '../../types'
 import { Container, Item, RainIcon } from './RainChanceChart.style'
 
 export function RainChanceChart({ hours }: RainChanceChartProps) {

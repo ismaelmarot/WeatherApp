@@ -15,6 +15,7 @@ export type { LunarDayProps } from './LunarDay.type'
 export type { MoonPhase } from './MoonPhase.type'
 export type { PollutantGaugeProps } from './PollutantGauge.type'
 export type { PressureProps } from './Pressure.type'
+export type { RainChanceProps } from './RainChance.type'
 export type { RainChanceChartProps } from './RainChanceChart.type'
 export type { ScreenLayoutBaseProps } from './ScreenLayoutBase.type'
 export type { SizeValue } from './sizeValue.type'
@@ -29,5 +30,4 @@ export type { WindCompassProps } from './WindCompass.type'
 export type { WindCompassSpeedProps } from './WindCompassSpeed.type'
 export type { WindNeedleProps } from './WindNeedle.type'
 export type { CoordinatesInfoProps } from './CoordinatesInfo.type'
-
 

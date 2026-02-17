@@ -1,12 +1,12 @@
 import styled from 'styled-components'
-import { flex } from '../../mixins/setFlex'
+import { flex, size } from '../../mixins'
 import { GeneralColors, ICONS } from '../../constants'
 
 export const Container = styled.div`
+    ${size('100%','49%')}
     padding: 1rem;
-    background-color: ${GeneralColors.grey};
     border-radius: .5rem;
-    width: 100%;
+    background-color: ${GeneralColors.grey};
 `
 
 export const Item = styled.div`
