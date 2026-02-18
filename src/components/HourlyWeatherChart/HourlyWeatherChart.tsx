@@ -37,7 +37,9 @@ export function HourlyWeatherChart({ data }: HourlyForecastChartProps) {
               </linearGradient>
             </defs>
 
-            <XAxis dataKey='hour' />
+            <XAxis
+              dataKey='hour'
+            />
 
             <YAxis
               unit='°C'

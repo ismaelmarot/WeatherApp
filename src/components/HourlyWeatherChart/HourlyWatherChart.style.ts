@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { flex, size } from '../../mixins'
-import { GeneralColors } from '../../constants/GeneralColors'
+import { GeneralColors } from '../../constants'
 
 export const Container = styled.section`
     ${flex('column','center','center')}
