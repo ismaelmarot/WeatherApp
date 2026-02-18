@@ -109,6 +109,19 @@
 //           />
 //       )}
 
+//       {weather?.forecast?.forecastday?.[0]?.hour && (
+//         <RainChanceChart
+//           hours={weather.forecast.forecastday[0].hour.slice(
+//             currentHour,
+//             currentHour + 12
+//           )}
+//         />
+//       )}
+
+
+
+
+
 
 
 
@@ -129,14 +142,6 @@
 //         <HourlyForecast hours={nextHours} /> !!!!!!
 //       )}
 
-//       {weather?.forecast?.forecastday?.[0]?.hour && (
-//         <RainChanceChart
-//           hours={weather.forecast.forecastday[0].hour.slice(
-//             currentHour,
-//             currentHour + 12
-//           )}
-//         />
-//       )}
 
 //       {hourlyForecast.length > 0 && (
 //         <HourlyWeatherChart data={hourlyForecast} />
