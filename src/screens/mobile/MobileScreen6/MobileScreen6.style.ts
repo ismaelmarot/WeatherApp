@@ -12,9 +12,9 @@ export const Container = styled.div`
 `
 
 export const TopElement = styled(Element)`
-  flex: 0 0 60%;
+  flex: 0 0 40%;
 `
 
 export const BottomElement = styled(Element)`
-  flex: 0 0 40%;
+  flex: 0 0 20%;
 `
