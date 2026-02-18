@@ -1,5 +1,5 @@
-import type { HourForecastProps } from './HourForecast.type';
+import type { HourForecastProps } from './HourForecast.type'
 
 export type HourlyForecastChartProps = {
-  data: HourForecastProps[];
-};
+  data: HourForecastProps[]
+}

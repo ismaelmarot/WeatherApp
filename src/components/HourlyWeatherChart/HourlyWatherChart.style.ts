@@ -9,11 +9,15 @@ export const Container = styled.section`
 `
 
 export const H3 = styled.h3`
+    margin-top: auto.5rem;
+    padding: .3rem;
+    margin-right: 1rem;
     font-size: 1rem;
-    color: ${GeneralColors.black}
+    color: ${GeneralColors.black};
 `
 
 export const Chart = styled.div`
     ${size('100%','16rem')}
-    margin-top: 1rem;
+    margin: .5rem;
+    font-size: .8rem;
 `
