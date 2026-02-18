@@ -3,10 +3,27 @@ import { flex, size } from '../../mixins'
 import { GeneralColors, ICONS } from '../../constants'
 
 export const Container = styled.div`
-    ${size('100%','49%')}
-    padding: 1rem;
+    ${flex('column','center','center')}
+    ${size('100%','100%')}
     border-radius: .5rem;
+    overflow-y: auto;
     background-color: ${GeneralColors.grey};
+`
+
+export const Header = styled.h3`
+    flex: 0 0 auto;
+    width: 90%;
+    margin:  1rem;
+`
+
+export const List = styled.div`
+    flex: 1 1 auto;
+    width: 90%;
+    min-height: 0;
+    margin-bottom: 1rem;
+    overflow-y: auto;
+    border-top: 1px solid ${GeneralColors.black};
+    border-bottom: 1px solid ${GeneralColors.black};
 `
 
 export const Item = styled.div`

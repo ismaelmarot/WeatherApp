@@ -1,4 +1,4 @@
-import type { AlignItems, FlexDirection, JustifyContent } from '../types/flexValue.type';
+import type { AlignItems, FlexDirection, JustifyContent } from '../types'
 
 export const flex = (
     direction: FlexDirection = 'row',

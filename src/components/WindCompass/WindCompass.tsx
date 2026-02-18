@@ -51,5 +51,5 @@ export function WindCompass({
           />
         </svg>
     </Container>
-  );
+  )
 }

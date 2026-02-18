@@ -4,8 +4,8 @@ import { GeneralColors } from '../../constants'
 
 export const Container = styled.div`
   ${flex('column','center','center')}
-  ${size('100%','50%')}
-  height: 49%;
+  ${size('100%','100%')}   
+  padding: 1rem;
   border-radius: 1rem;
   background-color: ${GeneralColors.grey};
 `
