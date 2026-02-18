@@ -143,7 +143,7 @@
 //       )}
 
 
-//       {hourlyForecast.length > 0 && (
+//       {hourlyForecast.length > 0 && (       //temperature
 //         <HourlyWeatherChart data={hourlyForecast} />
 //       )}
 

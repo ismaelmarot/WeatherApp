@@ -3,19 +3,18 @@ import { Container, H3, Chart, GradientStopStart, GradientStopEnd } from './Dail
 import type { DailyRainChartProps } from '../../types/DailyRainChart.type'
 
 export function DailyRainChart({ hours }: DailyRainChartProps) {
-  if (!hours.length) return null;
+  if (!hours.length) return null
 
   const chartData = hours.map((hour) => ({
     hour: hour.time.split(' ')[1].slice(0, 5),
     rain: Number(hour.chance_of_rain),
-  }));
+  }))
 
   return (
     <Container>
       <H3>Rain probability – today</H3>
-
       <Chart>
-        <ResponsiveContainer width='100%' height={256}>
+        <ResponsiveContainer width='100%' height={200}>
           <AreaChart data={chartData}>
             <defs>
               <linearGradient id='rainGradient' x1='0' y1='0' x2='0' y2='1'>

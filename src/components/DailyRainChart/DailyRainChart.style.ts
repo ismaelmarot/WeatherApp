@@ -4,20 +4,18 @@ import { GeneralColors } from '../../constants/GeneralColors'
 
 export const Container = styled.section`
   ${flex('column','center','center')}
-  margin-top: 2rem;
-  padding: 1rem;
+  ${size('100%','100%')}
   border-radius: 12px;
   background: ${GeneralColors.grey};
 `
 
 export const H3 = styled.h3`
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1rem;
   color: ${GeneralColors.black};
 `
 
 export const Chart = styled.div`
-  ${size('100%', '16rem')}
+  ${size('100%', '90%')}
 `
 
 export const GradientStopStart = styled.stop`

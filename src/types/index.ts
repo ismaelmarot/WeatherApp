@@ -1,6 +1,7 @@
 export type { AirQualityProps } from './AirQuality.type'
 export type { Cardinal } from './CardinalDirections.type'
 export type { CoordinatesProps } from './Coordinates.type'
+export type { DailyRainChartProps } from './DailyRainChart.type'
 export type { FlexDirection, JustifyContent, AlignItems } from './flexValue.type'
 export type { GeoStateProps } from './GeoState.type'
 export type { HumidityProps } from './Humidity.type'
