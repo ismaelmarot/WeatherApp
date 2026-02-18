@@ -1,6 +1,6 @@
-import type { HourlyForecastProps } from '../../types';
-import { formatHour } from '../../utils/formatHour.utils';
-import { Container, HourItem, Time, Temp, Icon, Rain } from './HourlyForecast.style';
+import type { HourlyForecastProps } from '../../types'
+import { formatHour } from '../../utils'
+import { Container, HourItem, Time, Temp, Icon, Rain } from './HourlyForecast.style'
 
 export function HourlyForecast({ hours }: HourlyForecastProps) {
     return (
@@ -17,5 +17,5 @@ export function HourlyForecast({ hours }: HourlyForecastProps) {
                 </HourItem>
             ))}
         </Container>
-    );
+    )
 }
