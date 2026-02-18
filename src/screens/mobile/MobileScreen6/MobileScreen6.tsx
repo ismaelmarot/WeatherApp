@@ -24,7 +24,7 @@ export function MobileScreen6() {
             />
           )}
         </TopElement>
-        <BottomElement>  
+        <BottomElement>
             {forecast && weather && (
                 <RainChance
                     chance={forecast.forecast.forecastday[0].day.daily_chance_of_rain}

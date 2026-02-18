@@ -7,14 +7,14 @@ const Element = styled.div`
 `
 
 export const Container = styled.div`
-  ${flex('column', 'stretch', 'stretch')}
-  height: 100%;
+  ${flex('column', 'center', 'space-between')}
+  height: 100%; 
 `
 
 export const TopElement = styled(Element)`
-  flex: 0 0 40%;
+  flex: 0 0 59%;
 `
 
 export const BottomElement = styled(Element)`
-  flex: 0 0 20%;
+  flex: 0 0 39%;
 `
