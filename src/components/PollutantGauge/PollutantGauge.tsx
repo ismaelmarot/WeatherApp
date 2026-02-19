@@ -19,46 +19,46 @@ export const PollutantGauge: React.FC<PollutantGaugeProps> = ({
 
   return (
     <Wrapper>
-      <svg width="100" height="100">
+      <svg width='100' height='100'>
         {/* Fondo */}
         <circle
-          cx="50"
-          cy="50"
+          cx='50'
+          cy='50'
           r={radius}
-          stroke="#e2e6ed"
+          stroke='#6a7a95'
           strokeWidth={stroke}
-          fill="none"
+          fill='none'
         />
 
         {/* Progreso */}
         <circle
-          cx="50"
-          cy="50"
+          cx='50'
+          cy='50'
           r={radius}
-          stroke="url(#aqiGradient)"
+          stroke='url(#aqiGradient)'
           strokeWidth={stroke}
-          fill="none"
+          fill='none'
           strokeDasharray={circumference}
           strokeDashoffset={dashOffset}
-          strokeLinecap="round"
-          transform="rotate(90 50 50)"
+          strokeLinecap='round'
+          transform='rotate(90 50 50)'
         />
 
         <defs>
-          <linearGradient id="aqiGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="#e00f0f" />
-            <stop offset="100%" stopColor="#33ff01" />
+          <linearGradient id='aqiGradient' x1='0%' y1='0%' x2='100%' y2='0%'>
+            <stop offset='0%' stopColor='#e00f0f' />
+            <stop offset='100%' stopColor='#33ff01' />
           </linearGradient>
         </defs>
 
         {/* Valor */}
         <text
-          x="50"
-          y="55"
-          textAnchor="middle"
-          fontSize="14"
-          fill="#000000"
-          fontWeight="600"
+          x='50'
+          y='55'
+          textAnchor='middle'
+          fontSize='25'
+          fill='#ffffff'
+          fontWeight='600'
         >
           {Math.round(normalizedAQI)}
         </text>

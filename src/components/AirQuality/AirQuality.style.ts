@@ -12,7 +12,8 @@ export const Title = styled.h3`
   width: 100%;
   padding-bottom: .5rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  text-shadow: 0 0 20px rgb(40, 10, 10);
   color: ${GENERAL_COLORS.white};
 `
 
@@ -21,6 +22,5 @@ export const Pollutants = styled.div`
   ${size('100%','100%')}
   gap: .5rem;
   overflow-y: auto;
-  border-top: 2px solid ${GENERAL_COLORS.white};
-  border-bottom: 2px solid ${GENERAL_COLORS.white};
+  padding: 3rem 0 1rem 0;
 `
