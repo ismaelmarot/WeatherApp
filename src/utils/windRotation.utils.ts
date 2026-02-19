@@ -1,6 +1,6 @@
-import { windDeg } from '../constants'
+import { WIN_DEG } from '../constants'
 
 export function windRotation(dir: string): number {
-    const deg = windDeg(dir)
+    const deg = WIN_DEG(dir)
     return deg + 180 -45
 }

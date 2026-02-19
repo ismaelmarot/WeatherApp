@@ -1,4 +1,6 @@
-export function windDeg(dir: string): number {
+export function WIN_DEG(
+    dir: string
+): number {
     const map: Record<string, number> = {
         N: 0,
         NNE: 22.5,
@@ -16,7 +18,7 @@ export function windDeg(dir: string): number {
         WNW: 292.5,
         NW: 315,
         NNW: 337.5,
-    };
+    }
 
-    return map[dir] ?? 0;
+    return map[dir] ?? 0
 }
