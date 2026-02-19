@@ -5,8 +5,8 @@ import {
   PRESSURE_MAX,
   PRESSURE_RADIUS,
   PRESSURE_STROKE,
-} from '../../constants/index'
-import { PRESSURE_COLORS } from '../../constants/pressureColors.constants'
+} from '../../constants'
+import { PRESSURE_COLORS } from '../../constants'
 import { getArrowCoordinates } from '../../utils/pressure.utils'
 
 export function PressureGauge({ value }: PressureProps) {

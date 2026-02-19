@@ -13,5 +13,10 @@ export {
     PRESSURE_MARKER_LENGTH,
     PRESSURE_MARKER_OVERSHOOT
 } from './pressure.constants'
+export {
+    POLLUTANT_UNIT,
+    POLLUTANT_LABELS,
+    AQI_TEXTS
+} from './aqiInfo'
 export { TEMPERATURE_COLORS } from './TemperatureColors'
 export { WIN_DEG } from './WindDeg'

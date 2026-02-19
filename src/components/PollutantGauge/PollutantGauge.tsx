@@ -9,13 +9,13 @@ export const PollutantGauge: React.FC<PollutantGaugeProps> = ({
   value,
   unit
 }) => {
-  const radius = 42;
-  const stroke = 6;
+  const radius = 42
+  const stroke = 6
 
-  const normalizedAQI = Math.min(Math.max(aqi, 0), 500);
-  const circumference = 2 * Math.PI * radius;
-  const percent = normalizedAQI / 500;
-  const dashOffset = circumference * (1 - percent);
+  const normalizedAQI = Math.min(Math.max(aqi, 0), 500)
+  const circumference = 2 * Math.PI * radius
+  const percent = normalizedAQI / 500
+  const dashOffset = circumference * (1 - percent)
 
   return (
     <Wrapper>

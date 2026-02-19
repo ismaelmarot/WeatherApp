@@ -7,7 +7,7 @@ export const Container = styled.div`
   width: 100%;
   margin-top: 1rem;
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 30px;
   border: 2px solid ${GENERAL_COLORS.white}
 `
 

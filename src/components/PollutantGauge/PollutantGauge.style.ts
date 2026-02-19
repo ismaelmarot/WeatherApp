@@ -5,7 +5,7 @@ import { GENERAL_COLORS } from '../../constants'
 export const Wrapper = styled.div`
   ${flex('row','center','center')}
   ${size('100%','auto')}
-  border-radius: .5rem;
+  border-radius: 34px;
   border: 2px solid ${GENERAL_COLORS.white};
   color: ${GENERAL_COLORS.white};
 `

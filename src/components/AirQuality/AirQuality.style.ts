@@ -4,8 +4,8 @@ import { flex, size } from '../../mixins'
 
 export const Container = styled.div`
   ${flex('column','center','center')}
-  height: 100%;
-  max-height: 100%;
+  height: 95%;
+  max-height: 95%;
 `
 
 export const Title = styled.h3`
@@ -14,7 +14,6 @@ export const Title = styled.h3`
   text-align: center;
   font-size: 1.5rem;
   color: ${GENERAL_COLORS.white};
-  border-bottom: 1px solid ${GENERAL_COLORS.white};
 `
 
 export const Pollutants = styled.div`
@@ -22,4 +21,6 @@ export const Pollutants = styled.div`
   ${size('100%','100%')}
   gap: .5rem;
   overflow-y: auto;
+  border-top: 2px solid ${GENERAL_COLORS.white};
+  border-bottom: 2px solid ${GENERAL_COLORS.white};
 `

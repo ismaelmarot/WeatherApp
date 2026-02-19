@@ -1,11 +1,7 @@
+import type { MoonInfoItemProps } from '../../types'
 import { Container, Label, Value } from './MoonInfoItem.style'
 
-type Props = {
-    label: string;
-    value: string;
-}
-
-export function MoonInfoItem({ label, value }: Props) {
+export function MoonInfoItem({ label, value }: MoonInfoItemProps) {
     return (
         <Container>
             <Value>{value}</Value>

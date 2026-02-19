@@ -1,6 +1,7 @@
 import { ScreenLayoutGlass } from '../../../layouts'
 import { AirQuality } from '../../../components'
 import { useWeatherContext } from '../../../context'
+import { Container } from './MobileScreen5.style'
 
 export function MobileScreen5() {
     const { weather } = useWeatherContext()
@@ -9,7 +10,7 @@ export function MobileScreen5() {
 
     return (
         <ScreenLayoutGlass>
-            <div style={{height:'37rem'}}>
+            <Container>
                 {weather.current.air_quality && (
                     <AirQuality
                         epaIndex={weather.current.air_quality['us-epa-index']}
@@ -21,7 +22,7 @@ export function MobileScreen5() {
                         pm10={weather.current.air_quality.pm10}
                     />
                 )}
-            </div>
+            </Container>
         </ScreenLayoutGlass>
     )
 }

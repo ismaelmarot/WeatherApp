@@ -17,7 +17,3 @@ export const AQI_TEXTS = [
   { max: 300, text: "Muy poco saludable" },
   { max: Infinity, text: "Peligroso" },
 ];
-
-export function getAqiText(aqi: number): string {
-  return AQI_TEXTS.find((item) => aqi <= item.max)?.text ?? "Desconocido";
-}

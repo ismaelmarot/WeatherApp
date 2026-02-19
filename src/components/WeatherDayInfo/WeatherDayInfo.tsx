@@ -1,9 +1,9 @@
-import type { WeatherDayInfoProps } from '../../types/WeatherDayInfo.type';
-import { Grid, Item, Label, Value } from './WeatherDayInfo.style';
+import type { WeatherDayInfoProps } from '../../types/WeatherDayInfo.type'
+import { Grid, Item, Label, Value } from './WeatherDayInfo.style'
 
 export function WeatherDayInfo({ weather }: WeatherDayInfoProps) {
-    const forecast = weather.forecast.forecastday[0];
-    const { day, astro } = forecast;
+    const forecast = weather.forecast.forecastday[0]
+    const { day, astro } = forecast
 
     return (
         <Grid>
@@ -32,5 +32,5 @@ export function WeatherDayInfo({ weather }: WeatherDayInfoProps) {
                 <Value>{day.daily_chance_of_rain}%</Value>
             </Item>
         </Grid>
-    );
+    )
 }
