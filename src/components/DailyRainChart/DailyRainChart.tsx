@@ -12,10 +12,14 @@ export function DailyRainChart({ hours }: DailyRainChartProps) {
 
   return (
     <Container>
-      <H3>Rain probability – today</H3>
+      <H3>Rain – next 12 hours</H3>
       <Chart>
-        <ResponsiveContainer width='100%' height={200}>
-          <AreaChart data={chartData}>
+        <ResponsiveContainer width='100%' height='100%'>
+          <AreaChart
+            data={chartData}
+            margin={{ top: 10, right: 8, left: -20, bottom: 0 }}
+            height='100%'
+          >
             <defs>
               <linearGradient id='rainGradient' x1='0' y1='0' x2='0' y2='1'>
                 <GradientStopStart offset='0%' />

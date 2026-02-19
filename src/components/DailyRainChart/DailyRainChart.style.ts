@@ -15,7 +15,8 @@ export const H3 = styled.h3`
 `
 
 export const Chart = styled.div`
-  ${size('100%', '90%')}
+  ${size('98%', '85%')}
+  font-size: .8rem;
 `
 
 export const GradientStopStart = styled.stop`
