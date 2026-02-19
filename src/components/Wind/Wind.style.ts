@@ -7,12 +7,11 @@ export const Container = styled.div`
     height: 100%;
     padding-top: 2rem;
     border-radius: 30px;
-    background-color: ${GENERAL_COLORS.grey};
 `
 
 export const H3 = styled.h3`
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 600;
-    color: ${GENERAL_COLORS.white}
-
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+    color: ${GENERAL_COLORS.white};
 `

@@ -1,5 +1,5 @@
-import type { WindNeedleProps } from '../../types/WindNeedle.type';
-import { Needle, NeedleLine } from './WindNeedle.style';
+import type { WindNeedleProps } from '../../types/WindNeedle.type'
+import { Needle, NeedleLine } from './WindNeedle.style'
 
 export function WindNeedle({ center, radius, rotation }: WindNeedleProps) {
   return (

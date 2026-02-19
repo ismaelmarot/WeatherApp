@@ -7,7 +7,9 @@ export const Container = styled.div`
     ${size('100%','100%')}
     border-radius: 30px;
     overflow-y: auto;
-    background-color: ${GENERAL_COLORS.grey};
+    opacity: 0.6;
+    color: ${GENERAL_COLORS.white};
+    background-color: ${GENERAL_COLORS.black};
 `
 
 export const Header = styled.h3`

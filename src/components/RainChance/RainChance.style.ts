@@ -7,7 +7,9 @@ export const Container = styled.div`
   ${size('100%','100%')}   
   padding: 1rem;
   border-radius: 30px;
-  background-color: ${GENERAL_COLORS.grey}
+  color: ${GENERAL_COLORS.white};
+  opacity: 0.6;
+  background-color: ${GENERAL_COLORS.black}
 `
 
 export const Title = styled.h4`

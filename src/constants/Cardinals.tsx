@@ -4,11 +4,11 @@ export const CARDINALS: Cardinal[] = [
     {
         label: 'N',
         x: (_, center) => center,
-        y: () => 16,
+        y: () => 18,
     },
     {
         label: 'E',
-        x: (size) => size - 12,
+        x: (size) => size - 13,
         y: (_, center) => center + 5,
     },
     {
@@ -18,7 +18,7 @@ export const CARDINALS: Cardinal[] = [
     },
     {
         label: 'W',
-        x: () => 9,
+        x: () => 12,
         y: (_, center) => center + 5,
     },
 ];

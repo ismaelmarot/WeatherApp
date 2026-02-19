@@ -1,5 +1,5 @@
-import type { WindCompassMarksProps } from '../../types/WindCompassMarks.type';
-import { Line } from './WindCompassMarks.style'; 
+import type { WindCompassMarksProps } from '../../types'
+import { Line } from './WindCompassMarks.style'
 
 export function WindCompassMarks({ center, radius }: WindCompassMarksProps) {
     return (
