@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 import { flex, size } from '../../mixins'
-import { ICONS, GeneralColors } from '../../constants'
+import { ICONS, GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.div`
   border-radius: .5rem;
   padding: .85rem;
-  border: 2px solid ${GeneralColors.white};
-  color: ${GeneralColors.white};
+  border: 2px solid ${GENERAL_COLORS.white};
+  color: ${GENERAL_COLORS.white};
 `
 
 export const Label = styled.div`
@@ -23,13 +23,11 @@ export const Value = styled.div`
 export const ArrowContainer = styled.div`
   ${flex('column','center','center')}
   ${size('2.5rem','2.5rem')}
-  border: 2px solid ${GeneralColors.white};
+  border: 2px solid ${GENERAL_COLORS.white};
   border-radius: 50%;
 `
 
-export const WindArrowIcon = styled(ICONS.windArrow)<{
-  $rotation: number
-}>`
+export const WindArrowIcon = styled(ICONS.windArrow)<{ $rotation: number}>`
   transform: rotate(${props => props.$rotation}deg);
   transition: transform .3s ease;
   font-size: 1.5rem;

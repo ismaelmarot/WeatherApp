@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { GeneralColors } from '../../constants/GeneralColors';
+import { GENERAL_COLORS } from '../../constants'
 
 export const Line = styled.line`
-    stroke: ${GeneralColors.black};
+    stroke: ${GENERAL_COLORS.black};
 `;

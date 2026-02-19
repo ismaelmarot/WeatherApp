@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { flex, size } from '../../mixins'
-import { GeneralColors } from '../../constants/GeneralColors'
+import { GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.div`
     ${flex('column','center','space-between')}
@@ -17,16 +17,16 @@ export const Temp = styled.div`
     font-size: 12rem;
     font-weight: 500;
     line-height: 1;
-    color: ${GeneralColors.white}
+    color: ${GENERAL_COLORS.white}
 `
 
 export const Location = styled.div`
     ${flex('column','center','center')}
     font-size: 1.5rem;
-    color: ${GeneralColors.white};
+    color: ${GENERAL_COLORS.white};
 `
 
 export const Condition = styled.div`
     font-size: 2rem;
-    color: ${GeneralColors.white};
+    color: ${GENERAL_COLORS.white};
 `

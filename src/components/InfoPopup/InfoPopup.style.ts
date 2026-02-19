@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { GeneralColors } from '../../constants'
+import { GENERAL_COLORS } from '../../constants'
 import { flex, size } from '../../mixins'
 
 export const Overlay = styled.div`
@@ -14,7 +14,7 @@ export const Popup = styled.div`
     ${flex('column','center','center')}
     ${size('100%','100%')}
     border-radius: .5rem;
-    background: ${GeneralColors.white};
+    background: ${GENERAL_COLORS.white};
 `
 
 export const Header = styled.div`
@@ -30,7 +30,7 @@ export const Header = styled.div`
 export const Title = styled.h3`
     margin: 0;
     font-size: 1.1rem;
-    color: ${GeneralColors.black};
+    color: ${GENERAL_COLORS.black};
 `
 
 export const CloseButton = styled.button`

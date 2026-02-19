@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { GENERAL_COLORS } from '../../constants'
-import { flex } from '../../mixins/setFlex';
+import { flex } from '../../mixins/setFlex'
 
 export const Container = styled.div`
   margin: 2rem 0;

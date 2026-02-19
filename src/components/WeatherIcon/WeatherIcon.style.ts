@@ -1,9 +1,9 @@
 import styled from 'styled-components'
-import { GeneralColors } from '../../constants'
+import { GENERAL_COLORS } from '../../constants'
 
 export const Icon = styled.i`
     font-size: 6rem;
-    color: ${GeneralColors.white};
+    color: ${GENERAL_COLORS.white};
 `
 
 export const IconNotFound = styled.p`
@@ -12,5 +12,5 @@ export const IconNotFound = styled.p`
     font-weight: 800;
     border-radius: .3rem;
     background-color: red;
-    color: ${GeneralColors.white};
+    color: ${GENERAL_COLORS.white};
 `

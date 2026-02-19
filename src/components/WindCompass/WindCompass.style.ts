@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { flex, size } from '../../mixins'
-import { GeneralColors } from '../../constants/GeneralColors'
+import { GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.div`
   ${flex('column','center','center')}
@@ -11,11 +11,11 @@ export const CardinalDirections = styled.text`
   text-anchor: middle;
   font-size: 1.2rem;
   font-weight: 600;
-  fill: ${GeneralColors.black};
+  fill: ${GENERAL_COLORS.black};
 `;
 
 export const Circle = styled.circle`
-  stroke: ${GeneralColors.black};
   fill: none;
   stroke-width: 2;
+  stroke: ${GENERAL_COLORS.black};
 `;

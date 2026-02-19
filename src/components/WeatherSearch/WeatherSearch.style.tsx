@@ -1,16 +1,16 @@
 import styled from 'styled-components'
-import { GeneralColors } from '../../constants/GeneralColors'
 import { flex, size } from '../../mixins'
+import { GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.div`
   position: relative;
-  ${flex('column', 'center', 'flex-start')}
-  ${size('100%', '100%')}
+  ${flex('column','center','flex-start')}
+  ${size('100%','100%')}
   padding-top: 8rem;
 `
 
 export const SearchWrapper = styled.div`
-  ${flex('row', 'center', 'center')}
+  ${flex('row','center','center')}
   position: relative;
   align-self: center;
   width: 21rem;
@@ -24,7 +24,7 @@ export const SearchIcon = styled.div`
   transform: translateY(-50%);
   font-size: 2rem;
   pointer-events: none;
-  color: ${GeneralColors.darkGrey};
+  color: ${GENERAL_COLORS.darkGrey};
   
 `
 
@@ -33,19 +33,19 @@ export const Input = styled.input`
   font-size: 2rem;
   outline: none;
   border-radius: 999px;
-  border: 2px solid ${GeneralColors.grey};
-  background-color: ${GeneralColors.white};
+  border: 2px solid ${GENERAL_COLORS.grey};
+  background-color: ${GENERAL_COLORS.white};
 
   -webkit-appearance: none;
   appearance: none;
 
   &:focus {
-    border-color: ${GeneralColors.blue};
+    border-color: ${GENERAL_COLORS.blue};
     box-shadow: 0 0 0 3px rgba(39, 88, 137, 0.15);
   }
 
   &::placeholder {
-    color: ${GeneralColors.darkGrey};
+    color: ${GENERAL_COLORS.darkGrey};
   }
 `
 
@@ -59,25 +59,24 @@ export const ListPlacesSearch = styled.div`
   max-height: 20rem;
 
   box-sizing: border-box;
-  
-  max-height: 20rem;
-  border-radius: .5rem;
+
   z-index: 100;
   overflow-y: auto;
-  background: ${GeneralColors.white};
-  border: 2px solid ${GeneralColors.darkGrey};
+  
   border-radius: 2rem;
+  border: 2px solid ${GENERAL_COLORS.darkGrey};
+  background: ${GENERAL_COLORS.white};
 `
 
 export const ItemPlace = styled.div`
   ${flex('column', 'flex-start', 'center')}
   padding: 0.6rem 0.8rem;
-  cursor: pointer;
-  border-bottom: 1px solid ${GeneralColors.darkGrey};
   font-size: 1.4rem;
+  cursor: pointer;
+  border-bottom: 1px solid ${GENERAL_COLORS.darkGrey};
 
   &:hover {
-    background-color: ${GeneralColors.grey};
+    background-color: ${GENERAL_COLORS.grey};
   }
 `
 

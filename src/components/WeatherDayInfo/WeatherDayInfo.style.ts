@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { GeneralColors } from '../../constants'
+import { GENERAL_COLORS } from '../../constants'
 import { flex } from '../../mixins'
 
 export const Grid = styled.div`
@@ -11,10 +11,10 @@ export const Grid = styled.div`
 
 export const Item = styled.div`
     ${flex('row','center','space-between')}
-    border: 2px solid ${GeneralColors.white};
-    border-radius: .5rem;
     padding: .9rem;
-    color: ${GeneralColors.white};
+    border-radius: .5rem;
+    border: 2px solid ${GENERAL_COLORS.white};
+    color: ${GENERAL_COLORS.white};
 `;
 
 export const Label = styled.div`
