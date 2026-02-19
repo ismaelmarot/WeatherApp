@@ -4,6 +4,9 @@ import { GENERAL_COLORS, ICONS } from '../../../constants'
 export const Container = styled.div`
     position: relative;
     height: 100%;
+    text-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.6),
+        0 4px 12px rgba(0, 0, 0, 0.25);
 `
 
 export const InfoButton = styled.button`
