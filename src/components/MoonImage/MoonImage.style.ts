@@ -5,7 +5,6 @@ import { flex } from '../../mixins'
 export const Item = styled.div`
   border-radius: 30px;
   padding: .85rem;
-  background-color: ${GENERAL_COLORS.grey};
 `
 
 export const ItemMoon = styled(Item)`

@@ -5,6 +5,9 @@ import { GENERAL_COLORS } from '../../constants'
 export const Container = styled.div`
     ${flex('column','center','space-between')}
     ${size('100%','95dvh')}
+    text-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.6),
+        0 4px 12px rgba(0, 0, 0, 0.25);
 `
 
 export const TempIconContainer = styled.div`
@@ -14,10 +17,10 @@ export const TempIconContainer = styled.div`
 `
 
 export const Temp = styled.div`
-    font-size: 12rem;
+    font-size: 14rem;
     font-weight: 500;
     line-height: 1;
-    color: ${GENERAL_COLORS.white}
+    color: ${GENERAL_COLORS.white};
 `
 
 export const Location = styled.div`
@@ -27,6 +30,6 @@ export const Location = styled.div`
 `
 
 export const Condition = styled.div`
-    font-size: 2rem;
+    font-size: 3rem;
     color: ${GENERAL_COLORS.white};
 `
