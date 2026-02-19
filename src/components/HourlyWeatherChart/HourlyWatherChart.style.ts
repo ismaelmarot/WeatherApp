@@ -5,19 +5,21 @@ import { GENERAL_COLORS } from '../../constants'
 export const Container = styled.section`
     ${flex('column','center','center')}
     border-radius: 30px;
-    background: ${GENERAL_COLORS.grey};
+    opacity: 0.6;
+    background: ${GENERAL_COLORS.black};
 `
 
 export const H3 = styled.h3`
-    margin-top: auto.5rem;
+    margin-top: .5rem;
     padding: .3rem;
     margin-right: 1rem;
     font-size: 1rem;
-    color: ${GENERAL_COLORS.black};
+    color: ${GENERAL_COLORS.white};
 `
 
 export const Chart = styled.div`
     ${size('100%','16rem')}
-    margin: .5rem;
+    padding: 0 1rem 0 0;
+    margin: 0rem;
     font-size: .8rem;
 `
