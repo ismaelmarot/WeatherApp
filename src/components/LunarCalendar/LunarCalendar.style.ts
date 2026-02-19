@@ -1,17 +1,15 @@
-import styled from 'styled-components';
-import { flex } from '../../mixins/setFlex';
-import { GeneralColors } from '../../constants/GeneralColors';
+import styled from 'styled-components'
+import { flex } from '../../mixins/setFlex'
+import { GENERAL_COLORS } from '../../constants'
 
 export const Calendar = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    ${flex('row','center','center')}
     gap: 1rem;
-
-    overflow-x: auto;
+ 
     padding: 1rem;
     border-radius: .5rem;
-    background-color: ${GeneralColors.grey};
+    overflow-x: auto;
+    background-color: ${GENERAL_COLORS.grey};
 `;
 
 

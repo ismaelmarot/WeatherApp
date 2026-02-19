@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { flex } from '../../mixins/setFlex'
-import { GeneralColors } from '../../constants'
+import { GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.div`
   ${flex('row','center','center')}
@@ -19,7 +19,7 @@ export const HourItem = styled.div`
   padding-top: 0.75rem;
   text-align: center;
   border-radius: 5px;
-  border: 2px solid ${GeneralColors.white};
+  border: 2px solid ${GENERAL_COLORS.white};
 `
 
 export const Time = styled.div`
