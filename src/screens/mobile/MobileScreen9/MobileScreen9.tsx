@@ -1,6 +1,7 @@
 import { useWeatherContext } from '../../../context'
 import { MoonImage, MoonInfoItem, LunarCalendar } from '../../../components'
 import { ScreenLayoutGlass } from '../../../layouts'
+import { Container } from './MobileScreen9.style'
 
 export function MobileScreen9() {
     const { weather, forecast } = useWeatherContext()
@@ -13,15 +14,17 @@ export function MobileScreen9() {
 
     return (
         <ScreenLayoutGlass>
+            <Container>
+                <MoonImage phase={astro.moon_phase} />
+                <MoonInfoItem label="Moon phase" value={astro.moon_phase} />
+            </Container>
             {/* Info lunar actual */}
-            <MoonImage phase={astro.moon_phase} />
-            <MoonInfoItem label="Moon phase" value={astro.moon_phase} />
-            <MoonInfoItem label="Moon light" value={`${astro.moon_illumination}%`} />
+            {/* <MoonInfoItem label="Moon light" value={`${astro.moon_illumination}%`} />
             <MoonInfoItem label="Moonrise" value={astro.moonrise} />
-            <MoonInfoItem label="Moonset" value={astro.moonset} />
+            <MoonInfoItem label="Moonset" value={astro.moonset} /> */}
 
             {/* Calendario lunar */}
-            {forecast.forecast.forecastday?.length > 0 && (
+            {/* {forecast.forecast.forecastday?.length > 0 && (
                 <LunarCalendar
                     days={forecast.forecast.forecastday.map((d: any) => ({
                         date: d.date,
@@ -29,7 +32,7 @@ export function MobileScreen9() {
                         moon_illumination: d.astro.moon_illumination,
                     }))}
                 />
-            )}
+            )} */}
         </ScreenLayoutGlass>
     )
 }

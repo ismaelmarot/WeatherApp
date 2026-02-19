@@ -6,7 +6,6 @@ export function LunarCalendar({ days }: LunarCalendarProps) {
     return (
         <>
         <h3>Lunar calendar</h3>
-
         <Calendar>
             {days.map(day => (
                 <Item key={day.date}>
