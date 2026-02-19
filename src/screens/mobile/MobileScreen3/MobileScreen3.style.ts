@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { GeneralColors, ICONS } from '../../../constants'
+import { GENERAL_COLORS, ICONS } from '../../../constants'
 
 export const Container = styled.div`
     position: relative;
@@ -12,7 +12,7 @@ export const InfoButton = styled.button`
     right: .1rem;
     background: none;
     border: none;
-    color: ${GeneralColors.white};
+    color: ${GENERAL_COLORS.white};
     cursor: pointer;
     z-index: 10;
 `

@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 import { flex, size } from '../../mixins'
-import { GeneralColors } from '../../constants'
+import { GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.section`
     ${flex('column','center','center')}
     border-radius: 12px;
-    background: ${GeneralColors.grey};
+    background: ${GENERAL_COLORS.grey};
 `
 
 export const H3 = styled.h3`
@@ -13,7 +13,7 @@ export const H3 = styled.h3`
     padding: .3rem;
     margin-right: 1rem;
     font-size: 1rem;
-    color: ${GeneralColors.black};
+    color: ${GENERAL_COLORS.black};
 `
 
 export const Chart = styled.div`

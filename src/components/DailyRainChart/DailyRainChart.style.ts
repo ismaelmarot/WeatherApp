@@ -1,17 +1,17 @@
 import styled from 'styled-components'
 import { flex, size } from '../../mixins'
-import { GeneralColors } from '../../constants/GeneralColors'
+import { GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.section`
   ${flex('column','center','center')}
   ${size('100%','100%')}
   border-radius: 12px;
-  background: ${GeneralColors.grey};
+  background: ${GENERAL_COLORS.grey};
 `
 
 export const H3 = styled.h3`
   font-size: 1rem;
-  color: ${GeneralColors.black};
+  color: ${GENERAL_COLORS.black};
 `
 
 export const Chart = styled.div`
@@ -19,7 +19,7 @@ export const Chart = styled.div`
 `
 
 export const GradientStopStart = styled.stop`
-  stop-color: rgb(17, 0, 255);
+  stop-color: ${GENERAL_COLORS.blue};
 `
 
 export const GradientStopEnd = styled.stop`

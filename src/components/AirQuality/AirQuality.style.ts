@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { GeneralColors } from '../../constants'
+import { GENERAL_COLORS } from '../../constants'
 import { flex, size } from '../../mixins'
 
 export const Container = styled.div`
@@ -13,8 +13,8 @@ export const Title = styled.h3`
   padding-bottom: .5rem;
   text-align: center;
   font-size: 1.5rem;
-  color: ${GeneralColors.white};
-  border-bottom: 1px solid ${GeneralColors.white};
+  color: ${GENERAL_COLORS.white};
+  border-bottom: 1px solid ${GENERAL_COLORS.white};
 `
 
 export const Pollutants = styled.div`

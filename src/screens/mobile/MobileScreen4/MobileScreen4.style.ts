@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { flex, size } from '../../../mixins'
-import { GeneralColors, ICONS } from '../../../constants'
+import { GENERAL_COLORS, ICONS } from '../../../constants'
 
 export const Container = styled.div`
     ${flex('column','center','flex-start')}
@@ -13,7 +13,7 @@ export const InfoButton = styled.button`
     right: 1rem;
     background: none;
     border: none;
-    color: ${GeneralColors.white};
+    color: ${GENERAL_COLORS.white};
     cursor: pointer;
     z-index: 10;
 `

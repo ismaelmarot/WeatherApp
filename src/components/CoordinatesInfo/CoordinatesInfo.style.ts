@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 import { flex } from '../../mixins'
-import { GeneralColors } from '../../constants/GeneralColors'
+import { GENERAL_COLORS } from '../../constants'
 import { ICONS } from '../../constants'
 
 export const Container = styled.div`
     ${flex('row','center','center')}
     font-size: 1rem;
-    color: ${GeneralColors.white}
+    color: ${GENERAL_COLORS.white}
 `;
 
 export const LocationIcon = styled(ICONS.location)`
