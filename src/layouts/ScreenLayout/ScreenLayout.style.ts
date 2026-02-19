@@ -13,16 +13,15 @@ export const BaseContainer = styled.section`
 `
 
 export const GlassContainer = styled(BaseContainer)`
-  background-color: rgba(83, 179, 190, 0.69);
-  border: 1.1px solid rgba(219, 224, 137, 0.86);
+  border: 1.1px solid rgba(219, 224, 137, 0.1);
   border-radius: 45px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
 
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
 
-  @supports not (backdrop-filter: blur(20px)) {
-    background-color: rgba(83, 179, 190, 0.85);
+  @supports not (backdrop-filter: blur(7px)) {
+    background-color: rgba(83, 179, 190, .69);
   }
 `
 

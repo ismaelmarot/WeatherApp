@@ -1,4 +1,6 @@
 export * from './AirQuality'
+export * from './AppLayout'
+export * from './BackgroundVideo'
 export * from './CoordinatesInfo'
 export * from './DailyRainChart'
 export * from './HourlyForecast'
@@ -27,6 +29,7 @@ export * from './WindCompassMarks'
 export * from './WindCompassSpeed'
 export * from './WindItem'
 export * from './WindNeedle'
+
 
 // export * from './WeatherDetails'
 // export * from './WeatherExtras'

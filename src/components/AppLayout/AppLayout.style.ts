@@ -1,15 +1,13 @@
 import styled from 'styled-components'
-import { flex } from './mixins'
+import { flex } from '../../mixins'
 
-export function AppLayout({ children }: { children: React.ReactNode }) {
-    return <Container>{children}</Container>
-}
-
-const Container = styled.div`
+export const Container = styled.div`
     ${flex('column','center','center')}
     min-height: 100dvh;
 
-    /* Safe Area real */
+    position: relative;
+    z-index: 1;
+
     padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom);
     padding-left: env(safe-area-inset-left);

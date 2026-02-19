@@ -1,7 +1,7 @@
 import { GlobalStyle } from './styles/GlobalStyle'
 import 'weather-icons/css/weather-icons.css'
 import { Home } from './pages'
-import { AppLayout } from './AppLayout'
+import { AppLayout } from './components'
 
 function App() {
   return (
