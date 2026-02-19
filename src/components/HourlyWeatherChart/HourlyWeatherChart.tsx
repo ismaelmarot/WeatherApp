@@ -1,6 +1,6 @@
 import { AreaChart, Area, XAxis, YAxis, Tooltip } from 'recharts'
 import type { HourlyForecastChartProps } from '../../types'
-import { TemperatureColors } from '../../constants'
+import { TEMPERATURE_COLORS } from '../../constants'
 import { Chart, Container, H3 } from './HourlyWatherChart.style'
 
 export function HourlyWeatherChart({ data }: HourlyForecastChartProps) {
@@ -31,9 +31,9 @@ export function HourlyWeatherChart({ data }: HourlyForecastChartProps) {
           >
             <defs>
               <linearGradient id="tempAreaGradient" x1='0' y1='1' x2='0' y2='0'>
-                <stop offset='0%' stopColor={TemperatureColors.minimum} />
-                <stop offset='50%' stopColor={TemperatureColors.average} />
-                <stop offset='100%' stopColor={TemperatureColors.maximum} />
+                <stop offset='0%' stopColor={TEMPERATURE_COLORS.minimum} />
+                <stop offset='50%' stopColor={TEMPERATURE_COLORS.average} />
+                <stop offset='100%' stopColor={TEMPERATURE_COLORS.maximum} />
               </linearGradient>
             </defs>
 
@@ -54,7 +54,7 @@ export function HourlyWeatherChart({ data }: HourlyForecastChartProps) {
             <Area
               type='monotone'
               dataKey='temp'
-              stroke={TemperatureColors.maximum}
+              stroke={TEMPERATURE_COLORS.maximum}
               strokeWidth={1}
               fill='url(#tempAreaGradient)'
               fillOpacity={0.9}

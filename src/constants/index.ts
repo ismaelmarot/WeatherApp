@@ -13,5 +13,5 @@ export {
     PRESSURE_MARKER_LENGTH,
     PRESSURE_MARKER_OVERSHOOT
 } from './pressure.constants'
-export { TemperatureColors } from './TemperatureColors'
+export { TEMPERATURE_COLORS } from './TemperatureColors'
 export { windDeg } from './WindDeg'
