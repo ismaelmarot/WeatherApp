@@ -3,8 +3,8 @@ import { flex, size } from '../../mixins'
 import { ICONS, GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.div`
-  border-radius: .5rem;
   padding: .85rem;
+  border-radius: 30px;
   border: 2px solid ${GENERAL_COLORS.white};
   color: ${GENERAL_COLORS.white};
 `

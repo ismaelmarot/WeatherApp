@@ -1,9 +1,11 @@
+import type { WindItemProps } from '../../types'
 import { Container, Label, Value, ArrowContainer, WindArrowIcon } from './WindItem.style'
-import type { WindItemProps } from '../../types/WindItem.type'
 import { windRotation } from '../../utils'
 
-
-export function WindItem({ windKph, windDir }: WindItemProps) {
+export function WindItem({
+  windKph,
+  windDir
+}: WindItemProps) {
   const rotation = windRotation(windDir ?? 'N')
 
   return (

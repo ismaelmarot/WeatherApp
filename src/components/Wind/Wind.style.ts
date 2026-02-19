@@ -6,7 +6,7 @@ export const Container = styled.div`
     ${flex('column','center','flex-start')}
     height: 100%;
     padding-top: 2rem;
-    border-radius: .5rem;
+    border-radius: 30px;
     background-color: ${GENERAL_COLORS.grey};
 `
 

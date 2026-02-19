@@ -6,7 +6,7 @@ export const Container = styled.div`
   margin: 2rem 0;
   padding: 1rem;
   box-sizing: border-box;
-  border-radius: .5rem;
+  border-radius: 30px;
   font-size: 2rem;
   color: ${GENERAL_COLORS.white};
   border: 2px solid ${GENERAL_COLORS.white};

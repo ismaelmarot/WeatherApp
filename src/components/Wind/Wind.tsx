@@ -4,8 +4,7 @@ import { Container, H3 } from './Wind.style'
 
 export function Wind({
   speed,
-  degree
-}: WindCompassProps) {
+  degree}: WindCompassProps) {
   return (
     <Container>
       <H3>Wind</H3>
