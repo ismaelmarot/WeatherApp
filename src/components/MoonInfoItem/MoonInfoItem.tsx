@@ -1,4 +1,4 @@
-import { Item, Label, Value } from './MoonInfoItem.style'
+import { Container, Label, Value } from './MoonInfoItem.style'
 
 type Props = {
     label: string;
@@ -7,9 +7,9 @@ type Props = {
 
 export function MoonInfoItem({ label, value }: Props) {
     return (
-        <Item>
-            <Label>{label}</Label>
+        <Container>
             <Value>{value}</Value>
-        </Item>
+            <Label>{label}</Label>
+        </Container>
     )
 }

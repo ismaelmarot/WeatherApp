@@ -5,11 +5,12 @@ import { flex } from '../../mixins'
 export const Item = styled.div`
   border-radius: 1rem;
   padding: .85rem;
-  background-color: ${GENERAL_COLORS.grey}
+  background-color: ${GENERAL_COLORS.grey};
 `
 
 export const ItemMoon = styled(Item)`
   ${flex('column','center','center')}
+  height: 80%;
   padding: 0;
   background-color: ${GENERAL_COLORS.black};
 `
