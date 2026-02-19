@@ -1,16 +1,11 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
+import { size } from '../../mixins'
 
 export const Container = styled.main`
-  width: 100vw;
-  height: 100vh;
-
+  ${size('100vw','100vh')}
   overflow-y: scroll;
+  overflow-x: hidden;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-
-  /* Mobile scroll limpio */
   -webkit-overflow-scrolling: touch;
-
-  /* Evita scroll horizontal fantasma */
-  overflow-x: hidden;
 `;

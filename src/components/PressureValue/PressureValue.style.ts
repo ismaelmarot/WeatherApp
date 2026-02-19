@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import { GeneralColors } from '../../constants'
+import { GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.div`
-    color: ${GeneralColors.white};
     font-size: 2rem;
+    color: ${GENERAL_COLORS.white}
 `

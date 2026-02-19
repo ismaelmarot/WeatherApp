@@ -1,16 +1,16 @@
 import styled from 'styled-components'
-import { GeneralColors } from '../../constants/GeneralColors'
-import { flex } from '../../mixins/setFlex'
+import { GENERAL_COLORS } from '../../constants'
+import { flex } from '../../mixins'
 
 export const Item = styled.div`
-  background-color: ${GeneralColors.grey};
   border-radius: .5rem;
   padding: .85rem;
+  background-color: ${GENERAL_COLORS.grey}
 `
 
 export const Label = styled.div`
   font-size: 0.75rem;
-  color: ${GeneralColors.black};
+  color: ${GENERAL_COLORS.black}
 `
 
 export const Value = styled.div`

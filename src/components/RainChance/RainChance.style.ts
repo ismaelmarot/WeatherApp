@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 import { flex, size } from '../../mixins'
-import { GeneralColors } from '../../constants'
+import { GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.div`
   ${flex('column','center','center')}
   ${size('100%','100%')}   
   padding: 1rem;
   border-radius: 1rem;
-  background-color: ${GeneralColors.grey};
+  background-color: ${GENERAL_COLORS.grey}
 `
 
 export const Title = styled.h4`
@@ -21,8 +21,8 @@ export const Bar = styled.div`
   position: relative;
   overflow: hidden;
   border-radius: 8px;
-  border: 1px solid ${GeneralColors.blue};
-  background: ${GeneralColors.grey};
+  border: 1px solid ${GENERAL_COLORS.blue};
+  background: ${GENERAL_COLORS.grey};
 `
 
 export const Fill = styled.div<{ value: number }>`
@@ -48,6 +48,6 @@ export const Badge = styled.span`
   font-size: 1rem;
   padding: .5rem 1rem;
   border-radius: 999px;
-  color: ${GeneralColors.white};
-  background: ${GeneralColors.blue};
+  color: ${GENERAL_COLORS.white};
+  background: ${GENERAL_COLORS.blue};
 `

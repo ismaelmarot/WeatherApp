@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 import { flex, size } from '../../mixins'
-import { GeneralColors, ICONS } from '../../constants'
+import { GENERAL_COLORS, ICONS } from '../../constants'
 
 export const Container = styled.div`
     ${flex('column','center','center')}
     ${size('100%','100%')}
     border-radius: .5rem;
     overflow-y: auto;
-    background-color: ${GeneralColors.grey};
+    background-color: ${GENERAL_COLORS.grey};
 `
 
 export const Header = styled.h3`
@@ -22,8 +22,8 @@ export const List = styled.div`
     min-height: 0;
     margin-bottom: 1rem;
     overflow-y: auto;
-    border-top: 1px solid ${GeneralColors.black};
-    border-bottom: 1px solid ${GeneralColors.black};
+    border-top: 1px solid ${GENERAL_COLORS.black};
+    border-bottom: 1px solid ${GENERAL_COLORS.black};
 `
 
 export const Item = styled.div`

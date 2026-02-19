@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { GeneralColors } from '../../constants/GeneralColors';
+import { GENERAL_COLORS } from '../../constants'
 import { flex } from '../../mixins/setFlex';
 
 export const Container = styled.div`
@@ -8,8 +8,8 @@ export const Container = styled.div`
   box-sizing: border-box;
   border-radius: .5rem;
   font-size: 2rem;
-  color: ${GeneralColors.white};
-  border: 2px solid ${GeneralColors.white};
+  color: ${GENERAL_COLORS.white};
+  border: 2px solid ${GENERAL_COLORS.white};
 `;
 
 export const Label = styled.div`
