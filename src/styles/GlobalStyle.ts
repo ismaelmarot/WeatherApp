@@ -13,7 +13,8 @@ export const GlobalStyle = createGlobalStyle`
     ${size('100%','100%')}
     margin: 0;
     padding: 0;
-    background: rgba(90, 180, 228, 0.85);
+    /* background: rgba(90, 180, 228, 0.85); */
+    background: rgb(0, 0, 0);
     overflow: hidden;
 
     font-family: system-ui, -apple-system, BlinkMacSystemFont,

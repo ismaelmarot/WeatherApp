@@ -5,7 +5,7 @@ import { GENERAL_COLORS, ICONS } from '../../constants'
 export const Container = styled.div`
     ${flex('column','center','center')}
     ${size('100%','100%')}
-    border-radius: .5rem;
+    border-radius: 30px;
     overflow-y: auto;
     background-color: ${GENERAL_COLORS.grey};
 `

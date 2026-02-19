@@ -8,7 +8,8 @@ const Element = styled.div`
 
 export const Container = styled.div`
   ${flex('column', 'center', 'space-between')}
-  height: 100%; 
+  height: 100%;
+  max-height: 100%;
 `
 
 export const TopElement = styled(Element)`

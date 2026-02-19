@@ -5,7 +5,7 @@ import { flex, size } from '../../mixins'
 export const Container = styled.div`
   ${flex('column','center','center')}
   ${size('100%','20%')}
-  border-radius: .5rem;
+  border-radius: 30px;
   padding: .85rem;
   background-color: ${GENERAL_COLORS.black};
 `

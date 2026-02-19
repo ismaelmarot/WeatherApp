@@ -4,7 +4,7 @@ import { GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.section`
     ${flex('column','center','center')}
-    border-radius: 12px;
+    border-radius: 30px;
     background: ${GENERAL_COLORS.grey};
 `
 
