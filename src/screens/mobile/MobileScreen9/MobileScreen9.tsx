@@ -1,6 +1,7 @@
 import { useWeatherContext } from '../../../context'
-import { MoonImage, MoonInfoItem, LunarCalendar } from '../../../components'
+import { isMoonPhase } from '../../../utils'
 import { ScreenLayoutGlass } from '../../../layouts'
+import { MoonImage, MoonInfoItem } from '../../../components'
 import { Container } from './MobileScreen9.style'
 
 export function MobileScreen9() {
@@ -12,11 +13,15 @@ export function MobileScreen9() {
 
     if (!astro) return null
 
+    const moonPhase = isMoonPhase(astro.moon_phase)
+        ? astro.moon_phase
+        : 'Full Moon'
+
     return (
         <ScreenLayoutGlass>
             <Container>
-                <MoonImage phase={astro.moon_phase} />
-                <MoonInfoItem label="Moon phase" value={astro.moon_phase} />
+                <MoonImage phase={moonPhase} />
+                <MoonInfoItem label="Moon phase" value={moonPhase} />
             </Container>
             {/* Info lunar actual */}
             {/* <MoonInfoItem label="Moon light" value={`${astro.moon_illumination}%`} />

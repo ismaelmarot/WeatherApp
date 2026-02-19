@@ -1,12 +1,8 @@
-import type { MoonPhase } from '../../types'
+import type { MoonImageProps } from '../../types'
 import { ItemMoon, Image } from './MoonImage.style'
 import { moonImages } from '../../utils/moonImages'
 
-type Props = {
-    phase: MoonPhase;
-}
-
-export function MoonImage({ phase }: Props) {
+export function MoonImage({ phase }: MoonImageProps) {
     return (
         <ItemMoon>
             <Image
