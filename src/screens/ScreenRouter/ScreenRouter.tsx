@@ -21,13 +21,13 @@ export function ScreenRouter() {
         <>
             <MobileScreen1 />
             <MobileScreen2 />
-            <MobileScreen3 />
+            {/* <MobileScreen3 />
             <MobileScreen4 />
             <MobileScreen5 />
             <MobileScreen6 />
             <MobileScreen7 />
             <MobileScreen8 />
-            <MobileScreen9 />
+            <MobileScreen9 /> */}
         </>
         )
     }

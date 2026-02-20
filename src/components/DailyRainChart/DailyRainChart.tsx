@@ -1,5 +1,5 @@
 import type { DailyRainChartProps } from '../../types'
-import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts'
+import { AreaChart, Area, XAxis, YAxis, Tooltip } from 'recharts'
 import { Container, H3, Chart, GradientStopStart, GradientStopEnd } from './DailyRainChart.style'
 
 export function DailyRainChart({ hours }: DailyRainChartProps) {
@@ -14,11 +14,11 @@ export function DailyRainChart({ hours }: DailyRainChartProps) {
     <Container>
       <H3>Rain – next 12 hours</H3>
       <Chart>
-        <ResponsiveContainer width='100%' height='100%'>
           <AreaChart
             data={chartData}
-            margin={{ top: 10, right: 8, left: -20, bottom: 0 }}
-            height='100%'
+            width={320}
+            height={180}
+            margin={{ top: 10, right: 8, left: 0, bottom: 0 }}
           >
             <defs>
               <linearGradient id='rainGradient' x1='0' y1='0' x2='0' y2='1'>
@@ -39,7 +39,6 @@ export function DailyRainChart({ hours }: DailyRainChartProps) {
               strokeWidth={1}
             />
           </AreaChart>
-        </ResponsiveContainer>
       </Chart>
     </Container>
   )

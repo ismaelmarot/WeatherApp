@@ -2,12 +2,14 @@ import styled from 'styled-components'
 import { flex } from '../../../mixins'
 
 const Element = styled.div`
-    width: 100%;  /* min-height: 0; */
+    width: 100%;
+    min-height: 0;
 `
 
 export const Container = styled.div`
     ${flex('column', 'center', 'space-between')}
     height: 100%;
+    min-height: 0;
 `
 
 export const TopElement = styled(Element)`
