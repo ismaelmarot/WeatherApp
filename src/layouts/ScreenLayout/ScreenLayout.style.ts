@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { flex } from '../../mixins'
 
 export const BaseContainer = styled.section`
-  ${flex('column','center','center')}
+  ${flex('column','center','flex-start')}
   min-height: 100dvh;
   width: 90%;
   margin: 10dvh 0;

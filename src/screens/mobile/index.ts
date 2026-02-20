@@ -1,3 +1,4 @@
+export { MobileScreens } from './MobileScreens'
 export { MobileScreen1 } from './MobileScreen1'
 export { MobileScreen2 } from './MobileScreen2'
 export { MobileScreen3 } from './MobileScreen3'

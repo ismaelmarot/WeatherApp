@@ -1,17 +1,21 @@
-import { GlobalStyle } from './styles/GlobalStyle'
 import 'weather-icons/css/weather-icons.css'
-import { Home } from './pages'
-import { AppLayout } from './components'
+// import { GlobalStyle } from './styles/GlobalStyle'
+// import { Home } from './pages'
+// import { AppLayout } from './components'
+import { DeviceLayout } from './app/DeviceLayout'
 
 function App() {
-  return (
-    <>
-      <GlobalStyle />
-      <AppLayout>
-        <Home />
-      </AppLayout>
-    </>
-  )
+
+  return <DeviceLayout />
+
+  // return (
+  //   <>
+  //     <GlobalStyle />
+  //     <AppLayout>
+  //       <Home />
+  //     </AppLayout>
+  //   </>
+  // )
 }
 
 export default App
