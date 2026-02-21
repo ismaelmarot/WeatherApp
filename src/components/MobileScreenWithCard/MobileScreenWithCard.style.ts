@@ -13,11 +13,13 @@ export const ScreenMobile = styled.div`
 `
 
 export const CardMobile = styled.div`
-     ${flex('column','center','center')}
+    ${flex('column','center','center')}
     width: 90%;
     min-height: 100%;
+    padding: 1rem .5rem;
     box-sizing: border-box;
     border-radius: 30px;
     background-color: ${GENERAL_COLORS.BlackGlass};
     box-shadow: 0 4px 16px ${GENERAL_COLORS.black};
+    border: 2px solid red;
 `;

@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { GENERAL_COLORS } from '../../constants'
 
 export const Icon = styled.i`
+    margin-top: 1.5rem;
     font-size: 7rem;
     color: ${GENERAL_COLORS.white};
 `

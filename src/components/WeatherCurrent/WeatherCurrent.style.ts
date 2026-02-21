@@ -4,8 +4,7 @@ import { GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.div`
     ${flex('column','center','space-between')}
-    ${size('100%','95dvh')}
-    padding: 1rem 0;
+    ${size('100%','100dvh')}
     text-shadow:
         0 1px 2px rgba(0, 0, 0, 0.6),
         0 4px 12px rgba(0, 0, 0, 0.25);
@@ -14,7 +13,6 @@ export const Container = styled.div`
 export const TempIconContainer = styled.div`
     ${flex('column','flex-start','flex-start')}
     width: 100%;
-    padding: 1rem;
 `
 
 export const Temp = styled.div`
