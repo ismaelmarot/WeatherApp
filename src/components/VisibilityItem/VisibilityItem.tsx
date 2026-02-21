@@ -1,10 +1,7 @@
-import { Container, Label, Value, Strong } from './VisibilityItem.style'
+import type { VisibilityItemProps } from '../../types'
+import { Container, Label, Strong, Value } from '../shared-styles'
 
-type Props = {
-    visibilityKm: number;
-}
-
-export function VisibilityItem({ visibilityKm }: Props) {
+export function VisibilityItem({ visibilityKm }: VisibilityItemProps) {
     return (
         <Container>
             <Label>Visibility</Label>

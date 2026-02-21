@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useWeatherContext } from '../../../context/WeatherContext'
 import {
   UvIndex,
   Humidity,
@@ -10,8 +11,6 @@ import {
   MobileScreenWithCard,
 } from '../../../components'
 import { Container, InfoButton, InfoIcon } from './MobileScreen3.style'
-import { useWeatherContext } from '../../../context/WeatherContext'
-// import { ScreenLayoutGlass } from '../../../layouts/ScreenLayout'
 
 export function MobileScreen3() {
     const { weather } = useWeatherContext()

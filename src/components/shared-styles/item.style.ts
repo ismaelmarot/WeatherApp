@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { GENERAL_COLORS } from '../../constants'
 import { flex } from '../../mixins'
+import { GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.div`
     ${flex('row','flex-end','space-between')}
@@ -12,19 +12,20 @@ export const Container = styled.div`
 `
 
 export const Label = styled.div`
-  font-size: 1.2rem;
-`;
+    font-size: 1.2rem;
+`
 
 export const Value = styled.div`
-  ${flex('row','flex-end','center')}
-  font-size: 1.5rem;
-  font-weight: 600;
-`;
+    ${flex('row','flex-end','center')}
+    font-size: 1.5rem;
+    font-weight: 600;
+`
 
 export const Strong = styled.strong`
-  font-size: 1rem;
-  height: 100%;
-  padding: .2rem;
-  opacity: .5;
-  color: ${GENERAL_COLORS.white};
+    height: 100%;
+    padding: .2rem .1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    opacity: .5;
+    color: ${GENERAL_COLORS.white};
 `

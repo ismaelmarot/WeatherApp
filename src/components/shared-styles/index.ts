@@ -1,0 +1,1 @@
+export { Container, Label, Value, Strong } from './item.style'

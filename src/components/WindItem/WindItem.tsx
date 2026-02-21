@@ -1,6 +1,7 @@
 import type { WindItemProps } from '../../types'
-import { Container, Label, Value, ArrowContainer, WindArrowIcon } from './WindItem.style'
 import { windRotation } from '../../utils'
+import { Strong } from '../shared-styles'
+import { Container, Label, Value, ArrowContainer, WindArrowIcon, WindSpeed } from './WindItem.style'
 
 export function WindItem({
   windKph,
@@ -15,7 +16,10 @@ export function WindItem({
         <ArrowContainer>
           <WindArrowIcon $rotation={rotation} />
         </ArrowContainer>
-        {windKph} km/h
+        <WindSpeed>
+          {windKph} 
+          <Strong>km/h</Strong>
+        </WindSpeed>
       </Value>
     </Container>
   )

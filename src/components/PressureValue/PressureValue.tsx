@@ -1,5 +1,5 @@
 import type { PressureProps } from '../../types'
-import { Container, Label, Value, Strong } from './PressureValue.style'
+import { Container, Label, Strong, Value } from '../shared-styles'
 
 export function PressureValue({ value }: PressureProps) {
     return (
