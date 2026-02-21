@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import { WeatherSearch } from '../../../components'
 import { useWeatherContext } from '../../../context'
-import { ScreenLayoutNoGlass } from '../../../layouts/ScreenLayout'
-
+import { ScreenLayoutNoGlass } from '../../../layouts'
 
 export function MobileScreen1() {
   const [city, setCity] = useState('')

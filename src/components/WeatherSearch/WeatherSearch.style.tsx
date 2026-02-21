@@ -3,18 +3,19 @@ import { flex, size } from '../../mixins'
 import { GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.div`
-  position: relative;
-  ${flex('column','center','flex-start')}
-  ${size('100%','100%')}
-  padding-top: 8rem;
+  ${flex('column','center','center')}
+  height: 100vh;
+  /* ${size('100%','100%')} */
+  /* position: relative; */
+  /* padding-top: 8rem; */
 `
 
 export const SearchWrapper = styled.div`
   ${flex('row','center','center')}
   position: relative;
   align-self: center;
-  width: 21rem;
-  max-width: 21rem;
+  width: 20rem;
+  max-width: 20rem;
 `
 
 export const SearchIcon = styled.div`
@@ -30,6 +31,7 @@ export const SearchIcon = styled.div`
 
 export const Input = styled.input`
   ${size('100%','4rem')}
+  padding-left: 1rem;
   font-size: 2rem;
   outline: none;
   border-radius: 999px;
@@ -45,6 +47,7 @@ export const Input = styled.input`
   }
 
   &::placeholder {
+    padding-left: 1rem;
     color: ${GENERAL_COLORS.darkGrey};
   }
 `

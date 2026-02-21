@@ -10,8 +10,13 @@ import {
     // MobileScreen8,
     // MobileScreen9
 } from '../mobile'
-import { TabletScreen1, TabletScreen2 } from '../tablet'
-import { DesktopScreen1 } from '../desktop'
+import {
+    TabletScreen1,
+    TabletScreen2
+} from '../tablet'
+import {
+    DesktopScreen1
+} from '../desktop'
 
 export function ScreenRouter() {
     const device = useDevice();

@@ -2,10 +2,9 @@ import styled from 'styled-components'
 import { flex } from '../../mixins'
 
 export const BaseContainer = styled.section`
-  ${flex('column','center','flex-start')}
+  ${flex('column','center','center')}
   min-height: 100dvh;
-  width: 90%;
-  margin: 10dvh 0;
+  width: 100%;
   scroll-snap-align: start;
 
   padding-top: env(safe-area-inset-top);
@@ -36,6 +35,6 @@ export const NoGlassContainer = styled(BaseContainer)`
 export const Content = styled.div`
   flex: 1;
   width: 100%;
-  max-width: 480px;
-  padding: 16px 20px;
+  /* max-width: 480px; */
+  border: 2px dashed blue;
 `
