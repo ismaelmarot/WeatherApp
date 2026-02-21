@@ -1,8 +1,8 @@
 import styled from 'styled-components'
+import { size } from '../../mixins'
 
 export const Viewport = styled.div`
-    height: 100dvh;
-    width: 100%;
+    ${size('100%','100dvh')}
     overflow-y: auto;
     scroll-snap-type: y mandatory;
 `

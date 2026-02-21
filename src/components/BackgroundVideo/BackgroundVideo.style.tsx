@@ -3,9 +3,10 @@ import { size } from '../../mixins'
 
 export const Video = styled.video`
     ${size('100%','100%')}
+    ${size('100vw','100vh')}
     position: fixed;
-    inset: 0;
     object-fit: cover;
-    z-index: 0;
-    pointer-events: none;
+    top: 0;
+    left: 0;
+    z-index: -1;
 `

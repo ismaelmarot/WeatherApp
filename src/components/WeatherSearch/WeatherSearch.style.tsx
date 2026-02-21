@@ -3,19 +3,17 @@ import { flex, size } from '../../mixins'
 import { GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.div`
-  ${flex('column','center','center')}
+  ${flex('column','center','flex-start')}
   height: 100vh;
-  /* ${size('100%','100%')} */
-  /* position: relative; */
-  /* padding-top: 8rem; */
 `
 
 export const SearchWrapper = styled.div`
   ${flex('row','center','center')}
   position: relative;
   align-self: center;
-  width: 20rem;
+  width: 90%;
   max-width: 20rem;
+  margin-top: 8rem;
 `
 
 export const SearchIcon = styled.div`
@@ -47,7 +45,6 @@ export const Input = styled.input`
   }
 
   &::placeholder {
-    padding-left: 1rem;
     color: ${GENERAL_COLORS.darkGrey};
   }
 `
@@ -59,7 +56,7 @@ export const ListPlacesSearch = styled.div`
   right: 0;
 
   width: 100%;
-  max-height: 20rem;
+  max-height: 25rem;
 
   box-sizing: border-box;
 

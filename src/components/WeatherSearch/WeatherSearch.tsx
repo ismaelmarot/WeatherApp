@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react'
 import { FiSearch } from 'react-icons/fi'
-import type { LocationResultProps, WeatherSearchProps } from '../../types'
+import type {
+  LocationResultProps,
+  WeatherSearchProps
+} from '../../types'
 import {
   Container,
   Input,

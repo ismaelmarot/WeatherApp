@@ -1,22 +1,24 @@
 import { useState } from 'react'
-import { WeatherSearch } from '../../../components'
 import { useWeatherContext } from '../../../context'
-import { ScreenLayoutNoGlass } from '../../../layouts'
+import { WeatherSearch } from '../../../components'
+import { CardMobile, ScreenMobile } from '../../../styles'
 
 export function MobileScreen1() {
   const [city, setCity] = useState('')
   const { fetchByCoords } = useWeatherContext()
 
   return (
-    <ScreenLayoutNoGlass>
-      <WeatherSearch
-        value={city}
-        onChange={setCity}
-        onSelect={(location) => {
-          setCity(location.name);
-          fetchByCoords(location.lat, location.lon);
-        }}
-      />
-    </ScreenLayoutNoGlass>
+    <ScreenMobile>
+      <CardMobile>
+        <WeatherSearch
+          value={city}
+          onChange={setCity}
+          onSelect={(location) => {
+            setCity(location.name);
+            fetchByCoords(location.lat, location.lon);
+          }}
+        />
+      </CardMobile>
+    </ScreenMobile>
   )
 }
