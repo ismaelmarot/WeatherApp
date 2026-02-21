@@ -1,15 +1,8 @@
 import type { WeatherCurrentProps } from '../../types'
 import { CoordinatesInfo, WeatherIcon } from '..'
-import {
-    Container,
-    Temp,
-    Condition,
-    Location,
-    TempIconContainer
-} from './WeatherCurrent.style'
+import { Container, Temp, Condition, Location, TempIconContainer } from './WeatherCurrent.style'
 
 export function WeatherCurrent({ weather }: WeatherCurrentProps) {
-
     const activeCoords = weather
     ? {
         latitude: weather.location.lat,

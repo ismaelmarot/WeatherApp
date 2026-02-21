@@ -41,7 +41,7 @@ export const Input = styled.input`
 
   &:focus {
     border-color: ${GENERAL_COLORS.blue};
-    box-shadow: 0 0 0 3px rgba(39, 88, 137, 0.15);
+    box-shadow: 0 0 0 3px rgba(0, 128, 255, 0.15);
   }
 
   &::placeholder {

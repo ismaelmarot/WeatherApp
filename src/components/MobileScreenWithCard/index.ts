@@ -1,0 +1,1 @@
+export { MobileScreenWithCard } from './MobileScreenWithCard'

@@ -1,9 +1,6 @@
 import { useEffect, useState } from 'react'
-import { FiSearch } from 'react-icons/fi'
-import type {
-  LocationResultProps,
-  WeatherSearchProps
-} from '../../types'
+import type { LocationResultProps, WeatherSearchProps } from '../../types'
+import { ICONS } from '../../constants'
 import {
   Container,
   Input,
@@ -35,23 +32,23 @@ export function WeatherSearch({
       try {
         const res = await fetch(
           `${BASE_URL}/search.json?key=${API_KEY}&q=${value}`
-        );
-        const data = await res.json();
-        setResults(data);
-        setShowList(true);
+        )
+        const data = await res.json()
+        setResults(data)
+        setShowList(true)
       } catch (err) {
-        console.error(err);
+        console.error(err)
       }
-    };
+    }
 
-    fetchLocations();
-  }, [value]);
+    fetchLocations()
+  }, [value])
 
   return (
     <Container>
       <SearchWrapper>
         <SearchIcon>
-          <FiSearch />
+          <ICONS.SearchIcon />
         </SearchIcon>
 
         <Input

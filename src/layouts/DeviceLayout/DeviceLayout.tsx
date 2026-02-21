@@ -1,7 +1,7 @@
-import { BackgroundVideo } from '../../components'
 import { useDevice } from '../../hooks'
 import { MobileScreens } from '../../screens'
 import { ScrollViewport } from '../ScrollViewport'
+import { BackgroundVideo } from '../../components'
 
 export function DeviceLayout() {
   const device = useDevice()
@@ -10,7 +10,6 @@ export function DeviceLayout() {
     return (
       <>
         <BackgroundVideo />
-        
         <ScrollViewport>
           <MobileScreens />
         </ScrollViewport>

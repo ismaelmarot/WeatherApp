@@ -13,7 +13,7 @@ export const Container = styled.div`
 export const TempIconContainer = styled.div`
     ${flex('column','flex-start','flex-start')}
     width: 100%;
-    margin: 1rem;
+    padding: 1rem;
 `
 
 export const Temp = styled.div`
@@ -27,6 +27,7 @@ export const Location = styled.div`
     ${flex('column','center','center')}
     font-size: 1.5rem;
     color: ${GENERAL_COLORS.white};
+    margin-bottom: 1rem;
 `
 
 export const Condition = styled.div`
