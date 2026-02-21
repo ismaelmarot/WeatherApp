@@ -1,6 +1,6 @@
 import { useDevice } from '../../hooks'
-import { MobileScreens } from '../../screens/mobile'
-import { ScrollViewport } from '../ScrollViewport/ScrollViewport'
+import { MobileScreens } from '../../screens'
+import { ScrollViewport } from '../ScrollViewport'
 // import { TabletScreens } from '../screens/tablet'
 // import { DesktopScreen } from '../screens/desktop'
 

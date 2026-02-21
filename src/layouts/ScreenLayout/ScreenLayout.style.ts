@@ -3,8 +3,8 @@ import { flex } from '../../mixins'
 
 export const BaseContainer = styled.section`
   ${flex('column','center','center')}
-  min-height: 100dvh;
-  width: 100%;
+  height: 100dvh;
+  box-sizing: border-box;
   scroll-snap-align: start;
 
   padding-top: env(safe-area-inset-top);
@@ -34,7 +34,5 @@ export const NoGlassContainer = styled(BaseContainer)`
 
 export const Content = styled.div`
   flex: 1;
-  width: 100%;
-  /* max-width: 480px; */
-  border: 2px dashed blue;
+  width: 90%;
 `

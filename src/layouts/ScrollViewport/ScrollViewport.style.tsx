@@ -5,5 +5,4 @@ export const Viewport = styled.div`
     width: 100%;
     overflow-y: auto;
     scroll-snap-type: y mandatory;
-    border: 3px solid red;
 `
