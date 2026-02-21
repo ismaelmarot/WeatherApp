@@ -10,7 +10,7 @@ import {
   InfoPopupScreen3,
   MobileScreenWithCard,
 } from '../../../components'
-import { Container, InfoButton, InfoIcon } from './MobileScreen3.style'
+import { Container, InfoButton, InfoIcon, DataInfo } from './MobileScreen3.style'
 
 export function MobileScreen3() {
     const { weather } = useWeatherContext()
@@ -21,10 +21,12 @@ export function MobileScreen3() {
     return (
         <MobileScreenWithCard>
             <Container>
-                <UvIndex value={weather.current.uv} />
-                <Humidity value={weather.current.humidity} />
-                <PressureValue value={weather.current.pressure_mb} />
-                <VisibilityItem visibilityKm={weather.current.vis_km} />
+                <DataInfo>
+                    <UvIndex value={weather.current.uv} />
+                    <Humidity value={weather.current.humidity} />
+                    <PressureValue value={weather.current.pressure_mb} />
+                    <VisibilityItem visibilityKm={weather.current.vis_km} />
+                </DataInfo>
                 <WindItem
                     windKph={weather.current.wind_kph}
                     windDir={weather.current.wind_dir}
