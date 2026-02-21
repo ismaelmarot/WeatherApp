@@ -1,11 +1,11 @@
 import type { PressureProps } from '../../types'
-import { Container } from './PressureValue.style'
+import { Container, Label, Value, Strong } from './PressureValue.style'
 
 export function PressureValue({ value }: PressureProps) {
     return (
         <Container>
-            <span>Pressure: </span>
-            <strong>{value} mb</strong>
+            <Label>Pressure</Label>
+            <Value>{value} <Strong>mb</Strong></Value>
         </Container>
     )
 }

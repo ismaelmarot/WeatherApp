@@ -3,21 +3,28 @@ import { GENERAL_COLORS } from '../../constants'
 import { flex } from '../../mixins/setFlex'
 
 export const Container = styled.div`
-  margin: 2rem 0;
-  padding: 1rem;
-  box-sizing: border-box;
-  border-radius: 30px;
+  ${flex('row','flex-end','space-between')}
+  padding: .5rem 1rem;
   font-size: 2rem;
+  border-radius: 30px;
   color: ${GENERAL_COLORS.white};
-  border: 2px solid ${GENERAL_COLORS.white};
-`;
+   background-color: rgba(0, 0, 0, 0.6);
+`
 
 export const Label = styled.div`
   font-size: 1.2rem;
-`;
+`
 
 export const Value = styled.div`
-  ${flex('column','center','center')}
-  font-size: 3rem;
-  font-weight: 600;
-`;
+    ${flex('row','flex-end','center')}
+    font-size: 1.5rem;
+    font-weight: 600;
+`
+
+export const Strong = styled.strong`
+    font-size: 1rem;
+    height: 100%;
+    padding: .2rem;
+    opacity: .5;
+    color: ${GENERAL_COLORS.white};
+`

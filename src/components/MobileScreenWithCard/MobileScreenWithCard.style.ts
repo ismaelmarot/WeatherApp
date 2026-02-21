@@ -21,5 +21,4 @@ export const CardMobile = styled.div`
     border-radius: 30px;
     background-color: ${GENERAL_COLORS.BlackGlass};
     box-shadow: 0 4px 16px ${GENERAL_COLORS.black};
-    border: 2px solid red;
 `;

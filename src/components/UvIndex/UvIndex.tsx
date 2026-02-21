@@ -1,4 +1,4 @@
-import { Container } from './UvIndex.style'
+import { Container, Label, Value } from './UvIndex.style'
 
 type UvIndexProps = {
     value: number;
@@ -7,8 +7,8 @@ type UvIndexProps = {
 export function UvIndex({ value }: UvIndexProps) {
     return (
         <Container>
-            <span>UV Index: </span>
-            <strong>{value}</strong>
+            <Label>UV Index</Label>
+            <Value>{value}</Value>
         </Container>
     );
 }

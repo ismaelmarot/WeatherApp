@@ -1,11 +1,11 @@
-import type { HumidityProps } from '../../types';
-import { Container } from './Humidity.style'
+import type { HumidityProps } from '../../types'
+import { Container, Label, Value, Strong } from './Humidity.style'
 
 export function Humidity({ value }: HumidityProps) {
   return (
     <Container>
-      <span>Humidity: </span>
-      <strong>{value}%</strong>
+      <Label>Humidity</Label>
+      <Value>{value} <Strong>%</Strong></Value>
     </Container>
   );
 }
