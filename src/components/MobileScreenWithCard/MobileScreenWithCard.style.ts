@@ -4,7 +4,7 @@ import { GENERAL_COLORS } from '../../constants'
 
 export const ScreenMobile = styled.div`
     ${flex('column','center','center')}
-    ${size('100vw','100dvh')}    
+    ${size('100vw','100dvh')}  
     position: relative;
     scroll-snap-align: start;
     box-sizing: border-box;
@@ -15,7 +15,7 @@ export const ScreenMobile = styled.div`
 export const CardMobile = styled.div`
      ${flex('column','center','center')}
     width: 90%;
-    max-height: 100%;
+    min-height: 100%;
     box-sizing: border-box;
     border-radius: 30px;
     background-color: ${GENERAL_COLORS.BlackGlass};

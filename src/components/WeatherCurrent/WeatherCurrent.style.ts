@@ -5,6 +5,7 @@ import { GENERAL_COLORS } from '../../constants'
 export const Container = styled.div`
     ${flex('column','center','space-between')}
     ${size('100%','95dvh')}
+    padding: 1rem 0;
     text-shadow:
         0 1px 2px rgba(0, 0, 0, 0.6),
         0 4px 12px rgba(0, 0, 0, 0.25);
@@ -27,7 +28,6 @@ export const Location = styled.div`
     ${flex('column','center','center')}
     font-size: 1.5rem;
     color: ${GENERAL_COLORS.white};
-    margin-bottom: 1rem;
 `
 
 export const Condition = styled.div`

@@ -22,7 +22,7 @@ export function MobileScreen3() {
     return (
         <MobileScreenWithCard>
             <Container>
-                {/* <UvIndex value={weather.current.uv} />
+                <UvIndex value={weather.current.uv} />
                 <Humidity value={weather.current.humidity} />
                 <PressureValue value={weather.current.pressure_mb} />
                 <VisibilityItem visibilityKm={weather.current.vis_km} />
@@ -42,7 +42,7 @@ export function MobileScreen3() {
                     >
                         <InfoPopupScreen3 />
                     </InfoPopup>
-                )} */}
+                )}
             </Container>
         </MobileScreenWithCard>
     )
