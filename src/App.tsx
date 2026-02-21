@@ -1,8 +1,10 @@
 import 'weather-icons/css/weather-icons.css'
+import { DeviceLayout } from './layouts'
+
 // import { GlobalStyle } from './styles/GlobalStyle'
 // import { Home } from './pages'
 // import { AppLayout } from './components'
-import { DeviceLayout } from './app/DeviceLayout'
+
 
 function App() {
 

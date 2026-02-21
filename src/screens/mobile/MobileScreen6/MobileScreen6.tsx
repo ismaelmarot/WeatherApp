@@ -1,8 +1,8 @@
 import { useWeatherContext } from '../../../context'
 import { RainChance, RainChanceChart } from '../../../components'
 import { getCurrentHour } from '../../../utils'
-import { ScreenLayoutGlass } from '../../../layouts'
 import { BottomElement, Container, TopElement } from './MobileScreen6.style'
+import { ScreenLayoutGlass } from '../../../layouts/ScreenLayout'
 
 export function MobileScreen6() {
   const { weather, forecast } = useWeatherContext()

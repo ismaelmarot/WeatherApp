@@ -1,6 +1,6 @@
-import { useDevice } from '../hooks'
-import { ScrollViewport } from './ScrollViewport'
-import { MobileScreens } from '../screens/mobile'
+import { useDevice } from '../../hooks'
+import { MobileScreens } from '../../screens/mobile'
+import { ScrollViewport } from '../ScrollViewport/ScrollViewport'
 // import { TabletScreens } from '../screens/tablet'
 // import { DesktopScreen } from '../screens/desktop'
 
@@ -23,5 +23,6 @@ export function DeviceLayout() {
 //     )
 //   }
 
+  return null
 //   return <DesktopScreen />
 }

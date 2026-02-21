@@ -2,13 +2,13 @@ import { useDevice } from '../../hooks'
 import {
     MobileScreen1,
     MobileScreen2,
-    MobileScreen3,
-    MobileScreen4,
-    MobileScreen5,
-    MobileScreen6,
-    MobileScreen7,
-    MobileScreen8,
-    MobileScreen9
+    // MobileScreen3,
+    // MobileScreen4,
+    // MobileScreen5,
+    // MobileScreen6,
+    // MobileScreen7,
+    // MobileScreen8,
+    // MobileScreen9
 } from '../mobile'
 import { TabletScreen1, TabletScreen2 } from '../tablet'
 import { DesktopScreen1 } from '../desktop'

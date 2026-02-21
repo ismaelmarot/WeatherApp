@@ -1,6 +1,6 @@
-import { ScreenLayoutGlass } from '../../../layouts'
 import { AirQuality } from '../../../components'
 import { useWeatherContext } from '../../../context'
+import { ScreenLayoutGlass } from '../../../layouts/ScreenLayout'
 import { Container } from './MobileScreen5.style'
 
 export function MobileScreen5() {

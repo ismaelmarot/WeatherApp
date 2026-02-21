@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { InfoPopup, InfoPopupScreen4, PressureGauge, WeatherDayInfo } from '../../../components'
 import { useWeatherContext } from '../../../context'
-import { ScreenLayoutGlass } from '../../../layouts'
 import { Container, InfoButton, InfoIcon } from './MobileScreen4.style'
+import { ScreenLayoutGlass } from '../../../layouts/ScreenLayout'
 
 export function MobileScreen4() {
     const { weather } = useWeatherContext()
