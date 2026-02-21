@@ -17,7 +17,7 @@ export const TempIconContainer = styled.div`
 `
 
 export const Temp = styled.div`
-    font-size: 14rem;
+    font-size: 10rem;
     font-weight: 500;
     line-height: 1;
     color: ${GENERAL_COLORS.white};

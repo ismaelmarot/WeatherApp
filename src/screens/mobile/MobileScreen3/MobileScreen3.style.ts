@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { GENERAL_COLORS, ICONS } from '../../../constants'
 
 export const Container = styled.div`
+    border: 2px solid red;
     position: relative;
     height: 100%;
     text-shadow:
