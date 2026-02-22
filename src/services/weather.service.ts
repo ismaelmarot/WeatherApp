@@ -9,7 +9,7 @@ export async function getWeatherByCoords(
   lon: number
 ): Promise<WeatherResponse> {
   const response = await fetch(
-    `${baseUrl}/forecast.json?key=${apiKey}&q=${lat},${lon}&days=1&lang=en&aqi=yes`
+    `${baseUrl}/forecast.json?key=${apiKey}&q=${lat},${lon}&days=${defaultDays}&lang=en&aqi=yes`
   )
 
   if (!response.ok) {
@@ -25,7 +25,7 @@ export async function getWeatherByCity(
   city: string
 ): Promise<WeatherResponse> {
   const response = await fetch(
-    `${baseUrl}/forecast.json?key=${apiKey}&q=${city}&days=1&lang=es`
+    `${baseUrl}/forecast.json?key=${apiKey}&q=${city}${defaultDays}&lang=es`
   )
 
   if (!response.ok) {

@@ -1,11 +1,12 @@
-import { getMoonImage } from '../../constants/moonImages'
+import { getMoonImage } from '../../constants'
 import type { LunarCalendarProps } from '../../types/LunarCalendar.type'
-import { Calendar, Image, Item, Day, Lightning } from './LunarCalendar.style'
+import { Container, Calendar, Title,Image, Item, Day, Lightning } from './LunarCalendar.style'
 
 export function LunarCalendar({ days }: LunarCalendarProps) {
+
     return (
-        <>
-        <h3>Lunar calendar</h3>
+        <Container>
+        <Title>Lunar calendar</Title>
         <Calendar>
             {days.map(day => (
                 <Item key={day.date}>
@@ -22,6 +23,6 @@ export function LunarCalendar({ days }: LunarCalendarProps) {
                 </Item>
             ))}
         </Calendar>
-        </>
+        </Container>
     )
 }
