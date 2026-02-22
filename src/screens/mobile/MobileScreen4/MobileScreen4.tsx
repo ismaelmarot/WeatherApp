@@ -21,20 +21,6 @@ export function MobileScreen4() {
                 <WeatherDayInfo weather={weather} />
                 <PressureGauge value={weather.current.pressure_mb} />
             </Container>
-
-             <InfoButton onClick={() => setOpen(true)}>
-                <InfoIcon />
-            </InfoButton>
-            
-            {/* POPUP */}
-            {open && (
-                <InfoPopup
-                    title="Temperature details"
-                    onClose={() => setOpen(false)}
-                >
-                    <InfoPopupScreen4 />
-                </InfoPopup>
-            )}
         </MobileScreenWithCard>
     )
 }

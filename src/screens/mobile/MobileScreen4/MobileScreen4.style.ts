@@ -3,7 +3,7 @@ import { flex, size } from '../../../mixins'
 import { GENERAL_COLORS, ICONS } from '../../../constants'
 
 export const Container = styled.div`
-    ${flex('column','center','space-between')}
+    ${flex('column','center','center')}
     position: relative;
     height: 100%;
     min-width: 95%;

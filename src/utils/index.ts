@@ -1,4 +1,5 @@
 export { formatHour } from './formatHour.utils'
+export { getArrowCoordinates } from './pressure.utils'
 export { getAqiText } from './getAqiText.utils'
 export { getCurrentHour } from './getCurrentHour.utils'
 export { getNextHours } from './getNextOurs.utils'
