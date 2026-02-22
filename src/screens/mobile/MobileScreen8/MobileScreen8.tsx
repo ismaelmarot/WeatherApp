@@ -1,8 +1,7 @@
 import { useWeatherContext } from '../../../context'
-import { DailyRainChart, HourlyWeatherChart } from '../../../components'
 import { getNextHours } from '../../../utils'
+import { DailyRainChart, HourlyWeatherChart, MobileScreenWithCard } from '../../../components'
 import { BottomElement, Container, TopElement } from './MobileScreen8.style'
-import { ScreenLayoutGlass } from '../../../layouts/ScreenLayout'
 
 export function MobileScreen8() {
     const { weather, forecast } = useWeatherContext()
@@ -13,7 +12,7 @@ export function MobileScreen8() {
     if (!nextHours || nextHours.length === 0) return null;
 
     return (
-        <ScreenLayoutGlass>
+        <MobileScreenWithCard>
             <Container>
                  <TopElement>
                     {hourlyForecast.length > 0 && (
@@ -26,6 +25,6 @@ export function MobileScreen8() {
                     )}
                  </BottomElement>
             </Container>            
-        </ScreenLayoutGlass>
+        </MobileScreenWithCard>
     )
 }

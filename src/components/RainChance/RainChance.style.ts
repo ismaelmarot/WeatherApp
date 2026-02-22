@@ -8,8 +8,7 @@ export const Container = styled.div`
   padding: 1rem;
   border-radius: 30px;
   color: ${GENERAL_COLORS.white};
-  opacity: 0.6;
-  background-color: ${GENERAL_COLORS.black}
+  background-color: ${GENERAL_COLORS.BlackGlass};
 `
 
 export const Title = styled.h4`

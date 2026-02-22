@@ -6,13 +6,13 @@ export const Wrapper = styled.div`
   ${flex('row','center','center')}
   ${size('100%','auto')}
   border-radius: 34px;
-  opacity: 0.6;
   color: ${GENERAL_COLORS.white};
-  background-color: ${GENERAL_COLORS.black};
+  background-color: ${GENERAL_COLORS.BlackGlass};
 `
 
 export const Label = styled.div`
   font-size: 1rem;
+  color: ${GENERAL_COLORS.white}
 `
 
 export const Info = styled.div`

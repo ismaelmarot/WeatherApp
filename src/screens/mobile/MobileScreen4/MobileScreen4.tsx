@@ -1,6 +1,5 @@
 import { useWeatherContext } from '../../../context'
 import {
-
     MobileScreenWithCard,
     PressureGauge,
     WeatherDayInfo

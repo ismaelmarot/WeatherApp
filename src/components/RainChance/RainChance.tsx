@@ -1,18 +1,7 @@
 import type { RainChanceProps } from '../../types'
-import {
-    Container,
-    Title,
-    Bar,
-    Fill,
-    Value,
-    Badge
-} from './RainChance.style'
+import { Container, Title, Bar, Fill, Value, Badge } from './RainChance.style'
 
-export function RainChance({
-    chance,
-    isRainingNow = false
-}: RainChanceProps) {
-    
+export function RainChance({ chance, isRainingNow = false }: RainChanceProps) {
     const safeChance = Math.min(Math.max(chance, 0), 100);
 
     return (

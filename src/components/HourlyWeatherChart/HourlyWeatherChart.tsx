@@ -25,8 +25,8 @@ export function HourlyWeatherChart({ data }: HourlyForecastChartProps) {
       <Chart>
           <AreaChart
             data={chartData}
-            width={280}
-            height={100}
+            width={260}
+            height={250}
             margin={{ top: 0, right: 8, left: 0, bottom: 0 }}
           >
             <defs>

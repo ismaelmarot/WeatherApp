@@ -1,7 +1,6 @@
-import { AirQuality, MobileScreenWithCard } from '../../../components'
 import { useWeatherContext } from '../../../context'
-import { ScreenLayoutGlass } from '../../../layouts/ScreenLayout'
 import { Container } from './MobileScreen5.style'
+import { AirQuality, MobileScreenWithCard } from '../../../components'
 
 export function MobileScreen5() {
     const { weather } = useWeatherContext()
