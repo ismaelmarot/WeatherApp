@@ -1,4 +1,3 @@
-
 import { BackgroundVideo } from '../BackgroundVideo'
 import { Container } from './AppLayout.style'
 
