@@ -32,15 +32,16 @@ export const Input = styled.input`
   padding-left: 1rem;
   font-size: 2rem;
   outline: none;
+  color: ${GENERAL_COLORS.white};
   border-radius: 999px;
-  border: 2px solid ${GENERAL_COLORS.grey};
-  background-color: ${GENERAL_COLORS.white};
+  border: 2px solid ${GENERAL_COLORS.BlackGlass};
+  background-color: ${GENERAL_COLORS.BlackGlass};
 
   -webkit-appearance: none;
   appearance: none;
 
   &:focus {
-    border-color: ${GENERAL_COLORS.blue};
+    border-color: ${GENERAL_COLORS.grey};
     box-shadow: 0 0 0 3px rgba(0, 128, 255, 0.15);
   }
 
@@ -64,8 +65,8 @@ export const ListPlacesSearch = styled.div`
   overflow-y: auto;
   
   border-radius: 2rem;
-  border: 2px solid ${GENERAL_COLORS.darkGrey};
-  background: ${GENERAL_COLORS.white};
+  border: 2px solid ${GENERAL_COLORS.BlackGlass};
+  background: ${GENERAL_COLORS.BlackGlass};
 `
 
 export const ItemPlace = styled.div`
@@ -73,7 +74,8 @@ export const ItemPlace = styled.div`
   padding: 0.6rem 0.8rem;
   font-size: 1.4rem;
   cursor: pointer;
-  border-bottom: 1px solid ${GENERAL_COLORS.darkGrey};
+  color: white;
+  border-bottom: 1px solid ${GENERAL_COLORS.grey};
 
   &:hover {
     background-color: ${GENERAL_COLORS.grey};
@@ -82,5 +84,6 @@ export const ItemPlace = styled.div`
 
 export const LocationPlace = styled.div`
   font-size: 1rem;
-  opacity: .7;
+  opacity: .5;
+  color: white;
 `

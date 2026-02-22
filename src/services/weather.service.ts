@@ -13,7 +13,7 @@ export async function getWeatherByCoords(
   )
 
   if (!response.ok) {
-    const error = await response.json();
+    const error = await response.json()
     throw new Error(error.error?.message || 'Error fetching weather')
   }
 
@@ -25,11 +25,11 @@ export async function getWeatherByCity(
   city: string
 ): Promise<WeatherResponse> {
   const response = await fetch(
-    `${baseUrl}/forecast.json?key=${apiKey}&q=${city}${defaultDays}&lang=es`
+    `${baseUrl}/forecast.json?key=${apiKey}&q=${city}&days=${defaultDays}&lang=es`
   )
 
   if (!response.ok) {
-    const error = await response.json();
+    const error = await response.json()
     throw new Error(error.error?.message || 'City not found')
   }
 
@@ -44,10 +44,10 @@ export async function getForecastByCoords(
 ) {
   const response = await fetch(
     `${baseUrl}/forecast.json?key=${apiKey}&q=${lat},${lon}&days=${days}&lang=es`
-  );
+  )
 
   if (!response.ok) {
-    const error = await response.json();
+    const error = await response.json()
     throw new Error(error.error?.message || 'Forecast error')
   }
 
