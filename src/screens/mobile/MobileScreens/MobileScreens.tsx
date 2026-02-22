@@ -3,6 +3,7 @@ import {
   MobileScreen2,
   MobileScreen3,
   MobileScreen4,
+  MobileScreen5,
 } from '..'
 
 export function MobileScreens() {
@@ -12,6 +13,7 @@ export function MobileScreens() {
       <MobileScreen2 />
       <MobileScreen3 />
       <MobileScreen4 />
+      <MobileScreen5 />
     </>
   )
 }

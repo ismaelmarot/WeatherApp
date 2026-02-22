@@ -1,13 +1,13 @@
 import type { PressureProps } from '../../types'
-import { Container, HPA, Pressure, Title } from './PressureGauge.style'
+import { getArrowCoordinates } from '../../utils'
 import {
   PRESSURE_MIN,
   PRESSURE_MAX,
   PRESSURE_RADIUS,
   PRESSURE_STROKE,
+  PRESSURE_COLORS,
 } from '../../constants'
-import { getArrowCoordinates } from '../../utils'
-import { PRESSURE_COLORS } from '../../constants'
+import { Container, HPA, Pressure, Title } from './PressureGauge.style'
 
 export function PressureGauge({ value }: PressureProps) {
   const clamped = Math.min(Math.max(value, PRESSURE_MIN), PRESSURE_MAX)
