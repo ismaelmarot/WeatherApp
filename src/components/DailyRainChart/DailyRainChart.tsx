@@ -16,7 +16,7 @@ export function DailyRainChart({ hours }: DailyRainChartProps) {
       <Chart>
           <AreaChart
             data={chartData}
-            width={320}
+            width={250}
             height={180}
             margin={{ top: 10, right: 8, left: 0, bottom: 0 }}
           >

@@ -1,13 +1,12 @@
 import styled from 'styled-components'
-import { flex } from '../../mixins'
+import { flex, size } from '../../mixins'
 import { GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.section`
-  ${flex('column','center','center')}
-  width: 100%;   /* ✅ solo width */
+  ${flex('column','center','space-between')}
+  ${size('100%','95%')}
   border-radius: 30px;
-  opacity: 0.6;
-  background: ${GENERAL_COLORS.black};
+  background: ${GENERAL_COLORS.BlackGlass};
 `
 
 export const H3 = styled.h3`
