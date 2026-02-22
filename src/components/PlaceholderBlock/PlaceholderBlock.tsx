@@ -1,9 +1,6 @@
+import type { PlaceholderBlockProps } from '../../types'
 import { Block } from './PlaceholderBlock.style'
 
-type Props = {
-    label: string;
-};
-
-export function PlaceholderBlock({ label }: Props) {
+export function PlaceholderBlock({ label }: PlaceholderBlockProps) {
     return <Block>{label}</Block>;
 }

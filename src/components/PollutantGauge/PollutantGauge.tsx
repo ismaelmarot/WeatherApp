@@ -23,7 +23,7 @@ export const PollutantGauge: React.FC<PollutantGaugeProps> = ({
   return (
     <Wrapper>
       <svg width='100' height='100'>
-        {/* Fondo */}
+        {/* Background */}
         <circle
           cx='50'
           cy='50'
@@ -33,7 +33,7 @@ export const PollutantGauge: React.FC<PollutantGaugeProps> = ({
           fill='none'
         />
 
-        {/* Progreso */}
+        {/* Progress */}
         <circle
           cx='50'
           cy='50'
@@ -54,7 +54,7 @@ export const PollutantGauge: React.FC<PollutantGaugeProps> = ({
           </linearGradient>
         </defs>
 
-        {/* Valor */}
+        {/* Value */}
         <text
           x='50'
           y='55'

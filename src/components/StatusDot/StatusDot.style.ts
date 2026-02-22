@@ -1,7 +1,8 @@
 import styled from 'styled-components'
-import { ICONS } from '../../constants'
-import type { StatusDotStyledProps } from '../../types'
+import { size } from '../../mixins'
 
-export const StatusDotStyled = styled(ICONS.circle)<StatusDotStyledProps>`
-    color: ${ ({ $color }) => $color }
+export const StatusDotStyled = styled.div<{ $color: string }>`
+    ${size('12px','12px')}
+    border-radius: 50%;
+    background-color: ${props => props.$color};
 `

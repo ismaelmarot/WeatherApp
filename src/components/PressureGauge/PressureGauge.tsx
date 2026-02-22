@@ -62,7 +62,7 @@ export function PressureGauge({ value }: PressureProps) {
 
         {/* Central data */}
         <Pressure x={30} y={50}>
-          {Math.round(value)}
+          {Math.round(clamped)}
         </Pressure>
 
         <HPA x={38} y={70}>

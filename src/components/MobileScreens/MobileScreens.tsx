@@ -1,4 +1,4 @@
-import { ScreensWrapper, Screen } from './MobileScreens.style';
+import { ScreensWrapper, Screen } from './MobileScreens.style'
 
 export function MobileScreens() {
     return (
@@ -10,5 +10,5 @@ export function MobileScreens() {
         <Screen style={{ background: '#111' }}>SCREEN 5</Screen>
         <Screen style={{ background: '#181818' }}>SCREEN 6</Screen>
         </ScreensWrapper>
-    );
+    )
 }

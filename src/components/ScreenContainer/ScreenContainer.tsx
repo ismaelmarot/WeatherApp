@@ -1,10 +1,6 @@
-import type { ReactNode } from 'react';
-import { Container } from './ScreenContainer.style';
+import type { ScreenContainerProps } from '../../types'
+import { Container } from './ScreenContainer.style'
 
-type Props = {
-  children: ReactNode;
-};
-
-export function ScreenContainer({ children }: Props) {
+export function ScreenContainer({ children }: ScreenContainerProps) {
   return <Container>{children}</Container>;
 }
