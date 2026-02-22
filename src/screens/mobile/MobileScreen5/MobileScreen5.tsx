@@ -1,4 +1,4 @@
-import { AirQuality } from '../../../components'
+import { AirQuality, MobileScreenWithCard } from '../../../components'
 import { useWeatherContext } from '../../../context'
 import { ScreenLayoutGlass } from '../../../layouts/ScreenLayout'
 import { Container } from './MobileScreen5.style'
@@ -9,7 +9,7 @@ export function MobileScreen5() {
     if (!weather) return null;
 
     return (
-        <ScreenLayoutGlass>
+        <MobileScreenWithCard>
             <Container>
                 {weather.current.air_quality && (
                     <AirQuality
@@ -23,6 +23,6 @@ export function MobileScreen5() {
                     />
                 )}
             </Container>
-        </ScreenLayoutGlass>
+        </MobileScreenWithCard>
     )
 }
