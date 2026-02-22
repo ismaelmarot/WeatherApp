@@ -1,8 +1,17 @@
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { Video } from './BackgroundVideo.style'
 
 export function BackgroundVideo() {
   const videoRef = useRef<HTMLVideoElement | null>(null)
+
+  useEffect(() => {
+    const video = videoRef.current
+      if (!video) return
+
+      video.muted = true
+      video.play().catch(() => {
+      })
+  }, [])
 
   return (
     <Video

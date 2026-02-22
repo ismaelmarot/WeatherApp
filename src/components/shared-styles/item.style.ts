@@ -12,7 +12,7 @@ export const Container = styled.div`
 `
 
 export const Label = styled.div`
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 `
 
 export const Value = styled.div`

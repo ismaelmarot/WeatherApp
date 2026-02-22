@@ -24,6 +24,7 @@ export const Temp = styled.div`
 
 export const Location = styled.div`
     ${flex('column','center','center')}
+    margin-bottom: 1rem;
     font-size: 1.5rem;
     color: ${GENERAL_COLORS.white};
 `
