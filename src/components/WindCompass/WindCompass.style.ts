@@ -4,8 +4,10 @@ import { GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.div`
   ${flex('column','center','center')}
+  margin-top: 2rem;
   border-radius: 50%;
   background-color: ${GENERAL_COLORS.BlackGlass};
+  border: 2px solid ${GENERAL_COLORS.white};
 `
 
 export const CardinalDirections = styled.text`

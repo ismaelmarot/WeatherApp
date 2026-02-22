@@ -8,9 +8,9 @@ export function WindCompass({
   degree
 }: WindCompassProps) {
 
-  const size = 280;
+  const size = 260;
   const center = size / 2;
-  const radius = 115;
+  const radius = 105;
   const rotation = degree + 90;
 
   return (

@@ -5,8 +5,6 @@ import { GENERAL_COLORS } from '../../constants'
 export const Container = styled.div`
     ${flex('column','center','flex-start')}
     height: 100%;
-    padding-top: 2rem;
-    border-radius: 30px;
 `
 
 export const H3 = styled.h3`
