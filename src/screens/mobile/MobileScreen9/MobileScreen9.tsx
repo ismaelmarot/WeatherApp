@@ -1,7 +1,7 @@
 import { useWeatherContext } from '../../../context'
 import { isMoonPhase } from '../../../utils'
-import { MobileScreenWithCard, MoonImage, MoonInfoItem } from '../../../components'
-import { Container } from './MobileScreen9.style'
+import { MobileScreenWithCard, MoonImage } from '../../../components'
+import { Container, Strong, MoonPhase } from './MobileScreen9.style'
 
 export function MobileScreen9() {
     const { weather, forecast } = useWeatherContext()
@@ -20,7 +20,8 @@ export function MobileScreen9() {
         <MobileScreenWithCard>
             <Container>
                 <MoonImage phase={moonPhase} />
-                <MoonInfoItem label="Moon phase" value={moonPhase} />
+                <MoonPhase>{moonPhase}</MoonPhase>
+                <Strong>Moon phase</Strong>
             </Container>
         </MobileScreenWithCard>
     )

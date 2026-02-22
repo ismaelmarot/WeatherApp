@@ -5,7 +5,7 @@ export function MoonInfoItem({ label, value, item }: MoonInfoItemProps) {
     const moonInfo = value.split(' ')[0]
 
     return (
-        <Container>
+        <Container >
             <Label>{label}</Label>
             <Value>
                 {moonInfo}
