@@ -1,6 +1,6 @@
 import { useWeatherContext } from '../../../context'
-import { Container } from './MobileScreen10.style'
 import { LunarCalendar, MobileScreenWithCard, MoonInfoItem } from '../../../components'
+import { Container } from './MobileScreen10.style'
 
 export function MobileScreen10() {
     const { weather } = useWeatherContext()
@@ -14,9 +14,9 @@ export function MobileScreen10() {
     return (
         <MobileScreenWithCard>
             <Container>
-                <MoonInfoItem label="Moon light" value={`${astro.moon_illumination}%`} />
-                <MoonInfoItem label="Moonrise" value={astro.moonrise} />
-                <MoonInfoItem label="Moonset" value={astro.moonset} />
+                <MoonInfoItem label="Moon light" value={`${astro.moon_illumination}`} item='%' />
+                <MoonInfoItem label="Moonrise" value={astro.moonrise} item='AM' />
+                <MoonInfoItem label="Moonset" value={astro.moonset} item='PM' />
 
 
                 {forecast.forecastday?.length > 0 && (
