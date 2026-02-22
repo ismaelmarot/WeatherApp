@@ -1,8 +1,13 @@
 import { useState } from 'react'
-import { InfoPopup, InfoPopupScreen4, PressureGauge, WeatherDayInfo } from '../../../components'
 import { useWeatherContext } from '../../../context'
+import {
+    InfoPopup,
+    InfoPopupScreen4,
+    MobileScreenWithCard,
+    PressureGauge,
+    WeatherDayInfo
+} from '../../../components'
 import { Container, InfoButton, InfoIcon } from './MobileScreen4.style'
-import { ScreenLayoutGlass } from '../../../layouts/ScreenLayout'
 
 export function MobileScreen4() {
     const { weather } = useWeatherContext()
@@ -11,7 +16,7 @@ export function MobileScreen4() {
     if (!weather) return null
 
     return (
-        <ScreenLayoutGlass>
+        <MobileScreenWithCard>
             <Container>
                 <WeatherDayInfo weather={weather} />
                 <PressureGauge value={weather.current.pressure_mb} />
@@ -30,6 +35,6 @@ export function MobileScreen4() {
                     <InfoPopupScreen4 />
                 </InfoPopup>
             )}
-        </ScreenLayoutGlass>
+        </MobileScreenWithCard>
     )
 }
