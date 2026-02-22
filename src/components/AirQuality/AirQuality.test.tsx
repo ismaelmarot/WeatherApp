@@ -3,7 +3,6 @@ import { render, screen } from '@testing-library/react'
 import { AirQuality } from './AirQuality'
 import { AIR_QUALITY_ITEMS } from '../../config'
 
-// Mock del componente hijo
 vi.mock('..', () => ({
   PollutantGauge: (props: any) => (
     <div data-testid="pollutant-gauge">

@@ -7,7 +7,7 @@ export function CoordinatesInfo({
 }: CoordinatesInfoProps) {
     return (
         <Container>
-            <LocationIcon />
+            <LocationIcon data-testid='location-icon' />
             Lat: {latitude.toFixed(2)} – Lon: {longitude.toFixed(2)}
         </Container>
     )

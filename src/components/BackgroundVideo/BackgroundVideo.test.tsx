@@ -3,7 +3,6 @@ import { vi } from 'vitest'
 import { BackgroundVideo } from './BackgroundVideo'
 
 describe('BackgroundVideo', () => {
-  // Mock global de HTMLVideoElement.play
   beforeAll(() => {
     // @ts-ignore
     HTMLVideoElement.prototype.play = vi.fn().mockResolvedValue(undefined)
