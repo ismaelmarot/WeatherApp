@@ -13,13 +13,28 @@ export const Item = styled.div`
     ${flex('row','center','space-between')}
     padding: .9rem;
     border-radius: 30px;
-    border: 2px solid ${GENERAL_COLORS.white};
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.6);
     color: ${GENERAL_COLORS.white};
-    font-size: 1rem;
 `
 
 export const Label = styled.div`
 `
 
 export const Value = styled.div`
+    ${flex('row','flex-end','center')}
+`
+
+export const Degrees = styled.div`
+    ${flex('row','flex-end','center')}
+    padding-left: .1rem;
+    opacity: .5;
+    font-weight: 200;
+`
+
+export const Strong = styled.strong`
+    padding: .2rem;
+    opacity: .5;
+    font-size: 1rem;
+    font-weight: 200;
 `
