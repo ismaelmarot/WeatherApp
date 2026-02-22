@@ -16,6 +16,7 @@ export function BackgroundVideo() {
   return (
     <Video
       ref={videoRef}
+      data-testid='background-video'
       autoPlay
       muted
       loop
