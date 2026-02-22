@@ -1,6 +1,7 @@
 export { formatHour } from './formatHour.utils'
-export { getArrowCoordinates } from './pressure.utils'
+export { getAqiColor } from './getAqiColor.utils'
 export { getAqiText } from './getAqiText.utils'
+export { getArrowCoordinates } from './pressure.utils'
 export { getCurrentHour } from './getCurrentHour.utils'
 export { getNextHours } from './getNextOurs.utils'
 export { getWeatherIcon } from './getWeatherIcon'

@@ -35,8 +35,8 @@ export const DataNumber = styled.p`
   color: ${GENERAL_COLORS.white}
 `
 
-export const Status = styled.small`
+export const Status = styled.span<{$color: string}>`
 margin-top: 1rem;
   font-size: 1rem;
-  color: ${GENERAL_COLORS.white};
+  color: ${({ $color }) => $color};
 `
