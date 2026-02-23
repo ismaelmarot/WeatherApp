@@ -1,6 +1,6 @@
 import type { MoonPhase } from '../types'
-import { moonImages } from './moonImages'
+import { MOON_IMAGES } from '../constants'
 
 export function isMoonPhase(value: string): value is MoonPhase {
-    return value in moonImages
+    return value in MOON_IMAGES
 }

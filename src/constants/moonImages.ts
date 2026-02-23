@@ -19,8 +19,4 @@ export const MOON_IMAGES: Record<MoonPhase, string> = {
     'Waxing Gibbous': waxingGibbousMoon,
     'Waning Crescent': waningCrescentMoon,
     'Waning Gibbous': waningGibbousMoon,
-};
-
-export function getMoonImage(phase: string): string {
-    return MOON_IMAGES[phase as MoonPhase] ?? MOON_IMAGES['Full Moon']
 }

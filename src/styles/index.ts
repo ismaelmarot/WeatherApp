@@ -1,5 +1,5 @@
-export { CardMobile } from './CardMobile'
+export { CardMobile } from './CardMobile.style'
 export {
     ScreenMobile,
     BackgroundVideo
-} from './ScreenMobile'
+} from './ScreenMobile.style'

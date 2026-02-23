@@ -1,4 +1,4 @@
-import { COLORS_AIR_QUALITY_LEVELS, GENERAL_COLORS } from "../constants"
+import { COLORS_AIR_QUALITY_LEVELS, GENERAL_COLORS } from '../constants'
 
 export function getAqiColor(status?: string) {
   if (!status) return GENERAL_COLORS.white

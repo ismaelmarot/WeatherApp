@@ -1,9 +1,8 @@
-import { getMoonImage } from '../../constants'
 import type { LunarCalendarProps } from '../../types'
+import { getMoonImage } from '../../utils'
 import { Container, Calendar, Title,Image, Item, Day, Lightning } from './LunarCalendar.style'
 
 export function LunarCalendar({ days }: LunarCalendarProps) {
-
     return (
         <Container>
         <Title>Lunar calendar</Title>

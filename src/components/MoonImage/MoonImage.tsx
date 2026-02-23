@@ -1,4 +1,4 @@
-import { moonImages } from '../../utils'
+import { MOON_IMAGES } from '../../constants'
 import type { MoonImageProps } from '../../types'
 import { ItemMoon, Image } from './MoonImage.style'
 
@@ -6,7 +6,7 @@ export function MoonImage({ phase }: MoonImageProps) {
     return (
         <ItemMoon>
             <Image
-                src={moonImages[phase] ?? moonImages['Full Moon']}
+                src={MOON_IMAGES[phase] ?? MOON_IMAGES['Full Moon']}
                 alt={phase}
             />
         </ItemMoon>
