@@ -1,0 +1,1 @@
+export { getWeatherIcon } from './getWeatherIcon'
