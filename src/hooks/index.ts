@@ -1,4 +1,4 @@
-export { useGeolocation } from './useGeolocation'
-export { useWeather } from './useWeather'
+export { useGeolocation } from './useGeolocation.hook'
+export { useWeather } from './useWeather.hook'
 export { useBreakpoint } from './useBreakpoint.hook'
-export { useDevice } from './useDevice'
+export { useDevice } from './useDevice.hook'

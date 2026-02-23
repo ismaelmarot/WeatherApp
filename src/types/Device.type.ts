@@ -1,0 +1,1 @@
+export type DeviceProps = 'mobile' | 'tablet' | 'desktop'

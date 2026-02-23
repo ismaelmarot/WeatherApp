@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import type { GeoStateProps } from '../types/GeoState.type';
+import { useEffect, useState } from 'react'
+import type { GeoStateProps } from '../types/GeoState.type'
 
 export function useGeolocation() {
   const [state, setState] = useState<GeoStateProps>({
@@ -15,7 +15,7 @@ export function useGeolocation() {
         error: 'Geolocation is not supported by your browser',
         coords: null,
       });
-      return;
+      return
     }
 
     navigator.geolocation.getCurrentPosition(
@@ -27,7 +27,7 @@ export function useGeolocation() {
             latitude: position.coords.latitude,
             longitude: position.coords.longitude,
           },
-        });
+        })
       },
       () => {
         setState({
@@ -39,5 +39,5 @@ export function useGeolocation() {
     );
   }, []);
 
-  return state;
+  return state
 }
