@@ -2,11 +2,13 @@ import { render, screen, fireEvent, waitFor } from '@testing-library/react'
 import { describe, test, expect, vi, beforeEach } from 'vitest'
 import { WeatherSearch } from './WeatherSearch'
 
-vi.mock('../../constants', () => ({
-    ICONS: {
-        SearchIcon: () => <div data-testid="search-icon" />,
-    },
-}))
+vi.mock('../../constants', async (importOriginal) => {
+  const actual = await importOriginal<any>()
+
+  return {
+    ...actual,
+  }
+})
 
 describe('WeatherSearch', () => {
     const mockOnChange = vi.fn()
