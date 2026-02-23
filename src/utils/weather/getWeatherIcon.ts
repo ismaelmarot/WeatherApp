@@ -1,4 +1,4 @@
-import { WEATHER_ICONS } from '../constants/weatherIcons'
+import { WEATHER_ICONS } from '../../constants/weatherIcons'
 
 export function getWeatherIcon(code: number, isDay: boolean): string {
   let iconKey = 'cloudy'

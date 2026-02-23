@@ -2,7 +2,7 @@ import {
     PRESSURE_RADIUS,
     PRESSURE_MARKER_LENGTH,
     PRESSURE_MARKER_OVERSHOOT
-} from '../constants'
+} from '../../constants'
 
 export function getArrowCoordinates(percent: number) {
     const cx = 50

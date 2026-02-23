@@ -1,0 +1,1 @@
+export { windRotation } from './windRotation.utils'

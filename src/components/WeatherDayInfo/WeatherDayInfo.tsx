@@ -7,7 +7,6 @@ export function WeatherDayInfo({ weather }: WeatherDayInfoProps) {
     const sunrise = astro.sunrise.split(' ')[0]
     const sunset = astro.sunset.split(' ')[0]
 
-
     return (
         <Grid>
             <Item>

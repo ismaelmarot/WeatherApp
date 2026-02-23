@@ -1,5 +1,5 @@
 import type { WeatherIconProps } from '../../types'
-import { getWeatherIcon } from '../../utils/getWeatherIcon'
+import { getWeatherIcon } from '../../utils/weather/getWeatherIcon'
 import { Icon, IconNotFound } from './WeatherIcon.style'
 
 export function WeatherIcon({
