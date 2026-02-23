@@ -1,5 +1,5 @@
 export type { AirQualityProps } from './AirQuality.type'
-export type { Cardinal } from './CardinalDirections.type'
+export type { CardinalDirections } from './CardinalDirections.type'
 export type { CoordinatesInfoProps } from './CoordinatesInfo.type'
 export type { CoordinatesProps } from './Coordinates.type'
 export type { DailyRainChartProps } from './DailyRainChart.type'

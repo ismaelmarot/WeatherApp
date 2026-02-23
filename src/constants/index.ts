@@ -1,10 +1,10 @@
-export { BREAKPOINTS } from './breakPoints'
-export { CARDINALS } from './Cardinals'
-export { COLORS_AIR_QUALITY_LEVELS } from './ColorsAirQualityLevels.constants'
-export { GENERAL_COLORS } from './GeneralColors'
-export { ICONS } from './icons.constants'
-export { MOON_IMAGES } from './moonImages'
-export { PRESSURE_COLORS } from './pressureColors.constants'
+export { BREAKPOINTS } from './breakPoints.const'
+export { CARDINALS } from './Cardinals.const'
+export { COLORS_AIR_QUALITY_LEVELS } from './ColorsAirQualityLevels.const'
+export { GENERAL_COLORS } from './GeneralColors.const'
+export { ICONS } from './icons.const'
+export { MOON_IMAGES } from './MoonImages.const'
+export { PRESSURE_COLORS } from './PressureColors.const'
 export {
     PRESSURE_MIN,
     PRESSURE_MAX,
@@ -12,11 +12,11 @@ export {
     PRESSURE_STROKE,
     PRESSURE_MARKER_LENGTH,
     PRESSURE_MARKER_OVERSHOOT
-} from './pressure.constants'
+} from './Pressure.const'
 export {
     POLLUTANT_UNIT,
     POLLUTANT_LABELS,
     AQI_TEXTS
-} from './aqiInfo'
+} from './aqiInfo.const'
 export { TEMPERATURE_COLORS } from './TemperatureColors'
 export { WIN_DEG } from './WindDeg'

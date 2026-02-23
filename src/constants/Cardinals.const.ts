@@ -1,6 +1,6 @@
-import type { Cardinal } from '../types/CardinalDirections.type';
+import type { CardinalDirections } from '../types'
 
-export const CARDINALS: Cardinal[] = [
+export const CARDINALS: CardinalDirections[] = [
     {
         label: 'N',
         x: (_, center) => center,
@@ -21,4 +21,4 @@ export const CARDINALS: Cardinal[] = [
         x: () => 12,
         y: (_, center) => center + 5,
     },
-];
+]

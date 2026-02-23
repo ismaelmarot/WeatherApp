@@ -1,5 +1,5 @@
-export type Cardinal = {
+export type CardinalDirections = {
     label: 'N' | 'E' | 'S' | 'W';
-    x: (size: number, center: number) => number;
-    y: (size: number, center: number) => number;
-};
+    x: (size: number, center: number) => number
+    y: (size: number, center: number) => number
+}

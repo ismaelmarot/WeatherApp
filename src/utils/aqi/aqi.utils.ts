@@ -1,3 +1,5 @@
+import { AQI_TEXTS } from '../../constants'
+
 export function pm25ToAQI(value: number): number {
     if (value <= 12) return (value / 12) * 50;
     if (value <= 35.4)
@@ -16,4 +18,8 @@ export function pm10ToAQI(value: number): number {
 
 export function simpleGasToAQI(value: number, safeMax: number): number {
     return Math.min((value / safeMax) * 50, 100);
+}
+
+export function getAqiText(aqi: number): string {
+  return AQI_TEXTS.find((item) => aqi <= item.max)?.text ?? 'Desconocido'
 }

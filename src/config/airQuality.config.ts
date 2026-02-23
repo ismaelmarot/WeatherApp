@@ -1,5 +1,5 @@
-import { POLLUTANT_LABELS } from '../constants/aqiInfo'
-import { pm25ToAQI, pm10ToAQI, simpleGasToAQI } from '../utils/aqiConverters.utils'
+import { POLLUTANT_LABELS } from '../constants'
+import { pm25ToAQI, pm10ToAQI, simpleGasToAQI } from '../utils'
 
 export const AIR_QUALITY_ITEMS = [
     {
