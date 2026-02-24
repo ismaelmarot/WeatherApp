@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { flex } from '../../mixins'
-import { GENERAL_COLORS } from '../../constants'
+import { BREAKPOINTS, GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.div`
   ${flex('column','center','center')}
@@ -9,11 +9,18 @@ export const Container = styled.div`
   padding: 1rem;
   border-radius: 30px;
   background-color: ${GENERAL_COLORS.BlackGlass};
+  @media (min-width: ${BREAKPOINTS.tablet}) {
+    ${flex('row','center','space-between')}
+    padding: 1rem 2rem;
+  }
 `
 
 export const Title = styled.span`
   font-size: 1.5rem;
   color: ${GENERAL_COLORS.white};
+  @media (min-width: ${BREAKPOINTS.tablet}) {
+    font-size: 2.5rem;
+  }
 `
 
 export const Pressure = styled.text`
