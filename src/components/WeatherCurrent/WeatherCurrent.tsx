@@ -1,6 +1,13 @@
 import type { WeatherCurrentProps } from '../../types'
 import { CoordinatesInfo, WeatherIcon } from '..'
-import { Container, Temp, Condition, Location, TempIconContainer } from './WeatherCurrent.style'
+import {
+    Container,
+    Temp,
+    Condition,
+    Location,
+    TempIconContainer,
+    Weather
+} from './WeatherCurrent.style'
 
 export function WeatherCurrent({ weather }: WeatherCurrentProps) {
     const activeCoords = weather
@@ -13,13 +20,15 @@ export function WeatherCurrent({ weather }: WeatherCurrentProps) {
     return (
         <Container>
             <TempIconContainer>
-                <WeatherIcon
-                    code={weather.current.condition.code}
-                    isDay={weather.current.is_day === 1}
-                />
-                <Temp>
-                    {Math.round(weather.current.temp_c)}°
-                </Temp>
+                <Weather>
+                    <WeatherIcon
+                        code={weather.current.condition.code}
+                        isDay={weather.current.is_day === 1}
+                    />
+                    <Temp>
+                        {Math.round(weather.current.temp_c)}°
+                    </Temp>
+                </Weather>
                 <Condition>
                     {weather.current.condition.text}
                 </Condition>

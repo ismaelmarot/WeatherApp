@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { flex, size } from '../../mixins'
-import { GENERAL_COLORS } from '../../constants'
+import { BREAKPOINTS, GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.div`
     ${flex('column','center','space-between')}
@@ -13,6 +13,10 @@ export const Container = styled.div`
 export const TempIconContainer = styled.div`
     ${flex('column','flex-start','flex-start')}
     width: 100%;
+    @media (min-width: ${BREAKPOINTS.tablet}) {
+        ${flex('column','center','center')}
+        height: 80%;
+    }
 `
 
 export const Temp = styled.div`
@@ -20,6 +24,9 @@ export const Temp = styled.div`
     font-weight: 500;
     line-height: 1;
     color: ${GENERAL_COLORS.white};
+    @media (min-width: ${BREAKPOINTS.tablet}) {
+        font-size: 15rem;
+    }
 `
 
 export const Location = styled.div`
@@ -32,4 +39,11 @@ export const Location = styled.div`
 export const Condition = styled.div`
     font-size: 3rem;
     color: ${GENERAL_COLORS.white};
+`
+
+export const Weather = styled.div`
+    @media (min-width: ${BREAKPOINTS.tablet}) {
+        ${flex('row','center','center')}
+        flex-direction: row-reverse;
+    }
 `
