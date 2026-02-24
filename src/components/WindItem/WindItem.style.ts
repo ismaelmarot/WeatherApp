@@ -1,12 +1,15 @@
 import styled from 'styled-components'
 import { flex, size } from '../../mixins'
-import { ICONS, GENERAL_COLORS } from '../../constants'
+import { ICONS, GENERAL_COLORS, BREAKPOINTS } from '../../constants'
 import {Container as GeneralContainer, Label as GeneralLabel } from '../shared-styles'
 
 export const Container = styled(GeneralContainer)`
   ${flex('column','center','center')}
   width: 100%;
   margin-bottom: 3rem;
+  @media (min-width: ${BREAKPOINTS.tablet}) {
+    flex-direction: row;
+  }
 `
 
 export const Label = styled(GeneralLabel)`
@@ -19,6 +22,10 @@ export const Value = styled.div`
   margin-top: .5rem;
   font-size: 2.5rem;
   font-weight: 600;
+  @media (min-width: ${BREAKPOINTS.tablet}) {
+    flex-direction: row-reverse;
+    gap: 1rem;
+  }
 `
 
 export const WindSpeed = styled.div`

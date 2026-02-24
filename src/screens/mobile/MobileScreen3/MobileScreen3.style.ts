@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { GENERAL_COLORS, ICONS } from '../../../constants'
+import { BREAKPOINTS, GENERAL_COLORS, ICONS } from '../../../constants'
 import { flex, size } from '../../../mixins'
 
 export const Container = styled.div`
@@ -17,6 +17,9 @@ export const DataInfo = styled.div`
     ${size('100%','60%')}
     padding-bottom: 1rem;
     gap: 1rem;
+    @media (min-width: ${BREAKPOINTS.tablet}) {
+        padding-bottom: 0;
+    }
 `
 
 export const InfoButton = styled.button`
