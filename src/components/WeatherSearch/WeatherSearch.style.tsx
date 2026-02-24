@@ -4,7 +4,7 @@ import { GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.div`
   ${flex('column','center','flex-start')}
-  height: 100vh;
+  ${size('100%','100vh')}
 `
 
 export const SearchWrapper = styled.div`
@@ -29,6 +29,7 @@ export const SearchIcon = styled.div`
 
 export const Input = styled.input`
   ${size('100%','4rem')}
+  max-width: 400px;
   padding-left: 1rem;
   font-size: 2rem;
   outline: none;

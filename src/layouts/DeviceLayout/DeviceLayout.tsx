@@ -16,6 +16,16 @@ export function DeviceLayout() {
       </>
     )
   }
+  if (device === 'tablet') {
+    return (
+      <>
+        <BackgroundVideo />
+        <ScrollViewport>
+           <MobileScreens />
+        </ScrollViewport>
+      </>
+    )
+  }
 
   return null
 }

@@ -4,7 +4,7 @@ import { GENERAL_COLORS } from '../../constants'
 
 export const ScreenMobile = styled.div`
     ${flex('column','center','center')}
-    ${size('100vw','100dvh')}  
+    ${size('100vw','100dvh')}
     position: relative;
     scroll-snap-align: start;
     box-sizing: border-box;
