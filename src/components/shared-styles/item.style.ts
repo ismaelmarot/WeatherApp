@@ -4,7 +4,7 @@ import { BREAKPOINTS, GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.div`
     ${flex('row','flex-end','space-between')}
-    padding: .5rem 1rem;
+    padding: .5rem 2rem;
     font-size: 2rem;
     border-radius: 30px;
     color: ${GENERAL_COLORS.white};

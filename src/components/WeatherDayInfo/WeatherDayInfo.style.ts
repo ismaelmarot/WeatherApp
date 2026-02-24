@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { GENERAL_COLORS } from '../../constants'
+import { BREAKPOINTS, GENERAL_COLORS } from '../../constants'
 import { flex } from '../../mixins'
 
 export const Grid = styled.div`
@@ -11,11 +11,15 @@ export const Grid = styled.div`
 
 export const Item = styled.div`
     ${flex('row','center','space-between')}
-    padding: .9rem;
+    padding: .9rem 2rem;
     border-radius: 30px;
     font-size: 1.5rem;
     background-color: rgba(0, 0, 0, 0.6);
     color: ${GENERAL_COLORS.white};
+    @media (min-width: ${BREAKPOINTS.tablet}) {
+        font-size: 2.5rem;
+        padding: 0 2rem;
+    }
 `
 
 export const Label = styled.div`
@@ -37,4 +41,8 @@ export const Strong = styled.strong`
     opacity: .5;
     font-size: 1rem;
     font-weight: 200;
+    @media (min-width: ${BREAKPOINTS.tablet}) {
+        font-size: 1.5rem;
+        margin-bottom: .2rem;
+    }
 `
