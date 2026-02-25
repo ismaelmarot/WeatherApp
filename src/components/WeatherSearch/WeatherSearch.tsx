@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import type { LocationResultProps, WeatherSearchProps } from '../../types'
 import { ICONS } from '../../constants'
+import { searchLocations } from '../../services/weather.service'
 import {
   Container,
   Input,
@@ -11,38 +12,55 @@ import {
   SearchIcon
 } from './WeatherSearch.style'
 
-const API_KEY = import.meta.env.VITE_WEATHER_API_KEY
-const BASE_URL = 'https://api.weatherapi.com/v1'
-
 export function WeatherSearch({
   value,
   onChange,
   onSelect,
 }: WeatherSearchProps) {
-  const [results, setResults] = useState<LocationResultProps[]>([]);
-  const [showList, setShowList] = useState(false);
+
+  const [results, setResults] = useState<LocationResultProps[]>([])
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     if (value.length < 2) {
-      setResults([]);
-      return;
+      setResults([])
+      setError(null)
+      return
     }
+
+    const controller = new AbortController()
 
     const fetchLocations = async () => {
       try {
-        const res = await fetch(
-          `${BASE_URL}/search.json?key=${API_KEY}&q=${value}`
-        )
-        const data = await res.json()
+        setLoading(true)
+        setError(null)
+
+        const data = await searchLocations(value)
         setResults(data)
-        setShowList(true)
-      } catch (err) {
-        console.error(err)
+
+      } catch (err: unknown) {
+        if (err instanceof Error) {
+          setError(err.message)
+        } else {
+          setError('Unexpected error')
+        }
+
+        setResults([])
+      } finally {
+        setLoading(false)
       }
     }
 
     fetchLocations()
+
+    return () => {
+      controller.abort()
+    }
+
   }, [value])
+
+  const showList = results.length > 0 && !loading && !error
 
   return (
     <Container>
@@ -52,29 +70,33 @@ export function WeatherSearch({
         </SearchIcon>
 
         <Input
-          type='text'
+          type="text"
           placeholder="Search city"
           value={value}
           onChange={(e) => onChange(e.target.value)}
         />
-        {showList && results.length > 0 && (
+
+        {loading && <p>Loading...</p>}
+        {error && <p>{error}</p>}
+
+        {showList && (
           <ListPlacesSearch>
             {results.map((loc) => (
               <ItemPlace
                 key={loc.id}
                 onClick={() => {
-                  onSelect(loc);
-                  setShowList(false);
+                  onSelect(loc)
+                  setResults([])
                 }}
               >
-              <strong>{loc.name}</strong>
-              <LocationPlace>
-                {loc.region}, {loc.country}
-              </LocationPlace>
+                <strong>{loc.name}</strong>
+                <LocationPlace>
+                  {loc.region}, {loc.country}
+                </LocationPlace>
               </ItemPlace>
             ))}
           </ListPlacesSearch>
-        )}  
+        )}
       </SearchWrapper>
     </Container>
   )

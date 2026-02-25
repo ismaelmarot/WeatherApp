@@ -3,7 +3,7 @@ import { WEATHER_API_CONFIG } from '../config/weatherApi.config'
 
 const { baseUrl, apiKey, defaultDays } = WEATHER_API_CONFIG
 
-/* Weather by Coordinates */
+/*=== Weather by Coordinates ===*/
 export async function getWeatherByCoords(
   lat: number,
   lon: number
@@ -20,7 +20,7 @@ export async function getWeatherByCoords(
   return response.json()
 }
 
-/* Weather by City */
+/*=== Weather by City ===*/
 export async function getWeatherByCity(
   city: string
 ): Promise<WeatherResponse> {
@@ -36,7 +36,7 @@ export async function getWeatherByCity(
   return response.json()
 }
 
-/* Forecast */
+/*=== Forecast by Coords ===*/
 export async function getForecastByCoords(
   lat: number,
   lon: number,
@@ -49,6 +49,20 @@ export async function getForecastByCoords(
   if (!response.ok) {
     const error = await response.json()
     throw new Error(error.error?.message || 'Forecast error')
+  }
+
+  return response.json()
+}
+
+/*=== Search Locations ===*/
+export async function searchLocations(query: string) {
+  const response = await fetch(
+    `${baseUrl}/search.json?key=${apiKey}&q=${query}`
+  )
+
+  if (!response.ok) {
+    const error = await response.json()
+    throw new Error(error.error?.message || 'Location search error')
   }
 
   return response.json()
