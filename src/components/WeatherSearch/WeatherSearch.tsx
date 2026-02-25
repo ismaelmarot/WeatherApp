@@ -1,7 +1,6 @@
-import { useEffect, useState } from 'react'
-import type { LocationResultProps, WeatherSearchProps } from '../../types'
+import type { WeatherSearchProps } from '../../types'
 import { ICONS } from '../../constants'
-import { searchLocations } from '../../services/weather.service'
+import { useLocationSearch } from '../../hooks'
 import {
   Container,
   Input,
@@ -18,47 +17,7 @@ export function WeatherSearch({
   onSelect,
 }: WeatherSearchProps) {
 
-  const [results, setResults] = useState<LocationResultProps[]>([])
-  const [loading, setLoading] = useState(false)
-  const [error, setError] = useState<string | null>(null)
-
-  useEffect(() => {
-    if (value.length < 2) {
-      setResults([])
-      setError(null)
-      return
-    }
-
-    const controller = new AbortController()
-
-    const fetchLocations = async () => {
-      try {
-        setLoading(true)
-        setError(null)
-
-        const data = await searchLocations(value)
-        setResults(data)
-
-      } catch (err: unknown) {
-        if (err instanceof Error) {
-          setError(err.message)
-        } else {
-          setError('Unexpected error')
-        }
-
-        setResults([])
-      } finally {
-        setLoading(false)
-      }
-    }
-
-    fetchLocations()
-
-    return () => {
-      controller.abort()
-    }
-
-  }, [value])
+  const { results, loading, error, clearResults } = useLocationSearch(value)
 
   const showList = results.length > 0 && !loading && !error
 
@@ -86,7 +45,7 @@ export function WeatherSearch({
                 key={loc.id}
                 onClick={() => {
                   onSelect(loc)
-                  setResults([])
+                  clearResults()
                 }}
               >
                 <strong>{loc.name}</strong>
