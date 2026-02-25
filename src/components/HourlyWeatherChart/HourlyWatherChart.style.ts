@@ -4,7 +4,8 @@ import { GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.section`
     ${flex('column','center','center')}
-    min-height: 0;
+    min-height: 1;
+    min-width: 1;
     border-radius: 30px;
     background: ${GENERAL_COLORS.BlackGlass};
 `
@@ -20,4 +21,5 @@ export const H3 = styled.h3`
 export const Chart = styled.div`
     ${size('100%','16rem')}
     min-width: 0;
+    min-height: 1;
 `

@@ -3,8 +3,18 @@ import { flex, size } from '../../mixins'
 import { GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.section`
-  ${flex('column','center','center')}
-    min-height: 0;
+  /* ${flex('column','center','center')}
+    min-width: 0; */
+
+display: flex;
+  flex-direction: column;
+
+  width: 100%;        /* 🔥 importante */
+  min-width: 0;
+  min-height: 0;
+
+
+    min-height: 1;
     border-radius: 30px;
     background: ${GENERAL_COLORS.BlackGlass};
 `
@@ -20,6 +30,7 @@ export const H3 = styled.h3`
 export const Chart = styled.div`
   ${size('100%','16rem')}
   min-width: 0;
+  min-height: 1px;
 `
 
 export const GradientStopStart = styled.stop`

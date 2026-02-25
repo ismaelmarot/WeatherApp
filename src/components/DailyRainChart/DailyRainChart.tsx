@@ -14,33 +14,33 @@ export function DailyRainChart({ hours }: DailyRainChartProps) {
     <Container>
       <H3>Rain – next 12 hours</H3>
       <Chart>
-           <ResponsiveContainer width='90%' height='100%'>
-            <AreaChart
-              data={chartData}
-              width={260}
-              height={250}
-              margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
-            >
-              <defs>
-                <linearGradient id='rainGradient' x1='0' y1='0' x2='0' y2='1'>
-                  <GradientStopStart offset='0%' />
-                  <GradientStopEnd offset='100%' />
-                </linearGradient>
-              </defs>
+        <ResponsiveContainer width='90%' height='100%'>
+          <AreaChart
+            data={chartData}
+            width={260}
+            height={250}
+            margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
+          >
+            <defs>
+              <linearGradient id='rainGradient' x1='0' y1='0' x2='0' y2='1'>
+                <GradientStopStart offset='0%' />
+                <GradientStopEnd offset='100%' />
+              </linearGradient>
+            </defs>
 
-              <XAxis dataKey='hour' />
-              <YAxis unit="%" domain={[0, 100]} />
-              <Tooltip />
+            <XAxis dataKey='hour' />
+            <YAxis unit="%" domain={[0, 100]} />
+            <Tooltip />
 
-              <Area
-                type='monotone'
-                dataKey='rain'
-                stroke='rgba(0,122,255,0.9)'
-                fill='url(#rainGradient)'
-                strokeWidth={1}
-              />
-            </AreaChart>
-           </ResponsiveContainer>
+            <Area
+              type='monotone'
+              dataKey='rain'
+              stroke='rgba(0,122,255,0.9)'
+              fill='url(#rainGradient)'
+              strokeWidth={1}
+            />
+          </AreaChart>
+        </ResponsiveContainer>
       </Chart>
     </Container>
   )
