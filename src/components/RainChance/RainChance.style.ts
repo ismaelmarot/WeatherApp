@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { flex, size } from '../../mixins'
-import { GENERAL_COLORS } from '../../constants'
+import { BREAKPOINTS, GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.div`
   ${flex('column','center','center')}
@@ -24,6 +24,9 @@ export const Bar = styled.div`
   border-radius: 8px;
   border: 1px solid ${GENERAL_COLORS.blue};
   background: ${GENERAL_COLORS.grey};
+  @media (min-width: ${BREAKPOINTS.tablet}) {
+    width: 8rem;
+  }
 `
 
 export const Fill = styled.div<{ value: number }>`
