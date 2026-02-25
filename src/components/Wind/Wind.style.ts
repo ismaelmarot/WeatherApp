@@ -8,6 +8,7 @@ export const Container = styled.div`
 `
 
 export const H3 = styled.h3`
+    margin-top: 2rem;
     font-size: 4rem;
     font-weight: 600;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);

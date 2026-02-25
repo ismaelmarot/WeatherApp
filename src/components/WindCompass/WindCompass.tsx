@@ -1,7 +1,7 @@
 import type { WindCompassProps } from '../../types'
 import { CARDINALS } from '../../constants'
 import { WindCompassMarks, WindCompassSpeed, WindNeedle } from '..'
-import { CardinalDirections, Circle, Container } from './WindCompass.style'
+import { CardinalDirections, Circle, Container, Svg } from './WindCompass.style'
 
 export function WindCompass({
   speed,
@@ -15,7 +15,7 @@ export function WindCompass({
 
   return (
     <Container>
-      <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
+      <Svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
           {/* External Ring */}
           <Circle
             cx={center}
@@ -49,7 +49,7 @@ export function WindCompass({
             radius={radius}
             rotation={rotation}
           />
-        </svg>
+        </Svg>
     </Container>
   )
 }
