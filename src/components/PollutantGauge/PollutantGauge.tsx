@@ -1,6 +1,6 @@
 import type { PollutantGaugeProps } from '../../types'
 import { getAqiColor } from '../../utils'
-import { Wrapper, Label, Info, Description, Status, DataNumber } from './PollutantGauge.style'
+import { Wrapper, Label, Info, Description, Status, DataNumber, Element } from './PollutantGauge.style'
 
 export const PollutantGauge: React.FC<PollutantGaugeProps> = ({
   label,
@@ -68,16 +68,18 @@ export const PollutantGauge: React.FC<PollutantGaugeProps> = ({
       </svg>
 
       <Info>
-        <Label>{label}</Label>
-        {description &&
-          <Description>{description}</Description>
-        }
-      
-        {value !== undefined && unit && (
-          <DataNumber>
-            {value.toFixed(2)} {unit}
-          </DataNumber>
-        )}
+        <Element>
+          <Label>{label}</Label>
+          {description &&
+            <Description>{description}</Description>
+          }
+        
+          {value !== undefined && unit && (
+            <DataNumber>
+              {value.toFixed(2)} {unit}
+            </DataNumber>
+          )}
+        </Element>
         {aqiStatus && (
           <Status $color={statusColor}>
             {aqiStatus}

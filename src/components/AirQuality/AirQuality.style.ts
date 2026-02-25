@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { GENERAL_COLORS } from '../../constants'
+import { BREAKPOINTS, GENERAL_COLORS } from '../../constants'
 import { flex, size } from '../../mixins'
 
 export const Container = styled.div`
@@ -22,5 +22,8 @@ export const Pollutants = styled.div`
   ${size('100%','100%')}
   gap: .5rem;
   overflow-y: auto;
-  padding: 3rem 0 1rem 0;
+  padding-top: 19rem;
+  @media (min-width: ${BREAKPOINTS.tablet}) {
+    padding-top: 32rem;
+  }
 `

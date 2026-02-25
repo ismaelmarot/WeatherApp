@@ -1,6 +1,8 @@
 export type FlexDirection =
     | 'row'
-    | 'column';
+    | 'column'
+    | 'row-reverse'
+    | 'column-reverse';
 
 export type JustifyContent =
     | 'flex-start'
