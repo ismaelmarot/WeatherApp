@@ -29,7 +29,7 @@ export function WeatherSearch({
         </SearchIcon>
 
         <Input
-          type="text"
+          type='text'
           placeholder="Search city"
           value={value}
           onChange={(e) => onChange(e.target.value)}

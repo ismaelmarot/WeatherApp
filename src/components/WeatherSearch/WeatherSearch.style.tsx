@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { flex, size } from '../../mixins'
-import { GENERAL_COLORS } from '../../constants'
+import { BREAKPOINTS, GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.div`
   ${flex('column','center','flex-start')}
@@ -14,6 +14,10 @@ export const SearchWrapper = styled.div`
   width: 90%;
   max-width: 20rem;
   margin-top: 8rem;
+  @media (min-width: ${BREAKPOINTS.tablet}) {
+    width: 100%;
+    min-width: 35rem;
+  }
 `
 
 export const SearchIcon = styled.div`
@@ -24,7 +28,11 @@ export const SearchIcon = styled.div`
   font-size: 2rem;
   pointer-events: none;
   color: ${GENERAL_COLORS.darkGrey};
-  
+  @media (min-width: ${BREAKPOINTS.tablet}) {
+    font-size: 3rem;
+    margin-right: 1rem;
+    padding-right: .5rem;
+  }
 `
 
 export const Input = styled.input`
@@ -37,6 +45,13 @@ export const Input = styled.input`
   border-radius: 999px;
   border: 2px solid ${GENERAL_COLORS.BlackGlass};
   background-color: ${GENERAL_COLORS.BlackGlass};
+  @media (min-width: ${BREAKPOINTS.tablet}) {
+    height: 100%;
+    min-width: 100%;
+    margin: 1.5rem;
+    font-size: 3rem;
+    padding-left: 2.5rem;
+  }
 
   -webkit-appearance: none;
   appearance: none;
