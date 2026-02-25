@@ -1,5 +1,5 @@
 import type { RainChanceChartProps } from '../../types'
-import { Container,Header, List, Item, RainIcon } from './RainChanceChart.style'
+import { Container, Header, List, Item, RainIcon, Span, HourTemp, Hour } from './RainChanceChart.style'
 
 export function RainChanceChart({ hours }: RainChanceChartProps) {
   return (
@@ -11,9 +11,11 @@ export function RainChanceChart({ hours }: RainChanceChartProps) {
 
           return (
             <Item key={h.time}>
-              <span>{hourLabel}</span>
-              <span>{Math.round(h.temp_c ?? 0)}°C</span>
-              <span>{h.chance_of_rain ?? 0}% <RainIcon /> </span>
+              <HourTemp>
+                <Hour>{hourLabel}</Hour>
+                <span>{Math.round(h.temp_c ?? 0)}°C</span>
+              </HourTemp>
+              <Span>{h.chance_of_rain ?? 0}% <RainIcon /> </Span>
             </Item>
           )
         })}

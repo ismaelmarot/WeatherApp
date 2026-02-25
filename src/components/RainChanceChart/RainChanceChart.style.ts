@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { flex, size } from '../../mixins'
-import { GENERAL_COLORS, ICONS } from '../../constants'
+import { BREAKPOINTS, GENERAL_COLORS, ICONS } from '../../constants'
 
 export const Container = styled.div`
     ${flex('column','center','center')}
@@ -31,9 +31,37 @@ export const Item = styled.div`
     ${flex('row','center','space-between')} 
     padding: .5rem 0;
     font-size: 1rem;
+     @media (min-width: ${BREAKPOINTS.tablet}) {
+        font-size: 3rem;
+        padding: 0;
+    }
+`
+
+export const HourTemp = styled.div`
+    ${flex('row','center','flex-start')}
+    flex: 5;
+    @media (min-width: ${BREAKPOINTS.tablet}) {
+        flex: 5;
+        justify-content: space-between;
+    }
+`
+
+export const Hour = styled.span`
+    margin-right: 2rem;
+`
+
+export const Span = styled.span`
+    ${flex('row','center','flex-end')}
+    flex: 5;
+    @media (min-width: ${BREAKPOINTS.tablet}) {
+        flex: 3;
+    }
 `
 
 export const RainIcon = styled(ICONS.rain)`
     font-size: 1.5rem;
     margin-left: .5rem;
+    @media (min-width: ${BREAKPOINTS.tablet}) {
+        font-size: 3rem;
+    }
 `
