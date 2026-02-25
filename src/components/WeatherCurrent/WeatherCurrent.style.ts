@@ -5,6 +5,7 @@ import { BREAKPOINTS, GENERAL_COLORS } from '../../constants'
 export const Container = styled.div`
     ${flex('column','center','space-between')}
     ${size('100%','100dvh')}
+    padding: 0 1rem;
     text-shadow:
         0 1px 2px rgba(0, 0, 0, 0.6),
         0 4px 12px rgba(0, 0, 0, 0.25);
@@ -37,8 +38,11 @@ export const Location = styled.div`
 `
 
 export const Condition = styled.div`
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: ${GENERAL_COLORS.white};
+    @media (min-width: ${BREAKPOINTS.tablet}) {
+        font-size: 3.5rem;
+    }
 `
 
 export const Weather = styled.div`
