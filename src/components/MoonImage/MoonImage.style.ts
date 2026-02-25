@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { GENERAL_COLORS } from '../../constants'
+import { BREAKPOINTS, GENERAL_COLORS } from '../../constants'
 import { flex } from '../../mixins'
 
 export const Item = styled.div`
@@ -15,7 +15,10 @@ export const ItemMoon = styled(Item)`
 `
 
 export const Image = styled.img`
-  width: 100%;
+  width: 80%;
   border-radius: 50%;
   opacity: .9;
+  @media (min-width: ${BREAKPOINTS.tablet}) {
+    width: 60%;
+  }
 `
