@@ -22,7 +22,7 @@ export const Pollutants = styled.div`
   ${size('100%','100%')}
   gap: .5rem;
   overflow-y: auto;
-  padding-top: 19rem;
+  padding-top: 20rem;
   @media (min-width: ${BREAKPOINTS.tablet}) {
     padding-top: 32rem;
   }
