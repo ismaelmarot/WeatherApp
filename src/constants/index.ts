@@ -1,8 +1,8 @@
-export { BREAKPOINTS } from './breakPoints.const'
+export { BREAKPOINTS } from './Breakpoints.const'
 export { CARDINALS } from './Cardinals.const'
 export { COLORS_AIR_QUALITY_LEVELS } from './ColorsAirQualityLevels.const'
 export { GENERAL_COLORS } from './GeneralColors.const'
-export { ICONS } from './icons.const'
+export { ICONS } from './Icons.const'
 export { MOON_IMAGES } from './MoonImages.const'
 export { PRESSURE_COLORS } from './PressureColors.const'
 export {
@@ -17,6 +17,6 @@ export {
     POLLUTANT_UNIT,
     POLLUTANT_LABELS,
     AQI_TEXTS
-} from './aqiInfo.const'
+} from './AqiInfo.const'
 export { TEMPERATURE_COLORS } from './TemperatureColors'
 export { WIN_DEG } from './WindDeg'

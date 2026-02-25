@@ -27,7 +27,8 @@ export function HourlyWeatherChart({ data }: HourlyForecastChartProps) {
             data={chartData}
             width={260}
             height={250}
-            margin={{ top: 0, right: 8, left: 0, bottom: 0 }}
+            margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
+            style={{border:'2px dashed blue'}}
           >
             <defs>
               <linearGradient id="tempAreaGradient" x1='0' y1='1' x2='0' y2='0'>
