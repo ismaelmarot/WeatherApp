@@ -1,9 +1,6 @@
 import styled from 'styled-components'
-import { BREAKPOINTS } from '../../../constants'
+import { size } from '../../../mixins'
 
 export const Container = styled.div`
-    height: 37rem;
-    @media (min-width: ${BREAKPOINTS.tablet}) {
-        width: 95%;
-    }
+    ${size('95%','40rem')}
 `
