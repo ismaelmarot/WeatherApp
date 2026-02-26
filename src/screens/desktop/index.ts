@@ -1,1 +1,0 @@
-export { DesktopScreen1 } from './DesktopScreen1'
