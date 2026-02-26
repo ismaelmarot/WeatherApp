@@ -49,11 +49,11 @@ Construida con **React 18**, **TypeScript** y **Vite**, siguiendo arquitectura m
    npm install
    ```
 3. **Run development server / Ejecutar servidor de desarrollo**
-  ```bash
-  npm run dev
-  ```
+   ```bash
+   npm run dev
+   ```
 
-Open in your browser: http://localhost:5173
+4.  **Open in your browser: http://localhost:5173 **
 
 ---
 ## 📂 Project Structure / Estructura del proyecto
