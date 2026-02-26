@@ -1,10 +1,7 @@
 # WeatherApp 🌤️
 
-![version](https://img.shields.io/github/package-json/v/ismaelmarot/WeatherApp?color=blue)
+![Version](https://img.shields.io/github/package-json/v/ismaelmarot/WeatherApp?style=for-the-badge&color=orange)
 
-![Version](https://img.shields.io/github/package-json/v/ismaelmarot/WeatherApp?style=for-the-badge&color=blue)
-
-![Version](https://img.shields.io/github/package-json/v/ismaelmarot/WeatherApp?style=for-the-badge&color=blue&logo=appveyor)
 
 ---
 
