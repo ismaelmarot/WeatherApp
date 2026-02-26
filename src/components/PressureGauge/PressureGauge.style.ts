@@ -26,7 +26,7 @@ export const Title = styled.span`
 export const Pressure = styled.text`
   letter-spacing: .1rem;
   font-size: 1rem;
-  fill: ${GENERAL_COLORS.white}
+  fill: ${GENERAL_COLORS.white};
 `
 
 export const HPA = styled.text`
