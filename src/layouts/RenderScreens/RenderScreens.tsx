@@ -8,8 +8,8 @@ import {
   Screen7,
   Screen8,
   Screen9,
-  Screen10,
-} from '..'
+  Screen10
+} from '../../screens'
 
 export function RenderScreens() {
   return (

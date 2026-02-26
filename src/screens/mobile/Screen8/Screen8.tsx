@@ -13,7 +13,7 @@ export function Screen8() {
 
     return (
         <MobileScreenWithCard>
-            <Container>
+            {/* <Container>
                  <TopElement>
                     {hourlyForecast.length > 0 && (
                         <HourlyWeatherChart data={hourlyForecast} />
@@ -24,7 +24,7 @@ export function Screen8() {
                         <DailyRainChart hours={forecast.forecast.forecastday[0].hour} />
                     )}
                  </BottomElement>
-            </Container>            
+            </Container>             */}
         </MobileScreenWithCard>
     )
 }

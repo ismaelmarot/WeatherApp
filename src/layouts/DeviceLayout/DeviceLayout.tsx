@@ -1,7 +1,7 @@
 import { useDevice } from '../../hooks'
-import { RenderScreens } from '../../screens'
 import { ScrollViewport } from '../ScrollViewport'
 import { BackgroundVideo } from '../../components'
+import { RenderScreens } from '../RenderScreens'
 
 export function DeviceLayout() {
   const device = useDevice()
