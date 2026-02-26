@@ -14,9 +14,6 @@ Built with **React 18**, **TypeScript**, and **Vite**, following modular archite
 Construida con **React 18**, **TypeScript** y **Vite**, siguiendo arquitectura modular, componentes reutilizables y diseño escalable.
 
 ---
-![Demo GIF](./assets/demo.gif)
-
----
 ## 🌟 Highlights / Aspectos destacados
 - Modular architecture with reusable components, hooks, and constants  
 - Responsive layout for mobile, tablet, and desktop  
