@@ -1,9 +1,9 @@
 import { useWeatherContext } from '../../../context'
 import { getNextHours } from '../../../utils'
 import { DailyRainChart, HourlyWeatherChart, MobileScreenWithCard } from '../../../components'
-import { BottomElement, Container, TopElement } from './MobileScreen8.style'
+import { BottomElement, Container, TopElement } from './Screen8.style'
 
-export function MobileScreen8() {
+export function Screen8() {
     const { weather, forecast } = useWeatherContext()
     const nextHours = getNextHours(forecast)
     const hourlyForecast = forecast?.forecast?.forecastday?.[0]?.hour ?? []

@@ -1,9 +1,9 @@
 import { useWeatherContext } from '../../../context'
 import { getCurrentHour } from '../../../utils'
 import { MobileScreenWithCard, RainChance, RainChanceChart } from '../../../components'
-import { BottomElement, Container, TopElement } from './MobileScreen6.style'
+import { BottomElement, Container, TopElement } from './Screen6.style'
 
-export function MobileScreen6() {
+export function Screen6() {
   const { weather, forecast } = useWeatherContext()
 
   if (!weather || !forecast) return null

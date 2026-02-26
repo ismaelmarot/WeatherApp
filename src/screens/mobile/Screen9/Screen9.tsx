@@ -1,9 +1,9 @@
 import { useWeatherContext } from '../../../context'
 import { isMoonPhase } from '../../../utils'
 import { MobileScreenWithCard, MoonImage } from '../../../components'
-import { Container, Strong, MoonPhase } from './MobileScreen9.style'
+import { Container, Strong, MoonPhase } from './Screen9.style'
 
-export function MobileScreen9() {
+export function Screen9() {
     const { weather, forecast } = useWeatherContext()
 
     if (!weather || !forecast) return null

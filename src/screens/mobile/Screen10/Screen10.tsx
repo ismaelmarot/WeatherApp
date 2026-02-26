@@ -1,8 +1,8 @@
 import { useWeatherContext } from '../../../context'
 import { LunarCalendar, MobileScreenWithCard, MoonInfoItem } from '../../../components'
-import { Container, MoonData } from './MobileScreen10.style'
+import { Container, MoonData } from './Screen10.style'
 
-export function MobileScreen10() {
+export function Screen10() {
     const { weather } = useWeatherContext()
 
     if (!weather) return null

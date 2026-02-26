@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useWeatherContext } from '../../../context'
 import { MobileScreenWithCard , WeatherSearch } from '../../../components'
 
-export function MobileScreen1() {
+export function Screen1() {
   const [city, setCity] = useState('')
   const { fetchByCoords } = useWeatherContext()
 

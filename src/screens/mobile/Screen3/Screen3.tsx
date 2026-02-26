@@ -10,9 +10,9 @@ import {
   InfoPopupScreen3,
   MobileScreenWithCard,
 } from '../../../components'
-import { Container, InfoButton, InfoIcon, DataInfo } from './MobileScreen3.style'
+import { Container, InfoButton, InfoIcon, DataInfo } from './Screen3.style'
 
-export function MobileScreen3() {
+export function Screen3() {
     const { weather } = useWeatherContext()
     const [open, setOpen] = useState(false)
 

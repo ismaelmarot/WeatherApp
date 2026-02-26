@@ -1,29 +1,29 @@
 import {
-  MobileScreen1,
-  MobileScreen2,
-  MobileScreen3,
-  MobileScreen4,
-  MobileScreen5,
-  MobileScreen6,
-  MobileScreen7,
-  MobileScreen8,
-  MobileScreen9,
-  MobileScreen10,
+  Screen1,
+  Screen2,
+  Screen3,
+  Screen4,
+  Screen5,
+  Screen6,
+  Screen7,
+  Screen8,
+  Screen9,
+  Screen10,
 } from '..'
 
 export function MobileScreens() {
   return (
     <>
-      <MobileScreen1 />
-      <MobileScreen2 />
-      <MobileScreen3 />
-      <MobileScreen4 />
-      <MobileScreen5 />
-      <MobileScreen6 />
-      <MobileScreen7 />
-      <MobileScreen8 />
-      <MobileScreen9 />
-      <MobileScreen10 />
+      <Screen1 />
+      <Screen2 />
+      <Screen3 />
+      <Screen4 />
+      <Screen5 />
+      <Screen6 />
+      <Screen7 />
+      <Screen8 />
+      <Screen9 />
+      <Screen10 />
     </>
   )
 }

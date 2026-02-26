@@ -4,9 +4,9 @@ import {
     PressureGauge,
     WeatherDayInfo
 } from '../../../components'
-import { Container } from './MobileScreen4.style'
+import { Container } from './Screen4.style'
 
-export function MobileScreen4() {
+export function Screen4() {
     const { weather } = useWeatherContext()
 
     if (!weather) return null

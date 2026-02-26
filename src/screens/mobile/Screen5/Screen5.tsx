@@ -1,8 +1,8 @@
 import { useWeatherContext } from '../../../context'
-import { Container } from './MobileScreen5.style'
 import { AirQuality, MobileScreenWithCard } from '../../../components'
+import { Container } from './Screen5.style'
 
-export function MobileScreen5() {
+export function Screen5() {
     const { weather } = useWeatherContext()
 
     if (!weather) return null;
