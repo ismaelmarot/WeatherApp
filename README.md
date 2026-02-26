@@ -1,7 +1,6 @@
 # WeatherApp 🌤️
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![Version](https://img.shields.io/badge/version-1.0.0-green)
+![version](https://img.shields.io/github/package-json/v/ismaelmarot/WeatherApp?color=blue)
 
 ![React](https://img.shields.io/badge/React-18-blue?logo=react) 
 ![TypeScript](https://img.shields.io/badge/TypeScript-4.9-blue?logo=typescript) 
