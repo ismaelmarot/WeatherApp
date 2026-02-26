@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { flex, size } from '../../../mixins'
+import { flex, size } from '../../mixins'
 
 export const Container = styled.div`
     ${size('90%','100%')}

@@ -20,3 +20,4 @@ export {
 } from './AqiInfo.const'
 export { TEMPERATURE_COLORS } from './TemperatureColors'
 export { WIN_DEG } from './WindDeg'
+export { SCREENS } from './screens.const'

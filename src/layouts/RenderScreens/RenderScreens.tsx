@@ -1,29 +1,11 @@
-import {
-  Screen1,
-  Screen2,
-  Screen3,
-  Screen4,
-  Screen5,
-  Screen6,
-  Screen7,
-  Screen8,
-  Screen9,
-  Screen10
-} from '../../screens'
+import { SCREENS } from '../../constants'
 
 export function RenderScreens() {
   return (
     <>
-      <Screen1 />
-      <Screen2 />
-      <Screen3 />
-      <Screen4 />
-      <Screen5 />
-      <Screen6 />
-      <Screen7 />
-      <Screen8 />
-      <Screen9 />
-      <Screen10 />
+      {SCREENS.map((Screen, index) => (
+        <Screen key={index} />
+      ))}
     </>
   )
 }
