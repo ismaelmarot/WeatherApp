@@ -1,5 +1,8 @@
 # WeatherApp 🌤️
 
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Version](https://img.shields.io/badge/version-1.0.0-green)
+
 ![React](https://img.shields.io/badge/React-18-blue?logo=react) 
 ![TypeScript](https://img.shields.io/badge/TypeScript-4.9-blue?logo=typescript) 
 ![Vite](https://img.shields.io/badge/Vite-4.5-blue?logo=vite) 
@@ -40,17 +43,19 @@ Construida con **React 18**, **TypeScript** y **Vite**, siguiendo arquitectura m
 ---
 ## 🚀 Installation / Instalación
 
-```bash
-# Clone the repository / Clonar el repositorio
-git clone https://github.com/ismaelmarot/WeatherApp.git
-cd WeatherApp
-
-# Install dependencies using npm / Instalar dependencias usando npm
-npm install
-
-# Run development server / Ejecutar servidor de desarrollo
-npm run dev
-```
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/ismaelmarot/WeatherApp.git
+   cd WeatherApp
+   ```
+2. **Install dependencies using npm / Instalar dependencias usando npm**
+   ```bash
+   npm install
+   ```
+3. **Run development server / Ejecutar servidor de desarrollo**
+  ```bash
+  npm run dev
+  ```
 
 Open in your browser: http://localhost:5173
 
