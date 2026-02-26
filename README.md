@@ -12,11 +12,9 @@ Built with **React 18**, **TypeScript**, and **Vite**, following modular archite
 Construida con **React 18**, **TypeScript** y **Vite**, siguiendo arquitectura modular, componentes reutilizables y diseño escalable.
 
 ---
-
 ![Demo GIF](./assets/demo.gif)
 
 ---
-
 ## 🌟 Highlights / Aspectos destacados
 - Modular architecture with reusable components, hooks, and constants  
 - Responsive layout for mobile, tablet, and desktop  
@@ -33,7 +31,6 @@ Construida con **React 18**, **TypeScript** y **Vite**, siguiendo arquitectura m
 - Unit tests con Vitest y React Testing Library  
 
 ---
-
 ## 🛠️ Technologies / Tecnologías
 - **Frontend:** React 18, TypeScript, Styled Components  
 - **Bundler:** Vite  
@@ -41,7 +38,6 @@ Construida con **React 18**, **TypeScript** y **Vite**, siguiendo arquitectura m
 - **Other / Otros:** Scroll-snap UI, responsive design, custom hooks  
 
 ---
-
 ## 🚀 Installation / Instalación
 
 ```bash
@@ -54,9 +50,11 @@ npm install
 
 # Run development server / Ejecutar servidor de desarrollo
 npm run dev
+```
 
 Open in your browser: http://localhost:5173
 
+---
 ## 📂 Project Structure / Estructura del proyecto
 
 ```plaintext
@@ -70,19 +68,26 @@ src/
 ├── utils/         # Utility functions / Funciones auxiliares
 ├── types/         # TypeScript types / Tipos TypeScript
 ├── mixins/        # CSS helpers (flex, size) / Helpers CSS
+```
 
+---
 ## 💡 Usage
+
+```bash
 import { DeviceLayout } from './layouts/DeviceLayout';
 
 function App() {
   return <DeviceLayout />;
 }
+```
 
+---
 ##
 🧪 Testing / Pruebas
-</> Bash
-npm test
 
+```Bash
+npm test
+```
 
 
 
