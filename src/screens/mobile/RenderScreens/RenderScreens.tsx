@@ -11,7 +11,7 @@ import {
   Screen10,
 } from '..'
 
-export function MobileScreens() {
+export function RenderScreens() {
   return (
     <>
       <Screen1 />

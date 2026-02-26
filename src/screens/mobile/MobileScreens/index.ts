@@ -1,1 +1,0 @@
-export {  MobileScreens } from './MobileScreens'

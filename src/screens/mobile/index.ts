@@ -1,4 +1,4 @@
-export { MobileScreens } from './MobileScreens'
+export { RenderScreens } from './RenderScreens'
 export { Screen1 } from './Screen1'
 export { Screen2 } from './Screen2'
 export { Screen3 } from './Screen3'

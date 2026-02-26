@@ -1,5 +1,5 @@
 import { useDevice } from '../../hooks'
-import { MobileScreens } from '../../screens'
+import { RenderScreens } from '../../screens'
 import { ScrollViewport } from '../ScrollViewport'
 import { BackgroundVideo } from '../../components'
 
@@ -9,17 +9,17 @@ export function DeviceLayout() {
   const screens = {
     mobile: (
       <ScrollViewport>
-        <MobileScreens />
+        <RenderScreens />
       </ScrollViewport>
     ),
     tablet: (
       <ScrollViewport>
-        <MobileScreens />
+        <RenderScreens />
       </ScrollViewport>
     ),
     desktop: (
       <ScrollViewport>
-        <MobileScreens />
+        <RenderScreens />
       </ScrollViewport>
     )
   }
