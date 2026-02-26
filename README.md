@@ -74,10 +74,10 @@ src/
 ## 💡 Usage
 
 ```bash
-import { DeviceLayout } from './layouts/DeviceLayout';
+import { DeviceLayout } from './layouts/DeviceLayout'
 
 function App() {
-  return <DeviceLayout />;
+  return <DeviceLayout />
 }
 ```
 
