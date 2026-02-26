@@ -21,3 +21,4 @@ export {
 export { TEMPERATURE_COLORS } from './TemperatureColors'
 export { WIN_DEG } from './WindDeg'
 export { SCREENS } from './screens.const'
+export { SCREENS_MAP } from './screensMap.const'
