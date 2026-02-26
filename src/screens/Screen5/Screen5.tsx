@@ -1,5 +1,5 @@
-import { useWeatherContext } from '../../../context'
-import { AirQuality, MobileScreenWithCard } from '../../../components'
+import { useWeatherContext } from '../../context'
+import { AirQuality, MobileScreenWithCard } from '../../components'
 import { Container } from './Screen5.style'
 
 export function Screen5() {

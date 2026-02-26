@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { useWeatherContext } from '../../../context'
-import { MobileScreenWithCard , WeatherSearch } from '../../../components'
+import { useWeatherContext } from '../../context'
+import { MobileScreenWithCard , WeatherSearch } from '../../components'
 
 export function Screen1() {
   const [city, setCity] = useState('')

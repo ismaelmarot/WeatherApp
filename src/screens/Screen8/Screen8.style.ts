@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { flex, size } from '../../../mixins'
+import { flex, size } from '../../mixins'
 
 const Element = styled.div`
     width: 100%;

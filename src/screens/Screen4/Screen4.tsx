@@ -1,9 +1,9 @@
-import { useWeatherContext } from '../../../context'
+import { useWeatherContext } from '../../context'
 import {
     MobileScreenWithCard,
     PressureGauge,
     WeatherDayInfo
-} from '../../../components'
+} from '../../components'
 import { Container } from './Screen4.style'
 
 export function Screen4() {

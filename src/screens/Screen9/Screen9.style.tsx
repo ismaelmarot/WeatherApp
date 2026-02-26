@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { flex, size } from '../../../mixins'
-import { GENERAL_COLORS } from '../../../constants'
+import { flex, size } from '../../mixins'
+import { GENERAL_COLORS } from '../../constants'
 
 export const Container = styled.div`
     ${flex('column','center','center')}

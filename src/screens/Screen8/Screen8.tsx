@@ -1,6 +1,6 @@
-import { useWeatherContext } from '../../../context'
-import { getNextHours } from '../../../utils'
-import { DailyRainChart, HourlyWeatherChart, MobileScreenWithCard } from '../../../components'
+import { useWeatherContext } from '../../context'
+import { getNextHours } from '../../utils'
+import { DailyRainChart, HourlyWeatherChart, MobileScreenWithCard } from '../../components'
 import { BottomElement, Container, TopElement } from './Screen8.style'
 
 export function Screen8() {

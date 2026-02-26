@@ -1,5 +1,5 @@
-import { useWeatherContext } from '../../../context'
-import { LunarCalendar, MobileScreenWithCard, MoonInfoItem } from '../../../components'
+import { useWeatherContext } from '../../context'
+import { LunarCalendar, MobileScreenWithCard, MoonInfoItem } from '../../components'
 import { Container, MoonData } from './Screen10.style'
 
 export function Screen10() {

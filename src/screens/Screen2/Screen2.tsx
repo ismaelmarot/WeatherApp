@@ -1,5 +1,5 @@
-import { useWeatherContext } from '../../../context'
-import { MobileScreenWithCard, WeatherCurrent } from '../../../components'
+import { useWeatherContext } from '../../context'
+import { MobileScreenWithCard, WeatherCurrent } from '../../components'
 
 export function Screen2() {
   const { weather } = useWeatherContext()

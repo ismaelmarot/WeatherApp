@@ -1,6 +1,6 @@
-import { useWeatherContext } from '../../../context'
-import { isMoonPhase } from '../../../utils'
-import { MobileScreenWithCard, MoonImage } from '../../../components'
+import { useWeatherContext } from '../../context'
+import { isMoonPhase } from '../../utils'
+import { MobileScreenWithCard, MoonImage } from '../../components'
 import { Container, Strong, MoonPhase } from './Screen9.style'
 
 export function Screen9() {

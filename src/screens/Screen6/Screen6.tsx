@@ -1,6 +1,6 @@
-import { useWeatherContext } from '../../../context'
-import { getCurrentHour } from '../../../utils'
-import { MobileScreenWithCard, RainChance, RainChanceChart } from '../../../components'
+import { useWeatherContext } from '../../context'
+import { getCurrentHour } from '../../utils'
+import { MobileScreenWithCard, RainChance, RainChanceChart } from '../../components'
 import { BottomElement, Container, TopElement } from './Screen6.style'
 
 export function Screen6() {

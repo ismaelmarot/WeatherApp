@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useWeatherContext } from '../../../context/WeatherContext'
+import { useWeatherContext } from '../../context/WeatherContext'
 import {
   UvIndex,
   Humidity,
@@ -9,7 +9,7 @@ import {
   InfoPopup,
   InfoPopupScreen3,
   MobileScreenWithCard,
-} from '../../../components'
+} from '../../components'
 import { Container, InfoButton, InfoIcon, DataInfo } from './Screen3.style'
 
 export function Screen3() {
