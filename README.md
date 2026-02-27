@@ -173,10 +173,9 @@ npm test
 ------------------------------------
 
 <a id="live-demo"></a>
-### 🌍 [Live Demo](#-table-of-content)
+## 🌍 [Live Demo](#-table-of-content)
 
-
-👉 https://ismaelmarot.github.io/WeatherApp/
+  👉 https://ismaelmarot.github.io/WeatherApp/
 
 <br>
 
