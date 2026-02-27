@@ -27,7 +27,6 @@
 </a>
 
 <br>
-
 _**WeatherApp is a responsive weather dashboard built with React and TypeScript.**_
 
 It consumes real-time weather data from the [WeatherAPI](https://www.weatherapi.com/) and dynamically adapts its layout for mobile, tablet, and desktop devices.
@@ -43,7 +42,7 @@ The project focuses on modular architecture, reusable components, custom hooks, 
 <br>
 <br>
 
-------
+------------------------------------
 
 ## 📑 [TABLE OF CONTENT](#-table-of-content)
 
@@ -54,10 +53,11 @@ The project focuses on modular architecture, reusable components, custom hooks, 
 5. [Usage](#usage)
 6. [Testing](#testing)
 7. [Screenshots](#screenshots)
+8. [Live Demo](#Live-Demo)
 
 <br>
 
-------
+------------------------------------
 
 <a id="highlights"></a>
 ## 🌟 [HIGHLIGHTS](#-table-of-content)
@@ -71,7 +71,7 @@ The project focuses on modular architecture, reusable components, custom hooks, 
 
 <br>
 
----
+------------------------------------
 
 <a id="technologies"></a>
 ## 🛠️ [TECNOLOGIES](#-table-of-content)
@@ -83,7 +83,7 @@ The project focuses on modular architecture, reusable components, custom hooks, 
 
 <br>
 
----
+------------------------------------
 
 <a id="installation"></a>
 ## 🚀 [INSTALLATION](#-table-of-content)
@@ -106,7 +106,7 @@ The project focuses on modular architecture, reusable components, custom hooks, 
 
 <br>
 
----
+------------------------------------
 
 <a id="project-structure"></a>
 ## 📂 [PROJECT STRUCTURE](#-table-of-content)
@@ -126,7 +126,7 @@ src/
 
 <br>
 
----
+------------------------------------
 
 <a id="usage"></a>
 ## 💡 [USAGE](#-table-of-content)
@@ -141,7 +141,7 @@ function App() {
 
 <br>
 
-------
+------------------------------------
 
 <a id="testing"></a>
 ## 🧪 [Testing](#-table-of-content)
@@ -157,7 +157,7 @@ npm test
 
 <br>
 
-------
+------------------------------------
 
 <a id="screenshots"></a>
 ## 📸 [Screenshots](#-table-of-content)
@@ -170,7 +170,16 @@ npm test
 
 <br>
 
-------
+------------------------------------
+
+<a id="live-demo"></a>
+### 🌍 Live Demo  
+👉 https://ismaelmarot.github.io/WeatherApp/
+
+<br>
+
+
+------------------------------------
 
 <a id="license"></a>
 ## 📄 [License](#-table-of-content)
@@ -180,7 +189,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <br>
 
-------
+------------------------------------
 
 ## 📬 Contact
 
@@ -194,7 +203,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   </a>
 </p>
 
-------
+------------------------------------
 
 <p align="center">
   <a href="#-table-of-content">
