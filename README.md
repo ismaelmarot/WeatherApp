@@ -10,7 +10,7 @@
 ## 📑 Table of Contents
 
 1. [Highlights](#-highlights)
-2. [Technologies](#technologies)
+2. [Technologies](#-technologies)
 3. [Installation](#-installation)
 4. [Project Structure](#-project-structure)
 5. [Usage](#-usage)
@@ -31,6 +31,7 @@ Built with **React 18**, **TypeScript**, and **Vite**, following modular archite
 
 ---
 ## 🛠️ Technologies
+## 🌟 Technologies
 - **Frontend:** React 18, TypeScript, Styled Components  
 - **Bundler:** Vite  
 - **Testing:** Vitest + React Testing Library  
