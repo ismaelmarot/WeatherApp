@@ -1,9 +1,28 @@
 import styled from 'styled-components'
 import { flex, size } from '../../mixins'
 import { ICONS, GENERAL_COLORS, BREAKPOINTS } from '../../constants'
-import {Container as GeneralContainer, Label as GeneralLabel } from '../shared-styles'
 
-export const Container = styled(GeneralContainer)`
+const GeneralLabel = styled.div`
+  font-size: 1.5rem;
+  @media (min-width: ${BREAKPOINTS.tablet}) {
+      font-size: 2.5rem;
+  }
+`
+
+const ContainerBase = styled.div`
+  ${flex('row','flex-end','space-between')}
+  padding: .5rem 2rem;
+  font-size: 2rem;
+  border-radius: 30px;
+  color: ${GENERAL_COLORS.white};
+  background-color: rgba(0, 0, 0, 0.6);
+  @media (min-width: ${BREAKPOINTS.tablet}) {
+    height: 10rem;
+    ${flex('row','center','space-between')}
+  }
+`
+
+export const Container = styled(ContainerBase)`
   ${flex('column','center','center')}
   width: 100%;
   margin-bottom: 3rem;
