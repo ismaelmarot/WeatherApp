@@ -6,6 +6,14 @@
 ![npm](https://img.shields.io/badge/npm-latest-red?logo=npm)
 
 ![Version](https://img.shields.io/badge/version-1.0.0-orange?style=for-the-badge)
+&nbsp;&nbsp;&nbsp;&nbsp;
+![Last Commit](https://img.shields.io/github/last-commit/ismaelmarot/WeatherApp?style=for-the-badge)
+
+[![Last Commit](https://img.shields.io/github/last-commit/ismaelmarot/WeatherApp?style=for-the-badge)](https://github.com/ismaelmarot/WeatherApp/commit/main)
+&nbsp;&nbsp;&nbsp;&nbsp;
+![License](https://img.shields.io/github/license/ismaelmarot/WeatherApp?style=for-the-badge)
+&nbsp;&nbsp;&nbsp;&nbsp;
+![Coverage](https://img.shields.io/codecov/c/github/ismaelmarot/WeatherApp?style=for-the-badge)
 
 _**A modern, responsive weather application for mobile, tablet, and desktop.**_
 
@@ -96,15 +104,32 @@ function App() {
 }
 ```
 
----
+------
 
 <a id="testing"></a>
 ## 🧪 [Testing](#-table-of-content)
+This project uses **Vitest + Testing Library** for unit and component testing.
 
-```Bash
+![Coverage](https://img.shields.io/codecov/c/github/ismaelmarot/WeatherApp?style=for-the-badge)
+
+### ▶ Run tests
+
+```bash
 npm test
 ```
-![Coverage](https://img.shields.io/codecov/c/github/ismaelmarot/WeatherApp?style=for-the-badge)
+
+
+
+------
+
+
+
+
+
+
+
+
+
 
 ---
 
@@ -115,13 +140,11 @@ npm test
 <a id="license"></a>
 ## 📄 [License](#-table-of-content)
 
-![License](https://img.shields.io/github/license/ismaelmarot/WeatherApp?style=for-the-badge)
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-![Last Commit](https://img.shields.io/github/last-commit/ismaelmarot/WeatherApp?style=for-the-badge)
 
 
 ## 📸 Screenshots
