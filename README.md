@@ -1,13 +1,15 @@
-# WeatherApp 🌤️
+# 🌤️ WeatherApp
 
-![Version](https://img.shields.io/badge/version-1.0.0-orange?style=for-the-badge)
+
 
 ![React](https://img.shields.io/badge/React-18-blue?logo=react) 
 ![TypeScript](https://img.shields.io/badge/TypeScript-4.9-blue?logo=typescript) 
 ![Vite](https://img.shields.io/badge/Vite-4.5-blue?logo=vite) 
-![npm](https://img.shields.io/badge/npm-latest-red?logo=npm) 
+![npm](https://img.shields.io/badge/npm-latest-red?logo=npm)
 
-## 📑 Table of Contents
+![Version](https://img.shields.io/badge/version-1.0.0-orange?style=for-the-badge)
+
+## 📑 TABLE OF CONTENT
 
 1. [Highlights](#-highlights)
 2. [Technologies](#-technologies)
