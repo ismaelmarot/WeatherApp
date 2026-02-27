@@ -4,9 +4,14 @@ import { WindItem } from './WindItem'
 
 const windRotationMock = vi.fn()
 
-vi.mock('../../utils', () => ({
-    windRotation: (dir: string) => windRotationMock(dir)
-}))
+vi.mock('../../utils', async (importOriginal) => {
+    const actual = await importOriginal<any>()
+
+    return {
+        ...actual,
+        windRotation: (dir: string) => windRotationMock(dir)
+    }
+})
 
 vi.mock('./WindItem.style', async (importOriginal) => {
     const actual = await importOriginal<any>()
