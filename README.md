@@ -7,7 +7,6 @@
 
 ![Version](https://img.shields.io/badge/version-1.0.0-orange?style=for-the-badge)
 &nbsp;&nbsp;&nbsp;&nbsp;
-![Last Commit](https://img.shields.io/github/last-commit/ismaelmarot/WeatherApp?style=for-the-badge)
 
 [![Last Commit](https://img.shields.io/github/last-commit/ismaelmarot/WeatherApp?style=for-the-badge)](https://github.com/ismaelmarot/WeatherApp/commit/main)
 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -143,7 +142,7 @@ npm test
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
+------
 
 
 
@@ -155,7 +154,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### Desktop
 ![Desktop Screenshot](assets/screenshots/desktop.png)
 
----
+------
 
 
 [![Ver Demo](https://img.shields.io/badge/Ver-Demo-blue?style=for-the-badge)](https://tusitio.com)
@@ -165,4 +164,33 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   <a href="#-table-of-content">
     <img src="https://img.shields.io/badge/Back%20-0A66C2?style=for-the-badge&logo=vercel&logoColor=white"/>
   </a>
+</p>
+
+
+------
+
+<p align="center">
+
+<a href="https://github.com/ismaelmarot/WeatherApp/commits/main">
+  <img src="https://img.shields.io/github/last-commit/ismaelmarot/WeatherApp?style=for-the-badge" />
+</a>
+
+&nbsp;&nbsp;&nbsp;
+
+<a href="https://github.com/ismaelmarot/WeatherApp/blob/main/LICENSE">
+  <img src="https://img.shields.io/github/license/ismaelmarot/WeatherApp?style=for-the-badge" />
+</a>
+
+&nbsp;&nbsp;&nbsp;
+
+<a href="https://github.com/ismaelmarot/WeatherApp">
+  <img src="https://img.shields.io/github/stars/ismaelmarot/WeatherApp?style=for-the-badge" />
+</a>
+
+&nbsp;&nbsp;&nbsp;
+
+<a href="https://github.com/ismaelmarot/WeatherApp/network/members">
+  <img src="https://img.shields.io/github/forks/ismaelmarot/WeatherApp?style=for-the-badge" />
+</a>
+
 </p>
