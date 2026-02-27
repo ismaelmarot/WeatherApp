@@ -9,12 +9,12 @@
 
 ## 📑 Table of Contents
 
-1. [Highlights](#highlights)
-2. [Technologies](#technologies)
-3. [Installation](#installation)
-4. [Project Structure](#project-structure)
-5. [Usage](#usage)
-6. [Testing](#testing)
+1. [Highlights](#-highlights)
+2. [Technologies](#-technologies)
+3. [Installation](#-installation)
+4. [Project Structure](#-project-structure)
+5. [Usage](#-usage)
+6. [Testing](#-testing)
 
 **A modern, responsive weather application for mobile, tablet, and desktop.**  
 Built with **React 18**, **TypeScript**, and **Vite**, following modular architecture, reusable components, and scalable design.
