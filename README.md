@@ -10,12 +10,12 @@
 
 ## 📑 Table of Contents / Índice
 
-1. [Highlights / Aspectos destacados](#-highlights)
-2. [Technologies / Tecnologías](#-technologies)
-3. [Installation / Instalación](#-installation)
-4. [Project Structure / Estructura del proyecto](#-project-structure)
-5. [Usage / Uso](#-usage)
-6. [Testing / Pruebas](#-testing)
+1. [Highlights](#-highlights)
+2. [Technologies](#-technologies)
+3. [Installation](#-installation)
+4. [Project Structure](#-project-structure)
+5. [Usage](#-usage)
+6. [Testing](#-testing)
 
 **A modern, responsive weather application for mobile, tablet, and desktop.**  
 Built with **React 18**, **TypeScript**, and **Vite**, following modular architecture, reusable components, and scalable design.
@@ -57,7 +57,7 @@ Built with **React 18**, **TypeScript**, and **Vite**, following modular archite
 4. Open in your browser: http://localhost:5173
 
 ---
-## 📂 Project Structure / Estructura del proyecto
+## 📂 Project Structure
 
 ```plaintext
 src/
