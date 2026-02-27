@@ -186,7 +186,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📬 Contact
 
 <p align="center">
-  <a href="https://https://ismaelmarot.github.io">
+  <a href="[https://https://ismaelmarot.github.io](https://github.com/ismaelmarot)">
     <img src="https://img.shields.io/badge/Portfolio-0A66C2?style=for-the-badge" />
   </a>
   <a href="https://www.linkedin.com/in/ismael-marot">
