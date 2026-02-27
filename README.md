@@ -28,15 +28,16 @@
 
 <br>
 
-_**A modern, responsive weather application for mobile, tablet, and desktop.**_
+_**WeatherApp is a responsive weather dashboard built with React and TypeScript.**_
 
-_Built with **React 18**, **TypeScript**, and **Vite**, following modular architecture, reusable components, and scalable design._
+It consumes real-time weather data from the [WeatherAPI](https://www.weatherapi.com/) and dynamically adapts its layout for mobile, tablet, and desktop devices.
 
+The project focuses on modular architecture, reusable components, custom hooks, and scalable folder structure.
 <br>
 <br>
 
 <a href="https://tusitio.com">
-  <img src="https://img.shields.io/badge/Ver-Demo-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Go-Demo-blue?style=for-the-badge" />
 </a>
 
 <br>
