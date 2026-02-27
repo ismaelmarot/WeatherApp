@@ -1,7 +1,5 @@
 # 🌤️ WeatherApp
 
-
-
 ![React](https://img.shields.io/badge/React-18-blue?logo=react) 
 ![TypeScript](https://img.shields.io/badge/TypeScript-4.9-blue?logo=typescript) 
 ![Vite](https://img.shields.io/badge/Vite-4.5-blue?logo=vite) 
@@ -9,21 +7,26 @@
 
 ![Version](https://img.shields.io/badge/version-1.0.0-orange?style=for-the-badge)
 
+_**A modern, responsive weather application for mobile, tablet, and desktop.**_
+
+_Built with **React 18**, **TypeScript**, and **Vite**, following modular architecture, reusable components, and scalable design._
+
+------
+
 ## 📑 TABLE OF CONTENT
 
-1. [Highlights](#-highlights)
+1. [Highlights](#highlights)
 2. [Technologies](#technologies)
-3. [Installation](#-installation)
-4. [Project Structure](#-project-structure)
-5. [Usage](#-usage)
-6. [Testing](#-testing)
+3. [Installation](#installation)
+4. [Project Structure](#project-structure)
+5. [Usage](#usage)
+6. [Testing](#testing)
 
+------
 
-**A modern, responsive weather application for mobile, tablet, and desktop.**  
-Built with **React 18**, **TypeScript**, and **Vite**, following modular architecture, reusable components, and scalable design.
+<a id="highlights"></a>
+## 🌟 HIGHLIGHTS
 
----
-## 🌟 Highlights
 - Modular architecture with reusable components, hooks, and constants  
 - Responsive layout for mobile, tablet, and desktop  
 - Scroll-snap screens for temperature, wind, humidity, UV, air quality, and moon phases  
@@ -31,18 +34,20 @@ Built with **React 18**, **TypeScript**, and **Vite**, following modular archite
 - Fully typed with TypeScript for reliability and maintainability  
 - Unit-tested with Vitest and React Testing Library  
 
-
 ---
 
-7. <a id="technologies"></a>
-## 🛠️ Technologies
+<a id="technologies"></a>
+## 🛠️ TECNOLOGIES
 
 - **Frontend:** React 18, TypeScript, Styled Components  
 - **Bundler:** Vite  
 - **Testing:** Vitest + React Testing Library  
 - **Other:** Scroll-snap UI, responsive design, custom hooks
+
 ---
-## 🚀 Installation 
+
+<a id="installation"></a>
+## 🚀 INSTALLATION
 
 1. **Clone the repository**:
    ```bash
@@ -57,11 +62,12 @@ Built with **React 18**, **TypeScript**, and **Vite**, following modular archite
    ```bash
    npm run dev
    ```
-
 4. Open in your browser: http://localhost:5173
 
 ---
-## 📂 Project Structure
+
+<a id="project-structure"></a>
+## 📂 PROJECT STRUCTURE
 
 ```plaintext
 src/
@@ -77,7 +83,9 @@ src/
 ```
 
 ---
-## 💡 Usage
+
+<a id="usage"></a>
+## 💡 USAGE
 
 ```bash
 import { DeviceLayout } from './layouts/DeviceLayout'
@@ -88,7 +96,9 @@ function App() {
 ```
 
 ---
-## 🧪 [Testing](#table-of-content)
+
+<a id="testing"></a>
+## 🧪 [Testing](#-table-of-content)
 
 ```Bash
 npm test
