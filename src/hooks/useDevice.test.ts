@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest'
 import { renderHook, act } from '@testing-library/react'
-import { useDevice } from './useDevice'
+import { useDevice } from './useDevice.hook'
 
 vi.mock('../constants', () => ({
     BREAKPOINTS: {
