@@ -8,7 +8,7 @@
 ![npm](https://img.shields.io/badge/npm-latest-red?logo=npm) 
 
 
-## 📑 Table of Contents / Índice
+## 📑 Table of Contents
 
 1. [Highlights](#-highlights)
 2. [Technologies](#-technologies)
