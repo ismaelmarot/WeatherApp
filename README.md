@@ -7,13 +7,17 @@
 
 ![Version](https://img.shields.io/badge/version-1.0.0-orange?style=for-the-badge)
 &nbsp;&nbsp;&nbsp;&nbsp;
+[![License](https://img.shields.io/github/license/ismaelmarot/WeatherApp?style=for-the-badge)](https://github.com/ismaelmarot/WeatherApp/blob/HEAD/LICENSE)
+&nbsp;&nbsp;&nbsp;&nbsp;
 
 [![Last Commit](https://img.shields.io/github/last-commit/ismaelmarot/WeatherApp?style=for-the-badge)](https://github.com/ismaelmarot/WeatherApp/commit/main)
 &nbsp;&nbsp;&nbsp;&nbsp;
-[![License](https://img.shields.io/github/license/ismaelmarot/WeatherApp?style=for-the-badge)](https://github.com/ismaelmarot/WeatherApp/blob/HEAD/LICENSE)
-&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 ![Coverage](https://img.shields.io/codecov/c/github/ismaelmarot/WeatherApp?style=for-the-badge)
 &nbsp;&nbsp;&nbsp;
+![Build](https://img.shields.io/github/actions/workflow/status/ismaelmarot/WeatherApp/main.yml?style=for-the-badge)
+&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://github.com/ismaelmarot/WeatherApp">
   <img src="https://img.shields.io/github/stars/ismaelmarot/WeatherApp?style=for-the-badge" />
 </a>
@@ -22,11 +26,21 @@
   <img src="https://img.shields.io/github/forks/ismaelmarot/WeatherApp?style=for-the-badge" />
 </a>
 
-</p>
+<br>
 
 _**A modern, responsive weather application for mobile, tablet, and desktop.**_
 
 _Built with **React 18**, **TypeScript**, and **Vite**, following modular architecture, reusable components, and scalable design._
+
+<br>
+<br>
+
+<a href="https://tusitio.com">
+  <img src="https://img.shields.io/badge/Ver-Demo-blue?style=for-the-badge" />
+</a>
+
+<br>
+<br>
 
 ------
 
@@ -38,6 +52,8 @@ _Built with **React 18**, **TypeScript**, and **Vite**, following modular archit
 4. [Project Structure](#project-structure)
 5. [Usage](#usage)
 6. [Testing](#testing)
+
+<br>
 
 ------
 
@@ -51,6 +67,8 @@ _Built with **React 18**, **TypeScript**, and **Vite**, following modular archit
 - Fully typed with TypeScript for reliability and maintainability  
 - Unit-tested with Vitest and React Testing Library  
 
+<br>
+
 ---
 
 <a id="technologies"></a>
@@ -60,6 +78,8 @@ _Built with **React 18**, **TypeScript**, and **Vite**, following modular archit
 - **Bundler:** Vite  
 - **Testing:** Vitest + React Testing Library  
 - **Other:** Scroll-snap UI, responsive design, custom hooks
+
+<br>
 
 ---
 
@@ -82,6 +102,8 @@ _Built with **React 18**, **TypeScript**, and **Vite**, following modular archit
 4. **Open in your browser**
    http://localhost:5173
 
+<br>
+
 ---
 
 <a id="project-structure"></a>
@@ -100,6 +122,8 @@ src/
 ├── mixins/        # CSS helpers (flex, size) / Helpers CSS
 ```
 
+<br>
+
 ---
 
 <a id="usage"></a>
@@ -112,6 +136,8 @@ function App() {
   return <DeviceLayout />
 }
 ```
+
+<br>
 
 ------
 
@@ -127,24 +153,9 @@ This project uses **Vitest + Testing Library** for unit and component testing.
 npm test
 ```
 
-
+<br>
 
 ------
-
-
-
-
-
-
-
-
-
-
----
-
-![Build](https://img.shields.io/github/actions/workflow/status/ismaelmarot/WeatherApp/main.yml?style=for-the-badge)
-
----
 
 <a id="license"></a>
 ## 📄 [License](#-table-of-content)
@@ -152,9 +163,9 @@ npm test
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+<br>
+
 ------
-
-
 
 ## 📸 Screenshots
 
@@ -164,8 +175,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### Desktop
 ![Desktop Screenshot](assets/screenshots/desktop.png)
 
-------
+<br>
 
+------
 
 [![Ver Demo](https://img.shields.io/badge/Ver-Demo-blue?style=for-the-badge)](https://tusitio.com)
 
@@ -176,19 +188,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   </a>
 </p>
 
-
-------
-
-<p align="center">
-
-<a href="https://github.com/ismaelmarot/WeatherApp/commits/main">
-  <img src="https://img.shields.io/github/last-commit/ismaelmarot/WeatherApp?style=for-the-badge" />
-</a>
-
-&nbsp;&nbsp;&nbsp;
-
-<a href="https://github.com/ismaelmarot/WeatherApp/blob/main/LICENSE">
-  <img src="https://img.shields.io/github/license/ismaelmarot/WeatherApp?style=for-the-badge" />
-</a>
-
-
+<br>
