@@ -52,6 +52,7 @@ _Built with **React 18**, **TypeScript**, and **Vite**, following modular archit
 4. [Project Structure](#project-structure)
 5. [Usage](#usage)
 6. [Testing](#testing)
+7. [Screenshots](#screenshots)
 
 <br>
 
@@ -157,23 +158,24 @@ npm test
 
 ------
 
-<a id="license"></a>
-## 📄 [License](#-table-of-content)
-
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-<br>
-
-------
-
-## 📸 Screenshots
+<a id="screenshots"></a>
+## 📸 [Screenshots](#-table-of-content)
 
 ### Mobile
 ![Mobile Screenshot](assets/screenshots/mobile.png)
 
 ### Desktop
 ![Desktop Screenshot](assets/screenshots/desktop.png)
+
+<br>
+
+------
+
+<a id="license"></a>
+## 📄 [License](#-table-of-content)
+
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 <br>
 
