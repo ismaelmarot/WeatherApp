@@ -13,7 +13,7 @@ _Built with **React 18**, **TypeScript**, and **Vite**, following modular archit
 
 ------
 
-## 📑 TABLE OF CONTENT
+## 📑 [TABLE OF CONTENT](#-table-of-content)
 
 1. [Highlights](#highlights)
 2. [Technologies](#technologies)
@@ -25,7 +25,7 @@ _Built with **React 18**, **TypeScript**, and **Vite**, following modular archit
 ------
 
 <a id="highlights"></a>
-## 🌟 HIGHLIGHTS
+## 🌟 [HIGHLIGHTS](#-table-of-content)
 
 - Modular architecture with reusable components, hooks, and constants  
 - Responsive layout for mobile, tablet, and desktop  
@@ -37,7 +37,7 @@ _Built with **React 18**, **TypeScript**, and **Vite**, following modular archit
 ---
 
 <a id="technologies"></a>
-## 🛠️ TECNOLOGIES
+## 🛠️ [TECNOLOGIES](#-table-of-content)
 
 - **Frontend:** React 18, TypeScript, Styled Components  
 - **Bundler:** Vite  
@@ -47,7 +47,7 @@ _Built with **React 18**, **TypeScript**, and **Vite**, following modular archit
 ---
 
 <a id="installation"></a>
-## 🚀 INSTALLATION
+## 🚀 [INSTALLATION](#-table-of-content)
 
 1. **Clone the repository**:
    ```bash
@@ -67,7 +67,7 @@ _Built with **React 18**, **TypeScript**, and **Vite**, following modular archit
 ---
 
 <a id="project-structure"></a>
-## 📂 PROJECT STRUCTURE
+## 📂 [PROJECT STRUCTURE](#-table-of-content)
 
 ```plaintext
 src/
@@ -85,7 +85,7 @@ src/
 ---
 
 <a id="usage"></a>
-## 💡 USAGE
+## 💡 [USAGE](#-table-of-content)
 
 ```bash
 import { DeviceLayout } from './layouts/DeviceLayout'
