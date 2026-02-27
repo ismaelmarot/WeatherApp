@@ -83,8 +83,7 @@ function App() {
 ```
 
 ---
-##
-🧪 Testing
+## 🧪 Testing
 
 ```Bash
 npm test
