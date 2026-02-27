@@ -54,15 +54,16 @@ _Built with **React 18**, **TypeScript**, and **Vite**, following modular archit
    git clone https://github.com/ismaelmarot/WeatherApp.git
    cd WeatherApp
    ```
-2. **Install dependencies using npm / Instalar dependencias usando npm**
+2. **Install dependencies using npm**
    ```bash
    npm install
    ```
-3. **Run development server / Ejecutar servidor de desarrollo**
+3. **Run development server**
    ```bash
    npm run dev
    ```
-4. Open in your browser: http://localhost:5173
+4. **Open in your browser**
+   http://localhost:5173
 
 ---
 
@@ -98,11 +99,34 @@ function App() {
 ---
 
 <a id="testing"></a>
-## 🧪 [Testing 🔝](#-table-of-content)
+## 🧪 [Testing](#-table-of-content)
 
 ```Bash
 npm test
 ```
+![Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen?style=for-the-badge)
+
+---
+
+![Build](https://img.shields.io/github/actions/workflow/status/ismaelmarot/WeatherApp/main.yml?style=for-the-badge)
+
+![License](https://img.shields.io/github/license/ismaelmarot/WeatherApp?style=for-the-badge)
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
 
+
+---
+
+![Last Commit](https://img.shields.io/github/last-commit/ismaelmarot/WeatherApp?style=for-the-badge)
+
+
+## 📸 Screenshots
+
+### Mobile
+![Mobile Screenshot](assets/screenshots/mobile.png)
+
+### Desktop
+![Desktop Screenshot](assets/screenshots/desktop.png)
