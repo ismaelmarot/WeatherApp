@@ -104,7 +104,7 @@ function App() {
 ```Bash
 npm test
 ```
-![Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen?style=for-the-badge)
+![Coverage](https://img.shields.io/codecov/c/github/ismaelmarot/WeatherApp?style=for-the-badge)
 
 ---
 
