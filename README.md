@@ -7,14 +7,21 @@
 ![Vite](https://img.shields.io/badge/Vite-4.5-blue?logo=vite) 
 ![npm](https://img.shields.io/badge/npm-latest-red?logo=npm) 
 
+
+## 📑 Table of Contents / Índice
+
+1. [Highlights / Aspectos destacados](#-highlights)
+2. [Technologies / Tecnologías](#-technologies)
+3. [Installation / Instalación](#-installation)
+4. [Project Structure / Estructura del proyecto](#-project-structure)
+5. [Usage / Uso](#-usage)
+6. [Testing / Pruebas](#-testing)
+
 **A modern, responsive weather application for mobile, tablet, and desktop.**  
 Built with **React 18**, **TypeScript**, and **Vite**, following modular architecture, reusable components, and scalable design.
 
-**Una aplicación de clima moderna y responsiva para móvil, tablet y escritorio.**  
-Construida con **React 18**, **TypeScript** y **Vite**, siguiendo arquitectura modular, componentes reutilizables y diseño escalable.
-
 ---
-## 🌟 Highlights / Aspectos destacados
+## 🌟 Highlights
 - Modular architecture with reusable components, hooks, and constants  
 - Responsive layout for mobile, tablet, and desktop  
 - Scroll-snap screens for temperature, wind, humidity, UV, air quality, and moon phases  
@@ -22,22 +29,16 @@ Construida con **React 18**, **TypeScript** y **Vite**, siguiendo arquitectura m
 - Fully typed with TypeScript for reliability and maintainability  
 - Unit-tested with Vitest and React Testing Library  
 
-- Arquitectura modular con componentes, hooks y constantes reutilizables  
-- Layout responsive para móvil, tablet y escritorio  
-- Pantallas con scroll-snap: temperatura, viento, humedad, UV, calidad del aire y fases lunares  
-- Lazy loading y Suspense para optimizar performance  
-- Tipado completo con TypeScript para confiabilidad y mantenibilidad  
-- Unit tests con Vitest y React Testing Library  
 
 ---
-## 🛠️ Technologies / Tecnologías
+## 🛠️ Technologies
 - **Frontend:** React 18, TypeScript, Styled Components  
 - **Bundler:** Vite  
 - **Testing:** Vitest + React Testing Library  
-- **Other / Otros:** Scroll-snap UI, responsive design, custom hooks  
+- **Other:** Scroll-snap UI, responsive design, custom hooks  
 
 ---
-## 🚀 Installation / Instalación
+## 🚀 Installation 
 
 1. **Clone the repository**:
    ```bash
@@ -84,7 +85,7 @@ function App() {
 
 ---
 ##
-🧪 Testing / Pruebas
+🧪 Testing
 
 ```Bash
 npm test
