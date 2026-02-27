@@ -112,8 +112,10 @@ npm test
 
 ---
 
+<a id="license"></a>
+## 📄 [License](#-table-of-content)
+
 ![License](https://img.shields.io/github/license/ismaelmarot/WeatherApp?style=for-the-badge)
-## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
