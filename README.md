@@ -13,6 +13,16 @@
 [![License](https://img.shields.io/github/license/ismaelmarot/WeatherApp?style=for-the-badge)](https://github.com/ismaelmarot/WeatherApp/blob/HEAD/LICENSE)
 &nbsp;&nbsp;&nbsp;&nbsp;
 ![Coverage](https://img.shields.io/codecov/c/github/ismaelmarot/WeatherApp?style=for-the-badge)
+&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/ismaelmarot/WeatherApp">
+  <img src="https://img.shields.io/github/stars/ismaelmarot/WeatherApp?style=for-the-badge" />
+</a>
+&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/ismaelmarot/WeatherApp/network/members">
+  <img src="https://img.shields.io/github/forks/ismaelmarot/WeatherApp?style=for-the-badge" />
+</a>
+
+</p>
 
 _**A modern, responsive weather application for mobile, tablet, and desktop.**_
 
@@ -181,16 +191,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   <img src="https://img.shields.io/github/license/ismaelmarot/WeatherApp?style=for-the-badge" />
 </a>
 
-&nbsp;&nbsp;&nbsp;
 
-<a href="https://github.com/ismaelmarot/WeatherApp">
-  <img src="https://img.shields.io/github/stars/ismaelmarot/WeatherApp?style=for-the-badge" />
-</a>
-
-&nbsp;&nbsp;&nbsp;
-
-<a href="https://github.com/ismaelmarot/WeatherApp/network/members">
-  <img src="https://img.shields.io/github/forks/ismaelmarot/WeatherApp?style=for-the-badge" />
-</a>
-
-</p>
