@@ -12,7 +12,7 @@
 ## 📑 TABLE OF CONTENT
 
 1. [Highlights](#-highlights)
-2. [Technologies](#-technologies)
+2. [Technologies](#technologies)
 3. [Installation](#-installation)
 4. [Project Structure](#-project-structure)
 5. [Usage](#-usage)
