@@ -186,10 +186,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📬 Contact
 
 <p align="center">
-  <a href="[https://https://ismaelmarot.github.io](https://github.com/ismaelmarot)">
+  <a href="https://ismaelmarot.github.io/" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-0A66C2?style=for-the-badge" />
   </a>
-  <a href="https://www.linkedin.com/in/ismael-marot">
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/ismael-marot" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
 </p>
