@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:watch": "vitest --watch",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "test:coverage": "vitest run --coverage && ts-node scripts/generate-coverage-badge.ts"
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
