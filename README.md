@@ -111,15 +111,15 @@ _Built with **React 18**, **TypeScript**, and **Vite**, following modular archit
 
 ```plaintext
 src/
-├── components/    # Reusable UI components / Componentes UI reutilizables
-├── screens/       # Screens (Screen1–Screen10) / Pantallas Screen1–Screen10
-├── layouts/       # DeviceLayout, RenderScreens, ScrollViewport / Layouts
-├── hooks/         # Custom hooks / Hooks personalizados
-├── constants/     # BREAKPOINTS, SCREENS_MAP, COLORS / Constantes
-├── services/      # API calls / Llamadas a APIs
-├── utils/         # Utility functions / Funciones auxiliares
-├── types/         # TypeScript types / Tipos TypeScript
-├── mixins/        # CSS helpers (flex, size) / Helpers CSS
+├── components/    # Reusable UI components
+├── screens/       # Screens (Screen1–Screen10)
+├── layouts/       # DeviceLayout, RenderScreens, ScrollViewport
+├── hooks/         # Custom hooks
+├── constants/     # BREAKPOINTS, SCREENS_MAP, COLORS
+├── services/      # API calls
+├── utils/         # Utility functions
+├── types/         # TypeScript types
+├── mixins/        # CSS helpers (flex, size)
 ```
 
 <br>
