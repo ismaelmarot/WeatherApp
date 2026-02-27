@@ -145,7 +145,7 @@ function App() {
 
 <a id="testing"></a>
 ## 🧪 [Testing](#-table-of-content)
-This project uses **Vitest + Testing Library** for unit and component testing.
+This project uses **Vitest + React Testing Library** for unit and component testing.
 
 ![Coverage](https://img.shields.io/codecov/c/github/ismaelmarot/WeatherApp?style=for-the-badge)
 
@@ -155,6 +155,7 @@ This project uses **Vitest + Testing Library** for unit and component testing.
 npm test
 ```
 
+![Coverage](https://img.shields.io/badge/coverage-73.29%25-brightgreen)
 <br>
 
 ------------------------------------
