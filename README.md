@@ -33,15 +33,14 @@ Built with **React 18**, **TypeScript**, and **Vite**, following modular archite
 
 
 ---
+
+7. <a id="technologies"></a>
 ## 🛠️ Technologies
+
 - **Frontend:** React 18, TypeScript, Styled Components  
 - **Bundler:** Vite  
 - **Testing:** Vitest + React Testing Library  
 - **Other:** Scroll-snap UI, responsive design, custom hooks
-
-
-7. <a id="technologies"></a>
-## 🛠️ Technologies
 ---
 ## 🚀 Installation 
 
