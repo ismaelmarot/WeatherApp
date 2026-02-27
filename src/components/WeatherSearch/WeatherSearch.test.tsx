@@ -28,6 +28,7 @@ describe('WeatherSearch', () => {
 
         globalThis.fetch = vi.fn(() =>
             Promise.resolve({
+                ok: true,
                 json: () => Promise.resolve(mockResults),
             } as Response)
         ) as any
