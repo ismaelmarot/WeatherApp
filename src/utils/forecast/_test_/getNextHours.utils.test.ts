@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
-import { getNextHours } from '../getNextHours.utils'
+import { getNextHours } from '../getNextOurs.utils'
 
 describe('getNextHours', () => {
     const mockNow = new Date('2026-02-23T12:00:00')
