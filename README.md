@@ -245,11 +245,29 @@ yarn vitest run src/components/MyComponent.test.tsx
 <a id="screenshots"></a>
 ## 📸 [Screenshots](#-table-of-content)
 
-### Mobile
-![Mobile Screenshot](assets/screenshots/mobile.png)
+### 📱 Mobile
 
-### Desktop
-![Desktop Screenshot](assets/screenshots/desktop.png)
+<p align="center">
+  <img src="assets/screenshots/screenshot_01.png" width="250"/>
+  <img src="assets/screenshots/screenshot_02.png" width="250"/>
+  <img src="assets/screenshots/screenshot_03.png" width="250"/>
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/screenshot_04.png" width="250"/>
+  <img src="assets/screenshots/screenshot_05.png" width="250"/>
+  <img src="assets/screenshots/screenshot_06.png" width="250"/>
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/screenshot_07.png" width="250"/>
+  <img src="assets/screenshots/screenshot_08.png" width="250"/>
+  <img src="assets/screenshots/screenshot_09.png" width="250"/>
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/screenshot_10.png" width="250"/>
+</p>
 
 <br>
 
