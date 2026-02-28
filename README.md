@@ -13,10 +13,9 @@
 [![Last Commit](https://img.shields.io/github/last-commit/ismaelmarot/WeatherApp?style=for-the-badge)](https://github.com/ismaelmarot/WeatherApp/commit/main)
 &nbsp;&nbsp;&nbsp;&nbsp;
 
-
 ![Build](https://img.shields.io/github/actions/workflow/status/ismaelmarot/WeatherApp/ci.yml?branch=master&style=for-the-badge)
-![Build](https://img.shields.io/github/actions/workflow/status/ismaelmarot/WeatherApp/main.yml?style=for-the-badge)
 &nbsp;&nbsp;&nbsp;&nbsp;
+
 ![Coverage](https://img.shields.io/badge/Coverage-73.29%25-brightgreen?style=for-the-badge)
 &nbsp;&nbsp;&nbsp;
 <a href="https://github.com/ismaelmarot/WeatherApp">
