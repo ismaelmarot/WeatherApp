@@ -41,9 +41,6 @@ The project focuses on modular architecture, reusable components, custom hooks, 
 <br>
 <br>
 
-
-![Build](https://img.shields.io/github/actions/workflow/status/ismaelmarot/WeatherApp/ci.yml?branch=main&style=for-the-badge)
-
 ------------------------------------
 
 ## 📑 [TABLE OF CONTENT](#-table-of-content)
