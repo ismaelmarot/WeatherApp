@@ -93,16 +93,47 @@ The project focuses on modular architecture, reusable components, custom hooks, 
    git clone https://github.com/ismaelmarot/WeatherApp.git
    cd WeatherApp
    ```
+   <br>
 2. **Install dependencies using npm**
    ```bash
    npm install
    ```
-3. **Run development server**
+   <br>
+3. **💡 Tip: Make sure you have Node.js >= 18 installed. You can check your version with:**
+   ```bash
+    node -v
+   ```
+   <br>
+4. **Setup API Key**
+    _This project requires a Weather API key to fetch weather data._
+
+    - Register for a free API key at [WeatherAPI](https://www.weatherapi.com/).  
+    - Once you have the key, create a `.env` file in the root folder of the project:
+    ```env
+    VITE_WEATHER_API_KEY=your_api_key_here
+    VITE_WEATHER_BASE_URL=https://api.weatherapi.com/v1
+    ```
+   <br>
+5. **Run development server**
    ```bash
    npm run dev
    ```
-4. **Open in your browser**
-   http://localhost:5173
+   <br>
+6. **This will start the app locally at port 5173.**
+    - Make sure your firewall or antivirus is not blocking the development port.
+    - ***Open in your browser http://localhost:5173***
+   <br>
+7. **Troubleshooting**
+    - If you encounter errors with dependencies, try:
+    ```bash
+     rm -rf node_modules package-lock.json
+     npm install
+   ```
+
+
+
+
+
 
 <br>
 
