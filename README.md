@@ -93,19 +93,22 @@ The project focuses on modular architecture, reusable components, custom hooks, 
    git clone https://github.com/ismaelmarot/WeatherApp.git
    cd WeatherApp
    ```
-   <br>
+   
 2. **Install dependencies using npm**
    ```bash
    npm install
    ```
-   <br>
-3. **💡 Tip: Make sure you have Node.js >= 18 installed. You can check your version with:**
+   
+3. **Make sure you have Node.js >= 18 installed (💡Tip)**
+
+   *You can check your version with:*
    ```bash
     node -v
    ```
-   <br>
-4. **Setup API Key**
-    _This project requires a Weather API key to fetch weather data._
+
+5. **Setup API Key**
+   
+    *This project requires a Weather API key to fetch weather data.*
 
     - Register for a free API key at [WeatherAPI](https://www.weatherapi.com/).  
     - Once you have the key, create a `.env` file in the root folder of the project:
@@ -113,18 +116,21 @@ The project focuses on modular architecture, reusable components, custom hooks, 
     VITE_WEATHER_API_KEY=your_api_key_here
     VITE_WEATHER_BASE_URL=https://api.weatherapi.com/v1
     ```
-   <br>
-5. **Run development server**
+
+6. **Run development server**
    ```bash
    npm run dev
    ```
-  <br>
+
+  
 6. **This will start the app locally at port 5173.**
     - Make sure your firewall or antivirus is not blocking the development port.
     - ***Open in your browser http://localhost:5173***
-   <br>
+
+   
 7. **Troubleshooting**
-    - If you encounter errors with dependencies, try:
+   
+    *If you encounter errors with dependencies, try:*
     ```bash
      rm -rf node_modules package-lock.json
      npm install
@@ -158,30 +164,80 @@ WEATHERAPP
 <a id="usage"></a>
 ## 💡 [USAGE](#-table-of-content)
 
+*After installing dependencies and setting up your API key, you can use the app as follows:*
+
+**1. Import the main layout**
+
+*In your main `App.tsx` file:*
+  ```bash
+  import 'weather-icons/css/weather-icons.css'
+  import { DeviceLayout } from './layouts/DeviceLayout'
+  
+  function App() {
+    return <DeviceLayout />
+  }
+
+  export default App
+  ```
+<br>
+
+**2. Run the app**
+
+*Start the development server if you haven’t already:*
 ```bash
-import { DeviceLayout } from './layouts/DeviceLayout'
-
-function App() {
-  return <DeviceLayout />
-}
+  npm run dev
 ```
-
 <br>
 
 ------------------------------------
 
 <a id="testing"></a>
 ## 🧪 [Testing](#-table-of-content)
-This project uses **Vitest + React Testing Library** for unit and component testing.
+This project uses **Vitest** for unit testing and **React Testing Library** for component tests.
 
 ![Coverage](https://img.shields.io/badge/coverage-73.29%25-brightgreen)
 
-### ▶ Run tests
+***1. Install testing dependencies***
+
+If not already installed via `npm install`, run:
 
 ```bash
-npm test
+# Using npm
+npm install --save-dev vitest @testing-library/react @testing-library/jest-dom
+
+# Or using yarn
+yarn add -D vitest @testing-library/react @testing-library/jest-dom
+
 ```
 
+***2. Run all tests***
+```basg
+# Using npm
+npm run test
+
+# Or using yarn
+yarn test
+```
+
+***3. Run in watch mode***
+
+_By default, this runs all tests once and exit_ (💡Tip)
+```bash
+# Using npm
+npm run test:watch
+
+# Or using yarn
+yarn test:watch
+```
+
+***4. Run a single test file***
+```bash
+# Using npm
+npx vitest run src/components/MyComponent.test.tsx
+
+# Or using yarn
+yarn vitest run src/components/MyComponent.test.tsx
+```
 <br>
 
 ------------------------------------
