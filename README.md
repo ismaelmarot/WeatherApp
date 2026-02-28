@@ -118,7 +118,7 @@ The project focuses on modular architecture, reusable components, custom hooks, 
    ```bash
    npm run dev
    ```
-   <br>
+  <br>
 6. **This will start the app locally at port 5173.**
     - Make sure your firewall or antivirus is not blocking the development port.
     - ***Open in your browser http://localhost:5173***
@@ -129,13 +129,7 @@ The project focuses on modular architecture, reusable components, custom hooks, 
      rm -rf node_modules package-lock.json
      npm install
    ```
-
-
-
-
-
-
-<br>
+  <br>
 
 ------------------------------------
 
@@ -143,16 +137,18 @@ The project focuses on modular architecture, reusable components, custom hooks, 
 ## 📂 [PROJECT STRUCTURE](#-table-of-content)
 
 ```plaintext
-src/
-├── components/    # Reusable UI components
-├── screens/       # Screens (Screen1–Screen10)
-├── layouts/       # DeviceLayout, RenderScreens, ScrollViewport
-├── hooks/         # Custom hooks
-├── constants/     # BREAKPOINTS, SCREENS_MAP, COLORS
-├── services/      # API calls
-├── utils/         # Utility functions
-├── types/         # TypeScript types
-├── mixins/        # CSS helpers (flex, size)
+WEATHERAPP
+├- src/
+│  ├── components/     # Reusable UI components
+│  ├── screens/        # Screens (Screen1–Screen10)
+│  ├── layouts/        # DeviceLayout, RenderScreens, ScrollViewport
+│  ├── hooks/          # Custom hooks
+│  ├── constants/      # BREAKPOINTS, SCREENS_MAP, COLORS
+│  ├── services/       # API calls
+│  ├── utils/          # Utility functions
+│  ├── types/          # TypeScript types
+│  ├── mixins/         # CSS helpers (flex, size)
+└──.env                # API key
 ```
 
 <br>
