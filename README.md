@@ -18,7 +18,7 @@
   <img src="https://img.shields.io/github/stars/ismaelmarot/WeatherApp?style=for-the-badge" />
 </a>
 &nbsp;&nbsp;&nbsp;
-<a href="https://github.com/ismaelmarot/WeatherApp/network/members">
+<a href="https://ismaelmarot.github.io/WeatherApp/">
   <img src="https://img.shields.io/github/forks/ismaelmarot/WeatherApp?style=for-the-badge" />
 </a>
 
