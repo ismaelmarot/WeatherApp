@@ -5,11 +5,11 @@ export function InfoPopupScreen5(){
     return (
         <>
             <p>Niveles</p>
-            <StatusDot color={COLORS_AIR_QUALITY_LEVELS.verde} /> - Bueno
-            <StatusDot color={COLORS_AIR_QUALITY_LEVELS.verde} /> - Moderado
-            <StatusDot color={COLORS_AIR_QUALITY_LEVELS.verde} /> - No saludable para personas sensibles
-            <StatusDot color={COLORS_AIR_QUALITY_LEVELS.verde} /> - Altamente no saludable
-            <StatusDot color={COLORS_AIR_QUALITY_LEVELS.verde} /> - Peligroso
+            <StatusDot color={COLORS_AIR_QUALITY_LEVELS.Bueno} /> - Bueno
+            <StatusDot color={COLORS_AIR_QUALITY_LEVELS.Moderado} /> - Moderado
+            <StatusDot color={COLORS_AIR_QUALITY_LEVELS['Poco saludable para grupos sensibles']} /> - No saludable para personas sensibles
+            <StatusDot color={COLORS_AIR_QUALITY_LEVELS['Muy no saludable']} /> - Altamente no saludable
+            <StatusDot color={COLORS_AIR_QUALITY_LEVELS.Peligroso} /> - Peligroso
          
             <p><strong>Title</strong></p>
             <p>
