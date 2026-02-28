@@ -15,7 +15,6 @@
 
 ![Build](https://img.shields.io/github/actions/workflow/status/ismaelmarot/WeatherApp/ci.yml?branch=master&style=for-the-badge)
 &nbsp;&nbsp;&nbsp;&nbsp;
-
 ![Coverage](https://img.shields.io/badge/Coverage-73.29%25-brightgreen?style=for-the-badge)
 &nbsp;&nbsp;&nbsp;
 <a href="https://github.com/ismaelmarot/WeatherApp">
