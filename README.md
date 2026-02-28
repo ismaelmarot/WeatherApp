@@ -25,6 +25,8 @@
   <img src="https://img.shields.io/github/forks/ismaelmarot/WeatherApp?style=for-the-badge" />
 </a>
 
+![Build](https://img.shields.io/github/actions/workflow/status/ismaelmarot/WeatherApp/ci.yml?branch=master&style=for-the-badge)
+
 <br>
 _**WeatherApp is a responsive weather dashboard built with React and TypeScript.**_
 
