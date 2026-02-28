@@ -13,14 +13,15 @@
 [![Last Commit](https://img.shields.io/github/last-commit/ismaelmarot/WeatherApp?style=for-the-badge)](https://github.com/ismaelmarot/WeatherApp/commit/main)
 &nbsp;&nbsp;&nbsp;&nbsp;
 ![Coverage](https://img.shields.io/badge/Coverage-73.29%25-brightgreen?style=for-the-badge)
-&nbsp;&nbsp;&nbsp;
-<a href="https://github.com/ismaelmarot/WeatherApp">
-  <img src="https://img.shields.io/github/stars/ismaelmarot/WeatherApp?style=for-the-badge" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/ismaelmarot/WeatherApp" target="_blank">
+  <img src="https://img.shields.io/github/stars/ismaelmarot/WeatherApp?style=for-the-badge" alt="GitHub Stars" />
 </a>
-&nbsp;&nbsp;&nbsp;
-<a href="https://ismaelmarot.github.io/WeatherApp/">
-  <img src="https://img.shields.io/github/forks/ismaelmarot/WeatherApp?style=for-the-badge" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/ismaelmarot/WeatherApp/network/members" target="_blank">
+  <img src="https://img.shields.io/github/forks/ismaelmarot/WeatherApp?style=for-the-badge" alt="GitHub Forks" />
 </a>
+
 
 <br>
 
@@ -33,7 +34,7 @@ The project focuses on modular architecture, reusable components, custom hooks, 
 <br>
 
 <a href="https://ismaelmarot.github.io/WeatherApp/" target="_blank">
-  <img src="https://img.shields.io/badge/Go-Demo-blue?style=for-the-badge" alt="Demo WeatherApp" />
+  <img src="https://img.shields.io/badge/Go-Live Demo-blue?style=for-the-badge" alt="Demo WeatherApp" />
 </a>
 
 <br>
