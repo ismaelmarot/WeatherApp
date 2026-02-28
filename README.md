@@ -32,7 +32,7 @@ The project focuses on modular architecture, reusable components, custom hooks, 
 <br>
 <br>
 
-<a href="https://tusitio.com">
+<a href="[https://tusitio.com](https://www.linkedin.com/in/ismael-marot)">
   <img src="https://img.shields.io/badge/Go-Demo-blue?style=for-the-badge" />
 </a>
 
