@@ -26,7 +26,8 @@
 </a>
 
 <br>
-_**WeatherApp is a responsive weather dashboard built with React and TypeScript.**_
+
+_***WeatherApp is a responsive weather dashboard built with React and TypeScript.***_
 
 It consumes real-time weather data from the [WeatherAPI](https://www.weatherapi.com/) and dynamically adapts its layout for mobile, tablet, and desktop devices.
 
