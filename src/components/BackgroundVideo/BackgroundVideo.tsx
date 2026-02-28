@@ -24,8 +24,8 @@ export function BackgroundVideo() {
       preload='auto'
     >
       <source
-        src='/videos/background_weather_00.mp4'
-        type='video/mp4'
+        src={`${import.meta.env.BASE_URL}videos/background_weather_00.mp4`}
+        type="video/mp4"
       />
     </Video>
   )
