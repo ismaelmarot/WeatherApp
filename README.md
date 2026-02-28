@@ -12,10 +12,8 @@
 
 [![Last Commit](https://img.shields.io/github/last-commit/ismaelmarot/WeatherApp?style=for-the-badge)](https://github.com/ismaelmarot/WeatherApp/commit/main)
 &nbsp;&nbsp;&nbsp;&nbsp;
-![Coverage](coverage/badge-coverage.svg)
 
-
-![Coverage](https://img.shields.io/codecov/c/github/ismaelmarot/WeatherApp?style=for-the-badge)
+![Coverage](https://img.shields.io/badge/Coverage-73.29%25-brightgreen?style=for-the-badge)
 &nbsp;&nbsp;&nbsp;
 ![Build](https://img.shields.io/github/actions/workflow/status/ismaelmarot/WeatherApp/main.yml?style=for-the-badge)
 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -42,6 +40,9 @@ The project focuses on modular architecture, reusable components, custom hooks, 
 
 <br>
 <br>
+
+
+![Build](https://img.shields.io/github/actions/workflow/status/ismaelmarot/WeatherApp/ci.yml?branch=main&style=for-the-badge)
 
 ------------------------------------
 
@@ -148,7 +149,7 @@ function App() {
 ## 🧪 [Testing](#-table-of-content)
 This project uses **Vitest + React Testing Library** for unit and component testing.
 
-![Coverage](https://img.shields.io/codecov/c/github/ismaelmarot/WeatherApp?style=for-the-badge)
+![Coverage](https://img.shields.io/badge/coverage-73.29%25-brightgreen)
 
 ### ▶ Run tests
 
@@ -156,7 +157,6 @@ This project uses **Vitest + React Testing Library** for unit and component test
 npm test
 ```
 
-![Coverage](https://img.shields.io/badge/coverage-73.29%25-brightgreen)
 <br>
 
 ------------------------------------
