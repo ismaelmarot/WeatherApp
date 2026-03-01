@@ -1,10 +1,5 @@
 # 🌤️ WeatherApp
 
-![React](https://img.shields.io/badge/React-18-blue?logo=react) 
-![TypeScript](https://img.shields.io/badge/TypeScript-4.9-blue?logo=typescript) 
-![Vite](https://img.shields.io/badge/Vite-4.5-blue?logo=vite) 
-![npm](https://img.shields.io/badge/npm-latest-red?logo=npm)
-
 ![Version](https://img.shields.io/badge/version-1.0.0-orange?style=for-the-badge)
 &nbsp;&nbsp;&nbsp;&nbsp;
 [![License](https://img.shields.io/github/license/ismaelmarot/WeatherApp?style=for-the-badge)](https://github.com/ismaelmarot/WeatherApp/blob/HEAD/LICENSE)
@@ -21,6 +16,16 @@
 <a href="https://github.com/ismaelmarot/WeatherApp/network/members" target="_blank">
   <img src="https://img.shields.io/github/forks/ismaelmarot/WeatherApp?style=for-the-badge" alt="GitHub Forks" />
 </a>
+
+![React](https://img.shields.io/badge/React-18-blue?logo=react) 
+![TypeScript](https://img.shields.io/badge/TypeScript-4.9-blue?logo=typescript) 
+![Vite](https://img.shields.io/badge/Vite-4.5-blue?logo=vite) 
+![npm](https://img.shields.io/badge/npm-latest-red?logo=npm)
+
+![TypeScript](https://img.shields.io/badge/TypeScript-78%25-3178C6?style=for-the-badge)
+![CSS](https://img.shields.io/badge/CSS-15%25-1572B6?style=for-the-badge)
+![HTML](https://img.shields.io/badge/HTML-7%25-E34F26?style=for-the-badge)
+
 
 <br>
 
