@@ -36,6 +36,13 @@ The project focuses on modular architecture, reusable components, custom hooks, 
   <img src="https://img.shields.io/badge/Go-Live Demo-blue?style=for-the-badge" alt="Demo WeatherApp" />
 </a>
 
+## What It Does
+  - Fetches current conditions, forecasts, and air quality data from an external weather API
+  - Resolves a user's location via the browser Geolocation API or a city-name search
+  - Displays data across a set of scroll-snap screens covering temperature, wind, rain, UV index, humidity, air quality, pressure, and lunar phases
+  - Adapts its layout to mobile, tablet, and desktop viewports
+  - Is structured as a Progressive Web App (PWA) with mobile-safe-area and fullscreen meta tags in index.html
+
 <br>
 <br>
 
@@ -52,7 +59,7 @@ The project focuses on modular architecture, reusable components, custom hooks, 
 6. [Usage](#usage)
 7. [Testing](#testing)
 8. [Screenshots](#screenshots)
-9. [Live Demo](#Live-Demo)
+9. [Live Demo](#live-demo)
 
 <br>
 
@@ -160,6 +167,16 @@ flowchart TD
     D --> E["Data Layer weater.service.ts - hooks - utils - types"]
     E --> F["External API WeatherAPI (forecast, search, AQI)"]
 ```
+
+## Sources:
+![App](https://img.shields.io/badge/src%2FApp.tsx-1--10-gray?labelColor=black&style=for-the-badge)
+&nbsp;
+![Home](https://img.shields.io/badge/src%2Fpages%2FHome%2FHome.tsx-1--13-gray?labelColor=black&style=for-the-badge)
+&nbsp;
+![Types](https://img.shields.io/badge/src%2Ftypes%2Findex.ts-1--42-gray?labelColor=black&style=for-the-badge)
+&nbsp;
+![Service](https://img.shields.io/badge/src%2Fservices%2Fweather.service.ts-1--5-gray?labelColor=black&style=for-the-badge)
+&nbsp;
 
 <br>
 
@@ -282,6 +299,21 @@ flowchart TD
   J --> L["2B.2) constants/index.ts"]
   J --> M["2B.3) utils/index.ts"]
 ```
+
+## Sources:
+![App](https://img.shields.io/badge/src%2FApp.tsx-1--10-gray?labelColor=black&style=for-the-badge)
+&nbsp;
+![Home](https://img.shields.io/badge/src%2Fpages%2FHome%2FHome.tsx-1--13-gray?labelColor=black&style=for-the-badge)
+&nbsp;
+![Service](https://img.shields.io/badge/src%2Fservices%2Fweather.service.ts-1--5-gray?labelColor=black&style=for-the-badge)
+&nbsp;
+![Types](https://img.shields.io/badge/src%2Ftypes%2Findex.ts-1--42-gray?labelColor=black&style=for-the-badge)
+&nbsp;
+![Components](https://img.shields.io/badge/src%2Fcomponents%2Findex.ts-1--34-gray?labelColor=black&style=for-the-badge)
+&nbsp;
+![Vite](https://img.shields.io/badge/vite.config.ts-1--22-gray?labelColor=black&style=for-the-badge)
+&nbsp;
+![TestSetup](https://img.shields.io/badge/src%2Ftest%2Fsetup.ts-1-gray?labelColor=black&style=for-the-badge)
 
 <br>
 
