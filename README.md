@@ -168,7 +168,7 @@ flowchart TD
     E --> F["External API WeatherAPI (forecast, search, AQI)"]
 ```
 
-## Sources:
+## sources:
 ![App](https://img.shields.io/badge/src%2FApp.tsx-1--10-gray?labelColor=black&style=for-the-badge)
 &nbsp;
 ![Home](https://img.shields.io/badge/src%2Fpages%2FHome%2FHome.tsx-1--13-gray?labelColor=black&style=for-the-badge)
@@ -300,7 +300,7 @@ flowchart TD
   J --> M["2B.3) utils/index.ts"]
 ```
 
-## Sources:
+## sources:
 ![App](https://img.shields.io/badge/src%2FApp.tsx-1--10-gray?labelColor=black&style=for-the-badge)
 &nbsp;
 ![Home](https://img.shields.io/badge/src%2Fpages%2FHome%2FHome.tsx-1--13-gray?labelColor=black&style=for-the-badge)
