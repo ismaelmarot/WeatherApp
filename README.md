@@ -45,10 +45,10 @@ The project focuses on modular architecture, reusable components, custom hooks, 
 
 1. [Highlights](#highlights)
 2. [Technologies Stack](#technologies)
-3. [Codebase Layer Map](#Codebase-layer-map)
+3. [Codebase Layer Map](#codebaser-layer-map)
 4. [Installation](#installation)
 5. [Project Structure](#project-structure)
-6. [Key Module Relationships](#project-structure)
+6. [Key Module Relationships](#key-module-relationships)
 6. [Usage](#usage)
 7. [Testing](#testing)
 8. [Screenshots](#screenshots)
@@ -150,7 +150,7 @@ The project focuses on modular architecture, reusable components, custom hooks, 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 <a id="codebaser-layer-map"></a>
-## 🔄 [Codebase Layer Map](#Codebase-layer-map)
+## 🔄 [Codebase Layer Map](#table-of-control)
 
 ```mermaid
 flowchart TD
@@ -256,8 +256,8 @@ flowchart TD
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
-<a id="project-structure"></a>
-## 📂 [KEY MODULE RELATIONSHIPS](#-key-module-relationship)
+<a id="key-module-relationships"></a>
+## 📂 [KEY MODULE RELATIONSHIPS](#-table-of-content)
 
 ```mermaid
   flowchart TD
