@@ -45,13 +45,14 @@ The project focuses on modular architecture, reusable components, custom hooks, 
 ## 📑 [TABLE OF CONTENT](#-table-of-content)
 
 1. [Highlights](#highlights)
-2. [Technologies](#technologies)
-3. [Installation](#installation)
-4. [Project Structure](#project-structure)
-5. [Usage](#usage)
-6. [Testing](#testing)
-7. [Screenshots](#screenshots)
-8. [Live Demo](#Live-Demo)
+2. [Technologies Stack](#technologies)
+3. Codebase Layer Map(#Codebase-layer-map)
+4. [Installation](#installation)
+5. [Project Structure](#project-structure)
+6. [Usage](#usage)
+7. [Testing](#testing)
+8. [Screenshots](#screenshots)
+9. [Live Demo](#Live-Demo)
 
 <br>
 
@@ -72,12 +73,93 @@ The project focuses on modular architecture, reusable components, custom hooks, 
 ------------------------------------
 
 <a id="technologies"></a>
-## 🛠️ [TECNOLOGIES](#-table-of-content)
+## 🛠️ [TECNOLOGIES STACK](#-table-of-content)
+ 
+<table style="border-collapse: collapse; width: 100%;">
+  <tr>
+    <th style="border-bottom: 2px solid #ccc; text-align:left; padding:8px;">Category</th>
+    <th style="border-bottom: 2px solid #ccc; text-align:left; padding:8px;">Library / Tool</th>
+    <th style="border-bottom: 2px solid #ccc; text-align:left; padding:8px;">Version</th>
+  </tr>
 
-- **Frontend:** React 18, TypeScript, Styled Components  
-- **Bundler:** Vite  
-- **Testing:** Vitest + React Testing Library  
-- **Other:** Scroll-snap UI, responsive design, custom hooks
+  <tr>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">UI framework</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">React</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">^19.2.0</td>
+  </tr>
+
+  <tr>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">Language</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">TypeScript</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">~5.9.3</td>
+  </tr>
+
+  <tr>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">Build tool</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">Vite + @vitejs/plugin-react</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">^7.2.4 / ^5.1.1</td>
+  </tr>
+
+  <tr>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">CSS-in-JS</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">styled-components</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">^6.3.8</td>
+  </tr>
+
+  <tr>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">Charting</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">recharts</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">^3.7.0</td>
+  </tr>
+
+  <tr>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">Weather icons</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">weather-icons</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">^1.3.2</td>
+  </tr>
+
+  <tr>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">General icons</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">react-icons</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">^5.5.0</td>
+  </tr>
+
+  <tr>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">Date utilities</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">date-fns</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">^4.1.0</td>
+  </tr>
+
+  <tr>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">Testing runner</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">Vitest</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">^4.0.18</td>
+  </tr>
+
+  <tr>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">Testing DOM</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">jsdom + @testing-library/react</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">^28.1.0 / ^16.3.2</td>
+  </tr>
+</table>
+
+  - **Other:** Scroll-snap UI, responsive design, custom hooks
+
+<br>
+
+------------------------------------
+
+<a id="codebaser-layer-map"></a>
+## 🔄 [Codebase Layer Map](#Codebase-layer-map)
+
+```mermaid
+flowchart TD
+    A["src/App.tsx<br/>DeviceLayout"] --> B["Layout Layer<br/>ScrollViewport<br/>RenderScreen<br/>ScreenLayoutGlass"]
+    B --> C["Screens Layer<br/>Screen1 → Screen10"]
+    C --> D["UI Component Library<br/>src/components/index.ts<br/>(30+ components)"]
+    D --> E["Data Layer weater.service.ts - hooks - utils - types"]
+    E --> F["External API WeatherAPI (forecast, search, AQI)"]
+```
 
 <br>
 
