@@ -22,7 +22,6 @@
   <img src="https://img.shields.io/github/forks/ismaelmarot/WeatherApp?style=for-the-badge" alt="GitHub Forks" />
 </a>
 
-
 <br>
 
 _***WeatherApp is a responsive weather dashboard built with React and TypeScript.***_
@@ -46,9 +45,10 @@ The project focuses on modular architecture, reusable components, custom hooks, 
 
 1. [Highlights](#highlights)
 2. [Technologies Stack](#technologies)
-3. Codebase Layer Map(#Codebase-layer-map)
+3. [Codebase Layer Map](#Codebase-layer-map)
 4. [Installation](#installation)
 5. [Project Structure](#project-structure)
+6. [Key Module Relationships](#project-structure)
 6. [Usage](#usage)
 7. [Testing](#testing)
 8. [Screenshots](#screenshots)
@@ -56,7 +56,7 @@ The project focuses on modular architecture, reusable components, custom hooks, 
 
 <br>
 
-------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 <a id="highlights"></a>
 ## 🌟 [HIGHLIGHTS](#-table-of-content)
@@ -70,7 +70,7 @@ The project focuses on modular architecture, reusable components, custom hooks, 
 
 <br>
 
-------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 <a id="technologies"></a>
 ## 🛠️ [TECNOLOGIES STACK](#-table-of-content)
@@ -147,7 +147,7 @@ The project focuses on modular architecture, reusable components, custom hooks, 
 
 <br>
 
-------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 <a id="codebaser-layer-map"></a>
 ## 🔄 [Codebase Layer Map](#Codebase-layer-map)
@@ -163,7 +163,7 @@ flowchart TD
 
 <br>
 
-------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 <a id="installation"></a>
 ## 🚀 [INSTALLATION](#-table-of-content)
@@ -217,29 +217,75 @@ flowchart TD
    ```
   <br>
 
-------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 <a id="project-structure"></a>
 ## 📂 [PROJECT STRUCTURE](#-table-of-content)
 
-```plaintext
-WEATHERAPP
-├- src/
-│  ├── components/     # Reusable UI components
-│  ├── screens/        # Screens (Screen1–Screen10)
-│  ├── layouts/        # DeviceLayout, RenderScreens, ScrollViewport
-│  ├── hooks/          # Custom hooks
-│  ├── constants/      # BREAKPOINTS, SCREENS_MAP, COLORS
-│  ├── services/       # API calls
-│  ├── utils/          # Utility functions
-│  ├── types/          # TypeScript types
-│  ├── mixins/         # CSS helpers (flex, size)
-└──.env                # API key
+*Diagram: Core module dependencies*
+
+```plaintherx
+  WEATHERAPP
+  src/
+  ├── App.tsx                     # Root component → DeviceLayout
+  ├── main.tsx                    # ReactDOM entry
+  ├── pages/
+  │   └── Home/
+  │       ├── Home.tsx            # WeatherProvider + ScreenRouter
+  │       └── Home.style.tsx      # Container (scroll-snap), AlertError
+  ├── layouts/                    # DeviceLayout, ScrollViewport, RenderScreens
+  ├── screens/
+  │   ├── ScreenRouter/           # Selects and renders active screen
+  │   └── Screen1/ … Screen10/    # Individual weather screens
+  ├── context/                    # WeatherProvider, useWeatherContext
+  ├── components/                 # UI component library (barrel: index.ts)
+  ├── services/
+  │   └── weather.service.ts      # API calls (getWeatherByCoords, etc.)
+  ├── hooks/                      # useDevice, useGeolocation, useWeather, etc.
+  ├── utils/                      # aqi, date, moon, wind, pressure, forecast, weather
+  ├── types/                      # TypeScript type definitions (barrel: index.ts)
+  ├── constants/                  # BREAKPOINTS, COLORS, SCREENS, SCREENS_MAP, etc.
+  ├── mixins/                     # flex(), size() CSS mixins
+  ├── config/
+  │   └── weatherApi.config.ts    # baseUrl, apiKey, defaultDays
+  └── test/
+      └── setup.ts                # @testing-library/jest-dom import
 ```
 
 <br>
 
-------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+<a id="project-structure"></a>
+## 📂 [KEY MODULE RELATIONSHIPS](#-key-module-relationship)
+
+```mermaid
+  flowchart TD
+  
+  A["src/App.tsx"]
+  A --> B["layouts/DeviceLayout"]
+  B --> C["pages/Home/Home.tsx"]
+  
+  C --> D["1) contextProvider"]
+  D --> E["hooks/useWeather"]
+  E --> F["services/weather.service.ts"]
+  
+  C --> G["2) screens/ScreenRouter"]
+  
+  G --> H["screens/Screen1...Screen10"]
+  
+  H --> I["2A) context/useWeatherContext"]
+  
+  H --> J["2B) components/index.ts"]
+  
+  J --> K["2B.1) mixins/ (flex, size)"]
+  J --> L["2B.2) constants/index.ts"]
+  J --> M["2B.3) utils/index.ts"]
+```
+
+<br>
+
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 <a id="usage"></a>
 ## 💡 [USAGE](#-table-of-content)
@@ -269,7 +315,7 @@ WEATHERAPP
 ```
 <br>
 
-------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 <a id="testing"></a>
 ## 🧪 [Testing](#-table-of-content)
@@ -320,7 +366,7 @@ yarn vitest run src/components/MyComponent.test.tsx
 ```
 <br>
 
-------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 <a id="screenshots"></a>
 ## 📸 [Screenshots](#-table-of-content)
@@ -360,7 +406,7 @@ yarn vitest run src/components/MyComponent.test.tsx
 
 <br>
 
-------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 <a id="license"></a>
 ## 📄 [License](#-table-of-content)
@@ -370,7 +416,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <br>
 
-------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 📬 Contact
 
