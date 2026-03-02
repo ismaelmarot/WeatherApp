@@ -48,7 +48,9 @@ The project focuses on modular architecture, reusable components, custom hooks, 
   - Adapts its layout to mobile, tablet, and desktop viewports
   - Is structured as a Progressive Web App (PWA) with mobile-safe-area and fullscreen meta tags in index.html
 
-<br>
+> [!CAUTION]
+> <sub>_Do not use in production (Experimental features)._</sub>
+
 <br>
 
 ------------------------------------
@@ -157,6 +159,9 @@ The project focuses on modular architecture, reusable components, custom hooks, 
 
   - **Other:** Scroll-snap UI, responsive design, custom hooks
 
+> [!IMPORTANT]
+> <sub>_Please choose the appropriate environment as well as the different build flags for your correct setup._</sub>
+
 <br>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
@@ -173,15 +178,15 @@ flowchart TD
     E --> F["External API WeatherAPI (forecast, search, AQI)"]
 ```
 
-## sources:
-![App](https://img.shields.io/badge/src%2FApp.tsx-1--10-gray?labelColor=black&style=for-the-badge)
-&nbsp;
-![Home](https://img.shields.io/badge/src%2Fpages%2FHome%2FHome.tsx-1--13-gray?labelColor=black&style=for-the-badge)
-&nbsp;
-![Types](https://img.shields.io/badge/src%2Ftypes%2Findex.ts-1--42-gray?labelColor=black&style=for-the-badge)
-&nbsp;
-![Service](https://img.shields.io/badge/src%2Fservices%2Fweather.service.ts-1--5-gray?labelColor=black&style=for-the-badge)
-&nbsp;
+> ## sources:
+> ![App](https://img.shields.io/badge/src%2FApp.tsx-1--10-gray?labelColor=black&style=for-the-badge)
+  &nbsp;
+  ![Home](https://img.shields.io/badge/src%2Fpages%2FHome%2FHome.tsx-1--13-gray?labelColor=black&style=for-the-badge)
+  &nbsp;
+  ![Types](https://img.shields.io/badge/src%2Ftypes%2Findex.ts-1--42-gray?labelColor=black&style=for-the-badge)
+  &nbsp;
+  ![Service](https://img.shields.io/badge/src%2Fservices%2Fweather.service.ts-1--5-gray?labelColor=black&style=for-the-badge)
+  &nbsp;
 
 <br>
 
@@ -305,20 +310,20 @@ flowchart TD
   J --> M["2B.3) utils/index.ts"]
 ```
 
-## sources:
-![App](https://img.shields.io/badge/src%2FApp.tsx-1--10-gray?labelColor=black&style=for-the-badge)
-&nbsp;
-![Home](https://img.shields.io/badge/src%2Fpages%2FHome%2FHome.tsx-1--13-gray?labelColor=black&style=for-the-badge)
-&nbsp;
-![Service](https://img.shields.io/badge/src%2Fservices%2Fweather.service.ts-1--5-gray?labelColor=black&style=for-the-badge)
-&nbsp;
-![Types](https://img.shields.io/badge/src%2Ftypes%2Findex.ts-1--42-gray?labelColor=black&style=for-the-badge)
-&nbsp;
-![Components](https://img.shields.io/badge/src%2Fcomponents%2Findex.ts-1--34-gray?labelColor=black&style=for-the-badge)
-&nbsp;
-![Vite](https://img.shields.io/badge/vite.config.ts-1--22-gray?labelColor=black&style=for-the-badge)
-&nbsp;
-![TestSetup](https://img.shields.io/badge/src%2Ftest%2Fsetup.ts-1-gray?labelColor=black&style=for-the-badge)
+> ## sources:
+> ![App](https://img.shields.io/badge/src%2FApp.tsx-1--10-gray?labelColor=black&style=for-the-badge)
+  &nbsp;
+  ![Home](https://img.shields.io/badge/src%2Fpages%2FHome%2FHome.tsx-1--13-gray?labelColor=black&style=for-the-badge)
+  &nbsp;
+  ![Service](https://img.shields.io/badge/src%2Fservices%2Fweather.service.ts-1--5-gray?labelColor=black&style=for-the-badge)
+  &nbsp;
+  ![Types](https://img.shields.io/badge/src%2Ftypes%2Findex.ts-1--42-gray?labelColor=black&style=for-the-badge)
+  &nbsp;
+  ![Components](https://img.shields.io/badge/src%2Fcomponents%2Findex.ts-1--34-gray?labelColor=black&style=for-the-badge)
+  &nbsp;
+  ![Vite](https://img.shields.io/badge/vite.config.ts-1--22-gray?labelColor=black&style=for-the-badge)
+  &nbsp;
+  ![TestSetup](https://img.shields.io/badge/src%2Ftest%2Fsetup.ts-1-gray?labelColor=black&style=for-the-badge)
 
 <br>
 
@@ -370,11 +375,11 @@ npm install --save-dev vitest @testing-library/react @testing-library/jest-dom
 
 # Or using yarn
 yarn add -D vitest @testing-library/react @testing-library/jest-dom
-
 ```
 
 ***2. Run all tests***
-```basg
+
+```bash
 # Using npm
 npm run test
 
@@ -383,8 +388,9 @@ yarn test
 ```
 
 ***3. Run in watch mode***
+> [!TIP]
+> <sub>_By default, this runs all tests once and exit._</sub>
 
-_By default, this runs all tests once and exit_ (💡Tip)
 ```bash
 # Using npm
 npm run test:watch
@@ -408,7 +414,7 @@ yarn vitest run src/components/MyComponent.test.tsx
 <a id="screenshots"></a>
 ## 📸 [Screenshots](#-table-of-content)
 
-### 📱 Mobile
+>### 📱 Mobile
 
 <p align="center">
   <img src="assets/screenshots/screenshot_01.png" width="250"/>
@@ -416,25 +422,27 @@ yarn vitest run src/components/MyComponent.test.tsx
   <img src="assets/screenshots/screenshot_03.png" width="250"/>
 </p>
 
+<details>
+<summary><strong>See more...</strong></summary>
+<br>
 <p align="center">
   <img src="assets/screenshots/screenshot_04.png" width="250"/>
   <img src="assets/screenshots/screenshot_05.png" width="250"/>
   <img src="assets/screenshots/screenshot_06.png" width="250"/>
 </p>
-
 <p align="center">
   <img src="assets/screenshots/screenshot_07.png" width="250"/>
   <img src="assets/screenshots/screenshot_08.png" width="250"/>
   <img src="assets/screenshots/screenshot_09.png" width="250"/>
 </p>
-
 <p align="center">
   <img src="assets/screenshots/screenshot_10.png" width="250"/>
 </p>
+</details>
 
 <br>
 
-------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 <a id="live-demo"></a>
 ## 🌍 [Live Demo](#-table-of-content)
@@ -467,7 +475,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   </a>
 </p>
 
-------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 <p align="center">
   <a href="#-table-of-content">
