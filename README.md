@@ -1,6 +1,6 @@
 # WEATHER APP
 
-<img src="public/icons/app_icon.png" alt="Icon Cap" width="150">
+<img src="public/icons/app-icon.png" alt="Icon Cap" width="150">
 
 _***WeatherApp is a responsive weather dashboard built with React and TypeScript.***_
 
