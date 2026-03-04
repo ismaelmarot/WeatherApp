@@ -1,4 +1,10 @@
-# 🌤️ WeatherApp
+# WEATHER APP
+
+_***WeatherApp is a responsive weather dashboard built with React and TypeScript.***_
+
+It consumes real-time weather data from the [WeatherAPI](https://www.weatherapi.com/) and dynamically adapts its layout for mobile, tablet, and desktop devices.
+</br>The project focuses on modular architecture, reusable components, custom hooks, and scalable folder structure.
+
 
 ![Version](https://img.shields.io/badge/version-1.0.0-orange?style=for-the-badge)
 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -26,20 +32,16 @@
 ![CSS](https://img.shields.io/badge/CSS-15%25-1572B6?style=for-the-badge)
 ![HTML](https://img.shields.io/badge/HTML-7%25-E34F26?style=for-the-badge)
 
+<br>
+
+<p  align="center">
+  <a href="https://ismaelmarot.github.io/WeatherApp/" target="_blank">
+    <img src="https://img.shields.io/badge/Go-Live Demo-blue?style=for-the-badge" alt="Demo WeatherApp" />
+  </a>
+</p>
 
 <br>
 
-_***WeatherApp is a responsive weather dashboard built with React and TypeScript.***_
-
-It consumes real-time weather data from the [WeatherAPI](https://www.weatherapi.com/) and dynamically adapts its layout for mobile, tablet, and desktop devices.
-
-The project focuses on modular architecture, reusable components, custom hooks, and scalable folder structure.
-<br>
-<br>
-
-<a href="https://ismaelmarot.github.io/WeatherApp/" target="_blank">
-  <img src="https://img.shields.io/badge/Go-Live Demo-blue?style=for-the-badge" alt="Demo WeatherApp" />
-</a>
 
 ## What It Does
   - Fetches current conditions, forecasts, and air quality data from an external weather API
