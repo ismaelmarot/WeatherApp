@@ -42,8 +42,10 @@ It consumes real-time weather data from the [WeatherAPI](https://www.weatherapi.
 
 <br>
 
+-------------------------------------------------------------------------------------------------------------------------
 
-## What It Does
+
+## What It Does?
   - Fetches current conditions, forecasts, and air quality data from an external weather API
   - Resolves a user's location via the browser Geolocation API or a city-name search
   - Displays data across a set of scroll-snap screens covering temperature, wind, rain, UV index, humidity, air quality, pressure, and lunar phases
