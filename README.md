@@ -73,7 +73,7 @@ It consumes real-time weather data from the [WeatherAPI](https://www.weatherapi.
 8. [Testing](#testing)
 9. [Screenshots](#screenshots)
 10. [Live Demo](#live-demo)
-11. [Version](#version)
+11. [Versions](#versions)
 
 <br>
 
@@ -459,8 +459,8 @@ yarn vitest run src/components/MyComponent.test.tsx
 <br>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
-<a id="version"></a>
-## [Version](#-table-of-content)
+<a id="versions"></a>
+## [Versions](#-table-of-content)
 
 <table style="border-collapse: collapse; width: 100%;">
   <tr>
