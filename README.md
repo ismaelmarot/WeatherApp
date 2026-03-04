@@ -1,5 +1,7 @@
 # WEATHER APP
 
+<img src="public/icons/app_icon.png" alt="Icon Cap" width="150">
+
 _***WeatherApp is a responsive weather dashboard built with React and TypeScript.***_
 
 It consumes real-time weather data from the [WeatherAPI](https://www.weatherapi.com/) and dynamically adapts its layout for mobile, tablet, and desktop devices.
