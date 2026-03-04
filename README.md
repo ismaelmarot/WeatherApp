@@ -419,6 +419,24 @@ yarn vitest run src/components/MyComponent.test.tsx
 <a id="version"></a>
 ## [Version](#-table-of-content)
 
+<table style="border-collapse: collapse; width: 100%;">
+  <tr>
+    <th style="border-bottom: 2px solid #ccc; text-align:left; padding:8px;">Version</th>
+    <th style="border-bottom: 2px solid #ccc; text-align:left; padding:8px;">Date</th>
+    <th style="border-bottom: 2px solid #ccc; text-align:left; padding:8px;">Changes</th>
+  </tr>
+
+  <tr>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">1.0.0k</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">00/00/2025</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">^19.2.0</td>
+  </tr>
+</table>
+
+
+<br>
+
+
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 <a id="screenshots"></a>
