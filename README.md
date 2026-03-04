@@ -69,8 +69,9 @@ It consumes real-time weather data from the [WeatherAPI](https://www.weatherapi.
 6. [Key Module Relationships](#key-module-relationships)
 6. [Usage](#usage)
 7. [Testing](#testing)
-8. [Screenshots](#screenshots)
-9. [Live Demo](#live-demo)
+8. [Version](#version)
+9. [Screenshots](#screenshots)
+10. [Live Demo](#live-demo)
 
 <br>
 
@@ -412,6 +413,11 @@ npx vitest run src/components/MyComponent.test.tsx
 yarn vitest run src/components/MyComponent.test.tsx
 ```
 <br>
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+<a id="version"></a>
+## [Version](#-table-of-content)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
