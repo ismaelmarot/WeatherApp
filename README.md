@@ -427,9 +427,9 @@ yarn vitest run src/components/MyComponent.test.tsx
   </tr>
 
   <tr>
-    <td style="border-bottom: 1px solid #eee; padding:8px;">1.0.0k</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">1.0.0</td>
     <td style="border-bottom: 1px solid #eee; padding:8px;">00/00/2025</td>
-    <td style="border-bottom: 1px solid #eee; padding:8px;">^19.2.0</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">Initial release - Weather general info</td>
   </tr>
 </table>
 
