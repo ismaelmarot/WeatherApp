@@ -416,29 +416,6 @@ yarn vitest run src/components/MyComponent.test.tsx
 ```
 <br>
 
-
-------------------------------------------------------------------------------------------------------------------------------------------------
-<a id="version"></a>
-## [Version](#-table-of-content)
-
-<table style="border-collapse: collapse; width: 100%;">
-  <tr>
-    <th style="border-bottom: 2px solid #ccc; text-align:left; padding:8px;">Version</th>
-    <th style="border-bottom: 2px solid #ccc; text-align:left; padding:8px;">Date</th>
-    <th style="border-bottom: 2px solid #ccc; text-align:left; padding:8px;">Changes</th>
-  </tr>
-
-  <tr>
-    <td style="border-bottom: 1px solid #eee; padding:8px;">1.0.0</td>
-    <td style="border-bottom: 1px solid #eee; padding:8px;">26/02/2026</td>
-    <td style="border-bottom: 1px solid #eee; padding:8px;">Initial release - Weather general info</td>
-  </tr>
-</table>
-
-
-<br>
-
-
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 <a id="screenshots"></a>
@@ -478,6 +455,27 @@ yarn vitest run src/components/MyComponent.test.tsx
 ## 🌍 [Live Demo](#-table-of-content)
 
   👉 https://ismaelmarot.github.io/WeatherApp/
+
+<br>
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+<a id="version"></a>
+## [Version](#-table-of-content)
+
+<table style="border-collapse: collapse; width: 100%;">
+  <tr>
+    <th style="border-bottom: 2px solid #ccc; text-align:left; padding:8px;">Version</th>
+    <th style="border-bottom: 2px solid #ccc; text-align:left; padding:8px;">Date</th>
+    <th style="border-bottom: 2px solid #ccc; text-align:left; padding:8px;">Changes</th>
+  </tr>
+
+  <tr>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">1.0.0</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">26/02/2026</td>
+    <td style="border-bottom: 1px solid #eee; padding:8px;">Initial release - Weather general info</td>
+  </tr>
+</table>
+
 
 <br>
 
