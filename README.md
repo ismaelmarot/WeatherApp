@@ -69,11 +69,11 @@ It consumes real-time weather data from the [WeatherAPI](https://www.weatherapi.
 4. [Installation](#installation)
 5. [Project Structure](#project-structure)
 6. [Key Module Relationships](#key-module-relationships)
-6. [Usage](#usage)
-7. [Testing](#testing)
-8. [Version](#version)
+7. [Usage](#usage)
+8. [Testing](#testing)
 9. [Screenshots](#screenshots)
 10. [Live Demo](#live-demo)
+11. [Version](#version)
 
 <br>
 
