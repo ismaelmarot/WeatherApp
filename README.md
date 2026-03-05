@@ -70,11 +70,12 @@ It consumes real-time weather data from the [WeatherAPI](https://www.weatherapi.
 5. [Usage](#usage)
 6. [Project Structure](#project-structure)
 7. [Key Module Relationships](#key-module-relationships)
-8. [Usage](#usage)
-9. [Testing](#testing)
-10. [Screenshots](#screenshots)
-11. [Live Demo](#live-demo)
-12. [Versions](#versions)
+8. [implement](#implement)
+9. [Usage](#usage)
+10. [Testing](#testing)
+11. [Screenshots](#screenshots)
+12. [Live Demo](#live-demo)
+13. [Versions](#versions)
 
 <br>
 
@@ -384,8 +385,8 @@ WeatherApp provides a clean and fast interface to explore detailed weather infor
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
-<a id="usage"></a>
-## 💡 [USAGE](#-table-of-content)
+<a id="implement"></a>
+## 💡 [IMPLEMENT](#implement)
 
 *After installing dependencies and setting up your API key, you can use the app as follows:*
 
