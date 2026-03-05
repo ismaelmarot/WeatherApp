@@ -256,7 +256,7 @@ flowchart TD
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 <a id="usage"></a>
-## ▶️ [USAGE](#usage)
+## ▶️ [USAGE](#-table-of-content)
 
 WeatherApp provides a clean and fast interface to explore detailed weather information for any location.
 
@@ -386,7 +386,7 @@ WeatherApp provides a clean and fast interface to explore detailed weather infor
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 <a id="implement"></a>
-## 💡 [IMPLEMENT](#implement)
+## 💡 [IMPLEMENT](#-table-of-content)
 
 *After installing dependencies and setting up your API key, you can use the app as follows:*
 
