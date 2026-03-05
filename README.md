@@ -293,11 +293,10 @@ WeatherApp provides a clean and fast interface to explore detailed weather infor
 
   > The layout automatically adapts to provide the best viewing experience.
 
----
+> [!TIP]
+> <sub>_For the best experience, allow the application to access your **location services**, or manually search for your preferred city._</sub>
 
-💡 **Tip**
 
-For the best experience, allow the application to access your **location services**, or manually search for your preferred city.
 
 <br>
 
