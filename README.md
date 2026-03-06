@@ -71,11 +71,10 @@ It consumes real-time weather data from the [WeatherAPI](https://www.weatherapi.
 6. [Project Structure](#project-structure)
 7. [Key Module Relationships](#key-module-relationships)
 8. [implement](#implement)
-9. [Usage](#usage)
-10. [Testing](#testing)
-11. [Screenshots](#screenshots)
-12. [Live Demo](#live-demo)
-13. [Versions](#versions)
+9. [Testing](#testing)
+10. [Screenshots](#screenshots)
+11. [Live Demo](#live-demo)
+12. [Versions](#versions)
 
 <br>
 
@@ -253,52 +252,6 @@ flowchart TD
    ```
   <br>
 
-------------------------------------------------------------------------------------------------------------------------------------------------
-
-<a id="usage"></a>
-## ▶️ [USAGE](#-table-of-content)
-
-WeatherApp provides a clean and fast interface to explore detailed weather information for any location.
-
-### 1. Search for a location
-  > Use the search bar to enter the **name of a city or location**.
-  > The app will fetch real-time weather data from the Weather API.
-
-### 2. View current weather conditions
-  > The main screen displays the **current temperature and basic conditions**, including:
-  > - Weather description
-  > - Feels like temperature
-  > - Local time
-  > - Weather icon
-
-### 3. Navigate through weather details
-  > Swipe or scroll vertically to explore additional weather screens powered by **scroll-snap navigation**.
-  > Available sections include:
-  > - 🌡 **Temperature**
-  > - 💨 **Wind**
-  > - 💧 **Humidity**
-  > - ☀️ **UV Index**
-  > - 🌫 **Air Quality**
-  > - 🌙 **Moon Phases**
-  > Each screen presents data using **visual indicators and charts** for better readability.
-
-### 4. Explore detailed metrics
-
-  > Some screens provide **additional visualizations**, such as charts and indicators, to help interpret weather trends more easily.
-
-### 5. Responsive experience
-  > WeatherApp is fully responsive and optimized for:
-  > - 📱 Mobile devices
-  > - 💻 Desktop screens
-  > - 📟 Tablets
-
-  > The layout automatically adapts to provide the best viewing experience.
-
->[!TIP]
-><sub>_For the best experience, allow the application to access your **location services**, or manually search for your preferred city._</sub>
-
-
-<br>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
