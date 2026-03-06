@@ -302,6 +302,21 @@ flowchart TD
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
+<a id="usage"></a>
+## ⚙️ [USAGE](#-table-of-content)
+
+| Step | Description |
+|------|-------------|
+| 1 | Open the WeatherApp in your browser. |
+| 2 | Enter the name of a city in the search field. |
+| 3 | Select the city from the search results (if suggestions appear). |
+| 4 | View the current weather information displayed on the screen. |
+| 5 | Search for another city to update the weather data instantly. |
+
+<br>
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
 <a id="project-structure"></a>
 ## 📂 [PROJECT STRUCTURE](#-table-of-content)
 
