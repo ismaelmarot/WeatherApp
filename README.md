@@ -96,7 +96,7 @@ It consumes real-time weather data from the [WeatherAPI](https://www.weatherapi.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 <a id="core-feature"></a>
-## ✨ [Core Feature](#-table-of-content)
+## ✨ [CORE FEATURE](#-table-of-content)
 
 | Feature | Description |
 |--------|-------------|
