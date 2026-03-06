@@ -538,11 +538,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   <img src="https://img.shields.io/badge/GitHub-@ismaelmarot-181717?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
   &nbsp;&nbsp;&nbsp;
-  <a href="https://linkedin.com/in/yourprofile">
+  <a href="https://linkedin.com/in/ismael-marot">
   <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
   &nbsp;&nbsp;&nbsp;
-  <a href="https://yourportfolio.com">
+  <a href="https://ismaelmarot.github.io">
   <img src="https://img.shields.io/badge/Portfolio-View%20Projects-FF7A00?style=for-the-badge&logo=google-chrome&logoColor=white"/>
   </a>
 </p>
