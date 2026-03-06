@@ -95,6 +95,21 @@ It consumes real-time weather data from the [WeatherAPI](https://www.weatherapi.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
+## ⭐ Core Features
+
+| Feature | Description |
+|--------|-------------|
+| City weather search | Users can search for any city to retrieve real-time weather information. |
+| Current weather data | Displays key weather metrics such as temperature, humidity, and weather conditions. |
+| Dynamic UI updates | Weather data updates instantly after each search without page reloads. |
+| Location-based weather | Option to fetch weather data based on the user's current location. |
+| Responsive interface | Clean and responsive layout optimized for desktop and mobile devices. |
+| Error handling | Handles invalid city names or failed API requests gracefully. |
+
+<br>
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
 <a id="technologies"></a>
 ## 🛠️ [TECNOLOGIES STACK](#-table-of-content)
  
