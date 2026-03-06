@@ -269,6 +269,36 @@ flowchart TD
    ```
   <br>
 
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+<a id="implement"></a>
+## 💡 [IMPLEMENT](#-table-of-content)
+
+*After installing dependencies and setting up your API key, you can use the app as follows:*
+
+**1. Import the main layout**
+
+*In your main `App.tsx` file:*
+  ```bash
+  import 'weather-icons/css/weather-icons.css'
+  import { DeviceLayout } from './layouts/DeviceLayout'
+  
+  function App() {
+    return <DeviceLayout />
+  }
+
+  export default App
+  ```
+<br>
+
+**2. Run the app**
+
+*Start the development server if you haven’t already:*
+```bash
+  npm run dev
+```
+
+<br>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -351,36 +381,6 @@ flowchart TD
   &nbsp;
   ![TestSetup](https://img.shields.io/badge/src%2Ftest%2Fsetup.ts-1-gray?labelColor=black&style=for-the-badge)
 
-<br>
-
-------------------------------------------------------------------------------------------------------------------------------------------------
-
-<a id="implement"></a>
-## 💡 [IMPLEMENT](#-table-of-content)
-
-*After installing dependencies and setting up your API key, you can use the app as follows:*
-
-**1. Import the main layout**
-
-*In your main `App.tsx` file:*
-  ```bash
-  import 'weather-icons/css/weather-icons.css'
-  import { DeviceLayout } from './layouts/DeviceLayout'
-  
-  function App() {
-    return <DeviceLayout />
-  }
-
-  export default App
-  ```
-<br>
-
-**2. Run the app**
-
-*Start the development server if you haven’t already:*
-```bash
-  npm run dev
-```
 <br>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
